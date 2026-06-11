@@ -1,0 +1,49 @@
+{
+  "version": "Q1-V3 Robust Multi-objective Multimodal Orienteering with Simulation-based Scheduling",
+  "package_root": "E:\\Desktop\\运筹学项目\\第一问_30天路线优化材料包",
+  "v3_root": "E:\\Desktop\\运筹学项目\\第一问_30天路线优化材料包\\09_Q1_V3_鲁棒联合优化",
+  "coverage_grid": [
+    20,
+    22,
+    24,
+    26,
+    28,
+    30,
+    32
+  ],
+  "scenario_samples": 500,
+  "transport_labels": 1841,
+  "candidate_routes": 126,
+  "simulation_routes": 126,
+  "pareto_front_routes": 45,
+  "selected_route_ids": [
+    {
+      "selected_role": "极限覆盖版",
+      "route_id": "Q1V3_Q32_340",
+      "selection_status": "criteria_pass"
+    },
+    {
+      "selected_role": "30景点均衡覆盖候选版",
+      "route_id": "Q1V3_Q30_279",
+      "selection_status": "coverage_candidate_not_strict_robust: 满足30景点和2缓冲，但未同时满足80%成功率或红日<=1，应作为覆盖候选而非最终稳健主推"
+    },
+    {
+      "selected_role": "鲁棒稳健主推版",
+      "route_id": "Q1V3_Q24_120",
+      "selection_status": "criteria_pass_relaxed_coverage: 成功率>=80%、红日<=2、缓冲>=2；覆盖降至24+以换取稳健性"
+    },
+    {
+      "selected_role": "亲子舒适版",
+      "route_id": "Q1V3_Q24_120",
+      "selection_status": "criteria_pass"
+    },
+    {
+      "selected_role": "长者慢游版",
+      "route_id": "Q1V3_Q22_092",
+      "selection_status": "criteria_pass"
+    }
+  ],
+  "success_threshold": 0.8,
+  "global_optimality_claimed": false,
+  "solver_type": "matheuristic: multi-label shortest paths + coverage-grid search + heuristic hourly scheduler + Monte Carlo simulation + Pareto filtering"
+}

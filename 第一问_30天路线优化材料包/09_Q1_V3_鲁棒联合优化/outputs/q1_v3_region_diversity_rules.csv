@@ -1,0 +1,7 @@
+﻿region_cluster,ordinary_candidate_spots,min_cover_soft,diminishing_alpha,diminishing_beta,rule_note
+东疆,7,1,10.0,0.72,Value_r(n)=A_r*(1-exp(-B_r*n)); 用于抑制同区域刷点
+乌鲁木齐周边,4,1,10.0,0.72,Value_r(n)=A_r*(1-exp(-B_r*n)); 用于抑制同区域刷点
+伊犁,7,1,10.0,0.72,Value_r(n)=A_r*(1-exp(-B_r*n)); 用于抑制同区域刷点
+北疆,6,1,8.0,0.72,Value_r(n)=A_r*(1-exp(-B_r*n)); 用于抑制同区域刷点
+南疆,8,1,10.0,0.72,Value_r(n)=A_r*(1-exp(-B_r*n)); 用于抑制同区域刷点
+巴州-南疆北线,6,1,10.0,0.72,Value_r(n)=A_r*(1-exp(-B_r*n)); 用于抑制同区域刷点

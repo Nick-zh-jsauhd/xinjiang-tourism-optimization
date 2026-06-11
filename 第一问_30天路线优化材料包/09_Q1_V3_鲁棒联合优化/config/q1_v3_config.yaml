@@ -1,0 +1,27 @@
+coverage_grid: [20, 22, 24, 26, 28, 30, 32]
+scenario_samples: 500
+cvar_alpha: 0.75
+cvar_alpha_high: 0.90
+success_threshold: 0.8
+main_route_min_spots: 30
+main_route_min_buffer_days: 2
+max_red_days_standard: 1
+max_red_days_family: 0
+max_red_days_senior: 0
+transport_label_limit_per_od: 5
+max_labels_per_node: 14
+max_path_edges: 7
+candidate_routes_per_q: 18
+random_seed: 20260611
+min_region_count: 4
+min_theme_count: 5
+daily_active_limit_standard: 8.5
+daily_active_limit_family: 7.0
+daily_active_limit_senior: 6.5
+lunch_start: "12:00"
+lunch_end: "13:00"
+day_start: "08:30"
+soft_day_end: "20:30"
+hard_day_end: "22:00"
+long_transfer_hours: 6.0
+buffer_absorb_hours_per_day: 6.0
