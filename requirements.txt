@@ -1,0 +1,10 @@
+pandas
+numpy
+matplotlib
+scipy
+scikit-learn
+networkx
+requests
+openpyxl
+tabulate
+

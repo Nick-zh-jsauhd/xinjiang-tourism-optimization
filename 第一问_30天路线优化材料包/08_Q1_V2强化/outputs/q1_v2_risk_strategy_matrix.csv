@@ -1,0 +1,5 @@
+﻿risk_type,trigger,model_signal,strategy,applies_to
+预约失败,重点景区余票不足、实名预约失败,expected_reservation_failures / buffer_days,优先消耗缓冲日；同城替代点；提前7-14天预约,全部方案，极限覆盖版风险最高
+道路/天气延误,独库/山区路段封闭、强降雨、大风沙尘,weighted_red_risk / p90_simulated_days,长转场后不安排核心景点；铁路/航班优先替代；保留缓冲日,均衡稳健版、长者慢游版
+高温暴露,吐鲁番、南疆午后高温,high_temp_exposure_hours / red_days,上午户外、午间室内或酒店休息、傍晚补游,亲子舒适版、长者慢游版
+酒店满房/晚到,旺季热门城市房量不足或晚间到达,hotel_cost / calendar_role / long transfer,住宿城市提前锁定；长转场日只做交通或低强度景点,全部方案

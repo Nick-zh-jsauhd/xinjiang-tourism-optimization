@@ -1,0 +1,3 @@
+﻿route_id,repair_type,target_spot,from_position,to_position,score_before,score_after,time_window_violations_before,time_window_violations_after,over_budget_days_before,over_budget_days_after,action_status,rationale
+PCOP_MILP,local_order_move,艾提尕尔清真寺,15,17,13536.61,13136.93,1,1,5,4,applied,局部移动闭园较早或到达过晚的景点，优先消除时间窗冲突。
+PCOP_MILP,local_order_move,艾提尕尔清真寺,17,16,13136.93,3536.623,1,0,4,5,applied,局部移动闭园较早或到达过晚的景点，优先消除时间窗冲突。

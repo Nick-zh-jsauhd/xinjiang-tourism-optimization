@@ -1,0 +1,18 @@
+{
+  "package_root": "E:\\Desktop\\运筹学项目\\第一问_30天路线优化材料包",
+  "v2_root": "E:\\Desktop\\运筹学项目\\第一问_30天路线优化材料包\\08_Q1_V2强化",
+  "routes": 4,
+  "daily_rows": 118,
+  "epsilon_candidates": 7,
+  "transport_label_rows": 1600,
+  "main_route_id": "Q1V2_BALANCED_30_BUFFER2",
+  "outputs": [
+    "E:\\Desktop\\运筹学项目\\第一问_30天路线优化材料包\\08_Q1_V2强化\\outputs\\enhanced_od_labels_v2.csv",
+    "E:\\Desktop\\运筹学项目\\第一问_30天路线优化材料包\\08_Q1_V2强化\\outputs\\q1_v2_pareto_routes.csv",
+    "E:\\Desktop\\运筹学项目\\第一问_30天路线优化材料包\\08_Q1_V2强化\\outputs\\q1_v2_daily_itinerary.csv",
+    "E:\\Desktop\\运筹学项目\\第一问_30天路线优化材料包\\08_Q1_V2强化\\outputs\\q1_v2_robustness_summary.csv",
+    "E:\\Desktop\\运筹学项目\\第一问_30天路线优化材料包\\08_Q1_V2强化\\outputs\\q1_v2_epsilon_grid.csv",
+    "E:\\Desktop\\运筹学项目\\第一问_30天路线优化材料包\\08_Q1_V2强化\\reports\\新疆旅游第一问Q1_V2强化建模与实验报告.md",
+    "E:\\Desktop\\运筹学项目\\第一问_30天路线优化材料包\\08_Q1_V2强化\\reports\\新疆旅游第一问Q1_V2强化结果.xlsx"
+  ]
+}

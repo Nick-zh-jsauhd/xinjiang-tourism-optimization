@@ -1,0 +1,71 @@
+# Secrets and local configuration
+.env
+.env.*
+!.env.example
+*.key
+*.pem
+*.p12
+*.crt
+*.der
+secrets/
+
+# Python cache and local runtime files
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.ipynb_checkpoints/
+
+# Node dependencies and package-manager cache
+node_modules/
+.npm/
+.pnpm-store/
+
+# Logs and temporary files
+logs/
+*.log
+*.tmp
+*.temp
+~$*
+
+# OS and editor files
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/
+.idea/
+
+# Large local-only archives, if created later
+*.zip
+*.7z
+*.rar
+
+# Local full-project artifacts kept on disk but not published in the Q1-only repo
+/adaptive_strategy_outputs/
+/advanced_model_outputs/
+/amap_selfdrive_model_outputs/
+/defense_package_outputs/
+/digital_twin_outputs/
+/enhanced_data/
+/enhanced_model_outputs/
+/final_research_package_v2_outputs/
+/graph_model_outputs/
+/humanized_scenario_outputs/
+/hybrid_30day_outputs/
+/hybrid_metaheuristic_outputs/
+/itinerary_outputs/
+/itinerary_repair_outputs/
+/model_data/
+/outputs/
+/paper_chapter_outputs/
+/policy_simulation_outputs/
+/research_synthesis_outputs/
+/risk_policy_outputs/
+/scripts/
+/solver_efficiency_outputs/
+/visual_assets_outputs/
+/旅游线路安排-图论.pdf
+/新疆旅游全品类数据明细.xlsx
+/新疆旅游线路安排案例10.docx

@@ -1,0 +1,21 @@
+﻿route_id,repair_type,target_spot,from_position,to_position,score_before,score_after,time_window_violations_before,time_window_violations_after,over_budget_days_before,over_budget_days_after,action_status,rationale,action_group,day,base_lodging_hub,recommended_lodging_hub,representative_hotel_area_spot,transfer_to_hotel_hours,transfer_to_hotel_cost_yuan_per_two,estimated_extra_detour_hours,estimated_extra_detour_cost_yuan_per_two,repair_status,issue_type,issue_value,recommended_action,target_segment,expected_effect
+PCOP_MILP,local_order_move,艾提尕尔清真寺,15.0,17.0,13536.61,13136.93,1.0,1.0,5.0,4.0,applied,局部移动闭园较早或到达过晚的景点，优先消除时间窗冲突。,order_repair,,,,,,,,,,,,,,
+PCOP_MILP,local_order_move,艾提尕尔清真寺,17.0,16.0,13136.93,3536.623,1.0,0.0,4.0,5.0,applied,局部移动闭园较早或到达过晚的景点，优先消除时间窗冲突。,order_repair,,,,,,,,,,,,,,
+PCOP_MILP,,,,,,,,,,,,将非标准住宿点替换为最近且绕行成本较低的标准酒店枢纽。,lodging_repair,1.0,达坂城镇,天池风景区,天山天池,1.921,92.74,0.0,0.0,recommended,,,,,
+PCOP_MILP,,,,,,,,,,,,将非标准住宿点替换为最近且绕行成本较低的标准酒店枢纽。,lodging_repair,25.0,霍城县(惠远古城),赛里木湖,果子沟大桥,0.597,19.1,0.0,0.0,recommended,,,,,
+PCOP_ALNS,,,,,,,,,,,,将非标准住宿点替换为最近且绕行成本较低的标准酒店枢纽。,lodging_repair,4.0,达坂城镇,吐鲁番市,吐峪沟麻扎村,1.779,85.64,0.0,0.0,recommended,,,,,
+PCOP_ALNS,,,,,,,,,,,,将非标准住宿点替换为最近且绕行成本较低的标准酒店枢纽。,lodging_repair,19.0,霍城县(惠远古城),赛里木湖,果子沟大桥,0.597,19.1,0.0,0.0,recommended,,,,,
+PCOP_ALNS,,,,,,,,,,,,将非标准住宿点替换为最近且绕行成本较低的标准酒店枢纽。,lodging_repair,22.0,阿勒泰市,禾木村,五彩滩,3.174,132.03,6.246,263.19,recommended,,,,,
+PCOP_ALNS,,,,,,,,,,,,将非标准住宿点替换为最近且绕行成本较低的标准酒店枢纽。,lodging_repair,23.0,阿勒泰市,禾木村,五彩滩,3.174,132.03,0.0,0.0,recommended,,,,,
+PCOP_MILP,,,,,,,,,,,requires_real_schedule_or_preference,交通+游览略超8小时，可前一晚靠近目的地住宿，或将该日定义为9-10小时高强度日。,operational_repair,14.0,,,,,,,,,daily_active_budget_overrun,9.6,move_previous_evening_or_relax_budget,喀什古城 -> 石头城遗址,减少或解释超过8小时的日程压力
+PCOP_MILP,,,,,,,,,,,requires_real_schedule_or_preference,跨区转移超过8小时，应优先用夜间火车/航班真实班次替换，或拆成中停过夜。,operational_repair,19.0,,,,,,,,,daily_active_budget_overrun,8.41,insert_time_expanded_rail_or_air,和田博物馆 -> 库车王府所在区域,减少或解释超过8小时的日程压力
+PCOP_MILP,,,,,,,,,,,requires_real_schedule_or_preference,跨区转移超过8小时，应优先用夜间火车/航班真实班次替换，或拆成中停过夜。,operational_repair,21.0,,,,,,,,,daily_active_budget_overrun,12.39,insert_time_expanded_rail_or_air,库车王府 -> 昭苏草原所在区域,减少或解释超过8小时的日程压力
+PCOP_MILP,,,,,,,,,,,requires_real_schedule_or_preference,交通+游览略超8小时，可前一晚靠近目的地住宿，或将该日定义为9-10小时高强度日。,operational_repair,23.0,,,,,,,,,daily_active_budget_overrun,10.17,move_previous_evening_or_relax_budget,昭苏草原 -> 喀拉峻大草原,减少或解释超过8小时的日程压力
+PCOP_MILP,,,,,,,,,,,requires_real_schedule_or_preference,交通+游览略超8小时，可前一晚靠近目的地住宿，或将该日定义为9-10小时高强度日。,operational_repair,24.0,,,,,,,,,daily_active_budget_overrun,11.0,move_previous_evening_or_relax_budget,喀拉峻大草原 -> 那拉提草原,减少或解释超过8小时的日程压力
+PCOP_ALNS,,,,,,,,,,,requires_real_schedule_or_preference,交通+游览略超8小时，可前一晚靠近目的地住宿，或将该日定义为9-10小时高强度日。,operational_repair,13.0,,,,,,,,,daily_active_budget_overrun,9.43,move_previous_evening_or_relax_budget,天山神秘大峡谷 -> 巴音布鲁克草原,减少或解释超过8小时的日程压力
+PCOP_ALNS,,,,,,,,,,,requires_real_schedule_or_preference,交通+游览略超8小时，可前一晚靠近目的地住宿，或将该日定义为9-10小时高强度日。,operational_repair,14.0,,,,,,,,,daily_active_budget_overrun,8.27,move_previous_evening_or_relax_budget,巴音布鲁克草原 -> 那拉提草原,减少或解释超过8小时的日程压力
+PCOP_ALNS,,,,,,,,,,,requires_real_schedule_or_preference,交通+游览略超8小时，可前一晚靠近目的地住宿，或将该日定义为9-10小时高强度日。,operational_repair,17.0,,,,,,,,,daily_active_budget_overrun,8.72,move_previous_evening_or_relax_budget,昭苏草原 -> 夏塔古道,减少或解释超过8小时的日程压力
+PCOP_ALNS,,,,,,,,,,,requires_real_schedule_or_preference,交通+游览略超8小时，可前一晚靠近目的地住宿，或将该日定义为9-10小时高强度日。,operational_repair,18.0,,,,,,,,,daily_active_budget_overrun,9.37,move_previous_evening_or_relax_budget,夏塔古道 -> 喀拉峻大草原,减少或解释超过8小时的日程压力
+PCOP_ALNS,,,,,,,,,,,requires_real_schedule_or_preference,单景区游览时间过长，应拆成两天或降低游览时长参数。,operational_repair,25.0,,,,,,,,,daily_active_budget_overrun,12.3,split_long_visit_over_two_days,五彩滩 -> 禾木村,减少或解释超过8小时的日程压力
+PCOP_ALNS,,,,,,,,,,,requires_real_schedule_or_preference,跨区转移超过8小时，应优先用夜间火车/航班真实班次替换，或拆成中停过夜。,operational_repair,30.0,,,,,,,,,daily_active_budget_overrun,12.8,insert_time_expanded_rail_or_air,可可托海 -> 和田博物馆所在区域,减少或解释超过8小时的日程压力
+PCOP_ALNS,,,,,,,,,,,requires_real_schedule_or_preference,跨区转移超过8小时，应优先用夜间火车/航班真实班次替换，或拆成中停过夜。,operational_repair,32.0,,,,,,,,,daily_active_budget_overrun,9.79,insert_time_expanded_rail_or_air,千里葡萄长廊 -> 石头城遗址所在区域,减少或解释超过8小时的日程压力

@@ -1,0 +1,119 @@
+﻿route_id,route_type,persona_id,day,calendar_role,visit_spots_count,visit_spots,day_travel_hours,day_service_hours,day_active_hours,transport_cost_yuan_for_two,ticket_cost_yuan_for_two,risk_score,mode_combo,high_temp_exposure_hours,remote_or_altitude_spots,lodging_hub,hotel_cost_yuan,fatigue_index,comfort_score,stress_level,humanized_note
+Q1V2_EXTREME_32_HARD30,极限覆盖版,extreme_coverage,1,active,2,达坂城古镇 -> 交河故城,2.74,4.25,6.99,113.16,140.0,0.149,hard30_original_segments,0.0,0,吐鲁番市,180.0,12.54,87.46,green,常规执行
+Q1V2_EXTREME_32_HARD30,极限覆盖版,extreme_coverage,2,active,3,坎儿井民俗园 -> 苏公塔 -> 葡萄沟,0.86,6.0,6.86,13.64,290.0,0.128,hard30_original_segments,0.0,0,吐鲁番市,180.0,10.85,89.15,green,常规执行
+Q1V2_EXTREME_32_HARD30,极限覆盖版,extreme_coverage,3,active,2,火焰山 -> 高昌故城,0.9,5.0,5.9,24.5,220.0,0.095,hard30_original_segments,0.0,0,吐鲁番市,180.0,3.06,96.94,green,常规执行
+Q1V2_EXTREME_32_HARD30,极限覆盖版,extreme_coverage,4,active,1,吐峪沟麻扎村,0.59,2.5,3.09,11.08,60.0,0.047,hard30_original_segments,0.0,0,吐鲁番市,180.0,1.51,98.49,green,常规执行
+Q1V2_EXTREME_32_HARD30,极限覆盖版,extreme_coverage,5,active,1,北庭故城遗址,4.7,1.5,6.2,190.84,76.0,0.156,hard30_original_segments,0.0,0,乌鲁木齐市,150.0,14.32,85.68,green,常规执行
+Q1V2_EXTREME_32_HARD30,极限覆盖版,extreme_coverage,6,active,1,江布拉克草原,1.33,3.5,4.83,38.39,86.0,0.063,hard30_original_segments,0.0,0,乌鲁木齐市,150.0,2.03,97.97,green,常规执行
+Q1V2_EXTREME_32_HARD30,极限覆盖版,extreme_coverage,7,active,1,天山天池,1.96,5.0,6.96,94.59,310.0,0.097,hard30_original_segments,0.0,0,天池风景区,280.0,10.63,89.37,green,常规执行
+Q1V2_EXTREME_32_HARD30,极限覆盖版,extreme_coverage,8,active,0,,6.21,0.0,6.21,323.25,0.0,0.236,hard30_original_segments,0.0,0,赛里木湖,260.0,26.69,73.31,red,长转场后降低游览密度
+Q1V2_EXTREME_32_HARD30,极限覆盖版,extreme_coverage,9,active,1,赛里木湖,0.0,6.0,6.0,0.0,290.0,0.0,hard30_original_segments,0.0,0,赛里木湖,260.0,0.0,100.0,green,常规执行
+Q1V2_EXTREME_32_HARD30,极限覆盖版,extreme_coverage,10,active,2,霍城薰衣草花田 -> 果子沟大桥,1.75,4.0,5.75,56.13,70.0,0.114,hard30_original_segments,0.0,0,赛里木湖,260.0,3.67,96.33,green,常规执行
+Q1V2_EXTREME_32_HARD30,极限覆盖版,extreme_coverage,11,active,1,喀拉峻大草原,4.96,6.0,10.96,197.09,280.0,0.221,hard30_original_segments,0.0,0,特克斯县(八卦城),190.0,98.88,35.0,red,硬约束可行但当天强度超标
+Q1V2_EXTREME_32_HARD30,极限覆盖版,extreme_coverage,12,active,1,夏塔古道,3.43,5.0,8.43,104.41,160.0,0.103,hard30_original_segments,0.0,0,昭苏县(夏塔古道),210.0,28.65,71.35,red,硬约束可行但当天强度超标
+Q1V2_EXTREME_32_HARD30,极限覆盖版,extreme_coverage,13,active,1,昭苏草原,3.73,3.5,7.23,66.27,0.0,0.08,hard30_original_segments,0.0,0,昭苏县(夏塔古道),210.0,13.68,86.32,green,常规执行
+Q1V2_EXTREME_32_HARD30,极限覆盖版,extreme_coverage,14,active,0,,7.24,0.0,7.24,169.17,0.0,0.143,hard30_original_segments,0.0,0,那拉提镇,200.0,38.39,61.61,red,长转场后降低游览密度
+Q1V2_EXTREME_32_HARD30,极限覆盖版,extreme_coverage,15,active,1,那拉提草原,0.0,6.0,6.0,0.0,270.0,0.0,hard30_original_segments,0.0,0,那拉提镇,200.0,0.0,100.0,green,常规执行
+Q1V2_EXTREME_32_HARD30,极限覆盖版,extreme_coverage,16,active,0,,7.95,0.0,7.95,241.1,0.0,0.186,hard30_original_segments,0.0,0,库尔勒市,150.0,49.9,50.1,red,长转场后降低游览密度
+Q1V2_EXTREME_32_HARD30,极限覆盖版,extreme_coverage,17,active,2,博斯腾湖 -> 罗布人村寨,1.3,6.0,7.8,30.0,160.0,0.08,hard30_original_segments,0.0,0,库尔勒市,150.0,16.65,83.35,yellow,常规执行
+Q1V2_EXTREME_32_HARD30,极限覆盖版,extreme_coverage,18,active,0,,6.58,0.0,6.58,243.67,0.0,0.188,hard30_original_segments,0.0,0,巴音布鲁克,230.0,30.42,69.58,red,长转场后降低游览密度
+Q1V2_EXTREME_32_HARD30,极限覆盖版,extreme_coverage,19,active,1,巴音布鲁克草原,0.0,6.0,6.5,0.0,280.0,0.0,hard30_original_segments,0.0,0,巴音布鲁克,230.0,3.91,96.09,green,常规执行
+Q1V2_EXTREME_32_HARD30,极限覆盖版,extreme_coverage,20,active,1,天山神秘大峡谷,3.38,3.5,6.88,106.05,80.0,0.104,hard30_original_segments,0.0,0,库车市,170.0,10.23,89.77,green,常规执行
+Q1V2_EXTREME_32_HARD30,极限覆盖版,extreme_coverage,21,active,2,库车王府 -> 克孜尔石窟,2.57,4.0,6.57,72.34,220.0,0.124,hard30_original_segments,0.0,0,库车市,170.0,8.45,91.55,green,常规执行
+Q1V2_EXTREME_32_HARD30,极限覆盖版,extreme_coverage,22,active,0,,7.54,0.0,7.54,383.27,0.0,0.272,hard30_original_segments,0.0,0,喀什市,180.0,46.82,53.18,red,长转场后降低游览密度
+Q1V2_EXTREME_32_HARD30,极限覆盖版,extreme_coverage,23,active,2,艾提尕尔清真寺 -> 喀什古城,0.15,5.0,6.65,1.2,60.0,0.041,hard30_original_segments,0.0,0,喀什市,180.0,6.4,93.6,green,常规执行
+Q1V2_EXTREME_32_HARD30,极限覆盖版,extreme_coverage,24,active,1,奥依塔克冰川,2.15,4.5,6.66,57.44,90.0,0.075,hard30_original_segments,0.0,0,喀什市,180.0,7.58,92.42,green,常规执行
+Q1V2_EXTREME_32_HARD30,极限覆盖版,extreme_coverage,25,active,1,帕米尔高原白沙湖,2.36,4.5,6.86,66.09,80.0,0.08,hard30_original_segments,0.0,0,塔什库尔干县(帕米尔高原),200.0,9.3,90.7,green,常规执行
+Q1V2_EXTREME_32_HARD30,极限覆盖版,extreme_coverage,26,active,1,石头城遗址,1.6,4.5,6.1,55.56,60.0,0.074,hard30_original_segments,0.0,0,塔什库尔干县(帕米尔高原),200.0,3.16,96.84,green,常规执行
+Q1V2_EXTREME_32_HARD30,极限覆盖版,extreme_coverage,27,active,1,香妃园,5.1,2.5,7.6,189.5,120.0,0.16,hard30_original_segments,0.0,0,喀什市,180.0,27.97,72.03,yellow,长转场后降低游览密度
+Q1V2_EXTREME_32_HARD30,极限覆盖版,extreme_coverage,28,active,0,,5.57,0.0,5.57,273.86,0.0,0.206,hard30_original_segments,0.0,0,和田市,160.0,19.96,80.04,yellow,长转场后降低游览密度
+Q1V2_EXTREME_32_HARD30,极限覆盖版,extreme_coverage,29,active,2,和田博物馆 -> 千里葡萄长廊,0.4,4.0,5.9,6.93,0.0,0.044,hard30_original_segments,0.0,0,和田市,160.0,1.42,98.58,green,常规执行
+Q1V2_EXTREME_32_HARD30,极限覆盖版,extreme_coverage,30,active,0,,7.05,0.0,7.05,2387.0,0.0,0.16,hard30_original_segments,0.0,0,乌鲁木齐市,150.0,36.23,63.77,red,长转场后降低游览密度
+Q1V2_BALANCED_30_BUFFER2,均衡稳健版,balanced_robust,1,active,3,达坂城古镇 -> 交河故城 -> 坎儿井民俗园,3.043,5.75,8.793,118.53,220.0,0.185,standard_active_amap_route_filtered,0.0,0,吐鲁番市,200.0,14.67,85.33,green,沿用普通体力型人性化转场结构；低收益点已删除
+Q1V2_BALANCED_30_BUFFER2,均衡稳健版,balanced_robust,2,active,3,苏公塔 -> 葡萄沟 -> 火焰山,1.126,7.0,8.126,25.06,290.0,0.15,standard_active_amap_route_filtered,0.0,0,吐鲁番市,200.0,7.97,92.03,green,沿用普通体力型人性化转场结构；低收益点已删除
+Q1V2_BALANCED_30_BUFFER2,均衡稳健版,balanced_robust,3,active,2,高昌故城 -> 吐峪沟麻扎村,0.925,5.0,5.925,18.79,200.0,0.087,standard_active_amap_route_filtered,0.0,0,吐鲁番市,200.0,1.3,98.7,green,沿用普通体力型人性化转场结构；低收益点已删除
+Q1V2_BALANCED_30_BUFFER2,均衡稳健版,balanced_robust,4,active,1,北庭故城遗址,4.702,1.5,6.202,190.84,76.0,0.12,standard_active_amap_route_filtered,0.0,0,乌鲁木齐市,200.0,2.43,97.57,green,沿用普通体力型人性化转场结构；低收益点已删除
+Q1V2_BALANCED_30_BUFFER2,均衡稳健版,balanced_robust,5,active,1,江布拉克草原,1.334,3.5,4.834,38.39,86.0,0.059,standard_active_amap_route_filtered,0.0,0,乌鲁木齐市,200.0,2.39,97.61,green,沿用普通体力型人性化转场结构；低收益点已删除
+Q1V2_BALANCED_30_BUFFER2,均衡稳健版,balanced_robust,6,active,1,天山天池,1.957,5.0,6.957,94.59,310.0,0.095,standard_active_amap_route_filtered,0.0,0,天池风景区,200.0,1.43,98.57,green,沿用普通体力型人性化转场结构；低收益点已删除
+Q1V2_BALANCED_30_BUFFER2,均衡稳健版,balanced_robust,7,transfer,0,跨区转场至赛里木湖,6.21,0.0,6.21,323.25,0.0,0.172,standard_active_amap_route_filtered,0.0,0,,200.0,13.92,86.08,green,跨区转场日，不叠加核心景点
+Q1V2_BALANCED_30_BUFFER2,均衡稳健版,balanced_robust,8,active,1,赛里木湖,0.0,6.0,6.0,0.0,290.0,0.02,standard_active_amap_route_filtered,0.0,0,赛里木湖,200.0,1.8,98.2,green,沿用普通体力型人性化转场结构；低收益点已删除
+Q1V2_BALANCED_30_BUFFER2,均衡稳健版,balanced_robust,9,active,2,霍城薰衣草花田 -> 果子沟大桥,1.752,4.0,5.752,56.13,70.0,0.127,standard_active_amap_route_filtered,0.0,0,赛里木湖,200.0,1.9,98.1,green,沿用普通体力型人性化转场结构；低收益点已删除
+Q1V2_BALANCED_30_BUFFER2,均衡稳健版,balanced_robust,10,transfer,0,跨区转场至喀拉峻大草原,5.036,0.0,5.036,187.09,0.0,0.151,standard_active_amap_route_filtered,0.0,0,,200.0,4.63,95.37,green,跨区转场日，不叠加核心景点
+Q1V2_BALANCED_30_BUFFER2,均衡稳健版,balanced_robust,11,active,1,喀拉峻大草原,0.0,6.0,6.0,0.0,280.0,0.02,standard_active_amap_route_filtered,0.0,0,特克斯县(八卦城),200.0,1.8,98.2,green,沿用普通体力型人性化转场结构；低收益点已删除
+Q1V2_BALANCED_30_BUFFER2,均衡稳健版,balanced_robust,12,active,1,夏塔古道,3.426,5.0,8.426,104.41,160.0,0.122,standard_active_amap_route_filtered,0.0,0,昭苏县(夏塔古道),200.0,8.13,91.87,green,沿用普通体力型人性化转场结构；低收益点已删除
+Q1V2_BALANCED_30_BUFFER2,均衡稳健版,balanced_robust,13,active,1,昭苏草原,3.726,3.5,7.226,66.27,0.0,0.102,standard_active_amap_route_filtered,0.0,0,昭苏县(夏塔古道),200.0,1.53,98.47,green,沿用普通体力型人性化转场结构；低收益点已删除
+Q1V2_BALANCED_30_BUFFER2,均衡稳健版,balanced_robust,14,transfer,0,跨区转场至那拉提草原,7.238,0.0,7.238,169.17,0.0,0.19,standard_active_amap_route_filtered,0.0,0,,200.0,24.28,75.72,yellow,跨区转场日，不叠加核心景点
+Q1V2_BALANCED_30_BUFFER2,均衡稳健版,balanced_robust,15,active,1,那拉提草原,0.0,6.0,6.0,0.0,270.0,0.02,standard_active_amap_route_filtered,0.0,0,那拉提镇,200.0,1.8,98.2,green,沿用普通体力型人性化转场结构；低收益点已删除
+Q1V2_BALANCED_30_BUFFER2,均衡稳健版,balanced_robust,16,transfer,0,跨区转场至博斯腾湖,7.945,0.0,7.945,241.1,0.0,0.178,standard_active_amap_route_filtered,0.0,0,,200.0,34.23,65.77,red,跨区转场日，不叠加核心景点
+Q1V2_BALANCED_30_BUFFER2,均衡稳健版,balanced_robust,17,active,2,博斯腾湖 -> 罗布人村寨,2.921,6.0,8.921,95.13,160.0,0.108,standard_active_amap_route_filtered,0.0,0,库尔勒市,200.0,14.36,85.64,green,沿用普通体力型人性化转场结构；低收益点已删除
+Q1V2_BALANCED_30_BUFFER2,均衡稳健版,balanced_robust,18,transfer,0,跨区转场/机动恢复（绕开删减点，向后续核心景区推进）,6.582,0.0,6.582,243.67,0.0,0.178,standard_active_amap_route_filtered,0.0,0,,200.0,17.48,82.52,yellow,跨区转场日，不叠加核心景点
+Q1V2_BALANCED_30_BUFFER2,均衡稳健版,balanced_robust,19,buffer,0,机动缓冲/删减点释放：巴音布鲁克草原,0.0,0.0,0.0,0.0,0.0,0.0,buffer_day_from_drop_low_value,0.0,0,按前后城市顺延,200.0,0.0,100.0,green,低收益点删除后形成机动日，用于预约失败、道路延误或身体恢复
+Q1V2_BALANCED_30_BUFFER2,均衡稳健版,balanced_robust,20,active,1,天山神秘大峡谷,3.377,3.5,6.877,106.05,80.0,0.096,standard_active_amap_route_filtered,0.0,0,库车市,200.0,1.44,98.56,green,沿用普通体力型人性化转场结构；低收益点已删除
+Q1V2_BALANCED_30_BUFFER2,均衡稳健版,balanced_robust,21,active,2,库车王府 -> 克孜尔石窟,2.572,4.0,6.572,72.34,220.0,0.141,standard_active_amap_route_filtered,0.0,0,库车市,200.0,2.12,97.88,green,沿用普通体力型人性化转场结构；低收益点已删除
+Q1V2_BALANCED_30_BUFFER2,均衡稳健版,balanced_robust,22,transfer,0,跨区转场至艾提尕尔清真寺,7.542,0.0,7.542,383.27,0.0,0.196,standard_active_amap_route_filtered,0.0,0,,200.0,27.73,72.27,yellow,跨区转场日，不叠加核心景点
+Q1V2_BALANCED_30_BUFFER2,均衡稳健版,balanced_robust,23,active,2,艾提尕尔清真寺 -> 喀什古城,0.151,5.0,5.151,1.2,60.0,0.083,standard_active_amap_route_filtered,0.0,0,喀什市,200.0,2.74,97.26,green,沿用普通体力型人性化转场结构；低收益点已删除
+Q1V2_BALANCED_30_BUFFER2,均衡稳健版,balanced_robust,24,active,1,奥依塔克冰川,2.155,3.5,5.655,57.44,90.0,0.099,standard_active_amap_route_filtered,0.0,1,喀什市,200.0,1.48,98.52,green,沿用普通体力型人性化转场结构；低收益点已删除
+Q1V2_BALANCED_30_BUFFER2,均衡稳健版,balanced_robust,25,active,2,帕米尔高原白沙湖 -> 石头城遗址,3.96,5.0,8.96,121.65,140.0,0.261,standard_active_amap_route_filtered,0.0,2,塔什库尔干县(帕米尔高原),200.0,15.59,84.41,green,沿用普通体力型人性化转场结构；低收益点已删除
+Q1V2_BALANCED_30_BUFFER2,均衡稳健版,balanced_robust,26,active,1,香妃园,5.106,2.5,7.606,156.66,120.0,0.152,standard_active_amap_route_filtered,0.0,0,喀什市,200.0,5.41,94.59,green,沿用普通体力型人性化转场结构；低收益点已删除
+Q1V2_BALANCED_30_BUFFER2,均衡稳健版,balanced_robust,27,active,1,和田博物馆,5.571,2.5,8.071,273.86,0.0,0.16,standard_active_amap_route_filtered,0.0,0,和田市,200.0,13.22,86.78,green,沿用普通体力型人性化转场结构；低收益点已删除
+Q1V2_BALANCED_30_BUFFER2,均衡稳健版,balanced_robust,28,buffer,0,机动缓冲/删减点释放：千里葡萄长廊,0.0,0.0,0.0,0.0,0.0,0.0,buffer_day_from_drop_low_value,0.0,0,按前后城市顺延,200.0,0.0,100.0,green,低收益点删除后形成机动日，用于预约失败、道路延误或身体恢复
+Q1V2_FAMILY_30_COMFORT,亲子舒适版,family_comfort,1,active,2,达坂城古镇 -> 交河故城,2.741,4.25,6.991,113.16,140.0,0.144,adaptive_real_amap_route,0.0,0,,200.0,4.84,95.16,green,来自既有自适应画像排程；V2保留为方案族成员
+Q1V2_FAMILY_30_COMFORT,亲子舒适版,family_comfort,2,active,3,坎儿井民俗园 -> 苏公塔 -> 葡萄沟,0.857,6.0,6.857,13.64,290.0,0.145,adaptive_real_amap_route,0.0,0,,200.0,5.92,94.08,green,来自既有自适应画像排程；V2保留为方案族成员
+Q1V2_FAMILY_30_COMFORT,亲子舒适版,family_comfort,3,active,2,火焰山 -> 高昌故城,0.902,5.0,5.902,24.5,220.0,0.086,adaptive_real_amap_route,0.0,0,,200.0,1.29,98.71,green,来自既有自适应画像排程；V2保留为方案族成员
+Q1V2_FAMILY_30_COMFORT,亲子舒适版,family_comfort,4,active,1,吐峪沟麻扎村,0.594,2.5,3.094,11.08,60.0,0.046,adaptive_real_amap_route,0.0,0,,200.0,0.69,99.31,green,来自既有自适应画像排程；V2保留为方案族成员
+Q1V2_FAMILY_30_COMFORT,亲子舒适版,family_comfort,5,active,1,北庭故城遗址,4.702,1.5,6.202,190.84,76.0,0.12,adaptive_real_amap_route,0.0,0,,200.0,8.85,91.15,green,来自既有自适应画像排程；V2保留为方案族成员
+Q1V2_FAMILY_30_COMFORT,亲子舒适版,family_comfort,6,active,1,江布拉克草原,1.334,3.5,4.834,38.39,86.0,0.059,adaptive_real_amap_route,0.0,0,,200.0,2.39,97.61,green,来自既有自适应画像排程；V2保留为方案族成员
+Q1V2_FAMILY_30_COMFORT,亲子舒适版,family_comfort,7,active,1,天山天池,1.957,5.0,6.957,94.59,310.0,0.095,adaptive_real_amap_route,0.0,0,,200.0,3.86,96.14,green,来自既有自适应画像排程；V2保留为方案族成员
+Q1V2_FAMILY_30_COMFORT,亲子舒适版,family_comfort,8,transfer,0,跨区转场至赛里木湖,6.21,0.0,6.21,323.25,0.0,0.172,adaptive_real_amap_route,0.0,0,,200.0,23.71,76.29,yellow,来自既有自适应画像排程；V2保留为方案族成员
+Q1V2_FAMILY_30_COMFORT,亲子舒适版,family_comfort,9,active,1,赛里木湖,0.0,6.0,6.0,0.0,290.0,0.02,adaptive_real_amap_route,0.0,0,,200.0,1.8,98.2,green,来自既有自适应画像排程；V2保留为方案族成员
+Q1V2_FAMILY_30_COMFORT,亲子舒适版,family_comfort,10,active,2,霍城薰衣草花田 -> 果子沟大桥,1.752,4.0,5.752,56.13,70.0,0.127,adaptive_real_amap_route,0.0,0,,200.0,1.9,98.1,green,来自既有自适应画像排程；V2保留为方案族成员
+Q1V2_FAMILY_30_COMFORT,亲子舒适版,family_comfort,11,transfer,0,跨区转场至喀拉峻大草原,5.036,0.0,5.036,187.09,0.0,0.151,adaptive_real_amap_route,0.0,0,,200.0,12.08,87.92,green,来自既有自适应画像排程；V2保留为方案族成员
+Q1V2_FAMILY_30_COMFORT,亲子舒适版,family_comfort,12,active,1,喀拉峻大草原,0.0,6.0,6.0,0.0,280.0,0.02,adaptive_real_amap_route,0.0,0,,200.0,1.8,98.2,green,来自既有自适应画像排程；V2保留为方案族成员
+Q1V2_FAMILY_30_COMFORT,亲子舒适版,family_comfort,13,active,1,夏塔古道,3.426,5.0,8.426,104.41,160.0,0.122,adaptive_real_amap_route,0.0,0,,200.0,21.18,78.82,yellow,来自既有自适应画像排程；V2保留为方案族成员
+Q1V2_FAMILY_30_COMFORT,亲子舒适版,family_comfort,14,active,1,昭苏草原,3.726,3.5,7.226,66.27,0.0,0.102,adaptive_real_amap_route,0.0,0,,200.0,6.81,93.19,green,来自既有自适应画像排程；V2保留为方案族成员
+Q1V2_FAMILY_30_COMFORT,亲子舒适版,family_comfort,15,transfer,0,跨区转场至那拉提草原,7.238,0.0,7.238,169.17,0.0,0.19,adaptive_real_amap_route,0.0,0,,200.0,41.61,58.39,red,来自既有自适应画像排程；V2保留为方案族成员
+Q1V2_FAMILY_30_COMFORT,亲子舒适版,family_comfort,16,active,1,那拉提草原,0.0,6.0,6.0,0.0,270.0,0.02,adaptive_real_amap_route,0.0,0,,200.0,1.8,98.2,green,来自既有自适应画像排程；V2保留为方案族成员
+Q1V2_FAMILY_30_COMFORT,亲子舒适版,family_comfort,17,transfer,0,跨区转场至博斯腾湖,7.945,0.0,7.945,241.1,0.0,0.178,adaptive_real_amap_route,0.0,0,,200.0,55.38,44.62,red,来自既有自适应画像排程；V2保留为方案族成员
+Q1V2_FAMILY_30_COMFORT,亲子舒适版,family_comfort,18,active,1,博斯腾湖,0.0,3.5,3.5,0.0,90.0,0.02,adaptive_real_amap_route,0.0,0,,200.0,1.8,98.2,green,来自既有自适应画像排程；V2保留为方案族成员
+Q1V2_FAMILY_30_COMFORT,亲子舒适版,family_comfort,19,active,1,罗布人村寨,2.921,2.5,5.421,95.13,70.0,0.088,adaptive_real_amap_route,0.0,0,,200.0,1.31,98.69,green,来自既有自适应画像排程；V2保留为方案族成员
+Q1V2_FAMILY_30_COMFORT,亲子舒适版,family_comfort,20,transfer,0,跨区转场至天山神秘大峡谷,6.418,0.0,6.418,245.22,0.0,0.151,adaptive_real_amap_route,0.0,0,,200.0,25.6,74.4,yellow,来自既有自适应画像排程；V2保留为方案族成员
+Q1V2_FAMILY_30_COMFORT,亲子舒适版,family_comfort,21,active,2,天山神秘大峡谷 -> 库车王府,1.301,5.0,6.301,36.48,160.0,0.103,adaptive_real_amap_route,0.0,0,,200.0,3.05,96.95,green,来自既有自适应画像排程；V2保留为方案族成员
+Q1V2_FAMILY_30_COMFORT,亲子舒适版,family_comfort,22,active,1,克孜尔石窟,1.271,2.5,3.771,35.86,140.0,0.058,adaptive_real_amap_route,0.0,0,,200.0,0.87,99.13,green,来自既有自适应画像排程；V2保留为方案族成员
+Q1V2_FAMILY_30_COMFORT,亲子舒适版,family_comfort,23,transfer,0,跨区转场至艾提尕尔清真寺,7.542,0.0,7.542,383.27,0.0,0.196,adaptive_real_amap_route,0.0,0,,200.0,46.58,53.42,red,来自既有自适应画像排程；V2保留为方案族成员
+Q1V2_FAMILY_30_COMFORT,亲子舒适版,family_comfort,24,active,2,艾提尕尔清真寺 -> 喀什古城,0.151,5.0,5.151,1.2,60.0,0.083,adaptive_real_amap_route,0.0,0,,200.0,2.74,97.26,green,来自既有自适应画像排程；V2保留为方案族成员
+Q1V2_FAMILY_30_COMFORT,亲子舒适版,family_comfort,25,active,1,奥依塔克冰川,2.155,3.5,5.655,57.44,90.0,0.099,adaptive_real_amap_route,0.0,0,,200.0,1.48,98.52,green,来自既有自适应画像排程；V2保留为方案族成员
+Q1V2_FAMILY_30_COMFORT,亲子舒适版,family_comfort,26,active,1,帕米尔高原白沙湖,2.358,2.5,4.858,66.09,80.0,0.137,adaptive_real_amap_route,0.0,0,,200.0,2.06,97.94,green,来自既有自适应画像排程；V2保留为方案族成员
+Q1V2_FAMILY_30_COMFORT,亲子舒适版,family_comfort,27,active,1,石头城遗址,1.602,2.5,4.102,55.56,60.0,0.124,adaptive_real_amap_route,0.0,0,,200.0,1.86,98.14,green,来自既有自适应画像排程；V2保留为方案族成员
+Q1V2_FAMILY_30_COMFORT,亲子舒适版,family_comfort,28,active,1,香妃园,5.106,2.5,7.606,156.66,120.0,0.152,adaptive_real_amap_route,0.0,0,,200.0,20.72,79.28,yellow,来自既有自适应画像排程；V2保留为方案族成员
+Q1V2_FAMILY_30_COMFORT,亲子舒适版,family_comfort,29,transfer,0,跨区转场至和田博物馆,5.571,0.0,5.571,273.86,0.0,0.16,adaptive_real_amap_route,0.0,0,,200.0,18.6,81.4,yellow,来自既有自适应画像排程；V2保留为方案族成员
+Q1V2_FAMILY_30_COMFORT,亲子舒适版,family_comfort,30,active,1,和田博物馆,0.0,2.5,2.5,0.0,0.0,0.02,adaptive_real_amap_route,0.0,0,,200.0,1.8,98.2,green,来自既有自适应画像排程；V2保留为方案族成员
+Q1V2_SENIOR_20_SLOW,长者慢游版,senior_slow,1,active,2,达坂城古镇 -> 交河故城,2.741,4.25,6.991,113.16,140.0,0.144,adaptive_real_amap_route,0.0,0,,200.0,11.03,88.97,green,来自既有自适应画像排程；V2保留为方案族成员
+Q1V2_SENIOR_20_SLOW,长者慢游版,senior_slow,2,active,3,坎儿井民俗园 -> 苏公塔 -> 葡萄沟,0.857,6.0,6.857,13.64,290.0,0.145,adaptive_real_amap_route,0.0,0,,200.0,11.73,88.27,green,来自既有自适应画像排程；V2保留为方案族成员
+Q1V2_SENIOR_20_SLOW,长者慢游版,senior_slow,3,active,2,火焰山 -> 高昌故城,0.902,5.0,5.902,24.5,220.0,0.086,adaptive_real_amap_route,0.0,0,,200.0,1.61,98.39,green,来自既有自适应画像排程；V2保留为方案族成员
+Q1V2_SENIOR_20_SLOW,长者慢游版,senior_slow,4,active,1,吐峪沟麻扎村,0.594,2.5,3.094,11.08,60.0,0.046,adaptive_real_amap_route,0.0,0,,200.0,0.69,99.31,green,来自既有自适应画像排程；V2保留为方案族成员
+Q1V2_SENIOR_20_SLOW,长者慢游版,senior_slow,5,transfer,0,跨区转场至天山天池,3.907,0.0,3.907,169.98,0.0,0.13,adaptive_real_amap_route,0.0,0,,200.0,6.78,93.22,green,来自既有自适应画像排程；V2保留为方案族成员
+Q1V2_SENIOR_20_SLOW,长者慢游版,senior_slow,6,active,1,天山天池,0.0,5.0,5.0,0.0,310.0,0.02,adaptive_real_amap_route,0.0,0,,200.0,1.8,98.2,green,来自既有自适应画像排程；V2保留为方案族成员
+Q1V2_SENIOR_20_SLOW,长者慢游版,senior_slow,7,transfer,0,跨区转场至赛里木湖,6.21,0.0,6.21,323.25,0.0,0.172,adaptive_real_amap_route,0.0,0,,200.0,31.23,68.77,red,来自既有自适应画像排程；V2保留为方案族成员
+Q1V2_SENIOR_20_SLOW,长者慢游版,senior_slow,8,active,1,赛里木湖,0.0,6.0,6.0,0.0,290.0,0.02,adaptive_real_amap_route,0.0,0,,200.0,2.6,97.4,green,来自既有自适应画像排程；V2保留为方案族成员
+Q1V2_SENIOR_20_SLOW,长者慢游版,senior_slow,9,active,2,霍城薰衣草花田 -> 果子沟大桥,1.752,4.0,5.752,56.13,70.0,0.127,adaptive_real_amap_route,0.0,0,,200.0,1.9,98.1,green,来自既有自适应画像排程；V2保留为方案族成员
+Q1V2_SENIOR_20_SLOW,长者慢游版,senior_slow,10,transfer,0,跨区转场至喀拉峻大草原,5.036,0.0,5.036,187.09,0.0,0.151,adaptive_real_amap_route,0.0,0,,200.0,16.62,83.38,yellow,来自既有自适应画像排程；V2保留为方案族成员
+Q1V2_SENIOR_20_SLOW,长者慢游版,senior_slow,11,active,1,喀拉峻大草原,0.0,6.0,6.0,0.0,280.0,0.02,adaptive_real_amap_route,0.0,0,,200.0,2.6,97.4,green,来自既有自适应画像排程；V2保留为方案族成员
+Q1V2_SENIOR_20_SLOW,长者慢游版,senior_slow,12,transfer,0,跨区转场至夏塔古道,3.426,0.0,3.426,104.41,0.0,0.122,adaptive_real_amap_route,0.0,0,,200.0,3.56,96.44,green,来自既有自适应画像排程；V2保留为方案族成员
+Q1V2_SENIOR_20_SLOW,长者慢游版,senior_slow,13,active,1,夏塔古道,0.0,5.0,5.0,0.0,160.0,0.02,adaptive_real_amap_route,0.0,0,,200.0,1.8,98.2,green,来自既有自适应画像排程；V2保留为方案族成员
+Q1V2_SENIOR_20_SLOW,长者慢游版,senior_slow,14,transfer,0,跨区转场至昭苏草原,3.726,0.0,3.726,66.27,0.0,0.102,adaptive_real_amap_route,0.0,0,,200.0,5.1,94.9,green,来自既有自适应画像排程；V2保留为方案族成员
+Q1V2_SENIOR_20_SLOW,长者慢游版,senior_slow,15,active,1,昭苏草原,0.0,3.5,3.5,0.0,0.0,0.02,adaptive_real_amap_route,0.0,0,,200.0,1.8,98.2,green,来自既有自适应画像排程；V2保留为方案族成员
+Q1V2_SENIOR_20_SLOW,长者慢游版,senior_slow,16,transfer,0,跨区转场至那拉提草原,7.238,0.0,7.238,169.17,0.0,0.19,adaptive_real_amap_route,0.0,0,,200.0,52.98,47.02,red,来自既有自适应画像排程；V2保留为方案族成员
+Q1V2_SENIOR_20_SLOW,长者慢游版,senior_slow,17,active,1,那拉提草原,0.0,6.0,6.0,0.0,270.0,0.02,adaptive_real_amap_route,0.0,0,,200.0,2.6,97.4,green,来自既有自适应画像排程；V2保留为方案族成员
+Q1V2_SENIOR_20_SLOW,长者慢游版,senior_slow,18,transfer,0,跨区转场至罗布人村寨,8.048,0.0,8.048,275.95,0.0,0.18,adaptive_real_amap_route,0.0,0,,200.0,79.49,20.51,red,来自既有自适应画像排程；V2保留为方案族成员
+Q1V2_SENIOR_20_SLOW,长者慢游版,senior_slow,19,active,1,罗布人村寨,0.0,2.5,2.5,0.0,70.0,0.02,adaptive_real_amap_route,0.0,0,,200.0,1.8,98.2,green,来自既有自适应画像排程；V2保留为方案族成员
+Q1V2_SENIOR_20_SLOW,长者慢游版,senior_slow,20,active,1,库车王府,5.437,1.5,6.937,214.57,80.0,0.158,adaptive_real_amap_route,0.0,0,,200.0,29.0,71.0,red,来自既有自适应画像排程；V2保留为方案族成员
+Q1V2_SENIOR_20_SLOW,长者慢游版,senior_slow,21,active,1,克孜尔石窟,1.271,2.5,3.771,35.86,140.0,0.058,adaptive_real_amap_route,0.0,0,,200.0,2.37,97.63,green,来自既有自适应画像排程；V2保留为方案族成员
+Q1V2_SENIOR_20_SLOW,长者慢游版,senior_slow,22,transfer,0,跨区转场至喀什古城,7.561,0.0,7.561,383.3,0.0,0.196,adaptive_real_amap_route,0.0,0,,200.0,62.49,37.51,red,来自既有自适应画像排程；V2保留为方案族成员
+Q1V2_SENIOR_20_SLOW,长者慢游版,senior_slow,23,active,1,喀什古城,0.0,3.5,3.5,0.0,0.0,0.02,adaptive_real_amap_route,0.0,0,,200.0,1.8,98.2,green,来自既有自适应画像排程；V2保留为方案族成员
+Q1V2_SENIOR_20_SLOW,长者慢游版,senior_slow,24,buffer,0,机动缓冲/低强度休整,0.0,0.0,0.0,0.0,0.0,0.0,buffer_day,0.0,0,按实际所在城市顺延,200.0,0.0,100.0,green,用于天气/预约/身体状态缓冲
+Q1V2_SENIOR_20_SLOW,长者慢游版,senior_slow,25,buffer,0,机动缓冲/低强度休整,0.0,0.0,0.0,0.0,0.0,0.0,buffer_day,0.0,0,按实际所在城市顺延,200.0,0.0,100.0,green,用于天气/预约/身体状态缓冲
+Q1V2_SENIOR_20_SLOW,长者慢游版,senior_slow,26,buffer,0,机动缓冲/低强度休整,0.0,0.0,0.0,0.0,0.0,0.0,buffer_day,0.0,0,按实际所在城市顺延,200.0,0.0,100.0,green,用于天气/预约/身体状态缓冲
+Q1V2_SENIOR_20_SLOW,长者慢游版,senior_slow,27,buffer,0,机动缓冲/低强度休整,0.0,0.0,0.0,0.0,0.0,0.0,buffer_day,0.0,0,按实际所在城市顺延,200.0,0.0,100.0,green,用于天气/预约/身体状态缓冲
+Q1V2_SENIOR_20_SLOW,长者慢游版,senior_slow,28,buffer,0,机动缓冲/低强度休整,0.0,0.0,0.0,0.0,0.0,0.0,buffer_day,0.0,0,按实际所在城市顺延,200.0,0.0,100.0,green,用于天气/预约/身体状态缓冲
+Q1V2_SENIOR_20_SLOW,长者慢游版,senior_slow,29,buffer,0,机动缓冲/低强度休整,0.0,0.0,0.0,0.0,0.0,0.0,buffer_day,0.0,0,按实际所在城市顺延,200.0,0.0,100.0,green,用于天气/预约/身体状态缓冲
+Q1V2_SENIOR_20_SLOW,长者慢游版,senior_slow,30,buffer,0,机动缓冲/低强度休整,0.0,0.0,0.0,0.0,0.0,0.0,buffer_day,0.0,0,按实际所在城市顺延,0.0,0.0,100.0,green,用于天气/预约/身体状态缓冲

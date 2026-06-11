@@ -1,0 +1,42 @@
+{
+  "route_count": 2,
+  "order_repair_actions": 2,
+  "lodging_repair_recommendations": 6,
+  "operational_repair_actions": 12,
+  "routes": [
+    {
+      "route_id": "PCOP_MILP",
+      "baseline_days": 28,
+      "baseline_over_budget_days": 5,
+      "baseline_time_window_violations": 1,
+      "baseline_limited_lodging_nights": 2,
+      "original_sequence": "达坂城古镇 -> 天山天池 -> 北庭故城遗址 -> 吐峪沟麻扎村 -> 火焰山 -> 高昌故城 -> 交河故城 -> 葡萄沟 -> 坎儿井民俗园 -> 苏公塔 -> 罗布人村寨 -> 克孜尔石窟 -> 喀什古城 -> 石头城遗址 -> 艾提尕尔清真寺 -> 香妃园 -> 和田博物馆 -> 库车王府 -> 昭苏草原 -> 喀拉峻大草原 -> 那拉提草原 -> 霍城薰衣草花田 -> 果子沟大桥 -> 赛里木湖",
+      "repaired_sequence": "达坂城古镇 -> 天山天池 -> 北庭故城遗址 -> 吐峪沟麻扎村 -> 火焰山 -> 高昌故城 -> 交河故城 -> 葡萄沟 -> 坎儿井民俗园 -> 苏公塔 -> 罗布人村寨 -> 克孜尔石窟 -> 喀什古城 -> 石头城遗址 -> 香妃园 -> 艾提尕尔清真寺 -> 和田博物馆 -> 库车王府 -> 昭苏草原 -> 喀拉峻大草原 -> 那拉提草原 -> 霍城薰衣草花田 -> 果子沟大桥 -> 赛里木湖",
+      "sequence_changed": true,
+      "repaired_days": 28,
+      "repaired_over_budget_days": 5,
+      "repaired_time_window_violations": 0,
+      "repaired_limited_lodging_nights": 2,
+      "lodging_repair_recommendations": 2,
+      "operational_actions": 5
+    },
+    {
+      "route_id": "PCOP_ALNS",
+      "baseline_days": 38,
+      "baseline_over_budget_days": 7,
+      "baseline_time_window_violations": 0,
+      "baseline_limited_lodging_nights": 4,
+      "original_sequence": "江布拉克草原 -> 北庭故城遗址 -> 天山天池 -> 达坂城古镇 -> 吐峪沟麻扎村 -> 高昌故城 -> 火焰山 -> 葡萄沟 -> 苏公塔 -> 坎儿井民俗园 -> 交河故城 -> 罗布人村寨 -> 博斯腾湖 -> 库车王府 -> 克孜尔石窟 -> 天山神秘大峡谷 -> 巴音布鲁克草原 -> 那拉提草原 -> 昭苏草原 -> 夏塔古道 -> 喀拉峻大草原 -> 霍城薰衣草花田 -> 果子沟大桥 -> 赛里木湖 -> 世界魔鬼城 -> 五彩滩 -> 禾木村 -> 喀纳斯湖 -> 白哈巴村 -> 可可托海 -> 和田博物馆 -> 千里葡萄长廊 -> 石头城遗址 -> 帕米尔高原白沙湖 -> 奥依塔克冰川 -> 艾提尕尔清真寺 -> 喀什古城 -> 香妃园",
+      "repaired_sequence": "江布拉克草原 -> 北庭故城遗址 -> 天山天池 -> 达坂城古镇 -> 吐峪沟麻扎村 -> 高昌故城 -> 火焰山 -> 葡萄沟 -> 苏公塔 -> 坎儿井民俗园 -> 交河故城 -> 罗布人村寨 -> 博斯腾湖 -> 库车王府 -> 克孜尔石窟 -> 天山神秘大峡谷 -> 巴音布鲁克草原 -> 那拉提草原 -> 昭苏草原 -> 夏塔古道 -> 喀拉峻大草原 -> 霍城薰衣草花田 -> 果子沟大桥 -> 赛里木湖 -> 世界魔鬼城 -> 五彩滩 -> 禾木村 -> 喀纳斯湖 -> 白哈巴村 -> 可可托海 -> 和田博物馆 -> 千里葡萄长廊 -> 石头城遗址 -> 帕米尔高原白沙湖 -> 奥依塔克冰川 -> 艾提尕尔清真寺 -> 喀什古城 -> 香妃园",
+      "sequence_changed": false,
+      "repaired_days": 38,
+      "repaired_over_budget_days": 7,
+      "repaired_time_window_violations": 0,
+      "repaired_limited_lodging_nights": 4,
+      "lodging_repair_recommendations": 4,
+      "operational_actions": 7
+    }
+  ],
+  "workbook": "outputs\\新疆旅游逐日行程二次修复结果.xlsx",
+  "report": "outputs\\新疆旅游逐日行程二次修复报告.md"
+}

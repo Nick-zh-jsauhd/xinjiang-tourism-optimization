@@ -1,0 +1,29 @@
+﻿route_id,day,requires_hotel_night,lodging_hub,lodging_status,room_price_yuan,lodging_feasible,lodging_note
+PCOP_MILP,1,True,达坂城镇,limited_or_simulated_lodging,260.0,False,limited/simulated lodging; should verify hotel availability
+PCOP_MILP,2,True,天池风景区,standard_hotel_hub,280.0,True,standard lodging hub
+PCOP_MILP,3,True,乌鲁木齐市,standard_hotel_hub,150.0,True,standard lodging hub
+PCOP_MILP,4,True,吐鲁番市,standard_hotel_hub,180.0,True,standard lodging hub
+PCOP_MILP,5,True,吐鲁番市,standard_hotel_hub,180.0,True,standard lodging hub
+PCOP_MILP,6,True,吐鲁番市,standard_hotel_hub,180.0,True,standard lodging hub
+PCOP_MILP,7,True,吐鲁番市,standard_hotel_hub,180.0,True,standard lodging hub
+PCOP_MILP,8,True,库尔勒市,standard_hotel_hub,150.0,True,standard lodging hub
+PCOP_MILP,9,True,库尔勒市,standard_hotel_hub,150.0,True,standard lodging hub
+PCOP_MILP,10,True,库车市,standard_hotel_hub,170.0,True,standard lodging hub
+PCOP_MILP,11,True,库车市,standard_hotel_hub,170.0,True,standard lodging hub
+PCOP_MILP,12,True,喀什市,standard_hotel_hub,180.0,True,standard lodging hub
+PCOP_MILP,13,True,喀什市,standard_hotel_hub,180.0,True,standard lodging hub
+PCOP_MILP,14,True,塔什库尔干县(帕米尔高原),standard_hotel_hub,200.0,True,standard lodging hub
+PCOP_MILP,15,True,喀什市,standard_hotel_hub,180.0,True,standard lodging hub
+PCOP_MILP,16,True,喀什市,standard_hotel_hub,180.0,True,standard lodging hub
+PCOP_MILP,17,True,和田市,standard_hotel_hub,160.0,True,standard lodging hub
+PCOP_MILP,18,True,和田市,standard_hotel_hub,160.0,True,standard lodging hub
+PCOP_MILP,19,True,库车市,standard_hotel_hub,170.0,True,standard lodging hub
+PCOP_MILP,20,True,库车市,standard_hotel_hub,170.0,True,standard lodging hub
+PCOP_MILP,21,True,昭苏县(夏塔古道),standard_hotel_hub,210.0,True,standard lodging hub
+PCOP_MILP,22,True,昭苏县(夏塔古道),standard_hotel_hub,210.0,True,standard lodging hub
+PCOP_MILP,23,True,特克斯县(八卦城),standard_hotel_hub,190.0,True,standard lodging hub
+PCOP_MILP,24,True,那拉提镇,standard_hotel_hub,200.0,True,standard lodging hub
+PCOP_MILP,25,True,霍城县(惠远古城),limited_or_simulated_lodging,260.0,False,limited/simulated lodging; should verify hotel availability
+PCOP_MILP,26,True,赛里木湖,standard_hotel_hub,260.0,True,standard lodging hub
+PCOP_MILP,27,True,赛里木湖,standard_hotel_hub,260.0,True,standard lodging hub
+PCOP_MILP,28,False,乌鲁木齐市,standard_hotel_hub,150.0,True,final return day
