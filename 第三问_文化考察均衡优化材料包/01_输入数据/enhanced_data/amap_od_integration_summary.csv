@@ -1,0 +1,9 @@
+﻿metric,value,note
+amap_od_rows,1600.0,40x40景点驾车OD
+amap_non_self_rows,1560.0,剔除自环后的有效景点对
+coordinate_high_quality_rows,40.0,高德POI坐标高置信匹配数
+amap_avg_duration_hours_non_self,11.614,高德驾车平均时长
+amap_median_duration_hours_non_self,11.044,高德驾车中位时长
+amap_avg_distance_km_non_self,916.015,高德驾车平均距离
+avg_amap_minus_multimodal_hours,0.65,高德驾车时长-多层交通最短时长
+median_amap_minus_multimodal_hours,0.161,高德驾车时长差中位数

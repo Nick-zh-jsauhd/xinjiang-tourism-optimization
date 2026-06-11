@@ -1,0 +1,21 @@
+﻿issue_id,severity,table_name,record_ref,issue,modeling_impact,recommended_fix
+Q001,High,spot_clean / edge_road_directed,all,40个景点中只有3个与公路节点精确同名，必须使用spot_hub_map。,若直接用景点名建图，大多数景点无法进入路径模型。,先以hub_id建交通主图，再用spot_hub_map连接景点与交通枢纽。
+Q002,High,edge_road_directed,all,公路边只有28条原始边，属于稀疏网络，不是完整OD矩阵。,不能直接认为任意景点之间都有边；需要先在枢纽图上求最短路闭包。,用Floyd/Dijkstra补全hub-to-hub最短时间/最短费用矩阵。
+Q003,Medium,spot_hub_map,P018,喀纳斯湖到禾木村为低置信映射。,路线计算可行，但距离/时间会偏粗。,补充该景点到最近城市/县镇的独立接驳边。
+Q004,Medium,spot_hub_map,P022,五彩滩到禾木村为低置信映射。,路线计算可行，但距离/时间会偏粗。,补充该景点到最近城市/县镇的独立接驳边。
+Q005,Medium,spot_hub_map,P023,世界魔鬼城到阿勒泰市为低置信映射。,路线计算可行，但距离/时间会偏粗。,补充该景点到最近城市/县镇的独立接驳边。
+Q006,Medium,spot_hub_map,P035,江布拉克草原到乌鲁木齐市为低置信映射。,路线计算可行，但距离/时间会偏粗。,补充该景点到最近城市/县镇的独立接驳边。
+Q007,Medium,spot_hub_map,P036,北庭故城遗址到乌鲁木齐市为低置信映射。,路线计算可行，但距离/时间会偏粗。,补充该景点到最近城市/县镇的独立接驳边。
+Q008,Medium,spot_clean,"P016,P018,P019,P020,P021,P027,P033",部分门票字段包含区间车、说明文字或特殊票种，不是纯数字。,费用模型可能重复计入景区区间车。,使用ticket_high_base_yuan_per_person和ticket_high_mandatory_local_yuan_per_person分项计算。
+Q009,High,spot_clean,"楼兰古城,尼雅遗址",存在普通游客不可直接进入或需文物审批的景点。,第一问普通旅游路线不能把这些点当作普通必游点。,在模型中设置Permit_i或ordinary_tourist_restricted约束。
+Q010,Medium,spot_clean,"白哈巴村,帕米尔高原白沙湖,石头城遗址",部分边境/高原景点需要边防证。,若未加证件约束，路线可能不可执行。,将边防证作为区域准入约束或准备时间参数。
+Q011,High,edge_road_directed,"E041,E042",独库/G217相关边存在季节性通行风险。,五一和非开放期路线可能不可行。,加入date-dependent a_ij(t)，并设置备选绕行边。
+Q012,Medium,edge_road_directed,茫崖市,边表含新疆外部节点茫崖市。,第二问若只计算新疆境内交通，应避免把外省段混入目标函数。,给外部节点设置external_exit角色，费用口径单独处理。
+Q013,Low,hotel_options_clean,"清水河镇(赛里木湖),可可托海镇,白哈巴村",部分住宿地点没有精确匹配到交通hub。,住宿费用可用，但路径节点连接需人工确认。,补充住宿地点到hub_id的别名映射。
+Q014,Medium,transport_cost_clean,"C027,C028,C029",部分景区交通备注显示可能已含在门票内。,若门票字段也包含区间车，会重复计费。,费用估算时优先使用spot_clean的门票拆分，景区交通只作为校验/备选。
+Q015,Medium,transport_cost_clean,C012,乌鲁木齐 - 伊宁 火车备注时间为2.0小时，疑似与实际铁路行程不符。,时间约束会严重偏乐观。,用12306重新核对班次时间后覆盖该字段。
+Q016,Medium,transport_cost_clean,C013,乌鲁木齐 - 喀什 火车备注时间为3.5小时，疑似与实际铁路行程不符。,时间约束会严重偏乐观。,用12306重新核对班次时间后覆盖该字段。
+Q017,Medium,transport_cost_clean,C024,乌鲁木齐 - 阿勒泰 火车备注时间为1.5小时，疑似与实际铁路行程不符。,时间约束会严重偏乐观。,用12306重新核对班次时间后覆盖该字段。
+Q018,Medium,transport_cost_clean,C025,乌鲁木齐 - 库尔勒 火车备注时间为1.0小时，疑似与实际铁路行程不符。,时间约束会严重偏乐观。,用12306重新核对班次时间后覆盖该字段。
+Q019,Medium,transport_cost_clean,C026,喀什 - 和田 火车备注时间为1.5小时，疑似与实际铁路行程不符。,时间约束会严重偏乐观。,用12306重新核对班次时间后覆盖该字段。
+Q020,High,capacity_inputs,missing,没有景区日容量、酒店房量、停车容量、摆渡容量和五一游客总量。,第四问无法直接计算具体分流人数。,后续需补capacity_by_spot、capacity_by_hotel_area、F_total_mayday。

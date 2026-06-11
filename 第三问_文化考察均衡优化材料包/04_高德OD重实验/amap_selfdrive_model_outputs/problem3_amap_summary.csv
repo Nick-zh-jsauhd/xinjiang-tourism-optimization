@@ -1,0 +1,4 @@
+﻿route_id,spots_count,travel_hours,service_hours,total_hours,estimated_days,nights,distance_km,ticket_yuan_for_two,selfdrive_cost_yuan_for_two,hotel_proxy_yuan_room,external_flight_proxy_yuan_for_two,total_proxy_yuan_excluding_meals,route_sequence,max_completion_hours,balance_gap_hours
+P3_AMAP_Group_1,5.0,35.25,68.0,103.25,13.0,12.0,3052.4,8350.0,1678.8,3120.0,0.0,13148.8,达坂城古镇 -> 坎儿井民俗园 -> 楼兰古城 -> 香妃园 -> 罗布人村寨,111.3,9.129999999999995
+P3_AMAP_Group_2,5.0,38.17,64.0,102.17,13.0,12.0,2945.3,320.0,1619.9,3120.0,0.0,5059.9,吐峪沟麻扎村 -> 苏公塔 -> 库车王府 -> 和田博物馆 -> 尼雅遗址,111.3,9.129999999999995
+P3_AMAP_Group_3,7.0,48.3,63.0,111.3,14.0,13.0,3886.0,536.0,2137.3,3380.0,0.0,6053.3,北庭故城遗址 -> 高昌故城 -> 交河故城 -> 石头城遗址 -> 艾提尕尔清真寺 -> 喀什古城 -> 克孜尔石窟,111.3,9.129999999999995

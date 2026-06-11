@@ -1,0 +1,15 @@
+{
+  "status": "success",
+  "risk_profiles": 4,
+  "q1_selection_rows": 64,
+  "q2_selection_rows": 12,
+  "q3_selection_rows": 20,
+  "q4_selection_rows": 20,
+  "figures": [
+    "risk_policy_outputs\\figures\\fig01_integrated_policy_matrix.png",
+    "risk_policy_outputs\\figures\\fig02_q2_risk_frontier.png",
+    "risk_policy_outputs\\figures\\fig03_q3_q4_selected_risk_metrics.png"
+  ],
+  "workbook": "outputs/新疆旅游风险感知策略选择模型结果.xlsx",
+  "report": "outputs/新疆旅游四问风险感知策略选择模型报告.md"
+}

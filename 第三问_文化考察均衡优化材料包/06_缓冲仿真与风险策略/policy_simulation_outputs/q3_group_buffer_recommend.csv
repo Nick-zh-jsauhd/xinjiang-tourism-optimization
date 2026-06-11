@@ -1,0 +1,4 @@
+﻿route_id,recommended_buffer_days,on_time_probability,deadline_days,note
+S3_MinMax_Group1,4,0.9364,17,按90%单组可靠性配置缓冲
+S3_MinMax_Group2,4,0.9547,16,按90%单组可靠性配置缓冲
+S3_MinMax_Group3,4,0.9547,15,按90%单组可靠性配置缓冲

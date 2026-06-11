@@ -1,0 +1,15 @@
+﻿route_id,order,spot_id,spot_name,region_cluster
+S3_MinMax_Group1,1,P007,楼兰古城,巴州-南疆北线
+S3_MinMax_Group1,2,P038,尼雅遗址,南疆
+S3_MinMax_Group2,1,P036,北庭故城遗址,乌鲁木齐周边
+S3_MinMax_Group2,2,P012,苏公塔,东疆
+S3_MinMax_Group2,3,P006,交河故城,东疆
+S3_MinMax_Group2,4,P030,库车王府,巴州-南疆北线
+S3_MinMax_Group2,5,P031,克孜尔石窟,巴州-南疆北线
+S3_MinMax_Group2,6,P026,香妃园,南疆
+S3_MinMax_Group2,7,P024,喀什古城,南疆
+S3_MinMax_Group3,1,P013,吐峪沟麻扎村,东疆
+S3_MinMax_Group3,2,P011,高昌故城,东疆
+S3_MinMax_Group3,3,P034,罗布人村寨,巴州-南疆北线
+S3_MinMax_Group3,4,P025,艾提尕尔清真寺,南疆
+S3_MinMax_Group3,5,P028,石头城遗址,南疆

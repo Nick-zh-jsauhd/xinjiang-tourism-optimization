@@ -1,0 +1,11 @@
+﻿scenario_id,parameter,value,unit,note
+S1_personal_30day,travel_days,30.0,days,第一问：一个月暑假
+S1_personal_30day,people,2.0,persons,王先生夫妇两人
+S1_personal_30day,day_hours,8.0,hours/day,将1天游览折算为8小时
+S1_personal_30day,allow_ordinary_restricted_spots,0.0,binary,普通旅游默认不含楼兰/尼雅等审批点
+S2_two_summers,stages,2.0,years,第二问：今明两年
+S2_two_summers,objective_cost_scope,1.0,flag,仅新疆境内交通费用
+S3_three_research_groups,groups,3.0,groups,第三问：三组并行
+S3_three_research_groups,research_time_multiplier,4.0,multiplier,考察时间为观光时间四倍
+S4_mayday_distribution,route_duration_limit,12.0,days,第四问：五一自治区内游程12天
+S4_mayday_distribution,capacity_threshold_beta,0.85,ratio,建议安全负载阈值，可灵敏度分析

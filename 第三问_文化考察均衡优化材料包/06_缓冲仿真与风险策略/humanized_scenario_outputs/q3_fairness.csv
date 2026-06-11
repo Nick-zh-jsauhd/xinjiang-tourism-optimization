@@ -1,0 +1,4 @@
+﻿metric,value,interpretation
+time_balance_gap_hours,12.16,三组完成时间差控制在约1.5天内，任务均衡可解释
+culture_value_gap,34.0,文化价值不完全均衡，因为楼兰/尼雅的访问难度主导了第一组任务量
+mean_risk_score,0.976,第三问应按研究队/专项考察配置保障，而不是普通游客口径

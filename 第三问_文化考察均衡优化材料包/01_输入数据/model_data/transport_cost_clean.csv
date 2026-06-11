@@ -1,0 +1,34 @@
+﻿cost_id,transport_type,item,origin_raw,destination_raw,trip_type,cost_min_yuan,cost_max_yuan,cost_mid_yuan,cost_basis,multiply_by_people_for_two_person_trip,time_hours_from_note,included_in_ticket_or_duplicate_risk,source_note
+C001,民航机票,华东(南京/上海/杭州) - 乌鲁木齐 往返,华东(南京/上海/杭州),乌鲁木齐,round_trip,2000.0,4000.0,3000.0,per_person,True,,False,提前1-2个月预订可享早鸟折扣，旺季价格上浮50%-100%
+C002,民航机票,乌鲁木齐 - 喀什 单程,乌鲁木齐,喀什,one_way,300.0,800.0,550.0,per_person,True,1.5,False,飞行时间1.5小时，旺季价格上浮，每日多班次
+C003,民航机票,乌鲁木齐 - 伊宁 单程,乌鲁木齐,伊宁,one_way,400.0,1000.0,700.0,per_person,True,1.0,False,飞行时间1小时，旺季价格上浮，每日多班次
+C004,包车服务,5座SUV 疆内包车 单日,,,day_or_use,600.0,1000.0,800.0,per_vehicle_day,False,,False,含油费、过路费、司机服务费，旺季7-8月价格上浮20%-30%
+C005,包车服务,7座商务车 疆内包车 单日,,,day_or_use,800.0,1200.0,1000.0,per_vehicle_day,False,,False,含油费、过路费、司机服务费，旺季价格上浮20%-30%
+C006,自驾租车,5座SUV 自驾租车 单日,,,day_or_use,300.0,600.0,450.0,per_vehicle_day,False,,False,不含油费、过路费，旺季7-8月价格上浮，需提前预订
+C007,自驾租车,5座轿车 自驾租车 单日,,,day_or_use,200.0,400.0,300.0,per_vehicle_day,False,,False,不含油费、过路费，旺季价格上浮，适合城市间通勤
+C008,城际大巴,乌鲁木齐 - 吐鲁番 单程,乌鲁木齐,吐鲁番,one_way,30.0,50.0,40.0,per_person,True,2.5,False,车程2.5小时，每日多班次，滚动发车
+C009,城际大巴,乌鲁木齐 - 伊宁 单程,乌鲁木齐,伊宁,one_way,150.0,200.0,175.0,per_person,True,7.0,False,车程7小时，夕发朝至班次较多，含卧铺
+C010,城际大巴,乌鲁木齐 - 喀什 单程,乌鲁木齐,喀什,one_way,280.0,380.0,330.0,per_person,True,18.0,False,车程18小时，夕发朝至卧铺班次为主
+C011,铁路火车,乌鲁木齐 - 吐鲁番 动车,乌鲁木齐,吐鲁番,day_or_use,60.0,80.0,70.0,per_person,True,1.0,False,车程1小时，每日多班次，高铁/动车均有
+C012,铁路火车,乌鲁木齐 - 伊宁 火车,乌鲁木齐,伊宁,day_or_use,150.0,300.0,225.0,per_person,True,2.0,False,车程2小时，夕发朝至列车为主，含卧铺
+C013,铁路火车,乌鲁木齐 - 喀什 火车,乌鲁木齐,喀什,day_or_use,280.0,450.0,365.0,per_person,True,3.5,False,车程3.5小时，高铁/动车均有，每日多班次
+C014,民航机票,乌鲁木齐 - 阿勒泰 单程,乌鲁木齐,阿勒泰,one_way,200.0,600.0,400.0,per_person,True,1.0,False,飞行时间1小时，旺季价格上浮，每日多班次
+C015,民航机票,乌鲁木齐 - 库尔勒 单程,乌鲁木齐,库尔勒,one_way,200.0,500.0,350.0,per_person,True,1.0,False,飞行时间1小时，旺季价格上浮，每日多班次
+C016,民航机票,喀什 - 和田 单程,喀什,和田,one_way,150.0,400.0,275.0,per_person,True,1.0,False,飞行时间1小时，旺季价格上浮，每日多班次
+C017,包车服务,5座SUV 独库公路包车 单日,,,day_or_use,800.0,1200.0,1000.0,per_vehicle_day,False,,False,独库公路旺季专属，含油费、过路费、司机服务费，需提前预订
+C018,包车服务,5座SUV 帕米尔高原包车 单日,,,day_or_use,700.0,1100.0,900.0,per_vehicle_day,False,,False,含油费、过路费、司机服务费，高原地区价格略高
+C019,自驾租车,7座SUV 自驾租车 单日,,,day_or_use,400.0,700.0,550.0,per_vehicle_day,False,,False,不含油费、过路费，适合家庭出行，旺季价格上浮
+C020,自驾租车,硬派越野车 自驾租车 单日,,,day_or_use,500.0,800.0,650.0,per_vehicle_day,False,,False,不含油费、过路费，适合沙漠、高原等复杂路况
+C021,城际大巴,吐鲁番 - 库尔勒 单程,吐鲁番,库尔勒,one_way,80.0,120.0,100.0,per_person,True,4.5,False,车程4.5小时，每日多班次，滚动发车
+C022,城际大巴,库尔勒 - 若羌 单程,库尔勒,若羌,one_way,100.0,150.0,125.0,per_person,True,6.0,False,车程6小时，每日多班次，含卧铺
+C023,城际大巴,伊宁 - 那拉提 单程,伊宁,那拉提,one_way,60.0,90.0,75.0,per_person,True,3.0,False,车程3小时，每日多班次，滚动发车
+C024,铁路火车,乌鲁木齐 - 阿勒泰 火车,乌鲁木齐,阿勒泰,day_or_use,120.0,220.0,170.0,per_person,True,1.5,False,车程1.5小时，高铁/动车均有，每日多班次
+C025,铁路火车,乌鲁木齐 - 库尔勒 火车,乌鲁木齐,库尔勒,day_or_use,100.0,200.0,150.0,per_person,True,1.0,False,车程1小时，高铁/动车均有，每日多班次
+C026,铁路火车,喀什 - 和田 火车,喀什,和田,day_or_use,80.0,150.0,115.0,per_person,True,1.5,False,车程1.5小时，高铁/动车均有，每日多班次
+C027,景区内交通,天池风景区 区间车 往返,,,round_trip,60.0,90.0,75.0,per_person,True,1.0,True,景区内必乘，往返车程1小时，含门票内
+C028,景区内交通,那拉提草原 区间车 往返,,,round_trip,40.0,60.0,50.0,per_person,True,,True,景区内必乘，往返车程40分钟，含门票内
+C029,景区内交通,赛里木湖 区间车 往返,,,round_trip,70.0,100.0,85.0,per_person,True,1.5,True,景区内必乘，环湖车程1.5小时，含门票内
+C030,景区内交通,喀什古城 观光车 往返,,,round_trip,30.0,50.0,40.0,per_person,True,,False,景区内可选，往返车程30分钟，古城内环线
+C031,其他交通,乌鲁木齐地窝堡机场 市区 打车,,,day_or_use,30.0,50.0,40.0,per_vehicle_trip,False,,False,车程30分钟，地铁1号线可直达，票价5元
+C032,其他交通,乌鲁木齐火车站 市区 打车,,,day_or_use,20.0,40.0,30.0,per_vehicle_trip,False,,False,车程20分钟，地铁2/4号线可直达，票价3-5元
+C033,其他交通,景区内骑马/骆驼 单次,,,day_or_use,80.0,200.0,140.0,per_person,True,,False,草原、沙漠景区可选，骑行时长1-2小时，价格因景区而异

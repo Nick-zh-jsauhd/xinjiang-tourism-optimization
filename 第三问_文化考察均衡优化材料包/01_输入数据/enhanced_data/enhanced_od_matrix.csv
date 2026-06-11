@@ -1,0 +1,1601 @@
+﻿from_spot_id,from_spot_name,to_spot_id,to_spot_name,scenario_id,shortest_time_hours,shortest_cost_yuan_per_two,path_risk,path_modes
+P001,天山天池,P001,天山天池,base_summer,0.0,0.0,0.0,
+P001,天山天池,P002,达坂城古镇,base_summer,2.131,93.7,0.097,self_drive
+P001,天山天池,P003,火焰山,base_summer,3.57,160.62,0.137,self_drive
+P001,天山天池,P004,葡萄沟,base_summer,3.231,148.51,0.13,self_drive
+P001,天山天池,P005,坎儿井民俗园,base_summer,3.235,146.5,0.129,self_drive
+P001,天山天池,P006,交河故城,base_summer,3.342,149.59,0.131,self_drive
+P001,天山天池,P007,楼兰古城,base_summer,8.219,2613.41,0.264,self_drive -> transfer -> air -> transfer -> scenic_shuttle -> self_drive
+P001,天山天池,P008,赛里木湖,base_summer,6.21,323.25,0.236,self_drive
+P001,天山天池,P009,那拉提草原,base_summer,8.394,290.91,0.256,self_drive
+P001,天山天池,P010,喀拉峻大草原,base_summer,10.817,488.71,0.376,self_drive -> self_drive
+P001,天山天池,P011,高昌故城,base_summer,3.853,165.31,0.14,self_drive
+P001,天山天池,P012,苏公塔,base_summer,3.343,149.56,0.131,self_drive
+P001,天山天池,P013,吐峪沟麻扎村,base_summer,3.766,177.49,0.148,self_drive
+P001,天山天池,P014,霍城薰衣草花田,base_summer,7.202,357.18,0.256,self_drive
+P001,天山天池,P015,昭苏草原,base_summer,12.844,511.51,0.39,self_drive -> self_drive
+P001,天山天池,P016,夏塔古道,base_summer,12.036,1454.25,0.303,self_drive -> transfer -> air -> transfer -> self_drive -> scenic_shuttle
+P001,天山天池,P017,果子沟大桥,base_summer,6.51,353.25,0.316,self_drive -> scenic_shuttle -> scenic_shuttle
+P001,天山天池,P018,喀纳斯湖,base_summer,6.383,326.65,0.3,self_drive -> scenic_shuttle -> scenic_shuttle
+P001,天山天池,P019,禾木村,base_summer,6.383,326.65,0.3,self_drive -> scenic_shuttle -> scenic_shuttle
+P001,天山天池,P020,白哈巴村,base_summer,7.241,343.88,0.35,self_drive -> scenic_shuttle -> scenic_shuttle -> self_drive
+P001,天山天池,P021,可可托海,base_summer,5.226,255.82,0.195,self_drive
+P001,天山天池,P022,五彩滩,base_summer,6.083,296.65,0.22,self_drive
+P001,天山天池,P023,世界魔鬼城,base_summer,4.878,259.67,0.197,self_drive
+P001,天山天池,P024,喀什古城,base_summer,8.086,2612.25,0.223,self_drive -> transfer -> air -> transfer -> scenic_shuttle
+P001,天山天池,P025,艾提尕尔清真寺,base_summer,8.086,2612.25,0.223,self_drive -> transfer -> air -> transfer -> scenic_shuttle
+P001,天山天池,P026,香妃园,base_summer,8.086,2612.25,0.223,self_drive -> transfer -> air -> transfer -> scenic_shuttle
+P001,天山天池,P027,帕米尔高原白沙湖,base_summer,11.733,2716.88,0.326,self_drive -> transfer -> air -> transfer -> scenic_shuttle -> self_drive
+P001,天山天池,P028,石头城遗址,base_summer,12.586,2771.75,0.303,self_drive -> transfer -> air -> transfer -> self_drive -> scenic_shuttle
+P001,天山天池,P029,天山神秘大峡谷,base_summer,8.619,1232.25,0.223,self_drive -> transfer -> air -> transfer -> scenic_shuttle
+P001,天山天池,P030,库车王府,base_summer,7.419,1232.25,0.223,self_drive -> transfer -> air -> transfer -> scenic_shuttle
+P001,天山天池,P031,克孜尔石窟,base_summer,8.619,1232.25,0.223,self_drive -> transfer -> air -> transfer -> scenic_shuttle
+P001,天山天池,P032,博斯腾湖,base_summer,5.654,227.22,0.178,self_drive
+P001,天山天池,P033,巴音布鲁克草原,base_summer,6.876,258.08,0.196,self_drive
+P001,天山天池,P034,罗布人村寨,base_summer,5.732,262.07,0.199,self_drive
+P001,天山天池,P035,江布拉克草原,base_summer,1.986,94.37,0.097,self_drive
+P001,天山天池,P036,北庭故城遗址,base_summer,1.313,60.98,0.077,self_drive
+P001,天山天池,P037,和田博物馆,base_summer,8.086,2424.25,0.223,self_drive -> transfer -> air -> transfer -> scenic_shuttle
+P001,天山天池,P038,尼雅遗址,base_summer,11.286,2484.75,0.303,self_drive -> transfer -> air -> transfer -> self_drive -> scenic_shuttle
+P001,天山天池,P039,千里葡萄长廊,base_summer,8.086,2424.25,0.223,self_drive -> transfer -> air -> transfer -> scenic_shuttle
+P001,天山天池,P040,奥依塔克冰川,base_summer,9.786,2612.25,0.223,self_drive -> transfer -> air -> transfer -> scenic_shuttle
+P002,达坂城古镇,P001,天山天池,base_summer,1.921,92.74,0.096,self_drive
+P002,达坂城古镇,P002,达坂城古镇,base_summer,0.0,0.0,0.0,
+P002,达坂城古镇,P003,火焰山,base_summer,1.617,68.76,0.082,self_drive
+P002,达坂城古镇,P004,葡萄沟,base_summer,1.296,56.65,0.074,self_drive
+P002,达坂城古镇,P005,坎儿井民俗园,base_summer,1.307,54.64,0.073,self_drive
+P002,达坂城古镇,P006,交河故城,base_summer,1.408,57.73,0.075,self_drive
+P002,达坂城古镇,P007,楼兰古城,base_summer,8.407,2631.09,0.274,self_drive -> transfer -> air -> transfer -> scenic_shuttle -> self_drive
+P002,达坂城古镇,P008,赛里木湖,base_summer,6.635,351.02,0.253,self_drive
+P002,达坂城古镇,P009,那拉提草原,base_summer,8.109,287.45,0.254,self_drive
+P002,达坂城古镇,P010,喀拉峻大草原,base_summer,11.224,1371.18,0.313,self_drive -> transfer -> air -> transfer -> self_drive -> scenic_shuttle
+P002,达坂城古镇,P011,高昌故城,base_summer,1.898,73.46,0.085,self_drive
+P002,达坂城古镇,P012,苏公塔,base_summer,1.379,57.7,0.075,self_drive
+P002,达坂城古镇,P013,吐峪沟麻扎村,base_summer,1.779,85.64,0.092,self_drive
+P002,达坂城古镇,P014,霍城薰衣草花田,base_summer,7.664,384.95,0.273,self_drive
+P002,达坂城古镇,P015,昭苏草原,base_summer,13.269,539.28,0.407,self_drive -> self_drive
+P002,达坂城古镇,P016,夏塔古道,base_summer,12.224,1471.93,0.313,self_drive -> transfer -> air -> transfer -> self_drive -> scenic_shuttle
+P002,达坂城古镇,P017,果子沟大桥,base_summer,6.935,381.02,0.333,self_drive -> scenic_shuttle -> scenic_shuttle
+P002,达坂城古镇,P018,喀纳斯湖,base_summer,7.531,381.88,0.333,self_drive -> scenic_shuttle -> scenic_shuttle
+P002,达坂城古镇,P019,禾木村,base_summer,7.531,381.88,0.333,self_drive -> scenic_shuttle -> scenic_shuttle
+P002,达坂城古镇,P020,白哈巴村,base_summer,8.389,399.11,0.383,self_drive -> scenic_shuttle -> scenic_shuttle -> self_drive
+P002,达坂城古镇,P021,可可托海,base_summer,6.861,343.87,0.248,self_drive
+P002,达坂城古镇,P022,五彩滩,base_summer,7.231,351.88,0.253,self_drive
+P002,达坂城古镇,P023,世界魔鬼城,base_summer,5.36,287.44,0.214,self_drive
+P002,达坂城古镇,P024,喀什古城,base_summer,8.274,2629.93,0.233,self_drive -> transfer -> air -> transfer -> scenic_shuttle
+P002,达坂城古镇,P025,艾提尕尔清真寺,base_summer,8.274,2629.93,0.233,self_drive -> transfer -> air -> transfer -> scenic_shuttle
+P002,达坂城古镇,P026,香妃园,base_summer,8.274,2629.93,0.233,self_drive -> transfer -> air -> transfer -> scenic_shuttle
+P002,达坂城古镇,P027,帕米尔高原白沙湖,base_summer,11.921,2734.56,0.336,self_drive -> transfer -> air -> transfer -> scenic_shuttle -> self_drive
+P002,达坂城古镇,P028,石头城遗址,base_summer,12.774,2789.43,0.313,self_drive -> transfer -> air -> transfer -> self_drive -> scenic_shuttle
+P002,达坂城古镇,P029,天山神秘大峡谷,base_summer,8.807,1249.93,0.233,self_drive -> transfer -> air -> transfer -> scenic_shuttle
+P002,达坂城古镇,P030,库车王府,base_summer,7.607,1249.93,0.233,self_drive -> transfer -> air -> transfer -> scenic_shuttle
+P002,达坂城古镇,P031,克孜尔石窟,base_summer,8.63,403.6,0.325,self_drive
+P002,达坂城古镇,P032,博斯腾湖,base_summer,4.942,188.05,0.154,self_drive
+P002,达坂城古镇,P033,巴音布鲁克草原,base_summer,6.552,254.62,0.194,self_drive
+P002,达坂城古镇,P034,罗布人村寨,base_summer,5.458,258.61,0.197,self_drive
+P002,达坂城古镇,P035,江布拉克草原,base_summer,3.63,182.41,0.151,self_drive
+P002,达坂城古镇,P036,北庭故城遗址,base_summer,2.967,149.02,0.13,self_drive
+P002,达坂城古镇,P037,和田博物馆,base_summer,8.274,2441.93,0.233,self_drive -> transfer -> air -> transfer -> scenic_shuttle
+P002,达坂城古镇,P038,尼雅遗址,base_summer,11.474,2502.43,0.313,self_drive -> transfer -> air -> transfer -> self_drive -> scenic_shuttle
+P002,达坂城古镇,P039,千里葡萄长廊,base_summer,8.274,2441.93,0.233,self_drive -> transfer -> air -> transfer -> scenic_shuttle
+P002,达坂城古镇,P040,奥依塔克冰川,base_summer,9.974,2629.93,0.233,self_drive -> transfer -> air -> transfer -> scenic_shuttle
+P003,火焰山,P001,天山天池,base_summer,3.571,159.44,0.137,self_drive
+P003,火焰山,P002,达坂城古镇,base_summer,2.086,81.4,0.089,self_drive
+P003,火焰山,P003,火焰山,base_summer,0.0,0.0,0.0,
+P003,火焰山,P004,葡萄沟,base_summer,0.578,16.67,0.05,self_drive
+P003,火焰山,P005,坎儿井民俗园,base_summer,0.679,18.14,0.051,self_drive
+P003,火焰山,P006,交河故城,base_summer,0.801,22.99,0.054,self_drive
+P003,火焰山,P007,楼兰古城,base_summer,10.003,2697.78,0.315,self_drive -> transfer -> air -> transfer -> scenic_shuttle -> self_drive
+P003,火焰山,P008,赛里木湖,base_summer,8.365,417.72,0.33,self_drive
+P003,火焰山,P009,那拉提草原,base_summer,9.694,354.14,0.295,self_drive
+P003,火焰山,P010,喀拉峻大草原,base_summer,12.787,359.96,0.33,self_drive -> scenic_shuttle -> transfer -> rail -> rail -> transfer -> self_drive -> scenic_shuttle
+P003,火焰山,P011,高昌故城,base_summer,0.331,7.71,0.045,self_drive
+P003,火焰山,P012,苏公塔,base_summer,0.521,15.71,0.05,self_drive
+P003,火焰山,P013,吐峪沟麻扎村,base_summer,0.378,10.74,0.047,self_drive
+P003,火焰山,P014,霍城薰衣草花田,base_summer,9.312,451.64,0.33,self_drive
+P003,火焰山,P015,昭苏草原,base_summer,14.955,604.34,0.463,self_drive -> self_drive
+P003,火焰山,P016,夏塔古道,base_summer,13.787,460.71,0.33,self_drive -> scenic_shuttle -> transfer -> rail -> rail -> transfer -> self_drive -> scenic_shuttle
+P003,火焰山,P017,果子沟大桥,base_summer,8.665,447.72,0.41,self_drive -> scenic_shuttle -> scenic_shuttle
+P003,火焰山,P018,喀纳斯湖,base_summer,9.043,448.57,0.41,self_drive -> scenic_shuttle -> scenic_shuttle
+P003,火焰山,P019,禾木村,base_summer,9.043,448.57,0.41,self_drive -> scenic_shuttle -> scenic_shuttle
+P003,火焰山,P020,白哈巴村,base_summer,9.901,465.8,0.46,self_drive -> scenic_shuttle -> scenic_shuttle -> self_drive
+P003,火焰山,P021,可可托海,base_summer,8.53,410.56,0.329,self_drive
+P003,火焰山,P022,五彩滩,base_summer,8.743,418.57,0.33,self_drive
+P003,火焰山,P023,世界魔鬼城,base_summer,7.072,354.13,0.255,self_drive
+P003,火焰山,P024,喀什古城,base_summer,9.87,2696.62,0.274,self_drive -> transfer -> air -> transfer -> scenic_shuttle
+P003,火焰山,P025,艾提尕尔清真寺,base_summer,9.87,2696.62,0.274,self_drive -> transfer -> air -> transfer -> scenic_shuttle
+P003,火焰山,P026,香妃园,base_summer,9.87,2696.62,0.274,self_drive -> transfer -> air -> transfer -> scenic_shuttle
+P003,火焰山,P027,帕米尔高原白沙湖,base_summer,13.517,2801.25,0.377,self_drive -> transfer -> air -> transfer -> scenic_shuttle -> self_drive
+P003,火焰山,P028,石头城遗址,base_summer,14.37,2856.12,0.354,self_drive -> transfer -> air -> transfer -> self_drive -> scenic_shuttle
+P003,火焰山,P029,天山神秘大峡谷,base_summer,9.851,402.72,0.324,self_drive
+P003,火焰山,P030,库车王府,base_summer,8.876,372.07,0.305,self_drive
+P003,火焰山,P031,克孜尔石窟,base_summer,9.86,401.98,0.324,self_drive
+P003,火焰山,P032,博斯腾湖,base_summer,5.568,195.61,0.159,self_drive
+P003,火焰山,P033,巴音布鲁克草原,base_summer,8.213,321.31,0.275,self_drive
+P003,火焰山,P034,罗布人村寨,base_summer,6.321,249.21,0.21,self_drive -> scenic_shuttle -> self_drive -> scenic_shuttle
+P003,火焰山,P035,江布拉克草原,base_summer,4.531,178.66,0.148,self_drive
+P003,火焰山,P036,北庭故城遗址,base_summer,4.776,196.34,0.159,self_drive
+P003,火焰山,P037,和田博物馆,base_summer,9.87,2508.62,0.274,self_drive -> transfer -> air -> transfer -> scenic_shuttle
+P003,火焰山,P038,尼雅遗址,base_summer,13.07,2569.12,0.354,self_drive -> transfer -> air -> transfer -> self_drive -> scenic_shuttle
+P003,火焰山,P039,千里葡萄长廊,base_summer,9.87,2508.62,0.274,self_drive -> transfer -> air -> transfer -> scenic_shuttle
+P003,火焰山,P040,奥依塔克冰川,base_summer,11.57,2696.62,0.274,self_drive -> transfer -> air -> transfer -> scenic_shuttle
+P004,葡萄沟,P001,天山天池,base_summer,3.245,147.52,0.129,self_drive
+P004,葡萄沟,P002,达坂城古镇,base_summer,1.772,69.48,0.082,self_drive
+P004,葡萄沟,P003,火焰山,base_summer,0.571,16.79,0.05,self_drive
+P004,葡萄沟,P004,葡萄沟,base_summer,0.0,0.0,0.0,
+P004,葡萄沟,P005,坎儿井民俗园,base_summer,0.416,7.54,0.045,self_drive
+P004,葡萄沟,P006,交河故城,base_summer,0.54,11.18,0.047,self_drive
+P004,葡萄沟,P007,楼兰古城,base_summer,9.69,2685.87,0.307,self_drive -> transfer -> air -> transfer -> scenic_shuttle -> self_drive
+P004,葡萄沟,P008,赛里木湖,base_summer,7.994,405.8,0.286,self_drive
+P004,葡萄沟,P009,那拉提草原,base_summer,9.396,342.22,0.287,self_drive
+P004,葡萄沟,P010,喀拉峻大草原,base_summer,12.266,344.25,0.28,scenic_shuttle -> transfer -> rail -> rail -> transfer -> self_drive -> scenic_shuttle
+P004,葡萄沟,P011,高昌故城,base_summer,0.853,21.49,0.053,self_drive
+P004,葡萄沟,P012,苏公塔,base_summer,0.295,5.0,0.043,self_drive
+P004,葡萄沟,P013,吐峪沟麻扎村,base_summer,0.907,27.34,0.057,self_drive
+P004,葡萄沟,P014,霍城薰衣草花田,base_summer,8.974,439.73,0.33,self_drive
+P004,葡萄沟,P015,昭苏草原,base_summer,14.617,592.43,0.463,self_drive -> self_drive
+P004,葡萄沟,P016,夏塔古道,base_summer,13.266,445.0,0.28,scenic_shuttle -> transfer -> rail -> rail -> transfer -> self_drive -> scenic_shuttle
+P004,葡萄沟,P017,果子沟大桥,base_summer,8.294,435.8,0.366,self_drive -> scenic_shuttle -> scenic_shuttle
+P004,葡萄沟,P018,喀纳斯湖,base_summer,8.715,436.66,0.406,self_drive -> scenic_shuttle -> scenic_shuttle
+P004,葡萄沟,P019,禾木村,base_summer,8.715,436.66,0.406,self_drive -> scenic_shuttle -> scenic_shuttle
+P004,葡萄沟,P020,白哈巴村,base_summer,9.573,453.89,0.456,self_drive -> scenic_shuttle -> scenic_shuttle -> self_drive
+P004,葡萄沟,P021,可可托海,base_summer,8.191,398.64,0.322,self_drive
+P004,葡萄沟,P022,五彩滩,base_summer,8.415,406.66,0.326,self_drive
+P004,葡萄沟,P023,世界魔鬼城,base_summer,6.735,342.22,0.247,self_drive
+P004,葡萄沟,P024,喀什古城,base_summer,9.557,2684.71,0.266,self_drive -> transfer -> air -> transfer -> scenic_shuttle
+P004,葡萄沟,P025,艾提尕尔清真寺,base_summer,9.557,2684.71,0.266,self_drive -> transfer -> air -> transfer -> scenic_shuttle
+P004,葡萄沟,P026,香妃园,base_summer,9.557,2684.71,0.266,self_drive -> transfer -> air -> transfer -> scenic_shuttle
+P004,葡萄沟,P027,帕米尔高原白沙湖,base_summer,13.204,2789.34,0.369,self_drive -> transfer -> air -> transfer -> scenic_shuttle -> self_drive
+P004,葡萄沟,P028,石头城遗址,base_summer,14.057,2844.21,0.346,self_drive -> transfer -> air -> transfer -> self_drive -> scenic_shuttle
+P004,葡萄沟,P029,天山神秘大峡谷,base_summer,9.664,392.26,0.318,self_drive
+P004,葡萄沟,P030,库车王府,base_summer,8.667,361.61,0.299,self_drive
+P004,葡萄沟,P031,克孜尔石窟,base_summer,9.652,391.53,0.317,self_drive
+P004,葡萄沟,P032,博斯腾湖,base_summer,5.1,233.5,0.16,scenic_shuttle -> self_drive -> scenic_shuttle
+P004,葡萄沟,P033,巴音布鲁克草原,base_summer,7.92,309.39,0.228,self_drive
+P004,葡萄沟,P034,罗布人村寨,base_summer,5.8,233.5,0.16,scenic_shuttle -> self_drive -> scenic_shuttle
+P004,葡萄沟,P035,江布拉克草原,base_summer,5.022,195.14,0.158,self_drive
+P004,葡萄沟,P036,北庭故城遗址,base_summer,4.291,203.8,0.164,self_drive
+P004,葡萄沟,P037,和田博物馆,base_summer,9.557,2496.71,0.266,self_drive -> transfer -> air -> transfer -> scenic_shuttle
+P004,葡萄沟,P038,尼雅遗址,base_summer,12.757,2557.21,0.346,self_drive -> transfer -> air -> transfer -> self_drive -> scenic_shuttle
+P004,葡萄沟,P039,千里葡萄长廊,base_summer,9.557,2496.71,0.266,self_drive -> transfer -> air -> transfer -> scenic_shuttle
+P004,葡萄沟,P040,奥依塔克冰川,base_summer,11.257,2684.71,0.266,self_drive -> transfer -> air -> transfer -> scenic_shuttle
+P005,坎儿井民俗园,P001,天山天池,base_summer,3.268,145.56,0.128,self_drive
+P005,坎儿井民俗园,P002,达坂城古镇,base_summer,1.794,67.52,0.081,self_drive
+P005,坎儿井民俗园,P003,火焰山,base_summer,0.669,18.0,0.051,self_drive
+P005,坎儿井民俗园,P004,葡萄沟,base_summer,0.442,7.9,0.045,self_drive
+P005,坎儿井民俗园,P005,坎儿井民俗园,base_summer,0.0,0.0,0.0,
+P005,坎儿井民俗园,P006,交河故城,base_summer,0.223,4.16,0.043,self_drive
+P005,坎儿井民俗园,P007,楼兰古城,base_summer,9.702,2683.91,0.306,self_drive -> transfer -> air -> transfer -> scenic_shuttle -> self_drive
+P005,坎儿井民俗园,P008,赛里木湖,base_summer,8.023,403.84,0.325,self_drive
+P005,坎儿井民俗园,P009,那拉提草原,base_summer,9.838,350.12,0.332,self_drive -> self_drive
+P005,坎儿井民俗园,P010,喀拉峻大草原,base_summer,12.266,344.25,0.28,scenic_shuttle -> transfer -> rail -> rail -> transfer -> self_drive -> scenic_shuttle
+P005,坎儿井民俗园,P011,高昌故城,base_summer,0.953,22.7,0.054,self_drive
+P005,坎儿井民俗园,P012,苏公塔,base_summer,0.257,3.27,0.042,self_drive
+P005,坎儿井民俗园,P013,吐峪沟麻扎村,base_summer,1.016,28.55,0.057,self_drive
+P005,坎儿井民俗园,P014,霍城薰衣草花田,base_summer,8.995,437.76,0.33,self_drive
+P005,坎儿井民俗园,P015,昭苏草原,base_summer,14.638,590.46,0.463,self_drive -> self_drive
+P005,坎儿井民俗园,P016,夏塔古道,base_summer,13.266,445.0,0.28,scenic_shuttle -> transfer -> rail -> rail -> transfer -> self_drive -> scenic_shuttle
+P005,坎儿井民俗园,P017,果子沟大桥,base_summer,8.323,433.84,0.405,self_drive -> scenic_shuttle -> scenic_shuttle
+P005,坎儿井民俗园,P018,喀纳斯湖,base_summer,8.727,434.69,0.405,self_drive -> scenic_shuttle -> scenic_shuttle
+P005,坎儿井民俗园,P019,禾木村,base_summer,8.727,434.69,0.405,self_drive -> scenic_shuttle -> scenic_shuttle
+P005,坎儿井民俗园,P020,白哈巴村,base_summer,9.585,451.92,0.455,self_drive -> scenic_shuttle -> scenic_shuttle -> self_drive
+P005,坎儿井民俗园,P021,可可托海,base_summer,8.213,396.68,0.32,self_drive
+P005,坎儿井民俗园,P022,五彩滩,base_summer,8.427,404.69,0.325,self_drive
+P005,坎儿井民俗园,P023,世界魔鬼城,base_summer,6.753,340.25,0.246,self_drive
+P005,坎儿井民俗园,P024,喀什古城,base_summer,9.569,2682.75,0.265,self_drive -> transfer -> air -> transfer -> scenic_shuttle
+P005,坎儿井民俗园,P025,艾提尕尔清真寺,base_summer,9.569,2682.75,0.265,self_drive -> transfer -> air -> transfer -> scenic_shuttle
+P005,坎儿井民俗园,P026,香妃园,base_summer,9.569,2682.75,0.265,self_drive -> transfer -> air -> transfer -> scenic_shuttle
+P005,坎儿井民俗园,P027,帕米尔高原白沙湖,base_summer,13.216,2787.38,0.368,self_drive -> transfer -> air -> transfer -> scenic_shuttle -> self_drive
+P005,坎儿井民俗园,P028,石头城遗址,base_summer,14.069,2842.25,0.345,self_drive -> transfer -> air -> transfer -> self_drive -> scenic_shuttle
+P005,坎儿井民俗园,P029,天山神秘大峡谷,base_summer,9.266,385.36,0.314,self_drive
+P005,坎儿井民俗园,P030,库车王府,base_summer,8.281,354.71,0.295,self_drive
+P005,坎儿井民俗园,P031,克孜尔石窟,base_summer,9.294,384.63,0.313,self_drive
+P005,坎儿井民俗园,P032,博斯腾湖,base_summer,5.071,178.26,0.148,self_drive
+P005,坎儿井民俗园,P033,巴音布鲁克草原,base_summer,8.346,322.14,0.275,self_drive -> self_drive
+P005,坎儿井民俗园,P034,罗布人村寨,base_summer,5.8,233.5,0.16,scenic_shuttle -> self_drive -> scenic_shuttle
+P005,坎儿井民俗园,P035,江布拉克草原,base_summer,5.135,196.35,0.159,self_drive
+P005,坎儿井民俗园,P036,北庭故城遗址,base_summer,4.309,201.83,0.162,self_drive
+P005,坎儿井民俗园,P037,和田博物馆,base_summer,9.569,2494.75,0.265,self_drive -> transfer -> air -> transfer -> scenic_shuttle
+P005,坎儿井民俗园,P038,尼雅遗址,base_summer,12.769,2555.25,0.345,self_drive -> transfer -> air -> transfer -> self_drive -> scenic_shuttle
+P005,坎儿井民俗园,P039,千里葡萄长廊,base_summer,9.569,2494.75,0.265,self_drive -> transfer -> air -> transfer -> scenic_shuttle
+P005,坎儿井民俗园,P040,奥依塔克冰川,base_summer,11.269,2682.75,0.265,self_drive -> transfer -> air -> transfer -> scenic_shuttle
+P006,交河故城,P001,天山天池,base_summer,3.483,149.86,0.131,self_drive
+P006,交河故城,P002,达坂城古镇,base_summer,1.992,71.82,0.084,self_drive
+P006,交河故城,P003,火焰山,base_summer,0.865,24.08,0.055,self_drive
+P006,交河故城,P004,葡萄沟,base_summer,0.6,30.0,0.08,scenic_shuttle -> scenic_shuttle
+P006,交河故城,P005,坎儿井民俗园,base_summer,0.302,5.37,0.043,self_drive
+P006,交河故城,P006,交河故城,base_summer,0.0,0.0,0.0,
+P006,交河故城,P007,楼兰古城,base_summer,9.716,2680.16,0.321,scenic_shuttle -> transfer -> rail -> transfer -> transfer -> air -> transfer -> scenic_shuttle -> self_drive
+P006,交河故城,P008,赛里木湖,base_summer,8.267,408.14,0.327,self_drive
+P006,交河故城,P009,那拉提草原,base_summer,9.996,372.22,0.367,scenic_shuttle -> scenic_shuttle -> self_drive
+P006,交河故城,P010,喀拉峻大草原,base_summer,12.266,344.25,0.28,scenic_shuttle -> transfer -> rail -> rail -> transfer -> self_drive -> scenic_shuttle
+P006,交河故城,P011,高昌故城,base_summer,1.148,28.77,0.057,self_drive
+P006,交河故城,P012,苏公塔,base_summer,0.458,8.91,0.045,self_drive
+P006,交河故城,P013,吐峪沟麻扎村,base_summer,1.209,34.62,0.061,self_drive
+P006,交河故城,P014,霍城薰衣草花田,base_summer,9.229,442.07,0.33,self_drive
+P006,交河故城,P015,昭苏草原,base_summer,14.766,380.0,0.28,scenic_shuttle -> transfer -> rail -> rail -> transfer -> self_drive -> scenic_shuttle
+P006,交河故城,P016,夏塔古道,base_summer,13.266,445.0,0.28,scenic_shuttle -> transfer -> rail -> rail -> transfer -> self_drive -> scenic_shuttle
+P006,交河故城,P017,果子沟大桥,base_summer,8.567,438.14,0.407,self_drive -> scenic_shuttle -> scenic_shuttle
+P006,交河故城,P018,喀纳斯湖,base_summer,8.974,438.99,0.408,self_drive -> scenic_shuttle -> scenic_shuttle
+P006,交河故城,P019,禾木村,base_summer,8.974,438.99,0.408,self_drive -> scenic_shuttle -> scenic_shuttle
+P006,交河故城,P020,白哈巴村,base_summer,9.832,456.22,0.458,self_drive -> scenic_shuttle -> scenic_shuttle -> self_drive
+P006,交河故城,P021,可可托海,base_summer,8.452,400.98,0.323,self_drive
+P006,交河故城,P022,五彩滩,base_summer,8.674,408.99,0.328,self_drive
+P006,交河故城,P023,世界魔鬼城,base_summer,6.987,344.56,0.249,self_drive
+P006,交河故城,P024,喀什古城,base_summer,9.583,2679.0,0.28,scenic_shuttle -> transfer -> rail -> transfer -> transfer -> air -> transfer -> scenic_shuttle
+P006,交河故城,P025,艾提尕尔清真寺,base_summer,9.583,2679.0,0.28,scenic_shuttle -> transfer -> rail -> transfer -> transfer -> air -> transfer -> scenic_shuttle
+P006,交河故城,P026,香妃园,base_summer,9.583,2679.0,0.28,scenic_shuttle -> transfer -> rail -> transfer -> transfer -> air -> transfer -> scenic_shuttle
+P006,交河故城,P027,帕米尔高原白沙湖,base_summer,13.23,2783.63,0.383,scenic_shuttle -> transfer -> rail -> transfer -> transfer -> air -> transfer -> scenic_shuttle -> self_drive
+P006,交河故城,P028,石头城遗址,base_summer,14.083,2838.5,0.36,scenic_shuttle -> transfer -> rail -> transfer -> transfer -> air -> transfer -> self_drive -> scenic_shuttle
+P006,交河故城,P029,天山神秘大峡谷,base_summer,9.447,389.22,0.316,self_drive
+P006,交河故城,P030,库车王府,base_summer,8.45,358.57,0.297,self_drive
+P006,交河故城,P031,克孜尔石窟,base_summer,9.457,388.48,0.315,self_drive
+P006,交河故城,P032,博斯腾湖,base_summer,5.1,233.5,0.16,scenic_shuttle -> self_drive -> scenic_shuttle
+P006,交河故城,P033,巴音布鲁克草原,base_summer,8.52,339.39,0.308,scenic_shuttle -> scenic_shuttle -> self_drive
+P006,交河故城,P034,罗布人村寨,base_summer,5.8,233.5,0.16,scenic_shuttle -> self_drive -> scenic_shuttle
+P006,交河故城,P035,江布拉克草原,base_summer,5.225,230.68,0.237,scenic_shuttle -> transfer -> rail -> transfer -> self_drive
+P006,交河故城,P036,北庭故城遗址,base_summer,4.53,197.29,0.217,scenic_shuttle -> transfer -> rail -> transfer -> self_drive
+P006,交河故城,P037,和田博物馆,base_summer,9.583,2491.0,0.28,scenic_shuttle -> transfer -> rail -> transfer -> transfer -> air -> transfer -> scenic_shuttle
+P006,交河故城,P038,尼雅遗址,base_summer,12.783,2551.5,0.36,scenic_shuttle -> transfer -> rail -> transfer -> transfer -> air -> transfer -> self_drive -> scenic_shuttle
+P006,交河故城,P039,千里葡萄长廊,base_summer,9.583,2491.0,0.28,scenic_shuttle -> transfer -> rail -> transfer -> transfer -> air -> transfer -> scenic_shuttle
+P006,交河故城,P040,奥依塔克冰川,base_summer,11.283,2679.0,0.28,scenic_shuttle -> transfer -> rail -> transfer -> transfer -> air -> transfer -> scenic_shuttle
+P007,楼兰古城,P001,天山天池,base_summer,8.215,2613.75,0.263,self_drive -> scenic_shuttle -> transfer -> air -> transfer -> self_drive
+P007,楼兰古城,P002,达坂城古镇,base_summer,8.581,2632.16,0.275,self_drive -> scenic_shuttle -> transfer -> air -> transfer -> self_drive
+P007,楼兰古城,P003,火焰山,base_summer,9.974,2699.07,0.315,self_drive -> scenic_shuttle -> transfer -> air -> transfer -> self_drive
+P007,楼兰古城,P004,葡萄沟,base_summer,9.647,2686.97,0.308,self_drive -> scenic_shuttle -> transfer -> air -> transfer -> self_drive
+P007,楼兰古城,P005,坎儿井民俗园,base_summer,9.665,2684.96,0.307,self_drive -> scenic_shuttle -> transfer -> air -> transfer -> self_drive
+P007,楼兰古城,P006,交河故城,base_summer,9.772,2688.05,0.308,self_drive -> scenic_shuttle -> transfer -> air -> transfer -> self_drive
+P007,楼兰古城,P007,楼兰古城,base_summer,0.0,0.0,0.0,
+P007,楼兰古城,P008,赛里木湖,base_summer,13.08,2877.22,0.423,self_drive -> scenic_shuttle -> transfer -> air -> transfer -> self_drive
+P007,楼兰古城,P009,那拉提草原,base_summer,13.591,571.05,0.33,self_drive
+P007,楼兰古城,P010,喀拉峻大草原,base_summer,15.648,3772.98,0.381,self_drive -> scenic_shuttle -> transfer -> air -> air -> transfer -> self_drive -> scenic_shuttle
+P007,楼兰古城,P011,高昌故城,base_summer,10.263,2703.77,0.318,self_drive -> scenic_shuttle -> transfer -> air -> transfer -> self_drive
+P007,楼兰古城,P012,苏公塔,base_summer,9.739,2688.02,0.308,self_drive -> scenic_shuttle -> transfer -> air -> transfer -> self_drive
+P007,楼兰古城,P013,吐峪沟麻扎村,base_summer,10.109,2715.95,0.325,self_drive -> scenic_shuttle -> transfer -> air -> transfer -> self_drive
+P007,楼兰古城,P014,霍城薰衣草花田,base_summer,13.648,3734.48,0.381,self_drive -> scenic_shuttle -> transfer -> air -> air -> transfer -> self_drive -> scenic_shuttle
+P007,楼兰古城,P015,昭苏草原,base_summer,18.148,3808.73,0.381,self_drive -> scenic_shuttle -> transfer -> air -> air -> transfer -> self_drive -> scenic_shuttle
+P007,楼兰古城,P016,夏塔古道,base_summer,16.648,3873.73,0.381,self_drive -> scenic_shuttle -> transfer -> air -> air -> transfer -> self_drive -> scenic_shuttle
+P007,楼兰古城,P017,果子沟大桥,base_summer,13.38,2907.22,0.503,self_drive -> scenic_shuttle -> transfer -> air -> transfer -> self_drive -> scenic_shuttle -> scenic_shuttle
+P007,楼兰古城,P018,喀纳斯湖,base_summer,13.73,2905.41,0.502,self_drive -> scenic_shuttle -> transfer -> air -> transfer -> self_drive -> scenic_shuttle -> scenic_shuttle
+P007,楼兰古城,P019,禾木村,base_summer,13.73,2905.41,0.502,self_drive -> scenic_shuttle -> transfer -> air -> transfer -> self_drive -> scenic_shuttle -> scenic_shuttle
+P007,楼兰古城,P020,白哈巴村,base_summer,14.588,2922.64,0.552,self_drive -> scenic_shuttle -> transfer -> air -> transfer -> self_drive -> scenic_shuttle -> scenic_shuttle -> self_drive
+P007,楼兰古城,P021,可可托海,base_summer,13.211,2864.87,0.416,self_drive -> scenic_shuttle -> transfer -> air -> transfer -> self_drive
+P007,楼兰古城,P022,五彩滩,base_summer,13.43,2875.41,0.422,self_drive -> scenic_shuttle -> transfer -> air -> transfer -> self_drive
+P007,楼兰古城,P023,世界魔鬼城,base_summer,11.753,2813.63,0.385,self_drive -> scenic_shuttle -> transfer -> air -> transfer -> self_drive
+P007,楼兰古城,P024,喀什古城,base_summer,0.198,1.73,0.041,self_drive
+P007,楼兰古城,P025,艾提尕尔清真寺,base_summer,0.225,2.05,0.041,self_drive
+P007,楼兰古城,P026,香妃园,base_summer,0.277,2.77,0.042,self_drive
+P007,楼兰古城,P027,帕米尔高原白沙湖,base_summer,3.603,105.02,0.104,self_drive
+P007,楼兰古城,P028,石头城遗址,base_summer,5.114,159.85,0.137,self_drive
+P007,楼兰古城,P029,天山神秘大峡谷,base_summer,8.479,417.54,0.33,self_drive
+P007,楼兰古城,P030,库车王府,base_summer,7.243,390.33,0.277,self_drive
+P007,楼兰古城,P031,克孜尔石窟,base_summer,7.681,384.68,0.273,self_drive
+P007,楼兰古城,P032,博斯腾湖,base_summer,11.693,547.33,0.437,self_drive -> scenic_shuttle -> transfer -> rail -> transfer -> scenic_shuttle
+P007,楼兰古城,P033,巴音布鲁克草原,base_summer,11.664,521.51,0.33,self_drive
+P007,楼兰古城,P034,罗布人村寨,base_summer,12.169,2800.55,0.377,self_drive -> scenic_shuttle -> transfer -> air -> transfer -> self_drive
+P007,楼兰古城,P035,江布拉克草原,base_summer,9.94,2703.41,0.318,self_drive -> scenic_shuttle -> transfer -> air -> transfer -> self_drive
+P007,楼兰古城,P036,北庭故城遗址,base_summer,9.245,2670.02,0.298,self_drive -> scenic_shuttle -> transfer -> air -> transfer -> self_drive
+P007,楼兰古城,P037,和田博物馆,base_summer,5.474,272.38,0.205,self_drive
+P007,楼兰古城,P038,尼雅遗址,base_summer,9.265,1048.31,0.281,self_drive -> scenic_shuttle -> transfer -> rail -> transfer -> self_drive -> scenic_shuttle
+P007,楼兰古城,P039,千里葡萄长廊,base_summer,5.552,274.71,0.206,self_drive
+P007,楼兰古城,P040,奥依塔克冰川,base_summer,2.041,57.19,0.075,self_drive
+P008,赛里木湖,P001,天山天池,base_summer,6.072,327.06,0.238,self_drive
+P008,赛里木湖,P002,达坂城古镇,base_summer,6.763,355.16,0.255,self_drive
+P008,赛里木湖,P003,火焰山,base_summer,8.193,422.07,0.33,self_drive
+P008,赛里木湖,P004,葡萄沟,base_summer,7.845,409.97,0.288,self_drive
+P008,赛里木湖,P005,坎儿井民俗园,base_summer,7.874,407.96,0.287,self_drive
+P008,赛里木湖,P006,交河故城,base_summer,7.977,411.05,0.289,self_drive
+P008,赛里木湖,P007,楼兰古城,base_summer,13.082,2880.31,0.425,self_drive -> transfer -> air -> transfer -> scenic_shuttle -> self_drive
+P008,赛里木湖,P008,赛里木湖,base_summer,0.0,0.0,0.0,
+P008,赛里木湖,P009,那拉提草原,base_summer,5.421,219.14,0.173,self_drive
+P008,赛里木湖,P010,喀拉峻大草原,base_summer,4.661,167.09,0.141,self_drive
+P008,赛里木湖,P011,高昌故城,base_summer,8.465,426.77,0.33,self_drive
+P008,赛里木湖,P012,苏公塔,base_summer,7.941,411.02,0.289,self_drive
+P008,赛里木湖,P013,吐峪沟麻扎村,base_summer,8.388,438.95,0.33,self_drive
+P008,赛里木湖,P014,霍城薰衣草花田,base_summer,1.155,37.03,0.062,self_drive
+P008,赛里木湖,P015,昭苏草原,base_summer,6.634,188.26,0.154,self_drive
+P008,赛里木湖,P016,夏塔古道,base_summer,6.026,226.21,0.177,self_drive
+P008,赛里木湖,P017,果子沟大桥,base_summer,0.3,30.0,0.08,scenic_shuttle -> scenic_shuttle
+P008,赛里木湖,P018,喀纳斯湖,base_summer,8.738,463.92,0.41,self_drive -> scenic_shuttle -> scenic_shuttle
+P008,赛里木湖,P019,禾木村,base_summer,8.738,463.92,0.41,self_drive -> scenic_shuttle -> scenic_shuttle
+P008,赛里木湖,P020,白哈巴村,base_summer,9.596,481.15,0.46,self_drive -> scenic_shuttle -> scenic_shuttle -> self_drive
+P008,赛里木湖,P021,可可托海,base_summer,10.619,565.21,0.33,self_drive
+P008,赛里木湖,P022,五彩滩,base_summer,8.438,433.92,0.33,self_drive
+P008,赛里木湖,P023,世界魔鬼城,base_summer,5.763,304.13,0.224,self_drive
+P008,赛里木湖,P024,喀什古城,base_summer,12.949,2879.15,0.384,self_drive -> transfer -> air -> transfer -> scenic_shuttle
+P008,赛里木湖,P025,艾提尕尔清真寺,base_summer,12.949,2879.15,0.384,self_drive -> transfer -> air -> transfer -> scenic_shuttle
+P008,赛里木湖,P026,香妃园,base_summer,12.949,2879.15,0.384,self_drive -> transfer -> air -> transfer -> scenic_shuttle
+P008,赛里木湖,P027,帕米尔高原白沙湖,base_summer,16.596,2983.78,0.487,self_drive -> transfer -> air -> transfer -> scenic_shuttle -> self_drive
+P008,赛里木湖,P028,石头城遗址,base_summer,17.449,3038.65,0.464,self_drive -> transfer -> air -> transfer -> self_drive -> scenic_shuttle
+P008,赛里木湖,P029,天山神秘大峡谷,base_summer,9.643,364.45,0.301,self_drive
+P008,赛里木湖,P030,库车王府,base_summer,10.639,398.84,0.322,self_drive
+P008,赛里木湖,P031,克孜尔石窟,base_summer,10.854,408.71,0.328,self_drive
+P008,赛里木湖,P032,博斯腾湖,base_summer,10.076,478.08,0.33,self_drive
+P008,赛里木湖,P033,巴音布鲁克草原,base_summer,6.512,260.22,0.198,self_drive
+P008,赛里木湖,P034,罗布人村寨,base_summer,10.202,512.93,0.33,self_drive
+P008,赛里木湖,P035,江布拉克草原,base_summer,7.879,416.72,0.29,self_drive
+P008,赛里木湖,P036,北庭故城遗址,base_summer,7.168,383.33,0.272,self_drive
+P008,赛里木湖,P037,和田博物馆,base_summer,12.949,2691.15,0.384,self_drive -> transfer -> air -> transfer -> scenic_shuttle
+P008,赛里木湖,P038,尼雅遗址,base_summer,16.149,2751.65,0.464,self_drive -> transfer -> air -> transfer -> self_drive -> scenic_shuttle
+P008,赛里木湖,P039,千里葡萄长廊,base_summer,12.949,2691.15,0.384,self_drive -> transfer -> air -> transfer -> scenic_shuttle
+P008,赛里木湖,P040,奥依塔克冰川,base_summer,14.649,2879.15,0.384,self_drive -> transfer -> air -> transfer -> scenic_shuttle
+P009,那拉提草原,P001,天山天池,base_summer,8.189,290.63,0.256,self_drive
+P009,那拉提草原,P002,达坂城古镇,base_summer,8.134,287.7,0.254,self_drive
+P009,那拉提草原,P003,火焰山,base_summer,9.557,354.61,0.295,self_drive
+P009,那拉提草原,P004,葡萄沟,base_summer,9.223,342.51,0.288,self_drive
+P009,那拉提草原,P005,坎儿井民俗园,base_summer,9.441,342.34,0.327,self_drive -> self_drive
+P009,那拉提草原,P006,交河故城,base_summer,9.542,345.43,0.329,self_drive -> self_drive
+P009,那拉提草原,P007,楼兰古城,base_summer,13.358,576.0,0.33,self_drive
+P009,那拉提草原,P008,赛里木湖,base_summer,5.054,231.73,0.242,self_drive -> scenic_shuttle -> scenic_shuttle
+P009,那拉提草原,P009,那拉提草原,base_summer,0.0,0.0,0.0,
+P009,那拉提草原,P010,喀拉峻大草原,base_summer,5.087,149.69,0.131,self_drive
+P009,那拉提草原,P011,高昌故城,base_summer,9.823,359.31,0.298,self_drive
+P009,那拉提草原,P012,苏公塔,base_summer,9.513,345.4,0.329,self_drive -> self_drive
+P009,那拉提草原,P013,吐峪沟麻扎村,base_summer,9.801,371.49,0.305,self_drive
+P009,那拉提草原,P014,霍城薰衣草花田,base_summer,4.296,183.41,0.151,self_drive
+P009,那拉提草原,P015,昭苏草原,base_summer,7.116,170.87,0.144,self_drive
+P009,那拉提草原,P016,夏塔古道,base_summer,6.498,208.82,0.167,self_drive
+P009,那拉提草原,P017,果子沟大桥,base_summer,4.754,201.73,0.162,self_drive
+P009,那拉提草原,P018,喀纳斯湖,base_summer,11.017,433.41,0.404,self_drive -> scenic_shuttle -> scenic_shuttle
+P009,那拉提草原,P019,禾木村,base_summer,11.017,433.41,0.404,self_drive -> scenic_shuttle -> scenic_shuttle
+P009,那拉提草原,P020,白哈巴村,base_summer,11.875,450.64,0.454,self_drive -> scenic_shuttle -> scenic_shuttle -> self_drive
+P009,那拉提草原,P021,可可托海,base_summer,13.107,541.75,0.33,self_drive
+P009,那拉提草原,P022,五彩滩,base_summer,10.717,403.41,0.324,self_drive
+P009,那拉提草原,P023,世界魔鬼城,base_summer,8.06,273.62,0.246,self_drive
+P009,那拉提草原,P024,喀什古城,base_summer,13.329,575.07,0.33,self_drive
+P009,那拉提草原,P025,艾提尕尔清真寺,base_summer,13.3,575.04,0.33,self_drive
+P009,那拉提草原,P026,香妃园,base_summer,13.283,575.05,0.33,self_drive
+P009,那拉提草原,P027,帕米尔高原白沙湖,base_summer,16.212,680.87,0.33,self_drive
+P009,那拉提草原,P028,石头城遗址,base_summer,17.693,735.71,0.33,self_drive
+P009,那拉提草原,P029,天山神秘大峡谷,base_summer,5.558,155.66,0.134,self_drive
+P009,那拉提草原,P030,库车王府,base_summer,6.568,190.05,0.155,self_drive
+P009,那拉提草原,P031,克孜尔石窟,base_summer,6.781,199.92,0.161,self_drive
+P009,那拉提草原,P032,博斯腾湖,base_summer,7.945,241.1,0.186,self_drive
+P009,那拉提草原,P033,巴音布鲁克草原,base_summer,2.254,51.43,0.071,self_drive
+P009,那拉提草原,P034,罗布人村寨,base_summer,8.048,275.95,0.247,self_drive
+P009,那拉提草原,P035,江布拉克草原,base_summer,9.953,380.29,0.31,self_drive
+P009,那拉提草原,P036,北庭故城遗址,base_summer,9.256,346.9,0.29,self_drive
+P009,那拉提草原,P037,和田博物馆,base_summer,14.459,2640.13,0.353,self_drive -> transfer -> air -> transfer -> scenic_shuttle
+P009,那拉提草原,P038,尼雅遗址,base_summer,15.017,534.58,0.33,self_drive
+P009,那拉提草原,P039,千里葡萄长廊,base_summer,14.459,2640.13,0.353,self_drive -> transfer -> air -> transfer -> scenic_shuttle
+P009,那拉提草原,P040,奥依塔克冰川,base_summer,14.706,633.04,0.33,self_drive
+P010,喀拉峻大草原,P001,天山天池,base_summer,10.26,490.9,0.378,self_drive -> self_drive
+P010,喀拉峻大草原,P002,达坂城古镇,base_summer,10.951,519.01,0.395,self_drive -> self_drive
+P010,喀拉峻大草原,P003,火焰山,base_summer,12.387,585.92,0.461,self_drive -> self_drive
+P010,喀拉峻大草原,P004,葡萄沟,base_summer,12.036,573.81,0.461,self_drive -> self_drive
+P010,喀拉峻大草原,P005,坎儿井民俗园,base_summer,12.066,571.8,0.461,self_drive -> self_drive
+P010,喀拉峻大草原,P006,交河故城,base_summer,12.171,574.89,0.461,self_drive -> self_drive
+P010,喀拉峻大草原,P007,楼兰古城,base_summer,15.583,3772.41,0.381,scenic_shuttle -> self_drive -> transfer -> air -> air -> transfer -> scenic_shuttle -> self_drive
+P010,喀拉峻大草原,P008,赛里木湖,base_summer,4.255,179.7,0.211,self_drive -> scenic_shuttle -> scenic_shuttle
+P010,喀拉峻大草原,P009,那拉提草原,base_summer,4.997,147.98,0.13,self_drive
+P010,喀拉峻大草原,P010,喀拉峻大草原,base_summer,0.0,0.0,0.0,
+P010,喀拉峻大草原,P011,高昌故城,base_summer,12.666,590.62,0.461,self_drive -> self_drive
+P010,喀拉峻大草原,P012,苏公塔,base_summer,12.137,574.86,0.461,self_drive -> self_drive
+P010,喀拉峻大草原,P013,吐峪沟麻扎村,base_summer,12.577,602.79,0.461,self_drive -> self_drive
+P010,喀拉峻大草原,P014,霍城薰衣草花田,base_summer,3.446,131.38,0.12,self_drive
+P010,喀拉峻大草原,P015,昭苏草原,base_summer,4.049,63.65,0.079,self_drive
+P010,喀拉峻大草原,P016,夏塔古道,base_summer,3.426,104.41,0.103,self_drive
+P010,喀拉峻大草原,P017,果子沟大桥,base_summer,3.955,149.7,0.131,self_drive
+P010,喀拉峻大草原,P018,喀纳斯湖,base_summer,12.916,627.77,0.541,self_drive -> self_drive -> scenic_shuttle -> scenic_shuttle
+P010,喀拉峻大草原,P019,禾木村,base_summer,12.916,627.77,0.541,self_drive -> self_drive -> scenic_shuttle -> scenic_shuttle
+P010,喀拉峻大草原,P020,白哈巴村,base_summer,13.774,645.0,0.591,self_drive -> self_drive -> scenic_shuttle -> scenic_shuttle -> self_drive
+P010,喀拉峻大草原,P021,可可托海,base_summer,14.808,729.06,0.461,self_drive -> self_drive
+P010,喀拉峻大草原,P022,五彩滩,base_summer,12.616,597.77,0.461,self_drive -> self_drive
+P010,喀拉峻大草原,P023,世界魔鬼城,base_summer,9.929,467.98,0.364,self_drive -> self_drive
+P010,喀拉峻大草原,P024,喀什古城,base_summer,15.45,3771.25,0.34,scenic_shuttle -> self_drive -> transfer -> air -> air -> transfer -> scenic_shuttle
+P010,喀拉峻大草原,P025,艾提尕尔清真寺,base_summer,15.45,3771.25,0.34,scenic_shuttle -> self_drive -> transfer -> air -> air -> transfer -> scenic_shuttle
+P010,喀拉峻大草原,P026,香妃园,base_summer,15.45,3771.25,0.34,scenic_shuttle -> self_drive -> transfer -> air -> air -> transfer -> scenic_shuttle
+P010,喀拉峻大草原,P027,帕米尔高原白沙湖,base_summer,19.097,3875.88,0.443,scenic_shuttle -> self_drive -> transfer -> air -> air -> transfer -> scenic_shuttle -> self_drive
+P010,喀拉峻大草原,P028,石头城遗址,base_summer,19.95,3930.75,0.42,scenic_shuttle -> self_drive -> transfer -> air -> air -> transfer -> self_drive -> scenic_shuttle
+P010,喀拉峻大草原,P029,天山神秘大峡谷,base_summer,9.143,303.33,0.264,self_drive
+P010,喀拉峻大草原,P030,库车王府,base_summer,10.161,337.71,0.285,self_drive
+P010,喀拉峻大草原,P031,克孜尔石窟,base_summer,10.384,347.59,0.291,self_drive
+P010,喀拉峻大草原,P032,博斯腾湖,base_summer,11.664,388.76,0.316,self_drive
+P010,喀拉峻大草原,P033,巴音布鲁克草原,base_summer,5.924,199.09,0.161,self_drive
+P010,喀拉峻大草原,P034,罗布人村寨,base_summer,11.804,423.61,0.33,self_drive
+P010,喀拉峻大草原,P035,江布拉克草原,base_summer,12.087,580.57,0.461,self_drive -> self_drive
+P010,喀拉峻大草原,P036,北庭故城遗址,base_summer,11.339,547.18,0.412,self_drive -> self_drive
+P010,喀拉峻大草原,P037,和田博物馆,base_summer,15.45,3583.25,0.34,scenic_shuttle -> self_drive -> transfer -> air -> air -> transfer -> scenic_shuttle
+P010,喀拉峻大草原,P038,尼雅遗址,base_summer,18.65,3643.75,0.42,scenic_shuttle -> self_drive -> transfer -> air -> air -> transfer -> self_drive -> scenic_shuttle
+P010,喀拉峻大草原,P039,千里葡萄长廊,base_summer,15.45,3583.25,0.34,scenic_shuttle -> self_drive -> transfer -> air -> air -> transfer -> scenic_shuttle
+P010,喀拉峻大草原,P040,奥依塔克冰川,base_summer,17.15,3771.25,0.34,scenic_shuttle -> self_drive -> transfer -> air -> air -> transfer -> scenic_shuttle
+P011,高昌故城,P001,天山天池,base_summer,3.956,165.15,0.14,self_drive
+P011,高昌故城,P002,达坂城古镇,base_summer,2.477,87.11,0.093,self_drive
+P011,高昌故城,P003,火焰山,base_summer,0.47,8.61,0.045,self_drive
+P011,高昌故城,P004,葡萄沟,base_summer,0.968,22.39,0.054,self_drive
+P011,高昌故城,P005,坎儿井民俗园,base_summer,1.067,23.85,0.054,self_drive
+P011,高昌故城,P006,交河故城,base_summer,1.228,26.05,0.056,self_drive
+P011,高昌故城,P007,楼兰古城,base_summer,10.416,2680.16,0.321,scenic_shuttle -> transfer -> rail -> transfer -> transfer -> air -> transfer -> scenic_shuttle -> self_drive
+P011,高昌故城,P008,赛里木湖,base_summer,8.773,423.43,0.33,self_drive
+P011,高昌故城,P009,那拉提草原,base_summer,10.122,359.85,0.298,self_drive
+P011,高昌故城,P010,喀拉峻大草原,base_summer,12.966,344.25,0.28,scenic_shuttle -> transfer -> rail -> rail -> transfer -> self_drive -> scenic_shuttle
+P011,高昌故城,P011,高昌故城,base_summer,0.0,0.0,0.0,
+P011,高昌故城,P012,苏公塔,base_summer,0.9,21.42,0.053,self_drive
+P011,高昌故城,P013,吐峪沟麻扎村,base_summer,0.594,11.08,0.047,self_drive
+P011,高昌故城,P014,霍城薰衣草花田,base_summer,9.651,457.36,0.33,self_drive
+P011,高昌故城,P015,昭苏草原,base_summer,15.294,610.06,0.463,self_drive -> self_drive
+P011,高昌故城,P016,夏塔古道,base_summer,13.966,445.0,0.28,scenic_shuttle -> transfer -> rail -> rail -> transfer -> self_drive -> scenic_shuttle
+P011,高昌故城,P017,果子沟大桥,base_summer,9.073,453.43,0.41,self_drive -> scenic_shuttle -> scenic_shuttle
+P011,高昌故城,P018,喀纳斯湖,base_summer,9.432,454.28,0.41,self_drive -> scenic_shuttle -> scenic_shuttle
+P011,高昌故城,P019,禾木村,base_summer,9.432,454.28,0.41,self_drive -> scenic_shuttle -> scenic_shuttle
+P011,高昌故城,P020,白哈巴村,base_summer,10.29,471.51,0.46,self_drive -> scenic_shuttle -> scenic_shuttle -> self_drive
+P011,高昌故城,P021,可可托海,base_summer,8.908,416.27,0.33,self_drive
+P011,高昌故城,P022,五彩滩,base_summer,9.132,424.28,0.33,self_drive
+P011,高昌故城,P023,世界魔鬼城,base_summer,7.451,359.84,0.258,self_drive
+P011,高昌故城,P024,喀什古城,base_summer,10.283,2679.0,0.28,scenic_shuttle -> transfer -> rail -> transfer -> transfer -> air -> transfer -> scenic_shuttle
+P011,高昌故城,P025,艾提尕尔清真寺,base_summer,10.283,2679.0,0.28,scenic_shuttle -> transfer -> rail -> transfer -> transfer -> air -> transfer -> scenic_shuttle
+P011,高昌故城,P026,香妃园,base_summer,10.283,2679.0,0.28,scenic_shuttle -> transfer -> rail -> transfer -> transfer -> air -> transfer -> scenic_shuttle
+P011,高昌故城,P027,帕米尔高原白沙湖,base_summer,13.93,2783.63,0.383,scenic_shuttle -> transfer -> rail -> transfer -> transfer -> air -> transfer -> scenic_shuttle -> self_drive
+P011,高昌故城,P028,石头城遗址,base_summer,14.783,2838.5,0.36,scenic_shuttle -> transfer -> rail -> transfer -> transfer -> air -> transfer -> self_drive -> scenic_shuttle
+P011,高昌故城,P029,天山神秘大峡谷,base_summer,10.282,408.9,0.368,self_drive -> self_drive
+P011,高昌故城,P030,库车王府,base_summer,9.292,378.25,0.349,self_drive -> self_drive
+P011,高昌故城,P031,克孜尔石窟,base_summer,10.299,408.17,0.367,self_drive -> self_drive
+P011,高昌故城,P032,博斯腾湖,base_summer,5.8,233.5,0.16,scenic_shuttle -> self_drive -> scenic_shuttle
+P011,高昌故城,P033,巴音布鲁克草原,base_summer,8.642,327.02,0.278,self_drive
+P011,高昌故城,P034,罗布人村寨,base_summer,6.5,233.5,0.16,scenic_shuttle -> self_drive -> scenic_shuttle
+P011,高昌故城,P035,江布拉克草原,base_summer,4.889,185.91,0.153,self_drive
+P011,高昌故城,P036,北庭故城遗址,base_summer,5.12,203.59,0.163,self_drive
+P011,高昌故城,P037,和田博物馆,base_summer,10.283,2491.0,0.28,scenic_shuttle -> transfer -> rail -> transfer -> transfer -> air -> transfer -> scenic_shuttle
+P011,高昌故城,P038,尼雅遗址,base_summer,13.483,2551.5,0.36,scenic_shuttle -> transfer -> rail -> transfer -> transfer -> air -> transfer -> self_drive -> scenic_shuttle
+P011,高昌故城,P039,千里葡萄长廊,base_summer,10.283,2491.0,0.28,scenic_shuttle -> transfer -> rail -> transfer -> transfer -> air -> transfer -> scenic_shuttle
+P011,高昌故城,P040,奥依塔克冰川,base_summer,11.983,2679.0,0.28,scenic_shuttle -> transfer -> rail -> transfer -> transfer -> air -> transfer -> scenic_shuttle
+P012,苏公塔,P001,天山天池,base_summer,3.334,148.57,0.13,self_drive
+P012,苏公塔,P002,达坂城古镇,base_summer,1.849,70.53,0.083,self_drive
+P012,苏公塔,P003,火焰山,base_summer,0.512,15.57,0.049,self_drive
+P012,苏公塔,P004,葡萄沟,base_summer,0.298,5.0,0.043,self_drive
+P012,苏公塔,P005,坎儿井民俗园,base_summer,0.258,3.25,0.042,self_drive
+P012,苏公塔,P006,交河故城,base_summer,0.388,7.75,0.045,self_drive
+P012,苏公塔,P007,楼兰古城,base_summer,9.716,2680.16,0.321,scenic_shuttle -> transfer -> rail -> transfer -> transfer -> air -> transfer -> scenic_shuttle -> self_drive
+P012,苏公塔,P008,赛里木湖,base_summer,8.087,406.85,0.327,self_drive
+P012,苏公塔,P009,那拉提草原,base_summer,9.694,347.22,0.33,self_drive -> self_drive
+P012,苏公塔,P010,喀拉峻大草原,base_summer,12.266,344.25,0.28,scenic_shuttle -> transfer -> rail -> rail -> transfer -> self_drive -> scenic_shuttle
+P012,苏公塔,P011,高昌故城,base_summer,0.796,20.27,0.052,self_drive
+P012,苏公塔,P012,苏公塔,base_summer,0.0,0.0,0.0,
+P012,苏公塔,P013,吐峪沟麻扎村,base_summer,0.841,26.11,0.056,self_drive
+P012,苏公塔,P014,霍城薰衣草花田,base_summer,9.057,440.78,0.33,self_drive
+P012,苏公塔,P015,昭苏草原,base_summer,14.7,593.48,0.463,self_drive -> self_drive
+P012,苏公塔,P016,夏塔古道,base_summer,13.266,445.0,0.28,scenic_shuttle -> transfer -> rail -> rail -> transfer -> self_drive -> scenic_shuttle
+P012,苏公塔,P017,果子沟大桥,base_summer,8.387,436.85,0.407,self_drive -> scenic_shuttle -> scenic_shuttle
+P012,苏公塔,P018,喀纳斯湖,base_summer,8.791,437.7,0.407,self_drive -> scenic_shuttle -> scenic_shuttle
+P012,苏公塔,P019,禾木村,base_summer,8.791,437.7,0.407,self_drive -> scenic_shuttle -> scenic_shuttle
+P012,苏公塔,P020,白哈巴村,base_summer,9.649,454.93,0.457,self_drive -> scenic_shuttle -> scenic_shuttle -> self_drive
+P012,苏公塔,P021,可可托海,base_summer,8.282,399.69,0.322,self_drive
+P012,苏公塔,P022,五彩滩,base_summer,8.491,407.7,0.327,self_drive
+P012,苏公塔,P023,世界魔鬼城,base_summer,6.808,343.26,0.248,self_drive
+P012,苏公塔,P024,喀什古城,base_summer,9.583,2679.0,0.28,scenic_shuttle -> transfer -> rail -> transfer -> transfer -> air -> transfer -> scenic_shuttle
+P012,苏公塔,P025,艾提尕尔清真寺,base_summer,9.583,2679.0,0.28,scenic_shuttle -> transfer -> rail -> transfer -> transfer -> air -> transfer -> scenic_shuttle
+P012,苏公塔,P026,香妃园,base_summer,9.583,2679.0,0.28,scenic_shuttle -> transfer -> rail -> transfer -> transfer -> air -> transfer -> scenic_shuttle
+P012,苏公塔,P027,帕米尔高原白沙湖,base_summer,13.23,2783.63,0.383,scenic_shuttle -> transfer -> rail -> transfer -> transfer -> air -> transfer -> scenic_shuttle -> self_drive
+P012,苏公塔,P028,石头城遗址,base_summer,14.083,2838.5,0.36,scenic_shuttle -> transfer -> rail -> transfer -> transfer -> air -> transfer -> self_drive -> scenic_shuttle
+P012,苏公塔,P029,天山神秘大峡谷,base_summer,9.382,387.48,0.315,self_drive
+P012,苏公塔,P030,库车王府,base_summer,8.392,356.83,0.296,self_drive
+P012,苏公塔,P031,克孜尔石窟,base_summer,9.399,386.75,0.314,self_drive
+P012,苏公塔,P032,博斯腾湖,base_summer,5.1,233.5,0.16,scenic_shuttle -> self_drive -> scenic_shuttle
+P012,苏公塔,P033,巴音布鲁克草原,base_summer,8.218,314.39,0.271,self_drive -> self_drive
+P012,苏公塔,P034,罗布人村寨,base_summer,5.8,233.5,0.16,scenic_shuttle -> self_drive -> scenic_shuttle
+P012,苏公塔,P035,江布拉克草原,base_summer,4.957,193.92,0.158,self_drive
+P012,苏公塔,P036,北庭故城遗址,base_summer,4.387,204.84,0.164,self_drive
+P012,苏公塔,P037,和田博物馆,base_summer,9.583,2491.0,0.28,scenic_shuttle -> transfer -> rail -> transfer -> transfer -> air -> transfer -> scenic_shuttle
+P012,苏公塔,P038,尼雅遗址,base_summer,12.783,2551.5,0.36,scenic_shuttle -> transfer -> rail -> transfer -> transfer -> air -> transfer -> self_drive -> scenic_shuttle
+P012,苏公塔,P039,千里葡萄长廊,base_summer,9.583,2491.0,0.28,scenic_shuttle -> transfer -> rail -> transfer -> transfer -> air -> transfer -> scenic_shuttle
+P012,苏公塔,P040,奥依塔克冰川,base_summer,11.283,2679.0,0.28,scenic_shuttle -> transfer -> rail -> transfer -> transfer -> air -> transfer -> scenic_shuttle
+P013,吐峪沟麻扎村,P001,天山天池,base_summer,3.907,169.98,0.143,self_drive
+P013,吐峪沟麻扎村,P002,达坂城古镇,base_summer,2.424,91.94,0.096,self_drive
+P013,吐峪沟麻扎村,P003,火焰山,base_summer,0.393,10.74,0.047,self_drive
+P013,吐峪沟麻扎村,P004,葡萄沟,base_summer,0.912,27.22,0.056,self_drive
+P013,吐峪沟麻扎村,P005,坎儿井民俗园,base_summer,1.014,28.68,0.057,self_drive
+P013,吐峪沟麻扎村,P006,交河故城,base_summer,1.129,33.53,0.06,self_drive
+P013,吐峪沟麻扎村,P007,楼兰古城,base_summer,10.319,2708.33,0.321,self_drive -> transfer -> air -> transfer -> scenic_shuttle -> self_drive
+P013,吐峪沟麻扎村,P008,赛里木湖,base_summer,8.714,428.26,0.33,self_drive
+P013,吐峪沟麻扎村,P009,那拉提草原,base_summer,10.059,364.68,0.301,self_drive
+P013,吐峪沟麻扎村,P010,喀拉峻大草原,base_summer,12.966,344.25,0.28,scenic_shuttle -> transfer -> rail -> rail -> transfer -> self_drive -> scenic_shuttle
+P013,吐峪沟麻扎村,P011,高昌故城,base_summer,0.424,9.8,0.046,self_drive
+P013,吐峪沟麻扎村,P012,苏公塔,base_summer,0.846,26.25,0.056,self_drive
+P013,吐峪沟麻扎村,P013,吐峪沟麻扎村,base_summer,0.0,0.0,0.0,
+P013,吐峪沟麻扎村,P014,霍城薰衣草花田,base_summer,9.633,462.19,0.33,self_drive
+P013,吐峪沟麻扎村,P015,昭苏草原,base_summer,15.276,614.89,0.463,self_drive -> self_drive
+P013,吐峪沟麻扎村,P016,夏塔古道,base_summer,13.966,445.0,0.28,scenic_shuttle -> transfer -> rail -> rail -> transfer -> self_drive -> scenic_shuttle
+P013,吐峪沟麻扎村,P017,果子沟大桥,base_summer,9.014,458.26,0.41,self_drive -> scenic_shuttle -> scenic_shuttle
+P013,吐峪沟麻扎村,P018,喀纳斯湖,base_summer,9.377,459.11,0.41,self_drive -> scenic_shuttle -> scenic_shuttle
+P013,吐峪沟麻扎村,P019,禾木村,base_summer,9.377,459.11,0.41,self_drive -> scenic_shuttle -> scenic_shuttle
+P013,吐峪沟麻扎村,P020,白哈巴村,base_summer,10.235,476.34,0.46,self_drive -> scenic_shuttle -> scenic_shuttle -> self_drive
+P013,吐峪沟麻扎村,P021,可可托海,base_summer,8.852,421.1,0.33,self_drive
+P013,吐峪沟麻扎村,P022,五彩滩,base_summer,9.077,429.11,0.33,self_drive
+P013,吐峪沟麻扎村,P023,世界魔鬼城,base_summer,7.371,364.67,0.261,self_drive
+P013,吐峪沟麻扎村,P024,喀什古城,base_summer,10.186,2707.17,0.28,self_drive -> transfer -> air -> transfer -> scenic_shuttle
+P013,吐峪沟麻扎村,P025,艾提尕尔清真寺,base_summer,10.186,2707.17,0.28,self_drive -> transfer -> air -> transfer -> scenic_shuttle
+P013,吐峪沟麻扎村,P026,香妃园,base_summer,10.186,2707.17,0.28,self_drive -> transfer -> air -> transfer -> scenic_shuttle
+P013,吐峪沟麻扎村,P027,帕米尔高原白沙湖,base_summer,13.833,2811.8,0.383,self_drive -> transfer -> air -> transfer -> scenic_shuttle -> self_drive
+P013,吐峪沟麻扎村,P028,石头城遗址,base_summer,14.686,2866.67,0.36,self_drive -> transfer -> air -> transfer -> self_drive -> scenic_shuttle
+P013,吐峪沟麻扎村,P029,天山神秘大峡谷,base_summer,10.228,413.73,0.371,self_drive -> self_drive
+P013,吐峪沟麻扎村,P030,库车王府,base_summer,9.238,383.08,0.352,self_drive -> self_drive
+P013,吐峪沟麻扎村,P031,克孜尔石窟,base_summer,10.245,413.0,0.37,self_drive -> self_drive
+P013,吐峪沟麻扎村,P032,博斯腾湖,base_summer,5.8,233.5,0.16,scenic_shuttle -> self_drive -> scenic_shuttle
+P013,吐峪沟麻扎村,P033,巴音布鲁克草原,base_summer,8.565,331.85,0.281,self_drive
+P013,吐峪沟麻扎村,P034,罗布人村寨,base_summer,6.5,233.5,0.16,scenic_shuttle -> self_drive -> scenic_shuttle
+P013,吐峪沟麻扎村,P035,江布拉克草原,base_summer,4.507,173.16,0.145,self_drive
+P013,吐峪沟麻扎村,P036,北庭故城遗址,base_summer,4.702,190.84,0.156,self_drive
+P013,吐峪沟麻扎村,P037,和田博物馆,base_summer,10.186,2519.17,0.28,self_drive -> transfer -> air -> transfer -> scenic_shuttle
+P013,吐峪沟麻扎村,P038,尼雅遗址,base_summer,13.386,2579.67,0.36,self_drive -> transfer -> air -> transfer -> self_drive -> scenic_shuttle
+P013,吐峪沟麻扎村,P039,千里葡萄长廊,base_summer,10.186,2519.17,0.28,self_drive -> transfer -> air -> transfer -> scenic_shuttle
+P013,吐峪沟麻扎村,P040,奥依塔克冰川,base_summer,11.886,2707.17,0.28,self_drive -> transfer -> air -> transfer -> scenic_shuttle
+P014,霍城薰衣草花田,P001,天山天池,base_summer,6.886,360.3,0.258,self_drive
+P014,霍城薰衣草花田,P002,达坂城古镇,base_summer,7.582,388.4,0.275,self_drive
+P014,霍城薰衣草花田,P003,火焰山,base_summer,9.025,455.32,0.33,self_drive
+P014,霍城薰衣草花田,P004,葡萄沟,base_summer,8.668,443.21,0.33,self_drive
+P014,霍城薰衣草花田,P005,坎儿井民俗园,base_summer,8.691,441.2,0.33,self_drive
+P014,霍城薰衣草花田,P006,交河故城,base_summer,8.797,444.29,0.33,self_drive
+P014,霍城薰衣草花田,P007,楼兰古城,base_summer,13.583,3733.91,0.381,scenic_shuttle -> self_drive -> transfer -> air -> air -> transfer -> scenic_shuttle -> self_drive
+P014,霍城薰衣草花田,P008,赛里木湖,base_summer,0.897,49.1,0.132,self_drive -> scenic_shuttle -> scenic_shuttle
+P014,霍城薰衣草花田,P009,那拉提草原,base_summer,4.368,183.59,0.151,self_drive
+P014,霍城薰衣草花田,P010,喀拉峻大草原,base_summer,3.615,131.53,0.12,self_drive
+P014,霍城薰衣草花田,P011,高昌故城,base_summer,9.298,460.01,0.33,self_drive
+P014,霍城薰衣草花田,P012,苏公塔,base_summer,8.766,444.26,0.33,self_drive
+P014,霍城薰衣草花田,P013,吐峪沟麻扎村,base_summer,9.207,472.19,0.33,self_drive
+P014,霍城薰衣草花田,P014,霍城薰衣草花田,base_summer,0.0,0.0,0.0,
+P014,霍城薰衣草花田,P015,昭苏草原,base_summer,5.643,152.7,0.133,self_drive
+P014,霍城薰衣草花田,P016,夏塔古道,base_summer,4.994,190.65,0.156,self_drive
+P014,霍城薰衣草花田,P017,果子沟大桥,base_summer,0.597,19.1,0.052,self_drive
+P014,霍城薰衣草花田,P018,喀纳斯湖,base_summer,9.535,497.16,0.41,self_drive -> scenic_shuttle -> scenic_shuttle
+P014,霍城薰衣草花田,P019,禾木村,base_summer,9.535,497.16,0.41,self_drive -> scenic_shuttle -> scenic_shuttle
+P014,霍城薰衣草花田,P020,白哈巴村,base_summer,10.393,514.39,0.46,self_drive -> scenic_shuttle -> scenic_shuttle -> self_drive
+P014,霍城薰衣草花田,P021,可可托海,base_summer,11.423,598.45,0.33,self_drive
+P014,霍城薰衣草花田,P022,五彩滩,base_summer,9.235,467.16,0.33,self_drive
+P014,霍城薰衣草花田,P023,世界魔鬼城,base_summer,6.547,337.37,0.244,self_drive
+P014,霍城薰衣草花田,P024,喀什古城,base_summer,13.45,3732.75,0.34,scenic_shuttle -> self_drive -> transfer -> air -> air -> transfer -> scenic_shuttle
+P014,霍城薰衣草花田,P025,艾提尕尔清真寺,base_summer,13.45,3732.75,0.34,scenic_shuttle -> self_drive -> transfer -> air -> air -> transfer -> scenic_shuttle
+P014,霍城薰衣草花田,P026,香妃园,base_summer,13.45,3732.75,0.34,scenic_shuttle -> self_drive -> transfer -> air -> air -> transfer -> scenic_shuttle
+P014,霍城薰衣草花田,P027,帕米尔高原白沙湖,base_summer,17.097,3837.38,0.443,scenic_shuttle -> self_drive -> transfer -> air -> air -> transfer -> scenic_shuttle -> self_drive
+P014,霍城薰衣草花田,P028,石头城遗址,base_summer,17.95,3892.25,0.42,scenic_shuttle -> self_drive -> transfer -> air -> air -> transfer -> self_drive -> scenic_shuttle
+P014,霍城薰衣草花田,P029,天山神秘大峡谷,base_summer,8.665,328.89,0.279,self_drive
+P014,霍城薰衣草花田,P030,库车王府,base_summer,9.679,363.28,0.3,self_drive
+P014,霍城薰衣草花田,P031,克孜尔石窟,base_summer,9.893,373.15,0.306,self_drive
+P014,霍城薰衣草花田,P032,博斯腾湖,base_summer,10.858,511.32,0.382,self_drive -> self_drive
+P014,霍城薰衣草花田,P033,巴音布鲁克草原,base_summer,5.501,224.66,0.176,self_drive
+P014,霍城薰衣草花田,P034,罗布人村寨,base_summer,11.043,546.17,0.382,self_drive -> self_drive
+P014,霍城薰衣草花田,P035,江布拉克草原,base_summer,8.721,449.96,0.33,self_drive
+P014,霍城薰衣草花田,P036,北庭故城遗址,base_summer,7.969,416.57,0.29,self_drive
+P014,霍城薰衣草花田,P037,和田博物馆,base_summer,13.45,3544.75,0.34,scenic_shuttle -> self_drive -> transfer -> air -> air -> transfer -> scenic_shuttle
+P014,霍城薰衣草花田,P038,尼雅遗址,base_summer,16.65,3605.25,0.42,scenic_shuttle -> self_drive -> transfer -> air -> air -> transfer -> self_drive -> scenic_shuttle
+P014,霍城薰衣草花田,P039,千里葡萄长廊,base_summer,13.45,3544.75,0.34,scenic_shuttle -> self_drive -> transfer -> air -> air -> transfer -> scenic_shuttle
+P014,霍城薰衣草花田,P040,奥依塔克冰川,base_summer,15.15,3732.75,0.34,scenic_shuttle -> self_drive -> transfer -> air -> air -> transfer -> scenic_shuttle
+P015,昭苏草原,P001,天山天池,base_summer,12.305,512.1,0.33,self_drive
+P015,昭苏草原,P002,达坂城古镇,base_summer,13.002,540.21,0.408,self_drive -> self_drive
+P015,昭苏草原,P003,火焰山,base_summer,14.438,607.12,0.474,self_drive -> self_drive
+P015,昭苏草原,P004,葡萄沟,base_summer,14.087,595.01,0.474,self_drive -> self_drive
+P015,昭苏草原,P005,坎儿井民俗园,base_summer,14.117,593.0,0.474,self_drive -> self_drive
+P015,昭苏草原,P006,交河故城,base_summer,14.222,596.09,0.474,self_drive -> self_drive
+P015,昭苏草原,P007,楼兰古城,base_summer,18.083,3808.16,0.381,scenic_shuttle -> self_drive -> transfer -> air -> air -> transfer -> scenic_shuttle -> self_drive
+P015,昭苏草原,P008,赛里木湖,base_summer,6.306,200.9,0.224,self_drive -> scenic_shuttle -> scenic_shuttle
+P015,昭苏草原,P009,那拉提草原,base_summer,7.238,169.17,0.143,self_drive
+P015,昭苏草原,P010,喀拉峻大草原,base_summer,4.167,63.65,0.079,self_drive
+P015,昭苏草原,P011,高昌故城,base_summer,14.717,611.82,0.474,self_drive -> self_drive
+P015,昭苏草原,P012,苏公塔,base_summer,14.188,596.06,0.474,self_drive -> self_drive
+P015,昭苏草原,P013,吐峪沟麻扎村,base_summer,14.628,623.99,0.474,self_drive -> self_drive
+P015,昭苏草原,P014,霍城薰衣草花田,base_summer,5.55,152.57,0.132,self_drive
+P015,昭苏草原,P015,昭苏草原,base_summer,0.0,0.0,0.0,
+P015,昭苏草原,P016,夏塔古道,base_summer,3.716,66.06,0.08,self_drive
+P015,昭苏草原,P017,果子沟大桥,base_summer,6.006,170.9,0.144,self_drive
+P015,昭苏草原,P018,喀纳斯湖,base_summer,14.967,648.97,0.554,self_drive -> self_drive -> scenic_shuttle -> scenic_shuttle
+P015,昭苏草原,P019,禾木村,base_summer,14.967,648.97,0.554,self_drive -> self_drive -> scenic_shuttle -> scenic_shuttle
+P015,昭苏草原,P020,白哈巴村,base_summer,15.825,666.2,0.604,self_drive -> self_drive -> scenic_shuttle -> scenic_shuttle -> self_drive
+P015,昭苏草原,P021,可可托海,base_summer,16.859,750.26,0.474,self_drive -> self_drive
+P015,昭苏草原,P022,五彩滩,base_summer,14.667,618.97,0.474,self_drive -> self_drive
+P015,昭苏草原,P023,世界魔鬼城,base_summer,11.98,489.18,0.377,self_drive -> self_drive
+P015,昭苏草原,P024,喀什古城,base_summer,17.95,3807.0,0.34,scenic_shuttle -> self_drive -> transfer -> air -> air -> transfer -> scenic_shuttle
+P015,昭苏草原,P025,艾提尕尔清真寺,base_summer,17.95,3807.0,0.34,scenic_shuttle -> self_drive -> transfer -> air -> air -> transfer -> scenic_shuttle
+P015,昭苏草原,P026,香妃园,base_summer,17.95,3807.0,0.34,scenic_shuttle -> self_drive -> transfer -> air -> air -> transfer -> scenic_shuttle
+P015,昭苏草原,P027,帕米尔高原白沙湖,base_summer,21.597,3911.63,0.443,scenic_shuttle -> self_drive -> transfer -> air -> air -> transfer -> scenic_shuttle -> self_drive
+P015,昭苏草原,P028,石头城遗址,base_summer,22.45,3966.5,0.42,scenic_shuttle -> self_drive -> transfer -> air -> air -> transfer -> self_drive -> scenic_shuttle
+P015,昭苏草原,P029,天山神秘大峡谷,base_summer,11.308,324.52,0.277,self_drive
+P015,昭苏草原,P030,库车王府,base_summer,12.296,358.91,0.298,self_drive
+P015,昭苏草原,P031,克孜尔石窟,base_summer,12.537,368.78,0.304,self_drive
+P015,昭苏草原,P032,博斯腾湖,base_summer,13.738,409.96,0.328,self_drive
+P015,昭苏草原,P033,巴音布鲁克草原,base_summer,8.108,220.29,0.214,self_drive
+P015,昭苏草原,P034,罗布人村寨,base_summer,13.925,444.81,0.33,self_drive
+P015,昭苏草原,P035,江布拉克草原,base_summer,14.138,601.77,0.474,self_drive -> self_drive
+P015,昭苏草原,P036,北庭故城遗址,base_summer,13.39,568.38,0.425,self_drive -> self_drive
+P015,昭苏草原,P037,和田博物馆,base_summer,17.95,3619.0,0.34,scenic_shuttle -> self_drive -> transfer -> air -> air -> transfer -> scenic_shuttle
+P015,昭苏草原,P038,尼雅遗址,base_summer,20.698,703.44,0.33,self_drive
+P015,昭苏草原,P039,千里葡萄长廊,base_summer,17.95,3619.0,0.34,scenic_shuttle -> self_drive -> transfer -> air -> air -> transfer -> scenic_shuttle
+P015,昭苏草原,P040,奥依塔克冰川,base_summer,19.65,3807.0,0.34,scenic_shuttle -> self_drive -> transfer -> air -> air -> transfer -> scenic_shuttle
+P016,夏塔古道,P001,天山天池,base_summer,11.521,550.03,0.414,self_drive -> self_drive
+P016,夏塔古道,P002,达坂城古镇,base_summer,12.212,578.14,0.431,self_drive -> self_drive
+P016,夏塔古道,P003,火焰山,base_summer,13.648,645.05,0.497,self_drive -> self_drive
+P016,夏塔古道,P004,葡萄沟,base_summer,13.266,445.0,0.28,scenic_shuttle -> self_drive -> transfer -> rail -> rail -> transfer -> scenic_shuttle
+P016,夏塔古道,P005,坎儿井民俗园,base_summer,13.266,445.0,0.28,scenic_shuttle -> self_drive -> transfer -> rail -> rail -> transfer -> scenic_shuttle
+P016,夏塔古道,P006,交河故城,base_summer,13.266,445.0,0.28,scenic_shuttle -> self_drive -> transfer -> rail -> rail -> transfer -> scenic_shuttle
+P016,夏塔古道,P007,楼兰古城,base_summer,16.583,3873.16,0.381,scenic_shuttle -> self_drive -> transfer -> air -> air -> transfer -> scenic_shuttle -> self_drive
+P016,夏塔古道,P008,赛里木湖,base_summer,5.516,238.83,0.247,self_drive -> scenic_shuttle -> scenic_shuttle
+P016,夏塔古道,P009,那拉提草原,base_summer,6.468,207.11,0.166,self_drive
+P016,夏塔古道,P010,喀拉峻大草原,base_summer,3.372,104.4,0.103,self_drive
+P016,夏塔古道,P011,高昌故城,base_summer,13.927,649.75,0.497,self_drive -> self_drive
+P016,夏塔古道,P012,苏公塔,base_summer,13.266,445.0,0.28,scenic_shuttle -> self_drive -> transfer -> rail -> rail -> transfer -> scenic_shuttle
+P016,夏塔古道,P013,吐峪沟麻扎村,base_summer,13.838,661.92,0.497,self_drive -> self_drive
+P016,夏塔古道,P014,霍城薰衣草花田,base_summer,4.739,190.51,0.155,self_drive
+P016,夏塔古道,P015,昭苏草原,base_summer,3.726,66.27,0.08,self_drive
+P016,夏塔古道,P016,夏塔古道,base_summer,0.0,0.0,0.0,
+P016,夏塔古道,P017,果子沟大桥,base_summer,5.216,208.83,0.167,self_drive
+P016,夏塔古道,P018,喀纳斯湖,base_summer,14.177,686.9,0.577,self_drive -> self_drive -> scenic_shuttle -> scenic_shuttle
+P016,夏塔古道,P019,禾木村,base_summer,14.177,686.9,0.577,self_drive -> self_drive -> scenic_shuttle -> scenic_shuttle
+P016,夏塔古道,P020,白哈巴村,base_summer,15.035,704.13,0.627,self_drive -> self_drive -> scenic_shuttle -> scenic_shuttle -> self_drive
+P016,夏塔古道,P021,可可托海,base_summer,16.069,788.19,0.497,self_drive -> self_drive
+P016,夏塔古道,P022,五彩滩,base_summer,13.877,656.9,0.497,self_drive -> self_drive
+P016,夏塔古道,P023,世界魔鬼城,base_summer,11.19,527.11,0.4,self_drive -> self_drive
+P016,夏塔古道,P024,喀什古城,base_summer,16.45,3872.0,0.34,scenic_shuttle -> self_drive -> transfer -> air -> air -> transfer -> scenic_shuttle
+P016,夏塔古道,P025,艾提尕尔清真寺,base_summer,16.45,3872.0,0.34,scenic_shuttle -> self_drive -> transfer -> air -> air -> transfer -> scenic_shuttle
+P016,夏塔古道,P026,香妃园,base_summer,16.45,3872.0,0.34,scenic_shuttle -> self_drive -> transfer -> air -> air -> transfer -> scenic_shuttle
+P016,夏塔古道,P027,帕米尔高原白沙湖,base_summer,20.097,3976.63,0.443,scenic_shuttle -> self_drive -> transfer -> air -> air -> transfer -> scenic_shuttle -> self_drive
+P016,夏塔古道,P028,石头城遗址,base_summer,20.95,4031.5,0.42,scenic_shuttle -> self_drive -> transfer -> air -> air -> transfer -> self_drive -> scenic_shuttle
+P016,夏塔古道,P029,天山神秘大峡谷,base_summer,10.541,362.46,0.3,self_drive
+P016,夏塔古道,P030,库车王府,base_summer,11.543,396.84,0.321,self_drive
+P016,夏塔古道,P031,克孜尔石窟,base_summer,11.775,406.72,0.326,self_drive
+P016,夏塔古道,P032,博斯腾湖,base_summer,13.011,447.89,0.33,self_drive
+P016,夏塔古道,P033,巴音布鲁克草原,base_summer,7.307,258.22,0.196,self_drive
+P016,夏塔古道,P034,罗布人村寨,base_summer,13.135,482.74,0.33,self_drive
+P016,夏塔古道,P035,江布拉克草原,base_summer,13.348,639.7,0.497,self_drive -> self_drive
+P016,夏塔古道,P036,北庭故城遗址,base_summer,12.6,606.31,0.448,self_drive -> self_drive
+P016,夏塔古道,P037,和田博物馆,base_summer,16.45,3684.0,0.34,scenic_shuttle -> self_drive -> transfer -> air -> air -> transfer -> scenic_shuttle
+P016,夏塔古道,P038,尼雅遗址,base_summer,19.65,3744.5,0.42,scenic_shuttle -> self_drive -> transfer -> air -> air -> transfer -> self_drive -> scenic_shuttle
+P016,夏塔古道,P039,千里葡萄长廊,base_summer,16.45,3684.0,0.34,scenic_shuttle -> self_drive -> transfer -> air -> air -> transfer -> scenic_shuttle
+P016,夏塔古道,P040,奥依塔克冰川,base_summer,18.15,3872.0,0.34,scenic_shuttle -> self_drive -> transfer -> air -> air -> transfer -> scenic_shuttle
+P017,果子沟大桥,P001,天山天池,base_summer,6.305,341.2,0.247,self_drive
+P017,果子沟大桥,P002,达坂城古镇,base_summer,6.996,369.31,0.264,self_drive
+P017,果子沟大桥,P003,火焰山,base_summer,8.432,436.22,0.33,self_drive
+P017,果子沟大桥,P004,葡萄沟,base_summer,8.081,424.11,0.33,self_drive
+P017,果子沟大桥,P005,坎儿井民俗园,base_summer,8.111,422.1,0.33,self_drive
+P017,果子沟大桥,P006,交河故城,base_summer,8.216,425.19,0.33,self_drive
+P017,果子沟大桥,P007,楼兰古城,base_summer,13.269,2894.45,0.434,self_drive -> transfer -> air -> transfer -> scenic_shuttle -> self_drive
+P017,果子沟大桥,P008,赛里木湖,base_summer,0.3,30.0,0.08,scenic_shuttle -> scenic_shuttle
+P017,果子沟大桥,P009,那拉提草原,base_summer,5.721,249.14,0.253,scenic_shuttle -> scenic_shuttle -> self_drive
+P017,果子沟大桥,P010,喀拉峻大草原,base_summer,4.961,197.09,0.221,scenic_shuttle -> scenic_shuttle -> self_drive
+P017,果子沟大桥,P011,高昌故城,base_summer,8.711,440.92,0.33,self_drive
+P017,果子沟大桥,P012,苏公塔,base_summer,8.182,425.16,0.33,self_drive
+P017,果子沟大桥,P013,吐峪沟麻扎村,base_summer,8.622,453.09,0.33,self_drive
+P017,果子沟大桥,P014,霍城薰衣草花田,base_summer,1.455,67.03,0.142,scenic_shuttle -> scenic_shuttle -> self_drive
+P017,果子沟大桥,P015,昭苏草原,base_summer,6.934,218.26,0.234,scenic_shuttle -> scenic_shuttle -> self_drive
+P017,果子沟大桥,P016,夏塔古道,base_summer,6.326,256.21,0.257,scenic_shuttle -> scenic_shuttle -> self_drive
+P017,果子沟大桥,P017,果子沟大桥,base_summer,0.0,0.0,0.0,
+P017,果子沟大桥,P018,喀纳斯湖,base_summer,8.961,478.07,0.41,self_drive -> scenic_shuttle -> scenic_shuttle
+P017,果子沟大桥,P019,禾木村,base_summer,8.961,478.07,0.41,self_drive -> scenic_shuttle -> scenic_shuttle
+P017,果子沟大桥,P020,白哈巴村,base_summer,9.819,495.3,0.46,self_drive -> scenic_shuttle -> scenic_shuttle -> self_drive
+P017,果子沟大桥,P021,可可托海,base_summer,10.853,579.36,0.33,self_drive
+P017,果子沟大桥,P022,五彩滩,base_summer,8.661,448.07,0.33,self_drive
+P017,果子沟大桥,P023,世界魔鬼城,base_summer,5.974,318.28,0.233,self_drive
+P017,果子沟大桥,P024,喀什古城,base_summer,13.136,2893.29,0.393,self_drive -> transfer -> air -> transfer -> scenic_shuttle
+P017,果子沟大桥,P025,艾提尕尔清真寺,base_summer,13.136,2893.29,0.393,self_drive -> transfer -> air -> transfer -> scenic_shuttle
+P017,果子沟大桥,P026,香妃园,base_summer,13.136,2893.29,0.393,self_drive -> transfer -> air -> transfer -> scenic_shuttle
+P017,果子沟大桥,P027,帕米尔高原白沙湖,base_summer,16.783,2997.92,0.496,self_drive -> transfer -> air -> transfer -> scenic_shuttle -> self_drive
+P017,果子沟大桥,P028,石头城遗址,base_summer,17.636,3052.79,0.473,self_drive -> transfer -> air -> transfer -> self_drive -> scenic_shuttle
+P017,果子沟大桥,P029,天山神秘大峡谷,base_summer,9.943,394.45,0.381,scenic_shuttle -> scenic_shuttle -> self_drive
+P017,果子沟大桥,P030,库车王府,base_summer,10.939,428.84,0.402,scenic_shuttle -> scenic_shuttle -> self_drive
+P017,果子沟大桥,P031,克孜尔石窟,base_summer,11.154,438.71,0.408,scenic_shuttle -> scenic_shuttle -> self_drive
+P017,果子沟大桥,P032,博斯腾湖,base_summer,10.261,492.22,0.33,self_drive
+P017,果子沟大桥,P033,巴音布鲁克草原,base_summer,6.812,290.22,0.278,scenic_shuttle -> scenic_shuttle -> self_drive
+P017,果子沟大桥,P034,罗布人村寨,base_summer,10.446,527.07,0.33,self_drive
+P017,果子沟大桥,P035,江布拉克草原,base_summer,8.132,430.87,0.33,self_drive
+P017,果子沟大桥,P036,北庭故城遗址,base_summer,7.384,397.48,0.281,self_drive
+P017,果子沟大桥,P037,和田博物馆,base_summer,13.136,2705.29,0.393,self_drive -> transfer -> air -> transfer -> scenic_shuttle
+P017,果子沟大桥,P038,尼雅遗址,base_summer,16.336,2765.79,0.473,self_drive -> transfer -> air -> transfer -> self_drive -> scenic_shuttle
+P017,果子沟大桥,P039,千里葡萄长廊,base_summer,13.136,2705.29,0.393,self_drive -> transfer -> air -> transfer -> scenic_shuttle
+P017,果子沟大桥,P040,奥依塔克冰川,base_summer,14.836,2893.29,0.393,self_drive -> transfer -> air -> transfer -> scenic_shuttle
+P018,喀纳斯湖,P001,天山天池,base_summer,5.976,326.52,0.3,scenic_shuttle -> scenic_shuttle -> self_drive
+P018,喀纳斯湖,P002,达坂城古镇,base_summer,7.358,381.18,0.333,scenic_shuttle -> scenic_shuttle -> self_drive
+P018,喀纳斯湖,P003,火焰山,base_summer,8.764,448.09,0.41,scenic_shuttle -> scenic_shuttle -> self_drive
+P018,喀纳斯湖,P004,葡萄沟,base_summer,8.417,435.99,0.406,scenic_shuttle -> scenic_shuttle -> self_drive
+P018,喀纳斯湖,P005,坎儿井民俗园,base_summer,8.435,433.97,0.405,scenic_shuttle -> scenic_shuttle -> self_drive
+P018,喀纳斯湖,P006,交河故城,base_summer,8.548,437.06,0.407,scenic_shuttle -> scenic_shuttle -> self_drive
+P018,喀纳斯湖,P007,楼兰古城,base_summer,13.416,2903.7,0.501,scenic_shuttle -> scenic_shuttle -> self_drive -> transfer -> air -> transfer -> scenic_shuttle -> self_drive
+P018,喀纳斯湖,P008,赛里木湖,base_summer,8.973,459.0,0.41,scenic_shuttle -> scenic_shuttle -> self_drive
+P018,喀纳斯湖,P009,那拉提草原,base_summer,11.007,432.79,0.404,scenic_shuttle -> scenic_shuttle -> self_drive
+P018,喀纳斯湖,P010,喀拉峻大草原,base_summer,13.463,624.46,0.53,scenic_shuttle -> scenic_shuttle -> self_drive -> self_drive
+P018,喀纳斯湖,P011,高昌故城,base_summer,9.018,452.79,0.41,scenic_shuttle -> scenic_shuttle -> self_drive
+P018,喀纳斯湖,P012,苏公塔,base_summer,8.517,437.03,0.407,scenic_shuttle -> scenic_shuttle -> self_drive
+P018,喀纳斯湖,P013,吐峪沟麻扎村,base_summer,8.941,464.97,0.41,scenic_shuttle -> scenic_shuttle -> self_drive
+P018,喀纳斯湖,P014,霍城薰衣草花田,base_summer,9.848,492.93,0.41,scenic_shuttle -> scenic_shuttle -> self_drive
+P018,喀纳斯湖,P015,昭苏草原,base_summer,15.491,645.63,0.543,scenic_shuttle -> scenic_shuttle -> self_drive -> self_drive
+P018,喀纳斯湖,P016,夏塔古道,base_summer,14.842,683.58,0.566,scenic_shuttle -> scenic_shuttle -> self_drive -> self_drive
+P018,喀纳斯湖,P017,果子沟大桥,base_summer,9.273,489.0,0.49,scenic_shuttle -> scenic_shuttle -> self_drive -> scenic_shuttle -> scenic_shuttle
+P018,喀纳斯湖,P018,喀纳斯湖,base_summer,0.0,0.0,0.0,
+P018,喀纳斯湖,P019,禾木村,base_summer,0.3,30.0,0.08,scenic_shuttle -> scenic_shuttle
+P018,喀纳斯湖,P020,白哈巴村,base_summer,0.858,17.23,0.05,self_drive
+P018,喀纳斯湖,P021,可可托海,base_summer,5.272,217.05,0.233,scenic_shuttle -> scenic_shuttle -> self_drive
+P018,喀纳斯湖,P022,五彩滩,base_summer,0.3,30.0,0.08,scenic_shuttle -> scenic_shuttle
+P018,喀纳斯湖,P023,世界魔鬼城,base_summer,3.372,161.16,0.199,scenic_shuttle -> scenic_shuttle -> self_drive
+P018,喀纳斯湖,P024,喀什古城,base_summer,13.283,2902.54,0.46,scenic_shuttle -> scenic_shuttle -> self_drive -> transfer -> air -> transfer -> scenic_shuttle
+P018,喀纳斯湖,P025,艾提尕尔清真寺,base_summer,13.283,2902.54,0.46,scenic_shuttle -> scenic_shuttle -> self_drive -> transfer -> air -> transfer -> scenic_shuttle
+P018,喀纳斯湖,P026,香妃园,base_summer,13.283,2902.54,0.46,scenic_shuttle -> scenic_shuttle -> self_drive -> transfer -> air -> transfer -> scenic_shuttle
+P018,喀纳斯湖,P027,帕米尔高原白沙湖,base_summer,16.93,3007.17,0.563,scenic_shuttle -> scenic_shuttle -> self_drive -> transfer -> air -> transfer -> scenic_shuttle -> self_drive
+P018,喀纳斯湖,P028,石头城遗址,base_summer,17.783,3062.04,0.54,scenic_shuttle -> scenic_shuttle -> self_drive -> transfer -> air -> transfer -> self_drive -> scenic_shuttle
+P018,喀纳斯湖,P029,天山神秘大峡谷,base_summer,13.816,1522.54,0.46,scenic_shuttle -> scenic_shuttle -> self_drive -> transfer -> air -> transfer -> scenic_shuttle
+P018,喀纳斯湖,P030,库车王府,base_summer,12.616,1522.54,0.46,scenic_shuttle -> scenic_shuttle -> self_drive -> transfer -> air -> transfer -> scenic_shuttle
+P018,喀纳斯湖,P031,克孜尔石窟,base_summer,13.816,1522.54,0.46,scenic_shuttle -> scenic_shuttle -> self_drive -> transfer -> air -> transfer -> scenic_shuttle
+P018,喀纳斯湖,P032,博斯腾湖,base_summer,10.681,511.57,0.41,scenic_shuttle -> scenic_shuttle -> self_drive
+P018,喀纳斯湖,P033,巴音布鲁克草原,base_summer,11.47,448.42,0.41,scenic_shuttle -> scenic_shuttle -> self_drive
+P018,喀纳斯湖,P034,罗布人村寨,base_summer,10.76,546.42,0.41,scenic_shuttle -> scenic_shuttle -> self_drive
+P018,喀纳斯湖,P035,江布拉克草原,base_summer,7.691,416.19,0.354,scenic_shuttle -> scenic_shuttle -> self_drive
+P018,喀纳斯湖,P036,北庭故城遗址,base_summer,7.289,387.5,0.377,scenic_shuttle -> scenic_shuttle -> self_drive -> self_drive
+P018,喀纳斯湖,P037,和田博物馆,base_summer,13.283,2714.54,0.46,scenic_shuttle -> scenic_shuttle -> self_drive -> transfer -> air -> transfer -> scenic_shuttle
+P018,喀纳斯湖,P038,尼雅遗址,base_summer,16.483,2775.04,0.54,scenic_shuttle -> scenic_shuttle -> self_drive -> transfer -> air -> transfer -> self_drive -> scenic_shuttle
+P018,喀纳斯湖,P039,千里葡萄长廊,base_summer,13.283,2714.54,0.46,scenic_shuttle -> scenic_shuttle -> self_drive -> transfer -> air -> transfer -> scenic_shuttle
+P018,喀纳斯湖,P040,奥依塔克冰川,base_summer,14.983,2902.54,0.46,scenic_shuttle -> scenic_shuttle -> self_drive -> transfer -> air -> transfer -> scenic_shuttle
+P019,禾木村,P001,天山天池,base_summer,5.976,326.52,0.3,scenic_shuttle -> scenic_shuttle -> self_drive
+P019,禾木村,P002,达坂城古镇,base_summer,7.358,381.18,0.333,scenic_shuttle -> scenic_shuttle -> self_drive
+P019,禾木村,P003,火焰山,base_summer,8.764,448.09,0.41,scenic_shuttle -> scenic_shuttle -> self_drive
+P019,禾木村,P004,葡萄沟,base_summer,8.417,435.99,0.406,scenic_shuttle -> scenic_shuttle -> self_drive
+P019,禾木村,P005,坎儿井民俗园,base_summer,8.435,433.97,0.405,scenic_shuttle -> scenic_shuttle -> self_drive
+P019,禾木村,P006,交河故城,base_summer,8.548,437.06,0.407,scenic_shuttle -> scenic_shuttle -> self_drive
+P019,禾木村,P007,楼兰古城,base_summer,13.416,2903.7,0.501,scenic_shuttle -> scenic_shuttle -> self_drive -> transfer -> air -> transfer -> scenic_shuttle -> self_drive
+P019,禾木村,P008,赛里木湖,base_summer,8.973,459.0,0.41,scenic_shuttle -> scenic_shuttle -> self_drive
+P019,禾木村,P009,那拉提草原,base_summer,11.007,432.79,0.404,scenic_shuttle -> scenic_shuttle -> self_drive
+P019,禾木村,P010,喀拉峻大草原,base_summer,13.463,624.46,0.53,scenic_shuttle -> scenic_shuttle -> self_drive -> self_drive
+P019,禾木村,P011,高昌故城,base_summer,9.018,452.79,0.41,scenic_shuttle -> scenic_shuttle -> self_drive
+P019,禾木村,P012,苏公塔,base_summer,8.517,437.03,0.407,scenic_shuttle -> scenic_shuttle -> self_drive
+P019,禾木村,P013,吐峪沟麻扎村,base_summer,8.941,464.97,0.41,scenic_shuttle -> scenic_shuttle -> self_drive
+P019,禾木村,P014,霍城薰衣草花田,base_summer,9.848,492.93,0.41,scenic_shuttle -> scenic_shuttle -> self_drive
+P019,禾木村,P015,昭苏草原,base_summer,15.491,645.63,0.543,scenic_shuttle -> scenic_shuttle -> self_drive -> self_drive
+P019,禾木村,P016,夏塔古道,base_summer,14.842,683.58,0.566,scenic_shuttle -> scenic_shuttle -> self_drive -> self_drive
+P019,禾木村,P017,果子沟大桥,base_summer,9.273,489.0,0.49,scenic_shuttle -> scenic_shuttle -> self_drive -> scenic_shuttle -> scenic_shuttle
+P019,禾木村,P018,喀纳斯湖,base_summer,0.3,30.0,0.08,scenic_shuttle -> scenic_shuttle
+P019,禾木村,P019,禾木村,base_summer,0.0,0.0,0.0,
+P019,禾木村,P020,白哈巴村,base_summer,1.158,47.23,0.13,scenic_shuttle -> scenic_shuttle -> self_drive
+P019,禾木村,P021,可可托海,base_summer,5.272,217.05,0.233,scenic_shuttle -> scenic_shuttle -> self_drive
+P019,禾木村,P022,五彩滩,base_summer,0.3,30.0,0.08,scenic_shuttle -> scenic_shuttle
+P019,禾木村,P023,世界魔鬼城,base_summer,3.372,161.16,0.199,scenic_shuttle -> scenic_shuttle -> self_drive
+P019,禾木村,P024,喀什古城,base_summer,13.283,2902.54,0.46,scenic_shuttle -> scenic_shuttle -> self_drive -> transfer -> air -> transfer -> scenic_shuttle
+P019,禾木村,P025,艾提尕尔清真寺,base_summer,13.283,2902.54,0.46,scenic_shuttle -> scenic_shuttle -> self_drive -> transfer -> air -> transfer -> scenic_shuttle
+P019,禾木村,P026,香妃园,base_summer,13.283,2902.54,0.46,scenic_shuttle -> scenic_shuttle -> self_drive -> transfer -> air -> transfer -> scenic_shuttle
+P019,禾木村,P027,帕米尔高原白沙湖,base_summer,16.93,3007.17,0.563,scenic_shuttle -> scenic_shuttle -> self_drive -> transfer -> air -> transfer -> scenic_shuttle -> self_drive
+P019,禾木村,P028,石头城遗址,base_summer,17.783,3062.04,0.54,scenic_shuttle -> scenic_shuttle -> self_drive -> transfer -> air -> transfer -> self_drive -> scenic_shuttle
+P019,禾木村,P029,天山神秘大峡谷,base_summer,13.816,1522.54,0.46,scenic_shuttle -> scenic_shuttle -> self_drive -> transfer -> air -> transfer -> scenic_shuttle
+P019,禾木村,P030,库车王府,base_summer,12.616,1522.54,0.46,scenic_shuttle -> scenic_shuttle -> self_drive -> transfer -> air -> transfer -> scenic_shuttle
+P019,禾木村,P031,克孜尔石窟,base_summer,13.816,1522.54,0.46,scenic_shuttle -> scenic_shuttle -> self_drive -> transfer -> air -> transfer -> scenic_shuttle
+P019,禾木村,P032,博斯腾湖,base_summer,10.681,511.57,0.41,scenic_shuttle -> scenic_shuttle -> self_drive
+P019,禾木村,P033,巴音布鲁克草原,base_summer,11.47,448.42,0.41,scenic_shuttle -> scenic_shuttle -> self_drive
+P019,禾木村,P034,罗布人村寨,base_summer,10.76,546.42,0.41,scenic_shuttle -> scenic_shuttle -> self_drive
+P019,禾木村,P035,江布拉克草原,base_summer,7.691,416.19,0.354,scenic_shuttle -> scenic_shuttle -> self_drive
+P019,禾木村,P036,北庭故城遗址,base_summer,7.289,387.5,0.377,scenic_shuttle -> scenic_shuttle -> self_drive -> self_drive
+P019,禾木村,P037,和田博物馆,base_summer,13.283,2714.54,0.46,scenic_shuttle -> scenic_shuttle -> self_drive -> transfer -> air -> transfer -> scenic_shuttle
+P019,禾木村,P038,尼雅遗址,base_summer,16.483,2775.04,0.54,scenic_shuttle -> scenic_shuttle -> self_drive -> transfer -> air -> transfer -> self_drive -> scenic_shuttle
+P019,禾木村,P039,千里葡萄长廊,base_summer,13.283,2714.54,0.46,scenic_shuttle -> scenic_shuttle -> self_drive -> transfer -> air -> transfer -> scenic_shuttle
+P019,禾木村,P040,奥依塔克冰川,base_summer,14.983,2902.54,0.46,scenic_shuttle -> scenic_shuttle -> self_drive -> transfer -> air -> transfer -> scenic_shuttle
+P020,白哈巴村,P001,天山天池,base_summer,7.105,347.47,0.353,self_drive -> scenic_shuttle -> scenic_shuttle -> self_drive
+P020,白哈巴村,P002,达坂城古镇,base_summer,8.487,402.13,0.386,self_drive -> scenic_shuttle -> scenic_shuttle -> self_drive
+P020,白哈巴村,P003,火焰山,base_summer,9.893,469.04,0.463,self_drive -> scenic_shuttle -> scenic_shuttle -> self_drive
+P020,白哈巴村,P004,葡萄沟,base_summer,9.546,456.94,0.459,self_drive -> scenic_shuttle -> scenic_shuttle -> self_drive
+P020,白哈巴村,P005,坎儿井民俗园,base_summer,9.564,454.92,0.458,self_drive -> scenic_shuttle -> scenic_shuttle -> self_drive
+P020,白哈巴村,P006,交河故城,base_summer,9.677,458.01,0.46,self_drive -> scenic_shuttle -> scenic_shuttle -> self_drive
+P020,白哈巴村,P007,楼兰古城,base_summer,14.545,2924.65,0.554,self_drive -> scenic_shuttle -> scenic_shuttle -> self_drive -> transfer -> air -> transfer -> scenic_shuttle -> self_drive
+P020,白哈巴村,P008,赛里木湖,base_summer,10.102,479.95,0.463,self_drive -> scenic_shuttle -> scenic_shuttle -> self_drive
+P020,白哈巴村,P009,那拉提草原,base_summer,12.136,453.74,0.457,self_drive -> scenic_shuttle -> scenic_shuttle -> self_drive
+P020,白哈巴村,P010,喀拉峻大草原,base_summer,14.592,645.41,0.583,self_drive -> scenic_shuttle -> scenic_shuttle -> self_drive -> self_drive
+P020,白哈巴村,P011,高昌故城,base_summer,10.147,473.74,0.463,self_drive -> scenic_shuttle -> scenic_shuttle -> self_drive
+P020,白哈巴村,P012,苏公塔,base_summer,9.646,457.98,0.46,self_drive -> scenic_shuttle -> scenic_shuttle -> self_drive
+P020,白哈巴村,P013,吐峪沟麻扎村,base_summer,10.07,485.92,0.463,self_drive -> scenic_shuttle -> scenic_shuttle -> self_drive
+P020,白哈巴村,P014,霍城薰衣草花田,base_summer,10.977,513.88,0.463,self_drive -> scenic_shuttle -> scenic_shuttle -> self_drive
+P020,白哈巴村,P015,昭苏草原,base_summer,16.62,666.58,0.596,self_drive -> scenic_shuttle -> scenic_shuttle -> self_drive -> self_drive
+P020,白哈巴村,P016,夏塔古道,base_summer,15.971,704.53,0.619,self_drive -> scenic_shuttle -> scenic_shuttle -> self_drive -> self_drive
+P020,白哈巴村,P017,果子沟大桥,base_summer,10.402,509.95,0.543,self_drive -> scenic_shuttle -> scenic_shuttle -> self_drive -> scenic_shuttle -> scenic_shuttle
+P020,白哈巴村,P018,喀纳斯湖,base_summer,1.129,20.95,0.053,self_drive
+P020,白哈巴村,P019,禾木村,base_summer,1.429,50.95,0.133,self_drive -> scenic_shuttle -> scenic_shuttle
+P020,白哈巴村,P020,白哈巴村,base_summer,0.0,0.0,0.0,
+P020,白哈巴村,P021,可可托海,base_summer,6.401,238.0,0.286,self_drive -> scenic_shuttle -> scenic_shuttle -> self_drive
+P020,白哈巴村,P022,五彩滩,base_summer,1.429,50.95,0.133,self_drive -> scenic_shuttle -> scenic_shuttle
+P020,白哈巴村,P023,世界魔鬼城,base_summer,4.501,182.11,0.252,self_drive -> scenic_shuttle -> scenic_shuttle -> self_drive
+P020,白哈巴村,P024,喀什古城,base_summer,14.412,2923.49,0.513,self_drive -> scenic_shuttle -> scenic_shuttle -> self_drive -> transfer -> air -> transfer -> scenic_shuttle
+P020,白哈巴村,P025,艾提尕尔清真寺,base_summer,14.412,2923.49,0.513,self_drive -> scenic_shuttle -> scenic_shuttle -> self_drive -> transfer -> air -> transfer -> scenic_shuttle
+P020,白哈巴村,P026,香妃园,base_summer,14.412,2923.49,0.513,self_drive -> scenic_shuttle -> scenic_shuttle -> self_drive -> transfer -> air -> transfer -> scenic_shuttle
+P020,白哈巴村,P027,帕米尔高原白沙湖,base_summer,18.059,3028.12,0.616,self_drive -> scenic_shuttle -> scenic_shuttle -> self_drive -> transfer -> air -> transfer -> scenic_shuttle -> self_drive
+P020,白哈巴村,P028,石头城遗址,base_summer,18.912,3082.99,0.593,self_drive -> scenic_shuttle -> scenic_shuttle -> self_drive -> transfer -> air -> transfer -> self_drive -> scenic_shuttle
+P020,白哈巴村,P029,天山神秘大峡谷,base_summer,14.945,1543.49,0.513,self_drive -> scenic_shuttle -> scenic_shuttle -> self_drive -> transfer -> air -> transfer -> scenic_shuttle
+P020,白哈巴村,P030,库车王府,base_summer,13.745,1543.49,0.513,self_drive -> scenic_shuttle -> scenic_shuttle -> self_drive -> transfer -> air -> transfer -> scenic_shuttle
+P020,白哈巴村,P031,克孜尔石窟,base_summer,14.945,1543.49,0.513,self_drive -> scenic_shuttle -> scenic_shuttle -> self_drive -> transfer -> air -> transfer -> scenic_shuttle
+P020,白哈巴村,P032,博斯腾湖,base_summer,11.81,532.52,0.463,self_drive -> scenic_shuttle -> scenic_shuttle -> self_drive
+P020,白哈巴村,P033,巴音布鲁克草原,base_summer,12.599,469.37,0.463,self_drive -> scenic_shuttle -> scenic_shuttle -> self_drive
+P020,白哈巴村,P034,罗布人村寨,base_summer,11.889,567.37,0.463,self_drive -> scenic_shuttle -> scenic_shuttle -> self_drive
+P020,白哈巴村,P035,江布拉克草原,base_summer,8.82,437.14,0.407,self_drive -> scenic_shuttle -> scenic_shuttle -> self_drive
+P020,白哈巴村,P036,北庭故城遗址,base_summer,8.418,408.45,0.43,self_drive -> scenic_shuttle -> scenic_shuttle -> self_drive -> self_drive
+P020,白哈巴村,P037,和田博物馆,base_summer,14.412,2735.49,0.513,self_drive -> scenic_shuttle -> scenic_shuttle -> self_drive -> transfer -> air -> transfer -> scenic_shuttle
+P020,白哈巴村,P038,尼雅遗址,base_summer,17.612,2795.99,0.593,self_drive -> scenic_shuttle -> scenic_shuttle -> self_drive -> transfer -> air -> transfer -> self_drive -> scenic_shuttle
+P020,白哈巴村,P039,千里葡萄长廊,base_summer,14.412,2735.49,0.513,self_drive -> scenic_shuttle -> scenic_shuttle -> self_drive -> transfer -> air -> transfer -> scenic_shuttle
+P020,白哈巴村,P040,奥依塔克冰川,base_summer,16.112,2923.49,0.513,self_drive -> scenic_shuttle -> scenic_shuttle -> self_drive -> transfer -> air -> transfer -> scenic_shuttle
+P021,可可托海,P001,天山天池,base_summer,5.035,256.11,0.195,self_drive
+P021,可可托海,P002,达坂城古镇,base_summer,6.848,344.57,0.249,self_drive
+P021,可可托海,P003,火焰山,base_summer,8.263,411.48,0.329,self_drive
+P021,可可托海,P004,葡萄沟,base_summer,7.914,399.38,0.282,self_drive
+P021,可可托海,P005,坎儿井民俗园,base_summer,7.942,397.36,0.281,self_drive
+P021,可可托海,P006,交河故城,base_summer,8.048,400.45,0.323,self_drive
+P021,可可托海,P007,楼兰古城,base_summer,12.934,2864.27,0.416,self_drive -> transfer -> air -> transfer -> scenic_shuttle -> self_drive
+P021,可可托海,P008,赛里木湖,base_summer,11.245,579.36,0.431,self_drive -> self_drive
+P021,可可托海,P009,那拉提草原,base_summer,13.043,541.77,0.33,self_drive
+P021,可可托海,P010,喀拉峻大草原,base_summer,15.751,1604.36,0.455,self_drive -> transfer -> air -> transfer -> self_drive -> scenic_shuttle
+P021,可可托海,P011,高昌故城,base_summer,8.539,416.18,0.33,self_drive
+P021,可可托海,P012,苏公塔,base_summer,8.012,400.42,0.323,self_drive
+P021,可可托海,P013,吐峪沟麻扎村,base_summer,8.466,428.36,0.33,self_drive
+P021,可可托海,P014,霍城薰衣草花田,base_summer,12.225,585.81,0.33,self_drive
+P021,可可托海,P015,昭苏草原,base_summer,17.868,738.51,0.463,self_drive -> self_drive
+P021,可可托海,P016,夏塔古道,base_summer,16.751,1705.11,0.455,self_drive -> transfer -> air -> transfer -> self_drive -> scenic_shuttle
+P021,可可托海,P017,果子沟大桥,base_summer,11.545,609.36,0.511,self_drive -> self_drive -> scenic_shuttle -> scenic_shuttle
+P021,可可托海,P018,喀纳斯湖,base_summer,5.395,216.71,0.233,self_drive -> scenic_shuttle -> scenic_shuttle
+P021,可可托海,P019,禾木村,base_summer,5.395,216.71,0.233,self_drive -> scenic_shuttle -> scenic_shuttle
+P021,可可托海,P020,白哈巴村,base_summer,6.253,233.94,0.283,self_drive -> scenic_shuttle -> scenic_shuttle -> self_drive
+P021,可可托海,P021,可可托海,base_summer,0.0,0.0,0.0,
+P021,可可托海,P022,五彩滩,base_summer,5.095,186.71,0.153,self_drive
+P021,可可托海,P023,世界魔鬼城,base_summer,5.63,254.04,0.194,self_drive
+P021,可可托海,P024,喀什古城,base_summer,12.801,2863.11,0.375,self_drive -> transfer -> air -> transfer -> scenic_shuttle
+P021,可可托海,P025,艾提尕尔清真寺,base_summer,12.801,2863.11,0.375,self_drive -> transfer -> air -> transfer -> scenic_shuttle
+P021,可可托海,P026,香妃园,base_summer,12.801,2863.11,0.375,self_drive -> transfer -> air -> transfer -> scenic_shuttle
+P021,可可托海,P027,帕米尔高原白沙湖,base_summer,16.448,2967.74,0.478,self_drive -> transfer -> air -> transfer -> scenic_shuttle -> self_drive
+P021,可可托海,P028,石头城遗址,base_summer,17.301,3022.61,0.455,self_drive -> transfer -> air -> transfer -> self_drive -> scenic_shuttle
+P021,可可托海,P029,天山神秘大峡谷,base_summer,13.334,1483.11,0.375,self_drive -> transfer -> air -> transfer -> scenic_shuttle
+P021,可可托海,P030,库车王府,base_summer,12.134,1483.11,0.375,self_drive -> transfer -> air -> transfer -> scenic_shuttle
+P021,可可托海,P031,克孜尔石窟,base_summer,13.334,1483.11,0.375,self_drive -> transfer -> air -> transfer -> scenic_shuttle
+P021,可可托海,P032,博斯腾湖,base_summer,10.415,478.08,0.33,self_drive
+P021,可可托海,P033,巴音布鲁克草原,base_summer,11.616,508.94,0.33,self_drive
+P021,可可托海,P034,罗布人村寨,base_summer,10.56,512.93,0.33,self_drive
+P021,可可托海,P035,江布拉克草原,base_summer,5.784,287.95,0.215,self_drive
+P021,可可托海,P036,北庭故城遗址,base_summer,5.04,237.33,0.184,self_drive
+P021,可可托海,P037,和田博物馆,base_summer,12.801,2675.11,0.375,self_drive -> transfer -> air -> transfer -> scenic_shuttle
+P021,可可托海,P038,尼雅遗址,base_summer,16.001,2735.61,0.455,self_drive -> transfer -> air -> transfer -> self_drive -> scenic_shuttle
+P021,可可托海,P039,千里葡萄长廊,base_summer,12.801,2675.11,0.375,self_drive -> transfer -> air -> transfer -> scenic_shuttle
+P021,可可托海,P040,奥依塔克冰川,base_summer,14.501,2863.11,0.375,self_drive -> transfer -> air -> transfer -> scenic_shuttle
+P022,五彩滩,P001,天山天池,base_summer,5.676,296.52,0.22,self_drive
+P022,五彩滩,P002,达坂城古镇,base_summer,7.058,351.18,0.253,self_drive
+P022,五彩滩,P003,火焰山,base_summer,8.464,418.09,0.33,self_drive
+P022,五彩滩,P004,葡萄沟,base_summer,8.117,405.99,0.326,self_drive
+P022,五彩滩,P005,坎儿井民俗园,base_summer,8.135,403.97,0.325,self_drive
+P022,五彩滩,P006,交河故城,base_summer,8.248,407.06,0.327,self_drive
+P022,五彩滩,P007,楼兰古城,base_summer,13.116,2873.7,0.421,self_drive -> transfer -> air -> transfer -> scenic_shuttle -> self_drive
+P022,五彩滩,P008,赛里木湖,base_summer,8.673,429.0,0.33,self_drive
+P022,五彩滩,P009,那拉提草原,base_summer,10.707,402.79,0.324,self_drive
+P022,五彩滩,P010,喀拉峻大草原,base_summer,13.163,594.46,0.45,self_drive -> self_drive
+P022,五彩滩,P011,高昌故城,base_summer,8.718,422.79,0.33,self_drive
+P022,五彩滩,P012,苏公塔,base_summer,8.217,407.03,0.327,self_drive
+P022,五彩滩,P013,吐峪沟麻扎村,base_summer,8.641,434.97,0.33,self_drive
+P022,五彩滩,P014,霍城薰衣草花田,base_summer,9.548,462.93,0.33,self_drive
+P022,五彩滩,P015,昭苏草原,base_summer,15.191,615.63,0.463,self_drive -> self_drive
+P022,五彩滩,P016,夏塔古道,base_summer,14.542,653.58,0.486,self_drive -> self_drive
+P022,五彩滩,P017,果子沟大桥,base_summer,8.973,459.0,0.41,self_drive -> scenic_shuttle -> scenic_shuttle
+P022,五彩滩,P018,喀纳斯湖,base_summer,0.3,30.0,0.08,scenic_shuttle -> scenic_shuttle
+P022,五彩滩,P019,禾木村,base_summer,0.3,30.0,0.08,scenic_shuttle -> scenic_shuttle
+P022,五彩滩,P020,白哈巴村,base_summer,1.158,47.23,0.13,scenic_shuttle -> scenic_shuttle -> self_drive
+P022,五彩滩,P021,可可托海,base_summer,4.972,187.05,0.153,self_drive
+P022,五彩滩,P022,五彩滩,base_summer,0.0,0.0,0.0,
+P022,五彩滩,P023,世界魔鬼城,base_summer,3.072,131.16,0.119,self_drive
+P022,五彩滩,P024,喀什古城,base_summer,12.983,2872.54,0.38,self_drive -> transfer -> air -> transfer -> scenic_shuttle
+P022,五彩滩,P025,艾提尕尔清真寺,base_summer,12.983,2872.54,0.38,self_drive -> transfer -> air -> transfer -> scenic_shuttle
+P022,五彩滩,P026,香妃园,base_summer,12.983,2872.54,0.38,self_drive -> transfer -> air -> transfer -> scenic_shuttle
+P022,五彩滩,P027,帕米尔高原白沙湖,base_summer,16.63,2977.17,0.483,self_drive -> transfer -> air -> transfer -> scenic_shuttle -> self_drive
+P022,五彩滩,P028,石头城遗址,base_summer,17.483,3032.04,0.46,self_drive -> transfer -> air -> transfer -> self_drive -> scenic_shuttle
+P022,五彩滩,P029,天山神秘大峡谷,base_summer,13.516,1492.54,0.38,self_drive -> transfer -> air -> transfer -> scenic_shuttle
+P022,五彩滩,P030,库车王府,base_summer,12.316,1492.54,0.38,self_drive -> transfer -> air -> transfer -> scenic_shuttle
+P022,五彩滩,P031,克孜尔石窟,base_summer,13.516,1492.54,0.38,self_drive -> transfer -> air -> transfer -> scenic_shuttle
+P022,五彩滩,P032,博斯腾湖,base_summer,10.381,481.57,0.33,self_drive
+P022,五彩滩,P033,巴音布鲁克草原,base_summer,11.17,418.42,0.33,self_drive
+P022,五彩滩,P034,罗布人村寨,base_summer,10.46,516.42,0.33,self_drive
+P022,五彩滩,P035,江布拉克草原,base_summer,7.391,386.19,0.274,self_drive
+P022,五彩滩,P036,北庭故城遗址,base_summer,6.989,357.5,0.297,self_drive -> self_drive
+P022,五彩滩,P037,和田博物馆,base_summer,12.983,2684.54,0.38,self_drive -> transfer -> air -> transfer -> scenic_shuttle
+P022,五彩滩,P038,尼雅遗址,base_summer,16.183,2745.04,0.46,self_drive -> transfer -> air -> transfer -> self_drive -> scenic_shuttle
+P022,五彩滩,P039,千里葡萄长廊,base_summer,12.983,2684.54,0.38,self_drive -> transfer -> air -> transfer -> scenic_shuttle
+P022,五彩滩,P040,奥依塔克冰川,base_summer,14.683,2872.54,0.38,self_drive -> transfer -> air -> transfer -> scenic_shuttle
+P023,世界魔鬼城,P001,天山天池,base_summer,4.905,260.13,0.198,self_drive
+P023,世界魔鬼城,P002,达坂城古镇,base_summer,5.612,288.23,0.215,self_drive
+P023,世界魔鬼城,P003,火焰山,base_summer,6.992,355.14,0.255,self_drive
+P023,世界魔鬼城,P004,葡萄沟,base_summer,6.659,343.04,0.248,self_drive
+P023,世界魔鬼城,P005,坎儿井民俗园,base_summer,6.687,341.03,0.247,self_drive
+P023,世界魔鬼城,P006,交河故城,base_summer,6.789,344.12,0.249,self_drive
+P023,世界魔鬼城,P007,楼兰古城,base_summer,12.044,2813.37,0.385,self_drive -> transfer -> air -> transfer -> scenic_shuttle -> self_drive
+P023,世界魔鬼城,P008,赛里木湖,base_summer,5.968,299.83,0.222,self_drive
+P023,世界魔鬼城,P009,那拉提草原,base_summer,8.138,273.62,0.246,self_drive
+P023,世界魔鬼城,P010,喀拉峻大草原,base_summer,10.594,465.29,0.362,self_drive -> self_drive
+P023,世界魔鬼城,P011,高昌故城,base_summer,7.268,359.84,0.258,self_drive
+P023,世界魔鬼城,P012,苏公塔,base_summer,6.762,344.09,0.249,self_drive
+P023,世界魔鬼城,P013,吐峪沟麻扎村,base_summer,7.205,372.02,0.265,self_drive
+P023,世界魔鬼城,P014,霍城薰衣草花田,base_summer,6.979,333.76,0.242,self_drive
+P023,世界魔鬼城,P015,昭苏草原,base_summer,12.602,488.09,0.376,self_drive -> self_drive
+P023,世界魔鬼城,P016,夏塔古道,base_summer,11.973,524.41,0.398,self_drive -> self_drive
+P023,世界魔鬼城,P017,果子沟大桥,base_summer,6.268,329.83,0.302,self_drive -> scenic_shuttle -> scenic_shuttle
+P023,世界魔鬼城,P018,喀纳斯湖,base_summer,3.474,162.03,0.2,self_drive -> scenic_shuttle -> scenic_shuttle
+P023,世界魔鬼城,P019,禾木村,base_summer,3.474,162.03,0.2,self_drive -> scenic_shuttle -> scenic_shuttle
+P023,世界魔鬼城,P020,白哈巴村,base_summer,4.332,179.26,0.25,self_drive -> scenic_shuttle -> scenic_shuttle -> self_drive
+P023,世界魔鬼城,P021,可可托海,base_summer,5.36,263.32,0.2,self_drive
+P023,世界魔鬼城,P022,五彩滩,base_summer,3.174,132.03,0.12,self_drive
+P023,世界魔鬼城,P023,世界魔鬼城,base_summer,0.0,0.0,0.0,
+P023,世界魔鬼城,P024,喀什古城,base_summer,11.911,2812.21,0.344,self_drive -> transfer -> air -> transfer -> scenic_shuttle
+P023,世界魔鬼城,P025,艾提尕尔清真寺,base_summer,11.911,2812.21,0.344,self_drive -> transfer -> air -> transfer -> scenic_shuttle
+P023,世界魔鬼城,P026,香妃园,base_summer,11.911,2812.21,0.344,self_drive -> transfer -> air -> transfer -> scenic_shuttle
+P023,世界魔鬼城,P027,帕米尔高原白沙湖,base_summer,15.558,2916.84,0.447,self_drive -> transfer -> air -> transfer -> scenic_shuttle -> self_drive
+P023,世界魔鬼城,P028,石头城遗址,base_summer,16.411,2971.71,0.424,self_drive -> transfer -> air -> transfer -> self_drive -> scenic_shuttle
+P023,世界魔鬼城,P029,天山神秘大峡谷,base_summer,11.787,393.49,0.318,self_drive
+P023,世界魔鬼城,P030,库车王府,base_summer,11.244,1432.21,0.344,self_drive -> transfer -> air -> transfer -> scenic_shuttle
+P023,世界魔鬼城,P031,克孜尔石窟,base_summer,12.444,1432.21,0.344,self_drive -> transfer -> air -> transfer -> scenic_shuttle
+P023,世界魔鬼城,P032,博斯腾湖,base_summer,8.866,411.15,0.329,self_drive
+P023,世界魔鬼城,P033,巴音布鲁克草原,base_summer,8.579,289.25,0.255,self_drive
+P023,世界魔鬼城,P034,罗布人村寨,base_summer,9.001,446.0,0.33,self_drive
+P023,世界魔鬼城,P035,江布拉克草原,base_summer,6.672,349.79,0.252,self_drive
+P023,世界魔鬼城,P036,北庭故城遗址,base_summer,5.977,316.4,0.232,self_drive
+P023,世界魔鬼城,P037,和田博物馆,base_summer,11.911,2624.21,0.344,self_drive -> transfer -> air -> transfer -> scenic_shuttle
+P023,世界魔鬼城,P038,尼雅遗址,base_summer,15.111,2684.71,0.424,self_drive -> transfer -> air -> transfer -> self_drive -> scenic_shuttle
+P023,世界魔鬼城,P039,千里葡萄长廊,base_summer,11.911,2624.21,0.344,self_drive -> transfer -> air -> transfer -> scenic_shuttle
+P023,世界魔鬼城,P040,奥依塔克冰川,base_summer,13.611,2812.21,0.344,self_drive -> transfer -> air -> transfer -> scenic_shuttle
+P024,喀什古城,P001,天山天池,base_summer,8.017,2612.02,0.222,scenic_shuttle -> transfer -> air -> transfer -> self_drive
+P024,喀什古城,P002,达坂城古镇,base_summer,8.383,2630.43,0.234,scenic_shuttle -> transfer -> air -> transfer -> self_drive
+P024,喀什古城,P003,火焰山,base_summer,9.776,2697.34,0.274,scenic_shuttle -> transfer -> air -> transfer -> self_drive
+P024,喀什古城,P004,葡萄沟,base_summer,9.449,2685.24,0.267,scenic_shuttle -> transfer -> air -> transfer -> self_drive
+P024,喀什古城,P005,坎儿井民俗园,base_summer,9.467,2683.23,0.266,scenic_shuttle -> transfer -> air -> transfer -> self_drive
+P024,喀什古城,P006,交河故城,base_summer,9.574,2686.32,0.267,scenic_shuttle -> transfer -> air -> transfer -> self_drive
+P024,喀什古城,P007,楼兰古城,base_summer,0.143,1.11,0.041,self_drive
+P024,喀什古城,P008,赛里木湖,base_summer,12.882,2875.49,0.382,scenic_shuttle -> transfer -> air -> transfer -> self_drive
+P024,喀什古城,P009,那拉提草原,base_summer,13.541,570.35,0.33,self_drive
+P024,喀什古城,P010,喀拉峻大草原,base_summer,15.45,3771.25,0.34,scenic_shuttle -> transfer -> air -> air -> transfer -> self_drive -> scenic_shuttle
+P024,喀什古城,P011,高昌故城,base_summer,10.065,2702.04,0.277,scenic_shuttle -> transfer -> air -> transfer -> self_drive
+P024,喀什古城,P012,苏公塔,base_summer,9.541,2686.29,0.267,scenic_shuttle -> transfer -> air -> transfer -> self_drive
+P024,喀什古城,P013,吐峪沟麻扎村,base_summer,9.911,2714.22,0.284,scenic_shuttle -> transfer -> air -> transfer -> self_drive
+P024,喀什古城,P014,霍城薰衣草花田,base_summer,13.45,3732.75,0.34,scenic_shuttle -> transfer -> air -> air -> transfer -> self_drive -> scenic_shuttle
+P024,喀什古城,P015,昭苏草原,base_summer,17.95,3807.0,0.34,scenic_shuttle -> transfer -> air -> air -> transfer -> self_drive -> scenic_shuttle
+P024,喀什古城,P016,夏塔古道,base_summer,16.45,3872.0,0.34,scenic_shuttle -> transfer -> air -> air -> transfer -> self_drive -> scenic_shuttle
+P024,喀什古城,P017,果子沟大桥,base_summer,13.182,2905.49,0.462,scenic_shuttle -> transfer -> air -> transfer -> self_drive -> scenic_shuttle -> scenic_shuttle
+P024,喀什古城,P018,喀纳斯湖,base_summer,13.532,2903.68,0.461,scenic_shuttle -> transfer -> air -> transfer -> self_drive -> scenic_shuttle -> scenic_shuttle
+P024,喀什古城,P019,禾木村,base_summer,13.532,2903.68,0.461,scenic_shuttle -> transfer -> air -> transfer -> self_drive -> scenic_shuttle -> scenic_shuttle
+P024,喀什古城,P020,白哈巴村,base_summer,14.39,2920.91,0.511,scenic_shuttle -> transfer -> air -> transfer -> self_drive -> scenic_shuttle -> scenic_shuttle -> self_drive
+P024,喀什古城,P021,可可托海,base_summer,13.013,2863.14,0.375,scenic_shuttle -> transfer -> air -> transfer -> self_drive
+P024,喀什古城,P022,五彩滩,base_summer,13.232,2873.68,0.381,scenic_shuttle -> transfer -> air -> transfer -> self_drive
+P024,喀什古城,P023,世界魔鬼城,base_summer,11.555,2811.9,0.344,scenic_shuttle -> transfer -> air -> transfer -> self_drive
+P024,喀什古城,P024,喀什古城,base_summer,0.0,0.0,0.0,
+P024,喀什古城,P025,艾提尕尔清真寺,base_summer,0.195,1.72,0.041,self_drive
+P024,喀什古城,P026,香妃园,base_summer,0.232,2.08,0.041,self_drive
+P024,喀什古城,P027,帕米尔高原白沙湖,base_summer,3.715,105.27,0.104,self_drive
+P024,喀什古城,P028,石头城遗址,base_summer,5.1,189.5,0.16,scenic_shuttle -> self_drive -> scenic_shuttle
+P024,喀什古城,P029,天山神秘大峡谷,base_summer,8.428,416.85,0.33,self_drive
+P024,喀什古城,P030,库车王府,base_summer,7.182,389.64,0.276,self_drive
+P024,喀什古城,P031,克孜尔石窟,base_summer,7.629,383.98,0.273,self_drive
+P024,喀什古城,P032,博斯腾湖,base_summer,11.583,4778.0,0.26,scenic_shuttle -> transfer -> air -> air -> transfer -> scenic_shuttle
+P024,喀什古城,P033,巴音布鲁克草原,base_summer,11.617,520.82,0.33,self_drive
+P024,喀什古城,P034,罗布人村寨,base_summer,11.971,2798.82,0.336,scenic_shuttle -> transfer -> air -> transfer -> self_drive
+P024,喀什古城,P035,江布拉克草原,base_summer,9.742,2701.68,0.277,scenic_shuttle -> transfer -> air -> transfer -> self_drive
+P024,喀什古城,P036,北庭故城遗址,base_summer,9.047,2668.29,0.257,scenic_shuttle -> transfer -> air -> transfer -> self_drive
+P024,喀什古城,P037,和田博物馆,base_summer,5.545,273.23,0.206,self_drive
+P024,喀什古城,P038,尼雅遗址,base_summer,9.067,1046.58,0.24,scenic_shuttle -> transfer -> rail -> transfer -> self_drive -> scenic_shuttle
+P024,喀什古城,P039,千里葡萄长廊,base_summer,5.625,275.56,0.207,self_drive
+P024,喀什古城,P040,奥依塔克冰川,base_summer,2.155,57.44,0.075,self_drive
+P025,艾提尕尔清真寺,P001,天山天池,base_summer,8.017,2612.02,0.222,scenic_shuttle -> transfer -> air -> transfer -> self_drive
+P025,艾提尕尔清真寺,P002,达坂城古镇,base_summer,8.383,2630.43,0.234,scenic_shuttle -> transfer -> air -> transfer -> self_drive
+P025,艾提尕尔清真寺,P003,火焰山,base_summer,9.776,2697.34,0.274,scenic_shuttle -> transfer -> air -> transfer -> self_drive
+P025,艾提尕尔清真寺,P004,葡萄沟,base_summer,9.449,2685.24,0.267,scenic_shuttle -> transfer -> air -> transfer -> self_drive
+P025,艾提尕尔清真寺,P005,坎儿井民俗园,base_summer,9.467,2683.23,0.266,scenic_shuttle -> transfer -> air -> transfer -> self_drive
+P025,艾提尕尔清真寺,P006,交河故城,base_summer,9.574,2686.32,0.267,scenic_shuttle -> transfer -> air -> transfer -> self_drive
+P025,艾提尕尔清真寺,P007,楼兰古城,base_summer,0.133,1.16,0.041,self_drive
+P025,艾提尕尔清真寺,P008,赛里木湖,base_summer,12.882,2875.49,0.382,scenic_shuttle -> transfer -> air -> transfer -> self_drive
+P025,艾提尕尔清真寺,P009,那拉提草原,base_summer,13.508,570.01,0.33,self_drive
+P025,艾提尕尔清真寺,P010,喀拉峻大草原,base_summer,15.45,3771.25,0.34,scenic_shuttle -> transfer -> air -> air -> transfer -> self_drive -> scenic_shuttle
+P025,艾提尕尔清真寺,P011,高昌故城,base_summer,10.065,2702.04,0.277,scenic_shuttle -> transfer -> air -> transfer -> self_drive
+P025,艾提尕尔清真寺,P012,苏公塔,base_summer,9.541,2686.29,0.267,scenic_shuttle -> transfer -> air -> transfer -> self_drive
+P025,艾提尕尔清真寺,P013,吐峪沟麻扎村,base_summer,9.911,2714.22,0.284,scenic_shuttle -> transfer -> air -> transfer -> self_drive
+P025,艾提尕尔清真寺,P014,霍城薰衣草花田,base_summer,13.45,3732.75,0.34,scenic_shuttle -> transfer -> air -> air -> transfer -> self_drive -> scenic_shuttle
+P025,艾提尕尔清真寺,P015,昭苏草原,base_summer,17.95,3807.0,0.34,scenic_shuttle -> transfer -> air -> air -> transfer -> self_drive -> scenic_shuttle
+P025,艾提尕尔清真寺,P016,夏塔古道,base_summer,16.45,3872.0,0.34,scenic_shuttle -> transfer -> air -> air -> transfer -> self_drive -> scenic_shuttle
+P025,艾提尕尔清真寺,P017,果子沟大桥,base_summer,13.182,2905.49,0.462,scenic_shuttle -> transfer -> air -> transfer -> self_drive -> scenic_shuttle -> scenic_shuttle
+P025,艾提尕尔清真寺,P018,喀纳斯湖,base_summer,13.532,2903.68,0.461,scenic_shuttle -> transfer -> air -> transfer -> self_drive -> scenic_shuttle -> scenic_shuttle
+P025,艾提尕尔清真寺,P019,禾木村,base_summer,13.532,2903.68,0.461,scenic_shuttle -> transfer -> air -> transfer -> self_drive -> scenic_shuttle -> scenic_shuttle
+P025,艾提尕尔清真寺,P020,白哈巴村,base_summer,14.39,2920.91,0.511,scenic_shuttle -> transfer -> air -> transfer -> self_drive -> scenic_shuttle -> scenic_shuttle -> self_drive
+P025,艾提尕尔清真寺,P021,可可托海,base_summer,13.013,2863.14,0.375,scenic_shuttle -> transfer -> air -> transfer -> self_drive
+P025,艾提尕尔清真寺,P022,五彩滩,base_summer,13.232,2873.68,0.381,scenic_shuttle -> transfer -> air -> transfer -> self_drive
+P025,艾提尕尔清真寺,P023,世界魔鬼城,base_summer,11.555,2811.9,0.344,scenic_shuttle -> transfer -> air -> transfer -> self_drive
+P025,艾提尕尔清真寺,P024,喀什古城,base_summer,0.151,1.2,0.041,self_drive
+P025,艾提尕尔清真寺,P025,艾提尕尔清真寺,base_summer,0.0,0.0,0.0,
+P025,艾提尕尔清真寺,P026,香妃园,base_summer,0.304,2.93,0.042,self_drive
+P025,艾提尕尔清真寺,P027,帕米尔高原白沙湖,base_summer,3.647,104.63,0.103,self_drive
+P025,艾提尕尔清真寺,P028,石头城遗址,base_summer,5.1,189.5,0.16,scenic_shuttle -> self_drive -> scenic_shuttle
+P025,艾提尕尔清真寺,P029,天山神秘大峡谷,base_summer,8.402,416.51,0.33,self_drive
+P025,艾提尕尔清真寺,P030,库车王府,base_summer,7.167,389.29,0.276,self_drive
+P025,艾提尕尔清真寺,P031,克孜尔石窟,base_summer,7.605,383.64,0.273,self_drive
+P025,艾提尕尔清真寺,P032,博斯腾湖,base_summer,11.583,4778.0,0.26,scenic_shuttle -> transfer -> air -> air -> transfer -> scenic_shuttle
+P025,艾提尕尔清真寺,P033,巴音布鲁克草原,base_summer,11.588,520.48,0.33,self_drive
+P025,艾提尕尔清真寺,P034,罗布人村寨,base_summer,11.971,2798.82,0.336,scenic_shuttle -> transfer -> air -> transfer -> self_drive
+P025,艾提尕尔清真寺,P035,江布拉克草原,base_summer,9.742,2701.68,0.277,scenic_shuttle -> transfer -> air -> transfer -> self_drive
+P025,艾提尕尔清真寺,P036,北庭故城遗址,base_summer,9.047,2668.29,0.257,scenic_shuttle -> transfer -> air -> transfer -> self_drive
+P025,艾提尕尔清真寺,P037,和田博物馆,base_summer,5.524,273.03,0.205,self_drive
+P025,艾提尕尔清真寺,P038,尼雅遗址,base_summer,9.067,1046.58,0.24,scenic_shuttle -> transfer -> rail -> transfer -> self_drive -> scenic_shuttle
+P025,艾提尕尔清真寺,P039,千里葡萄长廊,base_summer,5.613,275.36,0.207,self_drive
+P025,艾提尕尔清真寺,P040,奥依塔克冰川,base_summer,2.089,56.8,0.074,self_drive
+P026,香妃园,P001,天山天池,base_summer,8.017,2612.02,0.222,scenic_shuttle -> transfer -> air -> transfer -> self_drive
+P026,香妃园,P002,达坂城古镇,base_summer,8.383,2630.43,0.234,scenic_shuttle -> transfer -> air -> transfer -> self_drive
+P026,香妃园,P003,火焰山,base_summer,9.776,2697.34,0.274,scenic_shuttle -> transfer -> air -> transfer -> self_drive
+P026,香妃园,P004,葡萄沟,base_summer,9.449,2685.24,0.267,scenic_shuttle -> transfer -> air -> transfer -> self_drive
+P026,香妃园,P005,坎儿井民俗园,base_summer,9.467,2683.23,0.266,scenic_shuttle -> transfer -> air -> transfer -> self_drive
+P026,香妃园,P006,交河故城,base_summer,9.574,2686.32,0.267,scenic_shuttle -> transfer -> air -> transfer -> self_drive
+P026,香妃园,P007,楼兰古城,base_summer,0.274,2.48,0.042,self_drive
+P026,香妃园,P008,赛里木湖,base_summer,12.882,2875.49,0.382,scenic_shuttle -> transfer -> air -> transfer -> self_drive
+P026,香妃园,P009,那拉提草原,base_summer,13.432,569.7,0.33,self_drive
+P026,香妃园,P010,喀拉峻大草原,base_summer,15.45,3771.25,0.34,scenic_shuttle -> transfer -> air -> air -> transfer -> self_drive -> scenic_shuttle
+P026,香妃园,P011,高昌故城,base_summer,10.065,2702.04,0.277,scenic_shuttle -> transfer -> air -> transfer -> self_drive
+P026,香妃园,P012,苏公塔,base_summer,9.541,2686.29,0.267,scenic_shuttle -> transfer -> air -> transfer -> self_drive
+P026,香妃园,P013,吐峪沟麻扎村,base_summer,9.911,2714.22,0.284,scenic_shuttle -> transfer -> air -> transfer -> self_drive
+P026,香妃园,P014,霍城薰衣草花田,base_summer,13.45,3732.75,0.34,scenic_shuttle -> transfer -> air -> air -> transfer -> self_drive -> scenic_shuttle
+P026,香妃园,P015,昭苏草原,base_summer,17.95,3807.0,0.34,scenic_shuttle -> transfer -> air -> air -> transfer -> self_drive -> scenic_shuttle
+P026,香妃园,P016,夏塔古道,base_summer,16.45,3872.0,0.34,scenic_shuttle -> transfer -> air -> air -> transfer -> self_drive -> scenic_shuttle
+P026,香妃园,P017,果子沟大桥,base_summer,13.182,2905.49,0.462,scenic_shuttle -> transfer -> air -> transfer -> self_drive -> scenic_shuttle -> scenic_shuttle
+P026,香妃园,P018,喀纳斯湖,base_summer,13.532,2903.68,0.461,scenic_shuttle -> transfer -> air -> transfer -> self_drive -> scenic_shuttle -> scenic_shuttle
+P026,香妃园,P019,禾木村,base_summer,13.532,2903.68,0.461,scenic_shuttle -> transfer -> air -> transfer -> self_drive -> scenic_shuttle -> scenic_shuttle
+P026,香妃园,P020,白哈巴村,base_summer,14.39,2920.91,0.511,scenic_shuttle -> transfer -> air -> transfer -> self_drive -> scenic_shuttle -> scenic_shuttle -> self_drive
+P026,香妃园,P021,可可托海,base_summer,13.013,2863.14,0.375,scenic_shuttle -> transfer -> air -> transfer -> self_drive
+P026,香妃园,P022,五彩滩,base_summer,13.232,2873.68,0.381,scenic_shuttle -> transfer -> air -> transfer -> self_drive
+P026,香妃园,P023,世界魔鬼城,base_summer,11.555,2811.9,0.344,scenic_shuttle -> transfer -> air -> transfer -> self_drive
+P026,香妃园,P024,喀什古城,base_summer,0.262,2.4,0.041,self_drive
+P026,香妃园,P025,艾提尕尔清真寺,base_summer,0.287,2.72,0.042,self_drive
+P026,香妃园,P026,香妃园,base_summer,0.0,0.0,0.0,
+P026,香妃园,P027,帕米尔高原白沙湖,base_summer,3.847,106.63,0.105,self_drive
+P026,香妃园,P028,石头城遗址,base_summer,5.1,189.5,0.16,scenic_shuttle -> self_drive -> scenic_shuttle
+P026,香妃园,P029,天山神秘大峡谷,base_summer,8.306,416.2,0.33,self_drive
+P026,香妃园,P030,库车王府,base_summer,7.072,388.98,0.276,self_drive
+P026,香妃园,P031,克孜尔石窟,base_summer,7.508,383.33,0.272,self_drive
+P026,香妃园,P032,博斯腾湖,base_summer,11.522,545.98,0.436,self_drive -> scenic_shuttle -> transfer -> rail -> transfer -> scenic_shuttle
+P026,香妃园,P033,巴音布鲁克草原,base_summer,11.5,520.17,0.33,self_drive
+P026,香妃园,P034,罗布人村寨,base_summer,11.971,2798.82,0.336,scenic_shuttle -> transfer -> air -> transfer -> self_drive
+P026,香妃园,P035,江布拉克草原,base_summer,9.742,2701.68,0.277,scenic_shuttle -> transfer -> air -> transfer -> self_drive
+P026,香妃园,P036,北庭故城遗址,base_summer,9.047,2668.29,0.257,scenic_shuttle -> transfer -> air -> transfer -> self_drive
+P026,香妃园,P037,和田博物馆,base_summer,5.571,273.86,0.206,self_drive
+P026,香妃园,P038,尼雅遗址,base_summer,9.067,1046.58,0.24,scenic_shuttle -> transfer -> rail -> transfer -> self_drive -> scenic_shuttle
+P026,香妃园,P039,千里葡萄长廊,base_summer,5.636,276.19,0.207,self_drive
+P026,香妃园,P040,奥依塔克冰川,base_summer,2.276,58.8,0.076,self_drive
+P027,帕米尔高原白沙湖,P001,天山天池,base_summer,11.464,2711.78,0.322,self_drive -> scenic_shuttle -> transfer -> air -> transfer -> self_drive
+P027,帕米尔高原白沙湖,P002,达坂城古镇,base_summer,11.83,2730.19,0.334,self_drive -> scenic_shuttle -> transfer -> air -> transfer -> self_drive
+P027,帕米尔高原白沙湖,P003,火焰山,base_summer,13.223,2797.1,0.374,self_drive -> scenic_shuttle -> transfer -> air -> transfer -> self_drive
+P027,帕米尔高原白沙湖,P004,葡萄沟,base_summer,12.896,2785.0,0.367,self_drive -> scenic_shuttle -> transfer -> air -> transfer -> self_drive
+P027,帕米尔高原白沙湖,P005,坎儿井民俗园,base_summer,12.914,2782.99,0.366,self_drive -> scenic_shuttle -> transfer -> air -> transfer -> self_drive
+P027,帕米尔高原白沙湖,P006,交河故城,base_summer,13.021,2786.08,0.367,self_drive -> scenic_shuttle -> transfer -> air -> transfer -> self_drive
+P027,帕米尔高原白沙湖,P007,楼兰古城,base_summer,3.455,99.92,0.101,self_drive
+P027,帕米尔高原白沙湖,P008,赛里木湖,base_summer,16.329,2975.25,0.482,self_drive -> scenic_shuttle -> transfer -> air -> transfer -> self_drive
+P027,帕米尔高原白沙湖,P009,那拉提草原,base_summer,16.263,671.32,0.33,self_drive
+P027,帕米尔高原白沙湖,P010,喀拉峻大草原,base_summer,18.897,3871.01,0.44,self_drive -> scenic_shuttle -> transfer -> air -> air -> transfer -> self_drive -> scenic_shuttle
+P027,帕米尔高原白沙湖,P011,高昌故城,base_summer,13.512,2801.8,0.377,self_drive -> scenic_shuttle -> transfer -> air -> transfer -> self_drive
+P027,帕米尔高原白沙湖,P012,苏公塔,base_summer,12.988,2786.05,0.367,self_drive -> scenic_shuttle -> transfer -> air -> transfer -> self_drive
+P027,帕米尔高原白沙湖,P013,吐峪沟麻扎村,base_summer,13.358,2813.98,0.384,self_drive -> scenic_shuttle -> transfer -> air -> transfer -> self_drive
+P027,帕米尔高原白沙湖,P014,霍城薰衣草花田,base_summer,16.897,3832.51,0.44,self_drive -> scenic_shuttle -> transfer -> air -> air -> transfer -> self_drive -> scenic_shuttle
+P027,帕米尔高原白沙湖,P015,昭苏草原,base_summer,21.397,3906.76,0.44,self_drive -> scenic_shuttle -> transfer -> air -> air -> transfer -> self_drive -> scenic_shuttle
+P027,帕米尔高原白沙湖,P016,夏塔古道,base_summer,19.897,3971.76,0.44,self_drive -> scenic_shuttle -> transfer -> air -> air -> transfer -> self_drive -> scenic_shuttle
+P027,帕米尔高原白沙湖,P017,果子沟大桥,base_summer,16.629,3005.25,0.562,self_drive -> scenic_shuttle -> transfer -> air -> transfer -> self_drive -> scenic_shuttle -> scenic_shuttle
+P027,帕米尔高原白沙湖,P018,喀纳斯湖,base_summer,16.979,3003.44,0.561,self_drive -> scenic_shuttle -> transfer -> air -> transfer -> self_drive -> scenic_shuttle -> scenic_shuttle
+P027,帕米尔高原白沙湖,P019,禾木村,base_summer,16.979,3003.44,0.561,self_drive -> scenic_shuttle -> transfer -> air -> transfer -> self_drive -> scenic_shuttle -> scenic_shuttle
+P027,帕米尔高原白沙湖,P020,白哈巴村,base_summer,17.837,3020.67,0.611,self_drive -> scenic_shuttle -> transfer -> air -> transfer -> self_drive -> scenic_shuttle -> scenic_shuttle -> self_drive
+P027,帕米尔高原白沙湖,P021,可可托海,base_summer,16.46,2962.9,0.475,self_drive -> scenic_shuttle -> transfer -> air -> transfer -> self_drive
+P027,帕米尔高原白沙湖,P022,五彩滩,base_summer,16.679,2973.44,0.481,self_drive -> scenic_shuttle -> transfer -> air -> transfer -> self_drive
+P027,帕米尔高原白沙湖,P023,世界魔鬼城,base_summer,15.002,2911.66,0.444,self_drive -> scenic_shuttle -> transfer -> air -> transfer -> self_drive
+P027,帕米尔高原白沙湖,P024,喀什古城,base_summer,3.489,100.08,0.101,self_drive
+P027,帕米尔高原白沙湖,P025,艾提尕尔清真寺,base_summer,3.447,99.76,0.1,self_drive
+P027,帕米尔高原白沙湖,P026,香妃园,base_summer,3.637,101.69,0.102,self_drive
+P027,帕米尔高原白沙湖,P027,帕米尔高原白沙湖,base_summer,0.0,0.0,0.0,
+P027,帕米尔高原白沙湖,P028,石头城遗址,base_summer,1.602,55.56,0.074,self_drive
+P027,帕米尔高原白沙湖,P029,天山神秘大峡谷,base_summer,11.155,517.82,0.33,self_drive
+P027,帕米尔高原白沙湖,P030,库车王府,base_summer,9.941,490.61,0.33,self_drive
+P027,帕米尔高原白沙湖,P031,克孜尔石窟,base_summer,10.359,484.95,0.33,self_drive
+P027,帕米尔高原白沙湖,P032,博斯腾湖,base_summer,14.391,647.61,0.49,self_drive -> scenic_shuttle -> transfer -> rail -> transfer -> scenic_shuttle
+P027,帕米尔高原白沙湖,P033,巴音布鲁克草原,base_summer,14.329,621.79,0.33,self_drive
+P027,帕米尔高原白沙湖,P034,罗布人村寨,base_summer,14.911,701.64,0.33,self_drive
+P027,帕米尔高原白沙湖,P035,江布拉克草原,base_summer,13.189,2801.44,0.377,self_drive -> scenic_shuttle -> transfer -> air -> transfer -> self_drive
+P027,帕米尔高原白沙湖,P036,北庭故城遗址,base_summer,12.494,2768.05,0.357,self_drive -> scenic_shuttle -> transfer -> air -> transfer -> self_drive
+P027,帕米尔高原白沙湖,P037,和田博物馆,base_summer,7.969,363.86,0.261,self_drive
+P027,帕米尔高原白沙湖,P038,尼雅遗址,base_summer,11.769,454.36,0.421,self_drive -> scenic_shuttle -> self_drive -> scenic_shuttle
+P027,帕米尔高原白沙湖,P039,千里葡萄长廊,base_summer,8.076,366.19,0.302,self_drive
+P027,帕米尔高原白沙湖,P040,奥依塔克冰川,base_summer,2.058,66.09,0.08,self_drive
+P028,石头城遗址,P001,天山天池,base_summer,12.517,2771.52,0.302,scenic_shuttle -> self_drive -> transfer -> air -> transfer -> self_drive
+P028,石头城遗址,P002,达坂城古镇,base_summer,12.883,2789.93,0.314,scenic_shuttle -> self_drive -> transfer -> air -> transfer -> self_drive
+P028,石头城遗址,P003,火焰山,base_summer,14.276,2856.84,0.354,scenic_shuttle -> self_drive -> transfer -> air -> transfer -> self_drive
+P028,石头城遗址,P004,葡萄沟,base_summer,13.949,2844.74,0.347,scenic_shuttle -> self_drive -> transfer -> air -> transfer -> self_drive
+P028,石头城遗址,P005,坎儿井民俗园,base_summer,13.967,2842.73,0.346,scenic_shuttle -> self_drive -> transfer -> air -> transfer -> self_drive
+P028,石头城遗址,P006,交河故城,base_summer,14.074,2845.82,0.347,scenic_shuttle -> self_drive -> transfer -> air -> transfer -> self_drive
+P028,石头城遗址,P007,楼兰古城,base_summer,4.926,155.01,0.174,self_drive -> self_drive
+P028,石头城遗址,P008,赛里木湖,base_summer,17.382,3034.99,0.462,scenic_shuttle -> self_drive -> transfer -> air -> transfer -> self_drive
+P028,石头城遗址,P009,那拉提草原,base_summer,17.712,726.29,0.33,self_drive
+P028,石头城遗址,P010,喀拉峻大草原,base_summer,19.95,3930.75,0.42,scenic_shuttle -> self_drive -> transfer -> air -> air -> transfer -> self_drive -> scenic_shuttle
+P028,石头城遗址,P011,高昌故城,base_summer,14.565,2861.54,0.357,scenic_shuttle -> self_drive -> transfer -> air -> transfer -> self_drive
+P028,石头城遗址,P012,苏公塔,base_summer,14.041,2845.79,0.347,scenic_shuttle -> self_drive -> transfer -> air -> transfer -> self_drive
+P028,石头城遗址,P013,吐峪沟麻扎村,base_summer,14.411,2873.72,0.364,scenic_shuttle -> self_drive -> transfer -> air -> transfer -> self_drive
+P028,石头城遗址,P014,霍城薰衣草花田,base_summer,17.95,3892.25,0.42,scenic_shuttle -> self_drive -> transfer -> air -> air -> transfer -> self_drive -> scenic_shuttle
+P028,石头城遗址,P015,昭苏草原,base_summer,22.45,3966.5,0.42,scenic_shuttle -> self_drive -> transfer -> air -> air -> transfer -> self_drive -> scenic_shuttle
+P028,石头城遗址,P016,夏塔古道,base_summer,20.95,4031.5,0.42,scenic_shuttle -> self_drive -> transfer -> air -> air -> transfer -> self_drive -> scenic_shuttle
+P028,石头城遗址,P017,果子沟大桥,base_summer,17.682,3064.99,0.542,scenic_shuttle -> self_drive -> transfer -> air -> transfer -> self_drive -> scenic_shuttle -> scenic_shuttle
+P028,石头城遗址,P018,喀纳斯湖,base_summer,18.032,3063.18,0.541,scenic_shuttle -> self_drive -> transfer -> air -> transfer -> self_drive -> scenic_shuttle -> scenic_shuttle
+P028,石头城遗址,P019,禾木村,base_summer,18.032,3063.18,0.541,scenic_shuttle -> self_drive -> transfer -> air -> transfer -> self_drive -> scenic_shuttle -> scenic_shuttle
+P028,石头城遗址,P020,白哈巴村,base_summer,18.89,3080.41,0.591,scenic_shuttle -> self_drive -> transfer -> air -> transfer -> self_drive -> scenic_shuttle -> scenic_shuttle -> self_drive
+P028,石头城遗址,P021,可可托海,base_summer,17.513,3022.64,0.455,scenic_shuttle -> self_drive -> transfer -> air -> transfer -> self_drive
+P028,石头城遗址,P022,五彩滩,base_summer,17.732,3033.18,0.461,scenic_shuttle -> self_drive -> transfer -> air -> transfer -> self_drive
+P028,石头城遗址,P023,世界魔鬼城,base_summer,16.055,2971.4,0.424,scenic_shuttle -> self_drive -> transfer -> air -> transfer -> self_drive
+P028,石头城遗址,P024,喀什古城,base_summer,4.96,155.17,0.174,self_drive -> self_drive
+P028,石头城遗址,P025,艾提尕尔清真寺,base_summer,4.918,154.73,0.134,self_drive
+P028,石头城遗址,P026,香妃园,base_summer,5.1,189.5,0.16,scenic_shuttle -> self_drive -> scenic_shuttle
+P028,石头城遗址,P027,帕米尔高原白沙湖,base_summer,1.471,55.09,0.073,self_drive
+P028,石头城遗址,P028,石头城遗址,base_summer,0.0,0.0,0.0,
+P028,石头城遗址,P029,天山神秘大峡谷,base_summer,12.545,572.79,0.33,self_drive
+P028,石头城遗址,P030,库车王府,base_summer,11.343,545.58,0.33,self_drive
+P028,石头城遗址,P031,克孜尔石窟,base_summer,11.752,539.93,0.33,self_drive
+P028,石头城遗址,P032,博斯腾湖,base_summer,15.793,702.58,0.49,self_drive -> scenic_shuttle -> transfer -> rail -> transfer -> scenic_shuttle
+P028,石头城遗址,P033,巴音布鲁克草原,base_summer,15.726,676.76,0.33,self_drive
+P028,石头城遗址,P034,罗布人村寨,base_summer,16.291,756.61,0.33,self_drive
+P028,石头城遗址,P035,江布拉克草原,base_summer,14.242,2861.18,0.357,scenic_shuttle -> self_drive -> transfer -> air -> transfer -> self_drive
+P028,石头城遗址,P036,北庭故城遗址,base_summer,13.547,2827.79,0.337,scenic_shuttle -> self_drive -> transfer -> air -> transfer -> self_drive
+P028,石头城遗址,P037,和田博物馆,base_summer,9.398,418.83,0.33,self_drive
+P028,石头城遗址,P038,尼雅遗址,base_summer,13.198,509.33,0.49,self_drive -> scenic_shuttle -> self_drive -> scenic_shuttle
+P028,石头城遗址,P039,千里葡萄长廊,base_summer,9.501,421.16,0.33,self_drive
+P028,石头城遗址,P040,奥依塔克冰川,base_summer,3.481,121.06,0.113,self_drive
+P029,天山神秘大峡谷,P001,天山天池,base_summer,8.55,1232.02,0.222,scenic_shuttle -> transfer -> air -> transfer -> self_drive
+P029,天山神秘大峡谷,P002,达坂城古镇,base_summer,8.912,410.19,0.328,self_drive -> self_drive
+P029,天山神秘大峡谷,P003,火焰山,base_summer,10.028,408.67,0.328,self_drive
+P029,天山神秘大峡谷,P004,葡萄沟,base_summer,9.829,398.71,0.322,self_drive
+P029,天山神秘大峡谷,P005,坎儿井民俗园,base_summer,9.473,391.46,0.317,self_drive
+P029,天山神秘大峡谷,P006,交河故城,base_summer,9.58,394.1,0.319,self_drive
+P029,天山神秘大峡谷,P007,楼兰古城,base_summer,8.201,422.43,0.33,self_drive
+P029,天山神秘大峡谷,P008,赛里木湖,base_summer,9.49,376.89,0.37,self_drive -> scenic_shuttle -> scenic_shuttle
+P029,天山神秘大峡谷,P009,那拉提草原,base_summer,5.441,155.83,0.134,self_drive
+P029,天山神秘大峡谷,P010,喀拉峻大草原,base_summer,9.265,303.44,0.264,self_drive
+P029,天山神秘大峡谷,P011,高昌故城,base_summer,10.276,413.37,0.33,self_drive
+P029,天山神秘大峡谷,P012,苏公塔,base_summer,9.568,393.5,0.318,self_drive
+P029,天山神秘大峡谷,P013,吐峪沟麻扎村,base_summer,10.392,419.21,0.33,self_drive
+P029,天山神秘大峡谷,P014,霍城薰衣草花田,base_summer,8.748,328.56,0.279,self_drive
+P029,天山神秘大峡谷,P015,昭苏草原,base_summer,11.238,324.61,0.277,self_drive
+P029,天山神秘大峡谷,P016,夏塔古道,base_summer,10.694,362.56,0.3,self_drive
+P029,天山神秘大峡谷,P017,果子沟大桥,base_summer,9.19,346.89,0.29,self_drive
+P029,天山神秘大峡谷,P018,喀纳斯湖,base_summer,14.065,1523.68,0.461,scenic_shuttle -> transfer -> air -> transfer -> self_drive -> scenic_shuttle -> scenic_shuttle
+P029,天山神秘大峡谷,P019,禾木村,base_summer,14.065,1523.68,0.461,scenic_shuttle -> transfer -> air -> transfer -> self_drive -> scenic_shuttle -> scenic_shuttle
+P029,天山神秘大峡谷,P020,白哈巴村,base_summer,14.923,1540.91,0.511,scenic_shuttle -> transfer -> air -> transfer -> self_drive -> scenic_shuttle -> scenic_shuttle -> self_drive
+P029,天山神秘大峡谷,P021,可可托海,base_summer,13.546,1483.14,0.375,scenic_shuttle -> transfer -> air -> transfer -> self_drive
+P029,天山神秘大峡谷,P022,五彩滩,base_summer,13.765,1493.68,0.381,scenic_shuttle -> transfer -> air -> transfer -> self_drive
+P029,天山神秘大峡谷,P023,世界魔鬼城,base_summer,11.569,393.61,0.319,self_drive
+P029,天山神秘大峡谷,P024,喀什古城,base_summer,8.129,421.5,0.33,self_drive
+P029,天山神秘大峡谷,P025,艾提尕尔清真寺,base_summer,8.116,421.47,0.33,self_drive
+P029,天山神秘大峡谷,P026,香妃园,base_summer,8.063,421.48,0.33,self_drive
+P029,天山神秘大峡谷,P027,帕米尔高原白沙湖,base_summer,11.059,527.3,0.33,self_drive
+P029,天山神秘大峡谷,P028,石头城遗址,base_summer,12.538,582.14,0.33,self_drive
+P029,天山神秘大峡谷,P029,天山神秘大峡谷,base_summer,0.0,0.0,0.0,
+P029,天山神秘大峡谷,P030,库车王府,base_summer,1.301,36.48,0.062,self_drive
+P029,天山神秘大峡谷,P031,克孜尔石窟,base_summer,1.497,46.35,0.068,self_drive
+P029,天山神秘大峡谷,P032,博斯腾湖,base_summer,5.65,157.0,0.16,scenic_shuttle -> transfer -> rail -> transfer -> scenic_shuttle
+P029,天山神秘大峡谷,P033,巴音布鲁克草原,base_summer,3.433,106.3,0.104,self_drive
+P029,天山神秘大峡谷,P034,罗布人村寨,base_summer,6.212,244.92,0.188,self_drive
+P029,天山神秘大峡谷,P035,江布拉克草原,base_summer,10.275,1321.68,0.277,scenic_shuttle -> transfer -> air -> transfer -> self_drive
+P029,天山神秘大峡谷,P036,北庭故城遗址,base_summer,9.58,1288.29,0.257,scenic_shuttle -> transfer -> air -> transfer -> self_drive
+P029,天山神秘大峡谷,P037,和田博物馆,base_summer,9.523,395.47,0.32,self_drive
+P029,天山神秘大峡谷,P038,尼雅遗址,base_summer,10.437,381.01,0.311,self_drive
+P029,天山神秘大峡谷,P039,千里葡萄长廊,base_summer,9.524,395.36,0.32,self_drive
+P029,天山神秘大峡谷,P040,奥依塔克冰川,base_summer,9.578,479.47,0.33,self_drive
+P030,库车王府,P001,天山天池,base_summer,7.35,1232.02,0.222,scenic_shuttle -> transfer -> air -> transfer -> self_drive
+P030,库车王府,P002,达坂城古镇,base_summer,7.611,373.71,0.266,self_drive
+P030,库车王府,P003,火焰山,base_summer,8.838,377.6,0.309,self_drive
+P030,库车王府,P004,葡萄沟,base_summer,8.674,367.65,0.303,self_drive
+P030,库车王府,P005,坎儿井民俗园,base_summer,8.307,360.39,0.298,self_drive
+P030,库车王府,P006,交河故城,base_summer,8.413,363.03,0.3,self_drive
+P030,库车王府,P007,楼兰古城,base_summer,7.267,390.1,0.276,self_drive
+P030,库车王府,P008,赛里木湖,base_summer,10.598,411.16,0.391,self_drive -> scenic_shuttle -> scenic_shuttle
+P030,库车王府,P009,那拉提草原,base_summer,6.596,190.1,0.155,self_drive
+P030,库车王府,P010,喀拉峻大草原,base_summer,10.454,337.72,0.285,self_drive
+P030,库车王府,P011,高昌故城,base_summer,9.101,382.3,0.312,self_drive
+P030,库车王府,P012,苏公塔,base_summer,8.411,362.44,0.3,self_drive
+P030,库车王府,P013,吐峪沟麻扎村,base_summer,9.19,388.15,0.315,self_drive
+P030,库车王府,P014,霍城薰衣草花田,base_summer,9.876,362.84,0.3,self_drive
+P030,库车王府,P015,昭苏草原,base_summer,12.387,358.89,0.298,self_drive
+P030,库车王府,P016,夏塔古道,base_summer,11.845,396.84,0.321,self_drive
+P030,库车王府,P017,果子沟大桥,base_summer,10.298,381.16,0.311,self_drive
+P030,库车王府,P018,喀纳斯湖,base_summer,12.816,662.43,0.41,self_drive -> scenic_shuttle -> scenic_shuttle
+P030,库车王府,P019,禾木村,base_summer,12.816,662.43,0.41,self_drive -> scenic_shuttle -> scenic_shuttle
+P030,库车王府,P020,白哈巴村,base_summer,13.674,679.66,0.46,self_drive -> scenic_shuttle -> scenic_shuttle -> self_drive
+P030,库车王府,P021,可可托海,base_summer,12.346,1483.14,0.375,scenic_shuttle -> transfer -> air -> transfer -> self_drive
+P030,库车王府,P022,五彩滩,base_summer,12.516,632.43,0.33,self_drive
+P030,库车王府,P023,世界魔鬼城,base_summer,10.888,1431.9,0.344,scenic_shuttle -> transfer -> air -> transfer -> self_drive
+P030,库车王府,P024,喀什古城,base_summer,7.193,389.17,0.276,self_drive
+P030,库车王府,P025,艾提尕尔清真寺,base_summer,7.179,389.14,0.276,self_drive
+P030,库车王府,P026,香妃园,base_summer,7.131,389.15,0.276,self_drive
+P030,库车王府,P027,帕米尔高原白沙湖,base_summer,10.148,494.97,0.33,self_drive
+P030,库车王府,P028,石头城遗址,base_summer,11.624,549.81,0.33,self_drive
+P030,库车王府,P029,天山神秘大峡谷,base_summer,1.317,36.6,0.062,self_drive
+P030,库车王府,P030,库车王府,base_summer,0.0,0.0,0.0,
+P030,库车王府,P031,克孜尔石窟,base_summer,1.271,35.86,0.062,self_drive
+P030,库车王府,P032,博斯腾湖,base_summer,4.45,157.0,0.16,scenic_shuttle -> transfer -> rail -> transfer -> scenic_shuttle
+P030,库车王府,P033,巴音布鲁克草原,base_summer,4.45,173.0,0.43,scenic_shuttle -> self_drive -> scenic_shuttle
+P030,库车王府,P034,罗布人村寨,base_summer,5.15,157.0,0.16,scenic_shuttle -> transfer -> rail -> transfer -> scenic_shuttle
+P030,库车王府,P035,江布拉克草原,base_summer,9.075,1321.68,0.277,scenic_shuttle -> transfer -> air -> transfer -> self_drive
+P030,库车王府,P036,北庭故城遗址,base_summer,8.38,1288.29,0.257,scenic_shuttle -> transfer -> air -> transfer -> self_drive
+P030,库车王府,P037,和田博物馆,base_summer,8.419,358.14,0.297,self_drive
+P030,库车王府,P038,尼雅遗址,base_summer,9.494,327.78,0.279,self_drive
+P030,库车王府,P039,千里葡萄长廊,base_summer,8.401,358.02,0.297,self_drive
+P030,库车王府,P040,奥依塔克冰川,base_summer,8.616,447.14,0.33,self_drive
+P031,克孜尔石窟,P001,天山天池,base_summer,8.55,1232.02,0.222,scenic_shuttle -> transfer -> air -> transfer -> self_drive
+P031,克孜尔石窟,P002,达坂城古镇,base_summer,8.636,404.16,0.325,self_drive
+P031,克孜尔石窟,P003,火焰山,base_summer,9.992,408.06,0.327,self_drive
+P031,克孜尔石窟,P004,葡萄沟,base_summer,9.794,398.1,0.321,self_drive
+P031,克孜尔石窟,P005,坎儿井民俗园,base_summer,9.444,390.85,0.317,self_drive
+P031,克孜尔石窟,P006,交河故城,base_summer,9.546,393.49,0.318,self_drive
+P031,克孜尔石窟,P007,楼兰古城,base_summer,7.649,384.23,0.273,self_drive
+P031,克孜尔石窟,P008,赛里木湖,base_summer,10.782,421.06,0.397,self_drive -> scenic_shuttle -> scenic_shuttle
+P031,克孜尔石窟,P009,那拉提草原,base_summer,6.839,200.0,0.161,self_drive
+P031,克孜尔石窟,P010,喀拉峻大草原,base_summer,10.691,347.62,0.291,self_drive
+P031,克孜尔石窟,P011,高昌故城,base_summer,10.207,412.76,0.33,self_drive
+P031,克孜尔石窟,P012,苏公塔,base_summer,9.541,392.89,0.318,self_drive
+P031,克孜尔石窟,P013,吐峪沟麻扎村,base_summer,10.318,418.6,0.33,self_drive
+P031,克孜尔石窟,P014,霍城薰衣草花田,base_summer,10.057,372.74,0.306,self_drive
+P031,克孜尔石窟,P015,昭苏草原,base_summer,12.624,368.79,0.304,self_drive
+P031,克孜尔石窟,P016,夏塔古道,base_summer,12.03,406.74,0.327,self_drive
+P031,克孜尔石窟,P017,果子沟大桥,base_summer,10.482,391.06,0.317,self_drive
+P031,克孜尔石窟,P018,喀纳斯湖,base_summer,14.065,1523.68,0.461,scenic_shuttle -> transfer -> air -> transfer -> self_drive -> scenic_shuttle -> scenic_shuttle
+P031,克孜尔石窟,P019,禾木村,base_summer,14.065,1523.68,0.461,scenic_shuttle -> transfer -> air -> transfer -> self_drive -> scenic_shuttle -> scenic_shuttle
+P031,克孜尔石窟,P020,白哈巴村,base_summer,14.923,1540.91,0.511,scenic_shuttle -> transfer -> air -> transfer -> self_drive -> scenic_shuttle -> scenic_shuttle -> self_drive
+P031,克孜尔石窟,P021,可可托海,base_summer,13.546,1483.14,0.375,scenic_shuttle -> transfer -> air -> transfer -> self_drive
+P031,克孜尔石窟,P022,五彩滩,base_summer,13.765,1493.68,0.381,scenic_shuttle -> transfer -> air -> transfer -> self_drive
+P031,克孜尔石窟,P023,世界魔鬼城,base_summer,12.088,1431.9,0.344,scenic_shuttle -> transfer -> air -> transfer -> self_drive
+P031,克孜尔石窟,P024,喀什古城,base_summer,7.561,383.3,0.272,self_drive
+P031,克孜尔石窟,P025,艾提尕尔清真寺,base_summer,7.542,383.27,0.272,self_drive
+P031,克孜尔石窟,P026,香妃园,base_summer,7.493,383.28,0.272,self_drive
+P031,克孜尔石窟,P027,帕米尔高原白沙湖,base_summer,10.475,489.1,0.33,self_drive
+P031,克孜尔石窟,P028,石头城遗址,base_summer,11.956,543.93,0.33,self_drive
+P031,克孜尔石窟,P029,天山神秘大峡谷,base_summer,1.523,46.5,0.068,self_drive
+P031,克孜尔石窟,P030,库车王府,base_summer,1.287,35.87,0.062,self_drive
+P031,克孜尔石窟,P031,克孜尔石窟,base_summer,0.0,0.0,0.0,
+P031,克孜尔石窟,P032,博斯腾湖,base_summer,5.65,157.0,0.16,scenic_shuttle -> transfer -> rail -> transfer -> scenic_shuttle
+P031,克孜尔石窟,P033,巴音布鲁克草原,base_summer,4.761,150.47,0.131,self_drive
+P031,克孜尔石窟,P034,罗布人村寨,base_summer,6.169,244.31,0.188,self_drive
+P031,克孜尔石窟,P035,江布拉克草原,base_summer,10.275,1321.68,0.277,scenic_shuttle -> transfer -> air -> transfer -> self_drive
+P031,克孜尔石窟,P036,北庭故城遗址,base_summer,9.58,1288.29,0.257,scenic_shuttle -> transfer -> air -> transfer -> self_drive
+P031,克孜尔石窟,P037,和田博物馆,base_summer,9.271,396.24,0.32,self_drive
+P031,克孜尔石窟,P038,尼雅遗址,base_summer,10.397,380.4,0.311,self_drive
+P031,克孜尔石窟,P039,千里葡萄长廊,base_summer,9.259,396.13,0.32,self_drive
+P031,克孜尔石窟,P040,奥依塔克冰川,base_summer,8.949,441.27,0.33,self_drive
+P032,博斯腾湖,P001,天山天池,base_summer,5.548,226.7,0.177,self_drive
+P032,博斯腾湖,P002,达坂城古镇,base_summer,5.598,207.9,0.166,self_drive
+P032,博斯腾湖,P003,火焰山,base_summer,5.612,249.07,0.209,scenic_shuttle -> self_drive -> scenic_shuttle -> self_drive
+P032,博斯腾湖,P004,葡萄沟,base_summer,5.1,233.5,0.16,scenic_shuttle -> self_drive -> scenic_shuttle
+P032,博斯腾湖,P005,坎儿井民俗园,base_summer,5.1,233.5,0.16,scenic_shuttle -> self_drive -> scenic_shuttle
+P032,博斯腾湖,P006,交河故城,base_summer,5.1,233.5,0.16,scenic_shuttle -> self_drive -> scenic_shuttle
+P032,博斯腾湖,P007,楼兰古城,base_summer,11.716,4779.16,0.301,scenic_shuttle -> transfer -> air -> air -> transfer -> scenic_shuttle -> self_drive
+P032,博斯腾湖,P008,赛里木湖,base_summer,10.199,475.19,0.33,self_drive
+P032,博斯腾湖,P009,那拉提草原,base_summer,8.053,241.35,0.226,self_drive
+P032,博斯腾湖,P010,喀拉峻大草原,base_summer,11.964,388.96,0.316,self_drive
+P032,博斯腾湖,P011,高昌故城,base_summer,5.8,233.5,0.16,scenic_shuttle -> self_drive -> scenic_shuttle
+P032,博斯腾湖,P012,苏公塔,base_summer,5.1,233.5,0.16,scenic_shuttle -> self_drive -> scenic_shuttle
+P032,博斯腾湖,P013,吐峪沟麻扎村,base_summer,5.8,233.5,0.16,scenic_shuttle -> self_drive -> scenic_shuttle
+P032,博斯腾湖,P014,霍城薰衣草花田,base_summer,11.297,414.08,0.33,self_drive
+P032,博斯腾湖,P015,昭苏草原,base_summer,13.849,410.14,0.329,self_drive
+P032,博斯腾湖,P016,夏塔古道,base_summer,13.233,448.08,0.33,self_drive
+P032,博斯腾湖,P017,果子沟大桥,base_summer,10.499,505.19,0.41,self_drive -> scenic_shuttle -> scenic_shuttle
+P032,博斯腾湖,P018,喀纳斯湖,base_summer,10.934,512.48,0.41,self_drive -> scenic_shuttle -> scenic_shuttle
+P032,博斯腾湖,P019,禾木村,base_summer,10.934,512.48,0.41,self_drive -> scenic_shuttle -> scenic_shuttle
+P032,博斯腾湖,P020,白哈巴村,base_summer,11.792,529.71,0.46,self_drive -> scenic_shuttle -> scenic_shuttle -> self_drive
+P032,博斯腾湖,P021,可可托海,base_summer,10.515,477.82,0.33,self_drive
+P032,博斯腾湖,P022,五彩滩,base_summer,10.634,482.48,0.33,self_drive
+P032,博斯腾湖,P023,世界魔鬼城,base_summer,8.787,411.61,0.329,self_drive
+P032,博斯腾湖,P024,喀什古城,base_summer,11.583,4778.0,0.26,scenic_shuttle -> transfer -> air -> air -> transfer -> scenic_shuttle
+P032,博斯腾湖,P025,艾提尕尔清真寺,base_summer,11.583,4778.0,0.26,scenic_shuttle -> transfer -> air -> air -> transfer -> scenic_shuttle
+P032,博斯腾湖,P026,香妃园,base_summer,11.581,546.15,0.436,scenic_shuttle -> transfer -> rail -> transfer -> scenic_shuttle -> self_drive
+P032,博斯腾湖,P027,帕米尔高原白沙湖,base_summer,14.598,651.97,0.49,scenic_shuttle -> transfer -> rail -> transfer -> scenic_shuttle -> self_drive
+P032,博斯腾湖,P028,石头城遗址,base_summer,16.074,706.81,0.49,scenic_shuttle -> transfer -> rail -> transfer -> scenic_shuttle -> self_drive
+P032,博斯腾湖,P029,天山神秘大峡谷,base_summer,5.65,157.0,0.16,scenic_shuttle -> transfer -> rail -> transfer -> scenic_shuttle
+P032,博斯腾湖,P030,库车王府,base_summer,4.45,157.0,0.16,scenic_shuttle -> transfer -> rail -> transfer -> scenic_shuttle
+P032,博斯腾湖,P031,克孜尔石窟,base_summer,5.65,157.0,0.16,scenic_shuttle -> transfer -> rail -> transfer -> scenic_shuttle
+P032,博斯腾湖,P032,博斯腾湖,base_summer,0.0,0.0,0.0,
+P032,博斯腾湖,P033,巴音布鲁克草原,base_summer,6.521,208.52,0.166,self_drive
+P032,博斯腾湖,P034,罗布人村寨,base_summer,1.3,30.0,0.08,scenic_shuttle -> scenic_shuttle
+P032,博斯腾湖,P035,江布拉克草原,base_summer,7.266,316.36,0.232,self_drive
+P032,博斯腾湖,P036,北庭故城遗址,base_summer,6.598,282.97,0.211,self_drive
+P032,博斯腾湖,P037,和田博物馆,base_summer,11.583,4590.0,0.26,scenic_shuttle -> transfer -> air -> air -> transfer -> scenic_shuttle
+P032,博斯腾湖,P038,尼雅遗址,base_summer,11.182,429.88,0.402,scenic_shuttle -> scenic_shuttle -> self_drive
+P032,博斯腾湖,P039,千里葡萄长廊,base_summer,11.583,4590.0,0.26,scenic_shuttle -> transfer -> air -> air -> transfer -> scenic_shuttle
+P032,博斯腾湖,P040,奥依塔克冰川,base_summer,13.066,604.14,0.49,scenic_shuttle -> transfer -> rail -> transfer -> scenic_shuttle -> self_drive
+P033,巴音布鲁克草原,P001,天山天池,base_summer,6.659,257.87,0.196,self_drive
+P033,巴音布鲁克草原,P002,达坂城古镇,base_summer,6.595,254.94,0.195,self_drive
+P033,巴音布鲁克草原,P003,火焰山,base_summer,8.046,321.85,0.275,self_drive
+P033,巴音布鲁克草原,P004,葡萄沟,base_summer,7.714,309.75,0.228,self_drive
+P033,巴音布鲁克草原,P005,坎儿井民俗园,base_summer,7.902,309.58,0.268,self_drive -> self_drive
+P033,巴音布鲁克草原,P006,交河故城,base_summer,8.003,312.67,0.27,self_drive -> self_drive
+P033,巴音布鲁克草原,P007,楼兰古城,base_summer,11.245,526.38,0.33,self_drive
+P033,巴音布鲁克草原,P008,赛里木湖,base_summer,6.315,272.56,0.267,self_drive -> scenic_shuttle -> scenic_shuttle
+P033,巴音布鲁克草原,P009,那拉提草原,base_summer,2.274,51.5,0.071,self_drive
+P033,巴音布鲁克草原,P010,喀拉峻大草原,base_summer,6.126,199.11,0.161,self_drive
+P033,巴音布鲁克草原,P011,高昌故城,base_summer,8.312,326.55,0.278,self_drive
+P033,巴音布鲁克草原,P012,苏公塔,base_summer,7.974,312.64,0.27,self_drive -> self_drive
+P033,巴音布鲁克草原,P013,吐峪沟麻扎村,base_summer,8.249,338.73,0.285,self_drive
+P033,巴音布鲁克草原,P014,霍城薰衣草花田,base_summer,5.536,224.23,0.176,self_drive
+P033,巴音布鲁克草原,P015,昭苏草原,base_summer,8.143,220.28,0.214,self_drive
+P033,巴音布鲁克草原,P016,夏塔古道,base_summer,7.477,258.23,0.197,self_drive
+P033,巴音布鲁克草原,P017,果子沟大桥,base_summer,6.015,242.56,0.187,self_drive
+P033,巴音布鲁克草原,P018,喀纳斯湖,base_summer,11.431,449.07,0.41,self_drive -> scenic_shuttle -> scenic_shuttle
+P033,巴音布鲁克草原,P019,禾木村,base_summer,11.431,449.07,0.41,self_drive -> scenic_shuttle -> scenic_shuttle
+P033,巴音布鲁克草原,P020,白哈巴村,base_summer,12.289,466.3,0.46,self_drive -> scenic_shuttle -> scenic_shuttle -> self_drive
+P033,巴音布鲁克草原,P021,可可托海,base_summer,11.614,508.99,0.33,self_drive
+P033,巴音布鲁克草原,P022,五彩滩,base_summer,11.131,419.07,0.33,self_drive
+P033,巴音布鲁克草原,P023,世界魔鬼城,base_summer,8.467,289.28,0.255,self_drive
+P033,巴音布鲁克草原,P024,喀什古城,base_summer,11.2,525.46,0.33,self_drive
+P033,巴音布鲁克草原,P025,艾提尕尔清真寺,base_summer,11.178,525.43,0.33,self_drive
+P033,巴音布鲁克草原,P026,香妃园,base_summer,11.16,525.43,0.33,self_drive
+P033,巴音布鲁克草原,P027,帕米尔高原白沙湖,base_summer,14.116,631.26,0.33,self_drive
+P033,巴音布鲁克草原,P028,石头城遗址,base_summer,15.598,686.09,0.33,self_drive
+P033,巴音布鲁克草原,P029,天山神秘大峡谷,base_summer,3.377,106.05,0.104,self_drive
+P033,巴音布鲁克草原,P030,库车王府,base_summer,4.45,173.0,0.43,scenic_shuttle -> self_drive -> scenic_shuttle
+P033,巴音布鲁克草原,P031,克孜尔石窟,base_summer,4.648,150.31,0.131,self_drive
+P033,巴音布鲁克草原,P032,博斯腾湖,base_summer,6.412,208.34,0.166,self_drive
+P033,巴音布鲁克草原,P033,巴音布鲁克草原,base_summer,0.0,0.0,0.0,
+P033,巴音布鲁克草原,P034,罗布人村寨,base_summer,6.515,243.19,0.187,self_drive
+P033,巴音布鲁克草原,P035,江布拉克草原,base_summer,8.411,347.54,0.291,self_drive
+P033,巴音布鲁克草原,P036,北庭故城遗址,base_summer,7.728,314.14,0.23,self_drive
+P033,巴音布鲁克草原,P037,和田博物馆,base_summer,12.619,499.43,0.33,self_drive
+P033,巴音布鲁克草原,P038,尼雅遗址,base_summer,13.06,484.97,0.33,self_drive
+P033,巴音布鲁克草原,P039,千里葡萄长廊,base_summer,12.617,499.32,0.33,self_drive
+P033,巴音布鲁克草原,P040,奥依塔克冰川,base_summer,12.62,583.43,0.33,self_drive
+P034,罗布人村寨,P001,天山天池,base_summer,5.643,261.85,0.199,self_drive
+P034,罗布人村寨,P002,达坂城古镇,base_summer,5.573,258.92,0.197,self_drive
+P034,罗布人村寨,P003,火焰山,base_summer,6.312,249.07,0.209,scenic_shuttle -> self_drive -> scenic_shuttle -> self_drive
+P034,罗布人村寨,P004,葡萄沟,base_summer,5.8,233.5,0.16,scenic_shuttle -> self_drive -> scenic_shuttle
+P034,罗布人村寨,P005,坎儿井民俗园,base_summer,5.8,233.5,0.16,scenic_shuttle -> self_drive -> scenic_shuttle
+P034,罗布人村寨,P006,交河故城,base_summer,5.8,233.5,0.16,scenic_shuttle -> self_drive -> scenic_shuttle
+P034,罗布人村寨,P007,楼兰古城,base_summer,12.242,2800.51,0.377,self_drive -> transfer -> air -> transfer -> scenic_shuttle -> self_drive
+P034,罗布人村寨,P008,赛里木湖,base_summer,10.318,510.35,0.33,self_drive
+P034,罗布人村寨,P009,那拉提草原,base_summer,8.12,276.5,0.248,self_drive
+P034,罗布人村寨,P010,喀拉峻大草原,base_summer,12.072,424.11,0.33,self_drive
+P034,罗布人村寨,P011,高昌故城,base_summer,6.5,233.5,0.16,scenic_shuttle -> self_drive -> scenic_shuttle
+P034,罗布人村寨,P012,苏公塔,base_summer,5.8,233.5,0.16,scenic_shuttle -> self_drive -> scenic_shuttle
+P034,罗布人村寨,P013,吐峪沟麻扎村,base_summer,6.5,233.5,0.16,scenic_shuttle -> self_drive -> scenic_shuttle
+P034,罗布人村寨,P014,霍城薰衣草花田,base_summer,11.443,449.23,0.33,self_drive
+P034,罗布人村寨,P015,昭苏草原,base_summer,14.012,445.29,0.33,self_drive
+P034,罗布人村寨,P016,夏塔古道,base_summer,13.334,483.24,0.33,self_drive
+P034,罗布人村寨,P017,果子沟大桥,base_summer,10.618,540.35,0.41,self_drive -> scenic_shuttle -> scenic_shuttle
+P034,罗布人村寨,P018,喀纳斯湖,base_summer,10.97,547.64,0.41,self_drive -> scenic_shuttle -> scenic_shuttle
+P034,罗布人村寨,P019,禾木村,base_summer,10.97,547.64,0.41,self_drive -> scenic_shuttle -> scenic_shuttle
+P034,罗布人村寨,P020,白哈巴村,base_summer,11.828,564.87,0.46,self_drive -> scenic_shuttle -> scenic_shuttle -> self_drive
+P034,罗布人村寨,P021,可可托海,base_summer,10.666,512.97,0.33,self_drive
+P034,罗布人村寨,P022,五彩滩,base_summer,10.67,517.64,0.33,self_drive
+P034,罗布人村寨,P023,世界魔鬼城,base_summer,8.928,446.76,0.33,self_drive
+P034,罗布人村寨,P024,喀什古城,base_summer,12.109,2799.35,0.336,self_drive -> transfer -> air -> transfer -> scenic_shuttle
+P034,罗布人村寨,P025,艾提尕尔清真寺,base_summer,12.109,2799.35,0.336,self_drive -> transfer -> air -> transfer -> scenic_shuttle
+P034,罗布人村寨,P026,香妃园,base_summer,12.109,2799.35,0.336,self_drive -> transfer -> air -> transfer -> scenic_shuttle
+P034,罗布人村寨,P027,帕米尔高原白沙湖,base_summer,15.196,706.36,0.33,self_drive
+P034,罗布人村寨,P028,石头城遗址,base_summer,16.609,2958.85,0.416,self_drive -> transfer -> air -> transfer -> self_drive -> scenic_shuttle
+P034,罗布人村寨,P029,天山神秘大峡谷,base_summer,6.35,157.0,0.16,scenic_shuttle -> transfer -> rail -> transfer -> scenic_shuttle
+P034,罗布人村寨,P030,库车王府,base_summer,5.15,157.0,0.16,scenic_shuttle -> transfer -> rail -> transfer -> scenic_shuttle
+P034,罗布人村寨,P031,克孜尔石窟,base_summer,6.35,157.0,0.16,scenic_shuttle -> transfer -> rail -> transfer -> scenic_shuttle
+P034,罗布人村寨,P032,博斯腾湖,base_summer,1.3,30.0,0.08,scenic_shuttle -> scenic_shuttle
+P034,罗布人村寨,P033,巴音布鲁克草原,base_summer,6.582,243.67,0.188,self_drive
+P034,罗布人村寨,P034,罗布人村寨,base_summer,0.0,0.0,0.0,
+P034,罗布人村寨,P035,江布拉克草原,base_summer,7.377,351.51,0.253,self_drive
+P034,罗布人村寨,P036,北庭故城遗址,base_summer,6.685,318.12,0.233,self_drive
+P034,罗布人村寨,P037,和田博物馆,base_summer,11.752,529.69,0.33,self_drive
+P034,罗布人村寨,P038,尼雅遗址,base_summer,9.882,399.88,0.322,self_drive
+P034,罗布人村寨,P039,千里葡萄长廊,base_summer,12.033,539.67,0.33,self_drive
+P034,罗布人村寨,P040,奥依塔克冰川,base_summer,13.753,658.53,0.33,self_drive
+P035,江布拉克草原,P001,天山天池,base_summer,1.957,94.59,0.097,self_drive
+P035,江布拉克草原,P002,达坂城古镇,base_summer,3.825,183.05,0.151,self_drive
+P035,江布拉克草原,P003,火焰山,base_summer,4.496,178.81,0.148,self_drive
+P035,江布拉克草原,P004,葡萄沟,base_summer,4.991,195.36,0.158,self_drive
+P035,江布拉克草原,P005,坎儿井民俗园,base_summer,5.098,234.83,0.223,self_drive -> self_drive
+P035,江布拉克草原,P006,交河故城,base_summer,5.205,237.92,0.224,self_drive -> self_drive
+P035,江布拉克草原,P007,楼兰古城,base_summer,9.864,2702.76,0.318,self_drive -> transfer -> air -> transfer -> scenic_shuttle -> self_drive
+P035,江布拉克草原,P008,赛里木湖,base_summer,7.988,412.61,0.29,self_drive
+P035,江布拉克草原,P009,那拉提草原,base_summer,10.027,380.26,0.31,self_drive
+P035,江布拉克草原,P010,喀拉峻大草原,base_summer,12.592,578.06,0.45,self_drive -> self_drive
+P035,江布拉克草原,P011,高昌故城,base_summer,4.751,185.58,0.152,self_drive
+P035,江布拉克草原,P012,苏公塔,base_summer,4.926,194.4,0.158,self_drive
+P035,江布拉克草原,P013,吐峪沟麻扎村,base_summer,4.519,173.48,0.145,self_drive
+P035,江布拉克草原,P014,霍城薰衣草花田,base_summer,8.977,446.53,0.33,self_drive
+P035,江布拉克草原,P015,昭苏草原,base_summer,14.62,599.23,0.463,self_drive -> self_drive
+P035,江布拉克草原,P016,夏塔古道,base_summer,13.681,1543.6,0.357,self_drive -> transfer -> air -> transfer -> self_drive -> scenic_shuttle
+P035,江布拉克草原,P017,果子沟大桥,base_summer,8.288,442.61,0.37,self_drive -> scenic_shuttle -> scenic_shuttle
+P035,江布拉克草原,P018,喀纳斯湖,base_summer,8.021,416.0,0.354,self_drive -> scenic_shuttle -> scenic_shuttle
+P035,江布拉克草原,P019,禾木村,base_summer,8.021,416.0,0.354,self_drive -> scenic_shuttle -> scenic_shuttle
+P035,江布拉克草原,P020,白哈巴村,base_summer,8.879,433.23,0.404,self_drive -> scenic_shuttle -> scenic_shuttle -> self_drive
+P035,江布拉克草原,P021,可可托海,base_summer,5.946,287.5,0.214,self_drive
+P035,江布拉克草原,P022,五彩滩,base_summer,7.721,386.0,0.274,self_drive
+P035,江布拉克草原,P023,世界魔鬼城,base_summer,6.635,349.02,0.252,self_drive
+P035,江布拉克草原,P024,喀什古城,base_summer,9.731,2701.6,0.277,self_drive -> transfer -> air -> transfer -> scenic_shuttle
+P035,江布拉克草原,P025,艾提尕尔清真寺,base_summer,9.731,2701.6,0.277,self_drive -> transfer -> air -> transfer -> scenic_shuttle
+P035,江布拉克草原,P026,香妃园,base_summer,9.731,2701.6,0.277,self_drive -> transfer -> air -> transfer -> scenic_shuttle
+P035,江布拉克草原,P027,帕米尔高原白沙湖,base_summer,13.378,2806.23,0.38,self_drive -> transfer -> air -> transfer -> scenic_shuttle -> self_drive
+P035,江布拉克草原,P028,石头城遗址,base_summer,14.231,2861.1,0.357,self_drive -> transfer -> air -> transfer -> self_drive -> scenic_shuttle
+P035,江布拉克草原,P029,天山神秘大峡谷,base_summer,10.264,1321.6,0.277,self_drive -> transfer -> air -> transfer -> scenic_shuttle
+P035,江布拉克草原,P030,库车王府,base_summer,9.064,1321.6,0.277,self_drive -> transfer -> air -> transfer -> scenic_shuttle
+P035,江布拉克草原,P031,克孜尔石窟,base_summer,10.264,1321.6,0.277,self_drive -> transfer -> air -> transfer -> scenic_shuttle
+P035,江布拉克草原,P032,博斯腾湖,base_summer,7.369,316.57,0.232,self_drive
+P035,江布拉克草原,P033,巴音布鲁克草原,base_summer,8.53,347.43,0.291,self_drive
+P035,江布拉克草原,P034,罗布人村寨,base_summer,7.477,351.42,0.253,self_drive
+P035,江布拉克草原,P035,江布拉克草原,base_summer,0.0,0.0,0.0,
+P035,江布拉克草原,P036,北庭故城遗址,base_summer,1.279,38.52,0.063,self_drive
+P035,江布拉克草原,P037,和田博物馆,base_summer,9.731,2513.6,0.277,self_drive -> transfer -> air -> transfer -> scenic_shuttle
+P035,江布拉克草原,P038,尼雅遗址,base_summer,12.931,2574.1,0.357,self_drive -> transfer -> air -> transfer -> self_drive -> scenic_shuttle
+P035,江布拉克草原,P039,千里葡萄长廊,base_summer,9.731,2513.6,0.277,self_drive -> transfer -> air -> transfer -> scenic_shuttle
+P035,江布拉克草原,P040,奥依塔克冰川,base_summer,11.431,2701.6,0.277,self_drive -> transfer -> air -> transfer -> scenic_shuttle
+P036,北庭故城遗址,P001,天山天池,base_summer,1.304,61.25,0.077,self_drive
+P036,北庭故城遗址,P002,达坂城古镇,base_summer,3.142,149.71,0.131,self_drive
+P036,北庭故城遗址,P003,火焰山,base_summer,4.715,196.5,0.159,self_drive
+P036,北庭故城遗址,P004,葡萄沟,base_summer,4.157,204.52,0.164,self_drive
+P036,北庭故城遗址,P005,坎儿井民俗园,base_summer,4.188,202.51,0.163,self_drive
+P036,北庭故城遗址,P006,交河故城,base_summer,4.294,205.6,0.165,self_drive
+P036,北庭故城遗址,P007,楼兰古城,base_summer,9.194,2669.42,0.298,self_drive -> transfer -> air -> transfer -> scenic_shuttle -> self_drive
+P036,北庭故城遗址,P008,赛里木湖,base_summer,7.199,379.26,0.27,self_drive
+P036,北庭故城遗址,P009,那拉提草原,base_summer,9.352,346.91,0.29,self_drive
+P036,北庭故城遗址,P010,喀拉峻大草原,base_summer,11.805,544.72,0.45,self_drive -> self_drive
+P036,北庭故城遗址,P011,高昌故城,base_summer,4.975,203.27,0.163,self_drive
+P036,北庭故城遗址,P012,苏公塔,base_summer,4.261,205.57,0.165,self_drive
+P036,北庭故城遗址,P013,吐峪沟麻扎村,base_summer,4.699,191.17,0.156,self_drive
+P036,北庭故城遗址,P014,霍城薰衣草花田,base_summer,8.19,413.19,0.33,self_drive
+P036,北庭故城遗址,P015,昭苏草原,base_summer,13.833,565.89,0.463,self_drive -> self_drive
+P036,北庭故城遗址,P016,夏塔古道,base_summer,13.011,1510.26,0.337,self_drive -> transfer -> air -> transfer -> self_drive -> scenic_shuttle
+P036,北庭故城遗址,P017,果子沟大桥,base_summer,7.499,409.26,0.35,self_drive -> scenic_shuttle -> scenic_shuttle
+P036,北庭故城遗址,P018,喀纳斯湖,base_summer,7.415,382.66,0.334,self_drive -> scenic_shuttle -> scenic_shuttle
+P036,北庭故城遗址,P019,禾木村,base_summer,7.415,382.66,0.334,self_drive -> scenic_shuttle -> scenic_shuttle
+P036,北庭故城遗址,P020,白哈巴村,base_summer,8.273,399.89,0.384,self_drive -> scenic_shuttle -> scenic_shuttle -> self_drive
+P036,北庭故城遗址,P021,可可托海,base_summer,5.188,237.17,0.184,self_drive
+P036,北庭故城遗址,P022,五彩滩,base_summer,7.115,352.66,0.254,self_drive
+P036,北庭故城遗址,P023,世界魔鬼城,base_summer,5.891,315.68,0.231,self_drive
+P036,北庭故城遗址,P024,喀什古城,base_summer,9.061,2668.26,0.257,self_drive -> transfer -> air -> transfer -> scenic_shuttle
+P036,北庭故城遗址,P025,艾提尕尔清真寺,base_summer,9.061,2668.26,0.257,self_drive -> transfer -> air -> transfer -> scenic_shuttle
+P036,北庭故城遗址,P026,香妃园,base_summer,9.061,2668.26,0.257,self_drive -> transfer -> air -> transfer -> scenic_shuttle
+P036,北庭故城遗址,P027,帕米尔高原白沙湖,base_summer,12.708,2772.89,0.36,self_drive -> transfer -> air -> transfer -> scenic_shuttle -> self_drive
+P036,北庭故城遗址,P028,石头城遗址,base_summer,13.561,2827.76,0.337,self_drive -> transfer -> air -> transfer -> self_drive -> scenic_shuttle
+P036,北庭故城遗址,P029,天山神秘大峡谷,base_summer,9.594,1288.26,0.257,self_drive -> transfer -> air -> transfer -> scenic_shuttle
+P036,北庭故城遗址,P030,库车王府,base_summer,8.394,1288.26,0.257,self_drive -> transfer -> air -> transfer -> scenic_shuttle
+P036,北庭故城遗址,P031,克孜尔石窟,base_summer,9.594,1288.26,0.257,self_drive -> transfer -> air -> transfer -> scenic_shuttle
+P036,北庭故城遗址,P032,博斯腾湖,base_summer,6.688,283.22,0.212,self_drive
+P036,北庭故城遗址,P033,巴音布鲁克草原,base_summer,7.888,314.08,0.23,self_drive
+P036,北庭故城遗址,P034,罗布人村寨,base_summer,6.787,318.07,0.233,self_drive
+P036,北庭故城遗址,P035,江布拉克草原,base_summer,1.334,38.39,0.063,self_drive
+P036,北庭故城遗址,P036,北庭故城遗址,base_summer,0.0,0.0,0.0,
+P036,北庭故城遗址,P037,和田博物馆,base_summer,9.061,2480.26,0.257,self_drive -> transfer -> air -> transfer -> scenic_shuttle
+P036,北庭故城遗址,P038,尼雅遗址,base_summer,12.261,2540.76,0.337,self_drive -> transfer -> air -> transfer -> self_drive -> scenic_shuttle
+P036,北庭故城遗址,P039,千里葡萄长廊,base_summer,9.061,2480.26,0.257,self_drive -> transfer -> air -> transfer -> scenic_shuttle
+P036,北庭故城遗址,P040,奥依塔克冰川,base_summer,10.761,2668.26,0.257,self_drive -> transfer -> air -> transfer -> scenic_shuttle
+P037,和田博物馆,P001,天山天池,base_summer,8.017,2424.02,0.222,scenic_shuttle -> transfer -> air -> transfer -> self_drive
+P037,和田博物馆,P002,达坂城古镇,base_summer,8.383,2442.43,0.234,scenic_shuttle -> transfer -> air -> transfer -> self_drive
+P037,和田博物馆,P003,火焰山,base_summer,9.776,2509.34,0.274,scenic_shuttle -> transfer -> air -> transfer -> self_drive
+P037,和田博物馆,P004,葡萄沟,base_summer,9.449,2497.24,0.267,scenic_shuttle -> transfer -> air -> transfer -> self_drive
+P037,和田博物馆,P005,坎儿井民俗园,base_summer,9.467,2495.23,0.266,scenic_shuttle -> transfer -> air -> transfer -> self_drive
+P037,和田博物馆,P006,交河故城,base_summer,9.574,2498.32,0.267,scenic_shuttle -> transfer -> air -> transfer -> self_drive
+P037,和田博物馆,P007,楼兰古城,base_summer,5.617,272.52,0.205,self_drive
+P037,和田博物馆,P008,赛里木湖,base_summer,12.882,2687.49,0.382,scenic_shuttle -> transfer -> air -> transfer -> self_drive
+P037,和田博物馆,P009,那拉提草原,base_summer,14.542,549.01,0.33,self_drive
+P037,和田博物馆,P010,喀拉峻大草原,base_summer,15.45,3583.25,0.34,scenic_shuttle -> transfer -> air -> air -> transfer -> self_drive -> scenic_shuttle
+P037,和田博物馆,P011,高昌故城,base_summer,10.065,2514.04,0.277,scenic_shuttle -> transfer -> air -> transfer -> self_drive
+P037,和田博物馆,P012,苏公塔,base_summer,9.541,2498.29,0.267,scenic_shuttle -> transfer -> air -> transfer -> self_drive
+P037,和田博物馆,P013,吐峪沟麻扎村,base_summer,9.911,2526.22,0.284,scenic_shuttle -> transfer -> air -> transfer -> self_drive
+P037,和田博物馆,P014,霍城薰衣草花田,base_summer,13.45,3544.75,0.34,scenic_shuttle -> transfer -> air -> air -> transfer -> self_drive -> scenic_shuttle
+P037,和田博物馆,P015,昭苏草原,base_summer,17.95,3619.0,0.34,scenic_shuttle -> transfer -> air -> air -> transfer -> self_drive -> scenic_shuttle
+P037,和田博物馆,P016,夏塔古道,base_summer,16.45,3684.0,0.34,scenic_shuttle -> transfer -> air -> air -> transfer -> self_drive -> scenic_shuttle
+P037,和田博物馆,P017,果子沟大桥,base_summer,13.182,2717.49,0.462,scenic_shuttle -> transfer -> air -> transfer -> self_drive -> scenic_shuttle -> scenic_shuttle
+P037,和田博物馆,P018,喀纳斯湖,base_summer,13.532,2715.68,0.461,scenic_shuttle -> transfer -> air -> transfer -> self_drive -> scenic_shuttle -> scenic_shuttle
+P037,和田博物馆,P019,禾木村,base_summer,13.532,2715.68,0.461,scenic_shuttle -> transfer -> air -> transfer -> self_drive -> scenic_shuttle -> scenic_shuttle
+P037,和田博物馆,P020,白哈巴村,base_summer,14.39,2732.91,0.511,scenic_shuttle -> transfer -> air -> transfer -> self_drive -> scenic_shuttle -> scenic_shuttle -> self_drive
+P037,和田博物馆,P021,可可托海,base_summer,13.013,2675.14,0.375,scenic_shuttle -> transfer -> air -> transfer -> self_drive
+P037,和田博物馆,P022,五彩滩,base_summer,13.232,2685.68,0.381,scenic_shuttle -> transfer -> air -> transfer -> self_drive
+P037,和田博物馆,P023,世界魔鬼城,base_summer,11.555,2623.9,0.344,scenic_shuttle -> transfer -> air -> transfer -> self_drive
+P037,和田博物馆,P024,喀什古城,base_summer,5.74,273.45,0.206,self_drive
+P037,和田博物馆,P025,艾提尕尔清真寺,base_summer,5.765,273.66,0.206,self_drive
+P037,和田博物馆,P026,香妃园,base_summer,5.708,273.94,0.206,self_drive
+P037,和田博物馆,P027,帕米尔高原白沙湖,base_summer,8.366,369.33,0.304,self_drive
+P037,和田博物馆,P028,石头城遗址,base_summer,9.818,424.16,0.33,self_drive
+P037,和田博物馆,P029,天山神秘大峡谷,base_summer,9.41,395.51,0.32,self_drive
+P037,和田博物馆,P030,库车王府,base_summer,8.41,357.96,0.297,self_drive
+P037,和田博物馆,P031,克孜尔石窟,base_summer,9.178,396.09,0.32,self_drive
+P037,和田博物馆,P032,博斯腾湖,base_summer,11.583,4590.0,0.26,scenic_shuttle -> transfer -> air -> air -> transfer -> scenic_shuttle
+P037,和田博物馆,P033,巴音布鲁克草原,base_summer,12.648,499.48,0.33,self_drive
+P037,和田博物馆,P034,罗布人村寨,base_summer,11.522,528.18,0.33,self_drive
+P037,和田博物馆,P035,江布拉克草原,base_summer,9.742,2513.68,0.277,scenic_shuttle -> transfer -> air -> transfer -> self_drive
+P037,和田博物馆,P036,北庭故城遗址,base_summer,9.047,2480.29,0.257,scenic_shuttle -> transfer -> air -> transfer -> self_drive
+P037,和田博物馆,P037,和田博物馆,base_summer,0.0,0.0,0.0,
+P037,和田博物馆,P038,尼雅遗址,base_summer,3.8,90.5,0.16,scenic_shuttle -> self_drive -> scenic_shuttle
+P037,和田博物馆,P039,千里葡萄长廊,base_summer,0.396,6.93,0.044,self_drive
+P037,和田博物馆,P040,奥依塔克冰川,base_summer,6.777,321.5,0.235,self_drive
+P038,尼雅遗址,P001,天山天池,base_summer,11.217,2484.52,0.302,scenic_shuttle -> self_drive -> transfer -> air -> transfer -> self_drive
+P038,尼雅遗址,P002,达坂城古镇,base_summer,11.583,2502.93,0.314,scenic_shuttle -> self_drive -> transfer -> air -> transfer -> self_drive
+P038,尼雅遗址,P003,火焰山,base_summer,12.976,2569.84,0.354,scenic_shuttle -> self_drive -> transfer -> air -> transfer -> self_drive
+P038,尼雅遗址,P004,葡萄沟,base_summer,12.649,2557.74,0.347,scenic_shuttle -> self_drive -> transfer -> air -> transfer -> self_drive
+P038,尼雅遗址,P005,坎儿井民俗园,base_summer,12.667,2555.73,0.346,scenic_shuttle -> self_drive -> transfer -> air -> transfer -> self_drive
+P038,尼雅遗址,P006,交河故城,base_summer,12.774,2558.82,0.347,scenic_shuttle -> self_drive -> transfer -> air -> transfer -> self_drive
+P038,尼雅遗址,P007,楼兰古城,base_summer,9.2,1047.74,0.281,scenic_shuttle -> self_drive -> transfer -> rail -> transfer -> scenic_shuttle -> self_drive
+P038,尼雅遗址,P008,赛里木湖,base_summer,16.082,2747.99,0.462,scenic_shuttle -> self_drive -> transfer -> air -> transfer -> self_drive
+P038,尼雅遗址,P009,那拉提草原,base_summer,14.722,489.73,0.33,self_drive
+P038,尼雅遗址,P010,喀拉峻大草原,base_summer,18.603,637.34,0.33,self_drive
+P038,尼雅遗址,P011,高昌故城,base_summer,13.265,2574.54,0.357,scenic_shuttle -> self_drive -> transfer -> air -> transfer -> self_drive
+P038,尼雅遗址,P012,苏公塔,base_summer,12.741,2558.79,0.347,scenic_shuttle -> self_drive -> transfer -> air -> transfer -> self_drive
+P038,尼雅遗址,P013,吐峪沟麻扎村,base_summer,13.111,2586.72,0.364,scenic_shuttle -> self_drive -> transfer -> air -> transfer -> self_drive
+P038,尼雅遗址,P014,霍城薰衣草花田,base_summer,16.65,3605.25,0.42,scenic_shuttle -> self_drive -> transfer -> air -> air -> transfer -> self_drive -> scenic_shuttle
+P038,尼雅遗址,P015,昭苏草原,base_summer,20.569,658.51,0.33,self_drive
+P038,尼雅遗址,P016,夏塔古道,base_summer,19.65,3744.5,0.42,scenic_shuttle -> self_drive -> transfer -> air -> air -> transfer -> self_drive -> scenic_shuttle
+P038,尼雅遗址,P017,果子沟大桥,base_summer,16.382,2777.99,0.542,scenic_shuttle -> self_drive -> transfer -> air -> transfer -> self_drive -> scenic_shuttle -> scenic_shuttle
+P038,尼雅遗址,P018,喀纳斯湖,base_summer,16.732,2776.18,0.541,scenic_shuttle -> self_drive -> transfer -> air -> transfer -> self_drive -> scenic_shuttle -> scenic_shuttle
+P038,尼雅遗址,P019,禾木村,base_summer,16.732,2776.18,0.541,scenic_shuttle -> self_drive -> transfer -> air -> transfer -> self_drive -> scenic_shuttle -> scenic_shuttle
+P038,尼雅遗址,P020,白哈巴村,base_summer,17.59,2793.41,0.591,scenic_shuttle -> self_drive -> transfer -> air -> transfer -> self_drive -> scenic_shuttle -> scenic_shuttle -> self_drive
+P038,尼雅遗址,P021,可可托海,base_summer,16.213,2735.64,0.455,scenic_shuttle -> self_drive -> transfer -> air -> transfer -> self_drive
+P038,尼雅遗址,P022,五彩滩,base_summer,16.432,2746.18,0.461,scenic_shuttle -> self_drive -> transfer -> air -> transfer -> self_drive
+P038,尼雅遗址,P023,世界魔鬼城,base_summer,14.755,2684.4,0.424,scenic_shuttle -> self_drive -> transfer -> air -> transfer -> self_drive
+P038,尼雅遗址,P024,喀什古城,base_summer,9.067,1046.58,0.24,scenic_shuttle -> self_drive -> transfer -> rail -> transfer -> scenic_shuttle
+P038,尼雅遗址,P025,艾提尕尔清真寺,base_summer,9.067,1046.58,0.24,scenic_shuttle -> self_drive -> transfer -> rail -> transfer -> scenic_shuttle
+P038,尼雅遗址,P026,香妃园,base_summer,9.067,1046.58,0.24,scenic_shuttle -> self_drive -> transfer -> rail -> transfer -> scenic_shuttle
+P038,尼雅遗址,P027,帕米尔高原白沙湖,base_summer,12.128,457.72,0.463,scenic_shuttle -> self_drive -> scenic_shuttle -> self_drive
+P038,尼雅遗址,P028,石头城遗址,base_summer,13.567,1206.08,0.32,scenic_shuttle -> self_drive -> transfer -> rail -> transfer -> self_drive -> scenic_shuttle
+P038,尼雅遗址,P029,天山神秘大峡谷,base_summer,9.553,336.22,0.284,self_drive
+P038,尼雅遗址,P030,库车王府,base_summer,8.371,300.46,0.262,self_drive
+P038,尼雅遗址,P031,克孜尔石窟,base_summer,9.631,335.49,0.283,self_drive
+P038,尼雅遗址,P032,博斯腾湖,base_summer,10.429,411.8,0.33,self_drive
+P038,尼雅遗址,P033,巴音布鲁克草原,base_summer,12.821,473.46,0.692,self_drive -> scenic_shuttle -> self_drive -> scenic_shuttle
+P038,尼雅遗址,P034,罗布人村寨,base_summer,9.146,370.13,0.304,self_drive
+P038,尼雅遗址,P035,江布拉克草原,base_summer,12.942,2574.18,0.357,scenic_shuttle -> self_drive -> transfer -> air -> transfer -> self_drive
+P038,尼雅遗址,P036,北庭故城遗址,base_summer,12.247,2540.79,0.337,scenic_shuttle -> self_drive -> transfer -> air -> transfer -> self_drive
+P038,尼雅遗址,P037,和田博物馆,base_summer,3.8,90.5,0.16,scenic_shuttle -> self_drive -> scenic_shuttle
+P038,尼雅遗址,P038,尼雅遗址,base_summer,0.0,0.0,0.0,
+P038,尼雅遗址,P039,千里葡萄长廊,base_summer,3.8,90.5,0.16,scenic_shuttle -> self_drive -> scenic_shuttle
+P038,尼雅遗址,P040,奥依塔克冰川,base_summer,10.541,409.89,0.394,scenic_shuttle -> self_drive -> scenic_shuttle -> self_drive
+P039,千里葡萄长廊,P001,天山天池,base_summer,8.017,2424.02,0.222,scenic_shuttle -> transfer -> air -> transfer -> self_drive
+P039,千里葡萄长廊,P002,达坂城古镇,base_summer,8.383,2442.43,0.234,scenic_shuttle -> transfer -> air -> transfer -> self_drive
+P039,千里葡萄长廊,P003,火焰山,base_summer,9.776,2509.34,0.274,scenic_shuttle -> transfer -> air -> transfer -> self_drive
+P039,千里葡萄长廊,P004,葡萄沟,base_summer,9.449,2497.24,0.267,scenic_shuttle -> transfer -> air -> transfer -> self_drive
+P039,千里葡萄长廊,P005,坎儿井民俗园,base_summer,9.467,2495.23,0.266,scenic_shuttle -> transfer -> air -> transfer -> self_drive
+P039,千里葡萄长廊,P006,交河故城,base_summer,9.574,2498.32,0.267,scenic_shuttle -> transfer -> air -> transfer -> self_drive
+P039,千里葡萄长廊,P007,楼兰古城,base_summer,5.565,270.41,0.204,self_drive
+P039,千里葡萄长廊,P008,赛里木湖,base_summer,12.882,2687.49,0.382,scenic_shuttle -> transfer -> air -> transfer -> self_drive
+P039,千里葡萄长廊,P009,那拉提草原,base_summer,14.618,2639.66,0.353,scenic_shuttle -> transfer -> air -> transfer -> self_drive
+P039,千里葡萄长廊,P010,喀拉峻大草原,base_summer,15.45,3583.25,0.34,scenic_shuttle -> transfer -> air -> air -> transfer -> self_drive -> scenic_shuttle
+P039,千里葡萄长廊,P011,高昌故城,base_summer,10.065,2514.04,0.277,scenic_shuttle -> transfer -> air -> transfer -> self_drive
+P039,千里葡萄长廊,P012,苏公塔,base_summer,9.541,2498.29,0.267,scenic_shuttle -> transfer -> air -> transfer -> self_drive
+P039,千里葡萄长廊,P013,吐峪沟麻扎村,base_summer,9.911,2526.22,0.284,scenic_shuttle -> transfer -> air -> transfer -> self_drive
+P039,千里葡萄长廊,P014,霍城薰衣草花田,base_summer,13.45,3544.75,0.34,scenic_shuttle -> transfer -> air -> air -> transfer -> self_drive -> scenic_shuttle
+P039,千里葡萄长廊,P015,昭苏草原,base_summer,17.95,3619.0,0.34,scenic_shuttle -> transfer -> air -> air -> transfer -> self_drive -> scenic_shuttle
+P039,千里葡萄长廊,P016,夏塔古道,base_summer,16.45,3684.0,0.34,scenic_shuttle -> transfer -> air -> air -> transfer -> self_drive -> scenic_shuttle
+P039,千里葡萄长廊,P017,果子沟大桥,base_summer,13.182,2717.49,0.462,scenic_shuttle -> transfer -> air -> transfer -> self_drive -> scenic_shuttle -> scenic_shuttle
+P039,千里葡萄长廊,P018,喀纳斯湖,base_summer,13.532,2715.68,0.461,scenic_shuttle -> transfer -> air -> transfer -> self_drive -> scenic_shuttle -> scenic_shuttle
+P039,千里葡萄长廊,P019,禾木村,base_summer,13.532,2715.68,0.461,scenic_shuttle -> transfer -> air -> transfer -> self_drive -> scenic_shuttle -> scenic_shuttle
+P039,千里葡萄长廊,P020,白哈巴村,base_summer,14.39,2732.91,0.511,scenic_shuttle -> transfer -> air -> transfer -> self_drive -> scenic_shuttle -> scenic_shuttle -> self_drive
+P039,千里葡萄长廊,P021,可可托海,base_summer,13.013,2675.14,0.375,scenic_shuttle -> transfer -> air -> transfer -> self_drive
+P039,千里葡萄长廊,P022,五彩滩,base_summer,13.232,2685.68,0.381,scenic_shuttle -> transfer -> air -> transfer -> self_drive
+P039,千里葡萄长廊,P023,世界魔鬼城,base_summer,11.555,2623.9,0.344,scenic_shuttle -> transfer -> air -> transfer -> self_drive
+P039,千里葡萄长廊,P024,喀什古城,base_summer,5.7,271.34,0.204,self_drive
+P039,千里葡萄长廊,P025,艾提尕尔清真寺,base_summer,5.724,271.55,0.205,self_drive
+P039,千里葡萄长廊,P026,香妃园,base_summer,5.664,271.83,0.205,self_drive
+P039,千里葡萄长廊,P027,帕米尔高原白沙湖,base_summer,8.328,367.22,0.303,self_drive
+P039,千里葡萄长廊,P028,石头城遗址,base_summer,9.793,422.05,0.33,self_drive
+P039,千里葡萄长廊,P029,天山神秘大峡谷,base_summer,9.464,396.28,0.32,self_drive
+P039,千里葡萄长廊,P030,库车王府,base_summer,8.462,358.73,0.297,self_drive
+P039,千里葡萄长廊,P031,克孜尔石窟,base_summer,9.222,396.86,0.321,self_drive
+P039,千里葡萄长廊,P032,博斯腾湖,base_summer,11.583,4590.0,0.26,scenic_shuttle -> transfer -> air -> air -> transfer -> scenic_shuttle
+P039,千里葡萄长廊,P033,巴音布鲁克草原,base_summer,12.722,500.25,0.33,self_drive
+P039,千里葡萄长廊,P034,罗布人村寨,base_summer,11.781,536.72,0.33,self_drive
+P039,千里葡萄长廊,P035,江布拉克草原,base_summer,9.742,2513.68,0.277,scenic_shuttle -> transfer -> air -> transfer -> self_drive
+P039,千里葡萄长廊,P036,北庭故城遗址,base_summer,9.047,2480.29,0.257,scenic_shuttle -> transfer -> air -> transfer -> self_drive
+P039,千里葡萄长廊,P037,和田博物馆,base_summer,0.449,7.63,0.045,self_drive
+P039,千里葡萄长廊,P038,尼雅遗址,base_summer,3.8,90.5,0.16,scenic_shuttle -> self_drive -> scenic_shuttle
+P039,千里葡萄长廊,P039,千里葡萄长廊,base_summer,0.0,0.0,0.0,
+P039,千里葡萄长廊,P040,奥依塔克冰川,base_summer,6.741,319.39,0.234,self_drive
+P040,奥依塔克冰川,P001,天山天池,base_summer,9.717,2612.02,0.222,scenic_shuttle -> transfer -> air -> transfer -> self_drive
+P040,奥依塔克冰川,P002,达坂城古镇,base_summer,10.083,2630.43,0.234,scenic_shuttle -> transfer -> air -> transfer -> self_drive
+P040,奥依塔克冰川,P003,火焰山,base_summer,11.476,2697.34,0.274,scenic_shuttle -> transfer -> air -> transfer -> self_drive
+P040,奥依塔克冰川,P004,葡萄沟,base_summer,11.149,2685.24,0.267,scenic_shuttle -> transfer -> air -> transfer -> self_drive
+P040,奥依塔克冰川,P005,坎儿井民俗园,base_summer,11.167,2683.23,0.266,scenic_shuttle -> transfer -> air -> transfer -> self_drive
+P040,奥依塔克冰川,P006,交河故城,base_summer,11.274,2686.32,0.267,scenic_shuttle -> transfer -> air -> transfer -> self_drive
+P040,奥依塔克冰川,P007,楼兰古城,base_summer,2.108,52.6,0.072,self_drive
+P040,奥依塔克冰川,P008,赛里木湖,base_summer,14.582,2875.49,0.382,scenic_shuttle -> transfer -> air -> transfer -> self_drive
+P040,奥依塔克冰川,P009,那拉提草原,base_summer,14.852,624.0,0.33,self_drive
+P040,奥依塔克冰川,P010,喀拉峻大草原,base_summer,17.15,3771.25,0.34,scenic_shuttle -> transfer -> air -> air -> transfer -> self_drive -> scenic_shuttle
+P040,奥依塔克冰川,P011,高昌故城,base_summer,11.765,2702.04,0.277,scenic_shuttle -> transfer -> air -> transfer -> self_drive
+P040,奥依塔克冰川,P012,苏公塔,base_summer,11.241,2686.29,0.267,scenic_shuttle -> transfer -> air -> transfer -> self_drive
+P040,奥依塔克冰川,P013,吐峪沟麻扎村,base_summer,11.611,2714.22,0.284,scenic_shuttle -> transfer -> air -> transfer -> self_drive
+P040,奥依塔克冰川,P014,霍城薰衣草花田,base_summer,15.15,3732.75,0.34,scenic_shuttle -> transfer -> air -> air -> transfer -> self_drive -> scenic_shuttle
+P040,奥依塔克冰川,P015,昭苏草原,base_summer,19.65,3807.0,0.34,scenic_shuttle -> transfer -> air -> air -> transfer -> self_drive -> scenic_shuttle
+P040,奥依塔克冰川,P016,夏塔古道,base_summer,18.15,3872.0,0.34,scenic_shuttle -> transfer -> air -> air -> transfer -> self_drive -> scenic_shuttle
+P040,奥依塔克冰川,P017,果子沟大桥,base_summer,14.882,2905.49,0.462,scenic_shuttle -> transfer -> air -> transfer -> self_drive -> scenic_shuttle -> scenic_shuttle
+P040,奥依塔克冰川,P018,喀纳斯湖,base_summer,15.232,2903.68,0.461,scenic_shuttle -> transfer -> air -> transfer -> self_drive -> scenic_shuttle -> scenic_shuttle
+P040,奥依塔克冰川,P019,禾木村,base_summer,15.232,2903.68,0.461,scenic_shuttle -> transfer -> air -> transfer -> self_drive -> scenic_shuttle -> scenic_shuttle
+P040,奥依塔克冰川,P020,白哈巴村,base_summer,16.09,2920.91,0.511,scenic_shuttle -> transfer -> air -> transfer -> self_drive -> scenic_shuttle -> scenic_shuttle -> self_drive
+P040,奥依塔克冰川,P021,可可托海,base_summer,14.713,2863.14,0.375,scenic_shuttle -> transfer -> air -> transfer -> self_drive
+P040,奥依塔克冰川,P022,五彩滩,base_summer,14.932,2873.68,0.381,scenic_shuttle -> transfer -> air -> transfer -> self_drive
+P040,奥依塔克冰川,P023,世界魔鬼城,base_summer,13.255,2811.9,0.344,scenic_shuttle -> transfer -> air -> transfer -> self_drive
+P040,奥依塔克冰川,P024,喀什古城,base_summer,2.143,52.76,0.072,self_drive
+P040,奥依塔克冰川,P025,艾提尕尔清真寺,base_summer,2.095,52.44,0.072,self_drive
+P040,奥依塔克冰川,P026,香妃园,base_summer,2.291,54.37,0.073,self_drive
+P040,奥依塔克冰川,P027,帕米尔高原白沙湖,base_summer,2.358,66.09,0.08,self_drive
+P040,奥依塔克冰川,P028,石头城遗址,base_summer,3.867,120.92,0.113,self_drive
+P040,奥依塔克冰川,P029,天山神秘大峡谷,base_summer,9.79,470.5,0.33,self_drive
+P040,奥依塔克冰川,P030,库车王府,base_summer,8.607,443.29,0.33,self_drive
+P040,奥依塔克冰川,P031,克孜尔石窟,base_summer,9.01,437.63,0.33,self_drive
+P040,奥依塔克冰川,P032,博斯腾湖,base_summer,13.057,600.29,0.49,self_drive -> scenic_shuttle -> transfer -> rail -> transfer -> scenic_shuttle
+P040,奥依塔克冰川,P033,巴音布鲁克草原,base_summer,12.961,574.47,0.33,self_drive
+P040,奥依塔克冰川,P034,罗布人村寨,base_summer,13.631,654.32,0.33,self_drive
+P040,奥依塔克冰川,P035,江布拉克草原,base_summer,11.442,2701.68,0.277,scenic_shuttle -> transfer -> air -> transfer -> self_drive
+P040,奥依塔克冰川,P036,北庭故城遗址,base_summer,10.747,2668.29,0.257,scenic_shuttle -> transfer -> air -> transfer -> self_drive
+P040,奥依塔克冰川,P037,和田博物馆,base_summer,6.738,316.54,0.232,self_drive
+P040,奥依塔克冰川,P038,尼雅遗址,base_summer,10.538,407.04,0.392,self_drive -> scenic_shuttle -> self_drive -> scenic_shuttle
+P040,奥依塔克冰川,P039,千里葡萄长廊,base_summer,6.841,318.87,0.233,self_drive
+P040,奥依塔克冰川,P040,奥依塔克冰川,base_summer,0.0,0.0,0.0,
