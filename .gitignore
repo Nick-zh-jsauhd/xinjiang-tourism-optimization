@@ -42,7 +42,7 @@ desktop.ini
 *.7z
 *.rar
 
-# Local full-project artifacts kept on disk but not published in the Q1-only repo
+# Local full-project artifacts kept on disk but not published unless copied into a curated question package
 /adaptive_strategy_outputs/
 /advanced_model_outputs/
 /amap_selfdrive_model_outputs/

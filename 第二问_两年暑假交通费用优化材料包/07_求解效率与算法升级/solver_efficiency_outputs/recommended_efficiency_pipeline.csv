@@ -1,0 +1,5 @@
+﻿phase,method,time_budget,target_output,why_it_is_fast,claim_allowed
+A,OR-Tools Routing,10-120 秒,两年路线、费用、天数、可行性,专门面向 VRP/TSP 的局部搜索与 Guided Local Search,高质量可行解，不声明全局最优
+B,Gurobi/CPLEX branch-and-cut,10-60 分钟,最优解或 gap <= 1%-3% 的证明,lazy subtour cuts 在分支树中动态加入，支持 MIP start,可证明最优或可证明近优
+C,日程-酒店-容量后验仿真,1-5 分钟/场景,舒适度、风险、预约失败率、敏感性,不把所有现实扰动塞进主 MILP，而是做场景压力测试,路线鲁棒性与场景适配性
+D,联合优化小规模精确校验,30-120 分钟,10-20 点子问题的精确对照,用子集验证模型结构，不在全 38 点上硬求所有现实约束,模型结构有效性/启发式误差校准

@@ -1,0 +1,8 @@
+{
+  "query_date": "2026-06-20",
+  "core_od_count": 8,
+  "raw_rows": 132,
+  "model_option_rows": 24,
+  "raw_path": "enhanced_data\\rail_12306_raw_core_od.csv",
+  "options_path": "enhanced_data\\rail_12306_model_options.csv"
+}

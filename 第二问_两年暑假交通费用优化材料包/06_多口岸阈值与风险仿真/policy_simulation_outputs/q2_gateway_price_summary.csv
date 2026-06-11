@@ -1,0 +1,4 @@
+﻿scenario_id,rooted_cost_yuan_for_two,open_gateway_base_cost_yuan_for_two,break_even_premium_yuan_for_two,premium_mean,premium_p75,premium_p95,prob_open_gateway_cheaper,expected_savings_if_choose_open_yuan_for_two,p10_savings_yuan_for_two,recommended_policy
+optimistic_multicity,4340.68,2992.69,1347.99,646.03,870.43,1209.73,0.9879,701.96,264.94,开放式多口岸作为主方案
+balanced_multicity,4340.68,2992.69,1347.99,1104.66,1433.63,1971.34,0.7001,243.33,-440.46,正文保留乌鲁木齐起讫，开放式作为条件方案
+peak_summer_multicity,4340.68,2992.69,1347.99,1762.26,2259.63,2991.78,0.3038,-414.27,-1394.72,暑期高峰下优先保守采用乌鲁木齐起讫

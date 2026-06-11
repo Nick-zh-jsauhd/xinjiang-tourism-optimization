@@ -1,0 +1,21 @@
+{
+  "problem1": {
+    "spots_count": 38.0,
+    "travel_hours": 107.41,
+    "service_hours": 130.25,
+    "total_hours": 237.66,
+    "estimated_days": 30.0,
+    "nights": 29.0,
+    "distance_km": 7268.6,
+    "ticket_yuan_for_two": 4892.0,
+    "selfdrive_cost_yuan_for_two": 3997.8,
+    "hotel_proxy_yuan_room": 7540.0,
+    "external_flight_proxy_yuan_for_two": 6000.0,
+    "total_proxy_yuan_excluding_meals": 22429.8
+  },
+  "problem2_routes": 3,
+  "problem3_groups": 3,
+  "problem4_candidate_routes": 6,
+  "report": "outputs\\新疆旅游高德驾车OD重实验报告.md",
+  "workbook": "outputs\\新疆旅游高德驾车OD重实验结果.xlsx"
+}

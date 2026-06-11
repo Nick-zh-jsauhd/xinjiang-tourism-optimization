@@ -1,0 +1,32 @@
+{
+  "outputs": [
+    "graph_model_outputs\\hub_shortest_paths.csv",
+    "graph_model_outputs\\problem1_route_detail.csv",
+    "graph_model_outputs\\problem1_summary.csv",
+    "graph_model_outputs\\problem2_route_detail.csv",
+    "graph_model_outputs\\problem2_summary.csv",
+    "graph_model_outputs\\problem3_route_detail.csv",
+    "graph_model_outputs\\problem3_summary.csv",
+    "graph_model_outputs\\problem4_candidate_route_detail.csv",
+    "graph_model_outputs\\problem4_candidate_routes.csv",
+    "graph_model_outputs\\spot_metric_closure.csv"
+  ],
+  "report": "outputs\\新疆旅游图论深化建模与求解报告.md",
+  "problem1": {
+    "spots_count": 34.0,
+    "travel_hours": 99.8,
+    "service_hours": 132.25,
+    "total_hours": 232.05,
+    "estimated_days": 30.0,
+    "nights": 29.0,
+    "distance_km": 7440.0,
+    "ticket_yuan_for_two": 3952.0,
+    "transport_proxy_yuan_for_two": 3720.0,
+    "hotel_proxy_yuan_room": 6090.0,
+    "external_flight_proxy_yuan_for_two": 6000.0,
+    "total_proxy_yuan_excluding_meals": 19762.0
+  },
+  "problem2_routes": 3,
+  "problem3_groups": 3,
+  "problem4_candidate_routes": 6
+}

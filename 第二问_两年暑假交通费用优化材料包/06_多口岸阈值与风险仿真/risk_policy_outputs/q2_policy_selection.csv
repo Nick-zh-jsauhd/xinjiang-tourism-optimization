@@ -1,0 +1,13 @@
+﻿question,profile_id,profile_name,policy_id,policy_name,expected_loss_or_cost,tail_loss_cvar75,risk_adjusted_objective,weighted_open_gateway_probability,is_selected
+Q2,balanced,均衡稳健型,quote_then_choose,双方案实时比价后择优,4512.61,4852.65,6696.3,0.5972,True
+Q2,balanced,均衡稳健型,open_gateway,开放式多口岸方案,4532.49,5250.83,6895.36,1.0,False
+Q2,balanced,均衡稳健型,rooted_urumqi,乌鲁木齐起讫保守方案,4684.62,4958.62,6916.0,0.0,False
+Q2,conservative,保守可靠型,quote_then_choose,双方案实时比价后择优,4583.26,4934.05,8777.2,0.5691,True
+Q2,conservative,保守可靠型,rooted_urumqi,乌鲁木齐起讫保守方案,4768.63,5101.91,9105.25,0.0,False
+Q2,conservative,保守可靠型,open_gateway,开放式多口岸方案,4664.11,5487.18,9328.21,1.0,False
+Q2,extreme_safe,极端安全型,quote_then_choose,双方案实时比价后择优,4724.03,5171.41,11705.44,0.4963,True
+Q2,extreme_safe,极端安全型,rooted_urumqi,乌鲁木齐起讫保守方案,4833.61,5136.07,11767.31,0.0,False
+Q2,extreme_safe,极端安全型,open_gateway,开放式多口岸方案,5017.67,6098.58,13250.76,1.0,False
+Q2,optimistic,乐观效率型,quote_then_choose,双方案实时比价后择优,4450.98,4819.33,5173.88,0.6323,True
+Q2,optimistic,乐观效率型,open_gateway,开放式多口岸方案,4437.0,5068.28,5197.25,1.0,False
+Q2,optimistic,乐观效率型,rooted_urumqi,乌鲁木齐起讫保守方案,4612.12,4846.99,5339.17,0.0,False

@@ -1,0 +1,11 @@
+{
+  "raw_od": "enhanced_data\\amap_driving_od_matrix.csv",
+  "clean_od": "enhanced_data\\amap_driving_od_matrix_clean.csv",
+  "merged_od": "enhanced_data\\enhanced_od_matrix_with_amap.csv",
+  "summary": "enhanced_data\\amap_od_integration_summary.csv",
+  "rows": {
+    "raw_od": 1600,
+    "merged_od": 1600,
+    "coordinate_rows": 40
+  }
+}
