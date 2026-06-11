@@ -1,0 +1,11 @@
+{
+  "ordinary_spots": 38,
+  "special_spots": 2,
+  "multimodal_labels": 3038,
+  "gateway_labels": 800,
+  "candidate_plans": 87,
+  "selected_plans": 6,
+  "pareto_front_size": 9,
+  "report": "reports\\新疆旅游第二问Q2_V3两年交通费用优化报告.md",
+  "workbook": "reports\\新疆旅游第二问Q2_V3两年交通费用优化结果.xlsx"
+}

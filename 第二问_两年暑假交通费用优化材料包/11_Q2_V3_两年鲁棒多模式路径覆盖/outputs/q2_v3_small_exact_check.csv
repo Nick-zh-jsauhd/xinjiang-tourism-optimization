@@ -1,0 +1,10 @@
+﻿check_id,plan_id,selected_role,year,node_count,gateway_policy,heuristic_cost,exact_held_karp_cost,relative_gap,status,model_scope,reason
+Q2V3_052_ROOTED_URUMQI_Y1_prefix15,Q2V3_052_ROOTED_URUMQI,ROOTED_URUMQI_MAIN,1.0,15,rooted_urumqi,1008.44,1008.44,0.0,completed_fixed_subset_order_check,,
+Q2V3_052_ROOTED_URUMQI_Y2_prefix15,Q2V3_052_ROOTED_URUMQI,ROOTED_URUMQI_MAIN,2.0,15,rooted_urumqi,2080.11,1963.12,0.0596,completed_fixed_subset_order_check,,
+Q2V3_010_OPEN_GATEWAY_Y1_prefix15,Q2V3_010_OPEN_GATEWAY,OPEN_GATEWAY_MIN_INTRA_COST,1.0,15,open_gateway,1477.28,1400.6,0.0547,completed_fixed_subset_order_check,,
+Q2V3_010_OPEN_GATEWAY_Y2_prefix8,Q2V3_010_OPEN_GATEWAY,OPEN_GATEWAY_MIN_INTRA_COST,2.0,8,open_gateway,542.02,538.14,0.0072,completed_fixed_subset_order_check,,
+Q2V3_010_OPEN_GATEWAY_Y1_prefix15,Q2V3_010_OPEN_GATEWAY,OPEN_GATEWAY_THRESHOLD_POLICY,1.0,15,open_gateway,1477.28,1400.6,0.0547,completed_fixed_subset_order_check,,
+Q2V3_010_OPEN_GATEWAY_Y2_prefix8,Q2V3_010_OPEN_GATEWAY,OPEN_GATEWAY_THRESHOLD_POLICY,2.0,8,open_gateway,542.02,538.14,0.0072,completed_fixed_subset_order_check,,
+Q2V3_071_OPEN_GATEWAY_Y1_prefix15,Q2V3_071_OPEN_GATEWAY,ROBUST_TWO_YEAR_MAIN,1.0,15,open_gateway,875.02,875.02,0.0,completed_fixed_subset_order_check,,
+Q2V3_071_OPEN_GATEWAY_Y2_prefix15,Q2V3_071_OPEN_GATEWAY,ROBUST_TWO_YEAR_MAIN,2.0,15,open_gateway,1529.75,1520.22,0.0063,completed_fixed_subset_order_check,,
+Q2V3_20_NODE_TWO_PATH_MIP,,,,20,,,,,not_run_no_mip_solver,two-path coverage MILP with subtour elimination,当前环境未配置OR-Tools/Gurobi/CPLEX；保留接口，后续可接入MIP start与lazy subtour cuts

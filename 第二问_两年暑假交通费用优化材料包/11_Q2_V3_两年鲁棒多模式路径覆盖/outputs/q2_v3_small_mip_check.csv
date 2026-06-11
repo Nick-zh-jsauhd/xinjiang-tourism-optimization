@@ -1,0 +1,2 @@
+﻿check_id,node_count,status,model_scope,reason
+Q2V3_20_NODE_TWO_PATH_MIP,20,not_run_no_mip_solver,two-path coverage MILP with subtour elimination,当前环境未配置OR-Tools/Gurobi/CPLEX；保留接口，后续可接入MIP start与lazy subtour cuts

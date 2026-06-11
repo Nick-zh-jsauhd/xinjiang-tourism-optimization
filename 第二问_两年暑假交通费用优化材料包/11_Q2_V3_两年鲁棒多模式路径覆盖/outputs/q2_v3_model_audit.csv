@@ -1,0 +1,7 @@
+﻿audit_id,module,claim,status,evidence_file,remaining_limitation,next_upgrade
+Q2V3-A1,problem_definition,第二问主目标为新疆境内交通费用最小化，覆盖是约束不是收益目标,implemented,reports/新疆旅游第二问Q2_V3两年交通费用优化报告.md,当前仍是matheuristic高质量可行解，不声称完整全局最优,接入Gurobi/CPLEX lazy DFJ或OR-Tools RoutingModel做更强求解
+Q2V3-A2,ordinary_access,普通游客主模型排除楼兰古城、尼雅遗址等特殊审批点,implemented,outputs/q2_v3_candidate_plans.csv,审批扩展仅作为可选方案，不作为普通游客主线,为审批扩展增加审批成功率与向导/越野车成本
+Q2V3-A3,multimodal_labels,生成直接道路、增强OD公共交通与铁路/航班种子模板标签并做非支配筛选,implemented_template_labels,outputs/q2_v3_multimodal_labels.csv,不是对全图每对OD运行无限制多标签最短路,接入班次级铁路/航班票价与真实余票
+Q2V3-A4,gateway_policy,同时输出固定乌鲁木齐起讫与开放式多口岸两种口径,implemented,outputs/q2_v3_gateway_thresholds.csv,开放式多口岸外部大交通价格仍以情景仿真表达,接入实时机票/铁路票价后把外部差价变成实时报价策略
+Q2V3-A5,route_specific_simulation,对每条候选两年方案进行route-specific Monte Carlo仿真,implemented,outputs/q2_v3_simulation_summary.csv,扰动分布为校准仿真，不是真实实时天气/库存,接入天气、道路封闭、票价和酒店房态API
+Q2V3-A6,exact_check,增加小规模Held-Karp排序精确校验，20节点MIP接口保留,implemented_scope_limited,outputs/q2_v3_small_exact_check.csv,仅校验固定子集排序，不证明完整38点两路径全局最优,安装OR-Tools/Gurobi后运行20节点两路径MILP

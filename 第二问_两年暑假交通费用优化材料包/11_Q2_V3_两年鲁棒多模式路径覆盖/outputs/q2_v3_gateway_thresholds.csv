@@ -1,0 +1,2 @@
+﻿comparison,rooted_plan_id,open_gateway_plan_id,rooted_cost_yuan_for_two,open_gateway_cost_yuan_for_two,break_even_external_premium_yuan_for_two,decision_rule
+open_gateway_vs_rooted_urumqi,Q2V3_052_ROOTED_URUMQI,Q2V3_010_OPEN_GATEWAY,3709.17,2443.02,1266.15,若两人多口岸外部大交通额外差价低于该阈值，则开放式多口岸总费用更优

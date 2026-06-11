@@ -1,0 +1,29 @@
+coverage_set: ordinary_tourist
+years:
+  - 1
+  - 2
+year_day_limit: 30
+daily_effective_hours: 8.0
+objective_primary: intra_xinjiang_transport_cost
+gateway_modes:
+  - rooted_urumqi
+  - open_gateway
+scenario_samples: 500
+success_threshold: 0.8
+cost_gap_for_robust_choice: 0.08
+max_year_day_difference: 8
+transport_label_limit_per_od: 5
+min_spots_per_year: 14
+max_spots_per_year: 24
+random_seed: 20260611
+gateway_candidates:
+  - 乌鲁木齐市
+  - 吐鲁番市
+  - 伊宁市(伊犁)
+  - 喀什市
+  - 阿勒泰市
+  - 库尔勒市
+  - 库车市
+  - 和田市
+  - 那拉提镇
+  - 赛里木湖
