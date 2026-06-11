@@ -16,6 +16,8 @@ transport_label_limit_per_od: 5
 min_spots_per_year: 14
 max_spots_per_year: 24
 random_seed: 20260611
+scenic_shuttle_floor_multiplier: 1.0
+cost_calibration_version: scenic_floor_base_v1 + road_mode_normalization_q1v3
 gateway_candidates:
   - 乌鲁木齐市
   - 吐鲁番市

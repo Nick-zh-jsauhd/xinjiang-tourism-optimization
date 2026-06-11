@@ -1,0 +1,4 @@
+﻿scenario,multiplier,meaning,rooted_plan_id,rooted_cost,open_min_plan_id,open_min_cost,robust_plan_id,robust_cost,break_even_external_premium,selected_plan_changed,notes
+low_floor,0.75,低估接驳费用,Q2V3_072_ROOTED_URUMQI,3995.21,Q2V3_010_OPEN_GATEWAY,2824.3,Q2V3_073_OPEN_GATEWAY,3067.41,1170.91,False,fixed_candidate_repricing_no_route_reoptimization
+base_floor,1.0,主模型,Q2V3_072_ROOTED_URUMQI,4027.71,Q2V3_010_OPEN_GATEWAY,2856.8,Q2V3_073_OPEN_GATEWAY,3099.91,1170.91,False,fixed_candidate_repricing_no_route_reoptimization
+high_floor,1.25,保守高估接驳费用,Q2V3_072_ROOTED_URUMQI,4060.21,Q2V3_010_OPEN_GATEWAY,2889.3,Q2V3_073_OPEN_GATEWAY,3132.41,1170.91,False,fixed_candidate_repricing_no_route_reoptimization

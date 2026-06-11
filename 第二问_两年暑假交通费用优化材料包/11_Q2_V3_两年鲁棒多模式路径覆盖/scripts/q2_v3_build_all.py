@@ -37,6 +37,9 @@ class TransportLabel:
     is_gateway_label: bool = False
     gateway_name: str = ""
     direction: str = ""
+    raw_mode: str = ""
+    raw_cost_yuan_for_two: float = 0.0
+    cost_calibration_note: str = ""
 
 
 def truthy(value: Any) -> bool:
@@ -103,6 +106,8 @@ class Q2V3Builder:
             "min_spots_per_year": 14,
             "max_spots_per_year": 24,
             "random_seed": 20260611,
+            "scenic_shuttle_floor_multiplier": 1.0,
+            "cost_calibration_version": "scenic_floor_base_v1 + road_mode_normalization_q1v3",
             "gateway_candidates": [
                 "乌鲁木齐市",
                 "吐鲁番市",
@@ -211,13 +216,58 @@ class Q2V3Builder:
             return "scenic_shuttle"
         return lower.split("->")[0].strip() or "unknown"
 
+    def normalize_road_mode_by_time(self, time_hours: float) -> str:
+        if time_hours <= 1.5:
+            return "taxi_transfer"
+        if time_hours <= 6.0:
+            return "rental_car"
+        return "charter_car"
+
+    def normalize_mode(self, mode: str, mode_combo: str, time_hours: float) -> str:
+        m = clean_text(mode).lower()
+        combo = clean_text(mode_combo).lower()
+        if m == "same_spot":
+            return "same_spot"
+        if m in {"self_drive", "fallback_road"}:
+            return self.normalize_road_mode_by_time(time_hours)
+        if "self_drive" in combo or "amap_selfdrive" in combo:
+            return self.normalize_road_mode_by_time(time_hours)
+        if m == "bus":
+            return "coach"
+        return m or "unknown"
+
+    def scenic_shuttle_cost_floor(self, time_hours: float, multiplier: float | None = None) -> float:
+        if multiplier is None:
+            multiplier = float(self.config["scenic_shuttle_floor_multiplier"])
+        if time_hours <= 0:
+            base = 0.0
+        elif time_hours <= 0.5:
+            base = 20.0
+        elif time_hours <= 1.0:
+            base = 40.0
+        elif time_hours <= 2.0:
+            base = 70.0
+        elif time_hours <= 4.0:
+            base = 110.0
+        else:
+            base = max(160.0, 35.0 * time_hours)
+        return round(base * float(multiplier), 2)
+
+    def calibrate_cost(self, mode: str, raw_cost: float, time_hours: float) -> tuple[float, str]:
+        raw_cost = max(0.0, float(raw_cost))
+        if mode == "scenic_shuttle":
+            floor = self.scenic_shuttle_cost_floor(time_hours)
+            if raw_cost < floor:
+                return round(floor, 2), f"scenic_shuttle_cost_floor_applied:{raw_cost:.2f}->{floor:.2f}"
+        return round(raw_cost, 2), "raw_cost_kept"
+
     def fatigue_for(self, mode: str, time_hours: float) -> float:
         factors = {
             "same_spot": 0.0,
             "rail": 0.45,
             "air": 0.60,
             "coach": 0.85,
-            "self_drive": 1.00,
+            "taxi_transfer": 0.80,
             "rental_car": 0.95,
             "charter_car": 0.85,
             "scenic_shuttle": 0.70,
@@ -242,21 +292,27 @@ class Q2V3Builder:
         if from_id == to_id and mode != "same_spot":
             return
         time_hours = max(0.0, round(float(time_hours), 3))
-        cost_yuan_for_two = max(0.0, round(float(cost_yuan_for_two), 2))
+        raw_mode = clean_text(mode)
+        raw_cost = max(0.0, round(float(cost_yuan_for_two), 2))
+        normalized_mode = self.normalize_mode(mode, mode_combo, time_hours)
+        calibrated_cost, cost_note = self.calibrate_cost(normalized_mode, raw_cost, time_hours)
         risk_score = max(0.0, round(float(risk_score), 3))
         label = TransportLabel(
             label_id=self.next_label_id(),
             from_id=from_id,
             to_id=to_id,
-            mode=mode,
+            mode=normalized_mode,
             mode_combo=mode_combo,
             time_hours=time_hours,
-            cost_yuan_for_two=cost_yuan_for_two,
+            cost_yuan_for_two=calibrated_cost,
             risk_score=risk_score,
-            fatigue_score=self.fatigue_for(mode, time_hours),
+            fatigue_score=self.fatigue_for(normalized_mode, time_hours),
             path_desc=path_desc,
             source=source,
-            schedule_required=schedule_required,
+            schedule_required=schedule_required or normalized_mode in {"rail", "air", "coach"},
+            raw_mode=raw_mode,
+            raw_cost_yuan_for_two=raw_cost,
+            cost_calibration_note=cost_note,
         )
         bucket[(from_id, to_id)].append(label)
 
@@ -443,18 +499,24 @@ class Q2V3Builder:
     def best_label(self, from_id: str, to_id: str, objective: str = "cost") -> TransportLabel:
         labels = self.labels_by_pair.get((from_id, to_id), [])
         if not labels:
+            time_hours = 10.0
+            raw_cost = 900.0
+            mode = self.normalize_mode("fallback_road", "fallback_road", time_hours)
             return TransportLabel(
                 label_id="Q2L_FALLBACK",
                 from_id=from_id,
                 to_id=to_id,
-                mode="fallback_road",
+                mode=mode,
                 mode_combo="fallback_road",
-                time_hours=10.0,
-                cost_yuan_for_two=900.0,
+                time_hours=time_hours,
+                cost_yuan_for_two=raw_cost,
                 risk_score=0.50,
-                fatigue_score=10.0,
+                fatigue_score=self.fatigue_for(mode, time_hours),
                 path_desc="fallback missing OD",
                 source="fallback",
+                raw_mode="fallback_road",
+                raw_cost_yuan_for_two=raw_cost,
+                cost_calibration_note="fallback_cost_kept",
             )
         if objective == "generalized":
             return min(labels, key=lambda x: x.cost_yuan_for_two + x.time_hours * 22 + x.risk_score * 260)
@@ -575,6 +637,8 @@ class Q2V3Builder:
         source: str,
         inherited_mode: str = "gateway_access",
     ) -> TransportLabel:
+        time_hours = round(max(0.0, time_hours), 3)
+        raw_cost = round(max(0.0, cost), 2)
         mode = inherited_mode if inherited_mode in {"rail", "air", "coach"} else "gateway_access"
         return TransportLabel(
             label_id=self.next_gateway_label_id(),
@@ -582,8 +646,8 @@ class Q2V3Builder:
             to_id=to_id,
             mode=mode,
             mode_combo=f"{direction}:{gateway}",
-            time_hours=round(max(0.0, time_hours), 3),
-            cost_yuan_for_two=round(max(0.0, cost), 2),
+            time_hours=time_hours,
+            cost_yuan_for_two=raw_cost,
             risk_score=round(max(0.0, risk), 3),
             fatigue_score=self.fatigue_for(mode, time_hours),
             path_desc=source,
@@ -592,6 +656,9 @@ class Q2V3Builder:
             is_gateway_label=True,
             gateway_name=gateway,
             direction=direction,
+            raw_mode=clean_text(inherited_mode),
+            raw_cost_yuan_for_two=raw_cost,
+            cost_calibration_note="gateway_cost_kept",
         )
 
     def gateway_label(self, gateway: str, direction: str, spot_id: str) -> TransportLabel:
@@ -939,6 +1006,9 @@ class Q2V3Builder:
                         "mode_combo": label.mode_combo,
                         "time_hours": round(label.time_hours, 3),
                         "cost_yuan_for_two": round(label.cost_yuan_for_two, 2),
+                        "raw_mode": label.raw_mode,
+                        "raw_cost_yuan_for_two": round(label.raw_cost_yuan_for_two, 2),
+                        "cost_calibration_note": label.cost_calibration_note,
                         "risk_score": round(label.risk_score, 3),
                         "fatigue_score": round(label.fatigue_score, 3),
                         "path_desc": label.path_desc,
@@ -1022,6 +1092,7 @@ class Q2V3Builder:
             "year2_mode_hours_mix": r2["mode_hours_mix"],
             "proved_optimal": False,
             "solver_status": "matheuristic_seed_2opt_relocate_swap",
+            "cost_calibration_version": self.config["cost_calibration_version"],
         }
         year_rows = []
         for year, r in [(1, r1), (2, r2)]:
@@ -1405,6 +1476,7 @@ class Q2V3Builder:
             "proved_optimal",
             "solver_status",
             "selection_status",
+            "cost_calibration_version",
             "year1_mode_hours_mix",
             "year2_mode_hours_mix",
             "year1_route_sequence",
@@ -1446,12 +1518,17 @@ class Q2V3Builder:
         self.pareto_front = out
         return out
 
-    def held_karp_path(self, nodes: list[str], start_gateway: str, end_gateway: str) -> float:
+    def held_karp_path(
+        self, nodes: list[str], start_gateway: str, end_gateway: str, end_spot: str | None = None
+    ) -> float:
         n = len(nodes)
         if n == 0:
             return 0.0
         start_cost = [self.gateway_label(start_gateway, "gateway_to_spot", x).cost_yuan_for_two for x in nodes]
-        end_cost = [self.gateway_label(end_gateway, "spot_to_gateway", x).cost_yuan_for_two for x in nodes]
+        if end_spot:
+            end_cost = [self.best_label(x, end_spot).cost_yuan_for_two for x in nodes]
+        else:
+            end_cost = [self.gateway_label(end_gateway, "spot_to_gateway", x).cost_yuan_for_two for x in nodes]
         dist = [[0.0] * n for _ in range(n)]
         for i in range(n):
             for j in range(n):
@@ -1479,12 +1556,17 @@ class Q2V3Builder:
                     kbits -= lsb
         return min(dp[(full, j)] + end_cost[j] for j in range(n))
 
-    def route_cost_for_subset(self, seq: list[str], start_gateway: str, end_gateway: str) -> float:
+    def route_cost_for_subset(
+        self, seq: list[str], start_gateway: str, end_gateway: str, end_spot: str | None = None
+    ) -> float:
         if not seq:
             return 0.0
         cost = self.gateway_label(start_gateway, "gateway_to_spot", seq[0]).cost_yuan_for_two
         cost += sum(self.best_label(a, b).cost_yuan_for_two for a, b in zip(seq[:-1], seq[1:]))
-        cost += self.gateway_label(end_gateway, "spot_to_gateway", seq[-1]).cost_yuan_for_two
+        if end_spot:
+            cost += self.best_label(seq[-1], end_spot).cost_yuan_for_two
+        else:
+            cost += self.gateway_label(end_gateway, "spot_to_gateway", seq[-1]).cost_yuan_for_two
         return cost
 
     def build_exact_checks(self) -> tuple[pd.DataFrame, pd.DataFrame]:
@@ -1497,10 +1579,11 @@ class Q2V3Builder:
                 if len(seq) < 6:
                     continue
                 subset = seq[: min(15, len(seq))]
+                end_spot = seq[len(subset)] if len(seq) > len(subset) else None
                 start_gateway = getattr(row, f"year{year}_entry_gateway")
                 end_gateway = getattr(row, f"year{year}_exit_gateway")
-                heuristic = self.route_cost_for_subset(subset, start_gateway, end_gateway)
-                exact = self.held_karp_path(subset, start_gateway, end_gateway)
+                heuristic = self.route_cost_for_subset(subset, start_gateway, end_gateway, end_spot=end_spot)
+                exact = self.held_karp_path(subset, start_gateway, end_gateway, end_spot=end_spot)
                 gap = (heuristic - exact) / exact if exact > 0 else 0.0
                 checks.append(
                     {
@@ -1514,6 +1597,8 @@ class Q2V3Builder:
                         "exact_held_karp_cost": round(exact, 2),
                         "relative_gap": round(gap, 4),
                         "status": "completed_fixed_subset_order_check",
+                        "end_anchor_type": "next_spot" if end_spot else "exit_gateway",
+                        "end_anchor": self.spot_name(end_spot) if end_spot else end_gateway,
                     }
                 )
         exact_df = pd.DataFrame(checks)
@@ -1535,6 +1620,147 @@ class Q2V3Builder:
         self.exact_checks = exact_df
         self.small_mip_check = mip_df
         return exact_df, mip_df
+
+    # ---------- Cost calibration audit ----------
+
+    def build_transport_cost_calibration_audit(self) -> pd.DataFrame:
+        labels = pd.concat([self.multimodal_labels, self.gateway_labels], ignore_index=True, sort=False)
+        rows = []
+        for r in labels.to_dict("records"):
+            raw_cost = num(r.get("raw_cost_yuan_for_two", r.get("cost_yuan_for_two", 0.0)))
+            calibrated = num(r.get("cost_yuan_for_two", 0.0))
+            rows.append(
+                {
+                    "label_id": r.get("label_id", ""),
+                    "from_id": r.get("from_id", ""),
+                    "to_id": r.get("to_id", ""),
+                    "raw_mode": r.get("raw_mode", r.get("mode", "")),
+                    "normalized_mode": r.get("mode", ""),
+                    "mode_combo": r.get("mode_combo", ""),
+                    "raw_cost_yuan_for_two": round(raw_cost, 2),
+                    "calibrated_cost_yuan_for_two": round(calibrated, 2),
+                    "cost_delta": round(calibrated - raw_cost, 2),
+                    "time_hours": r.get("time_hours", ""),
+                    "cost_calibration_note": r.get("cost_calibration_note", ""),
+                    "source": r.get("source", ""),
+                    "is_gateway_label": r.get("is_gateway_label", False),
+                }
+            )
+        audit = pd.DataFrame(rows)
+        self.write_csv(audit, self.outputs / "q2_v3_transport_cost_calibration_audit.csv")
+        self.transport_cost_calibration_audit = audit
+        return audit
+
+    def validate_no_zero_cost_scenic_shuttle(self) -> None:
+        labels = self.multimodal_labels
+        segments = self.route_segments
+        bad_labels = labels[(labels["mode"].astype(str).eq("scenic_shuttle")) & (labels["cost_yuan_for_two"] <= 0)]
+        bad_segments = segments[
+            (segments["mode"].astype(str).eq("scenic_shuttle")) & (segments["cost_yuan_for_two"] <= 0)
+        ]
+        if not bad_labels.empty:
+            raise ValueError(f"仍存在0成本scenic_shuttle标签: {len(bad_labels)}")
+        if not bad_segments.empty:
+            raise ValueError(f"路线中仍使用0成本scenic_shuttle: {len(bad_segments)}")
+
+    def validate_no_self_drive_mode(self) -> None:
+        labels = self.multimodal_labels
+        segments = self.route_segments
+        selected = self.selected_plans
+        if "self_drive" in set(labels["mode"].astype(str)):
+            raise ValueError("labels中仍存在self_drive规范模式")
+        if "self_drive" in set(segments["mode"].astype(str)):
+            raise ValueError("segments中仍存在self_drive规范模式")
+        for col in ["year1_mode_hours_mix", "year2_mode_hours_mix"]:
+            if col in selected.columns and selected[col].astype(str).str.contains("self_drive", regex=False).any():
+                raise ValueError(f"selected plans 的 {col} 中仍含 self_drive")
+
+    def build_cost_calibration_sensitivity(self) -> pd.DataFrame:
+        scenarios = [
+            ("low_floor", 0.75, "低估接驳费用"),
+            ("base_floor", 1.00, "主模型"),
+            ("high_floor", 1.25, "保守高估接驳费用"),
+        ]
+        base_roles = self.selected_plans.set_index("selected_role")["plan_id"].to_dict()
+        segment_base = self.route_segments.copy()
+        rows = []
+        plan_df = self.candidate_plans.merge(self.simulation_summary, on="plan_id", how="left")
+        regular = plan_df[~plan_df["include_special"]].copy()
+        for scenario, multiplier, meaning in scenarios:
+            seg = segment_base.copy()
+            scenic = seg["mode"].astype(str).eq("scenic_shuttle")
+            adjusted = seg["cost_yuan_for_two"].astype(float).copy()
+            if scenic.any():
+                floors = seg.loc[scenic, "time_hours"].astype(float).map(
+                    lambda t: self.scenic_shuttle_cost_floor(float(t), multiplier)
+                )
+                raw = seg.loc[scenic, "raw_cost_yuan_for_two"].astype(float)
+                adjusted.loc[scenic] = np.maximum(raw.to_numpy(), floors.to_numpy())
+            seg["sensitivity_cost"] = adjusted
+            costs = (
+                seg.groupby("plan_id")["sensitivity_cost"]
+                .sum()
+                .round(2)
+                .rename("sensitivity_total_cost")
+                .reset_index()
+            )
+            df = regular.merge(costs, on="plan_id", how="left")
+            df["sensitivity_total_cost"] = df["sensitivity_total_cost"].fillna(df["total_intra_transport_cost"])
+
+            rooted = df[df["gateway_policy"].eq("rooted_urumqi")].sort_values("sensitivity_total_cost").iloc[0]
+            opened = df[df["gateway_policy"].eq("open_gateway")].sort_values("sensitivity_total_cost").iloc[0]
+
+            min_cost = float(df["sensitivity_total_cost"].min())
+            balanced = df[
+                df["schedule_strict_feasible"].astype(bool)
+                & df["year_day_difference"].le(int(self.config["max_year_day_difference"]))
+                & df["operational_success_probability"].ge(float(self.config["success_threshold"]))
+            ]
+            robust_pool = balanced[balanced["sensitivity_total_cost"].le(min_cost * (1 + float(self.config["cost_gap_for_robust_choice"])))]
+            if robust_pool.empty:
+                robust_pool = balanced
+            if robust_pool.empty:
+                robust_pool = df[df["schedule_soft_feasible"].astype(bool)]
+            if robust_pool.empty:
+                robust_pool = df
+            robust = robust_pool.sort_values(
+                [
+                    "operational_success_probability",
+                    "strict_comfort_success_probability",
+                    "cvar75_loss",
+                    "sensitivity_total_cost",
+                ],
+                ascending=[False, False, True, True],
+            ).iloc[0]
+            changed = any(
+                [
+                    base_roles.get("ROOTED_URUMQI_MAIN") != rooted["plan_id"],
+                    base_roles.get("OPEN_GATEWAY_MIN_INTRA_COST") != opened["plan_id"],
+                    base_roles.get("ROBUST_TWO_YEAR_MAIN") != robust["plan_id"],
+                ]
+            )
+            rows.append(
+                {
+                    "scenario": scenario,
+                    "multiplier": multiplier,
+                    "meaning": meaning,
+                    "rooted_plan_id": rooted["plan_id"],
+                    "rooted_cost": round(float(rooted["sensitivity_total_cost"]), 2),
+                    "open_min_plan_id": opened["plan_id"],
+                    "open_min_cost": round(float(opened["sensitivity_total_cost"]), 2),
+                    "robust_plan_id": robust["plan_id"],
+                    "robust_cost": round(float(robust["sensitivity_total_cost"]), 2),
+                    "break_even_external_premium": round(
+                        float(rooted["sensitivity_total_cost"]) - float(opened["sensitivity_total_cost"]), 2
+                    ),
+                    "selected_plan_changed": changed,
+                    "notes": "fixed_candidate_repricing_no_route_reoptimization",
+                }
+            )
+        out = pd.DataFrame(rows)
+        self.write_csv(out, self.outputs / "q2_v3_cost_calibration_sensitivity.csv")
+        self.cost_calibration_sensitivity = out
+        return out
 
     # ---------- Audit, figures, reports ----------
 
@@ -1593,6 +1819,24 @@ class Q2V3Builder:
                 "evidence_file": "outputs/q2_v3_small_exact_check.csv",
                 "remaining_limitation": "仅校验固定子集排序，不证明完整38点两路径全局最优",
                 "next_upgrade": "安装OR-Tools/Gurobi后运行20节点两路径MILP",
+            },
+            {
+                "audit_id": "Q2V3-A7",
+                "module": "scenic_shuttle_cost_calibration",
+                "claim": "scenic_shuttle不再允许0元参与费用最小化",
+                "status": "implemented",
+                "evidence_file": "outputs/q2_v3_transport_cost_calibration_audit.csv",
+                "remaining_limitation": "接驳费用为代理估计，非实时票价",
+                "next_upgrade": "接入景区区间车/当地包车/出租价格数据",
+            },
+            {
+                "audit_id": "Q2V3-A8",
+                "module": "road_mode_normalization",
+                "claim": "self_drive统一映射为taxi_transfer/rental_car/charter_car",
+                "status": "implemented",
+                "evidence_file": "outputs/q2_v3_multimodal_labels.csv",
+                "remaining_limitation": "当前道路成本仍为代理成本，未拆分完整租车日租/包车日费",
+                "next_upgrade": "建立真实租车/包车/司机费用模型",
             },
         ]
         df = pd.DataFrame(rows)
@@ -1682,6 +1926,17 @@ class Q2V3Builder:
         front = self.pareto_front.copy()
         audit = self.model_audit.copy()
         exact = self.exact_checks.copy()
+        cal_audit = self.transport_cost_calibration_audit.copy()
+        sensitivity = self.cost_calibration_sensitivity.copy()
+        floor_count = int(cal_audit["cost_calibration_note"].astype(str).str.contains("scenic_shuttle_cost_floor_applied").sum())
+        self_drive_norm_count = int(
+            (
+                cal_audit["raw_mode"].astype(str).str.contains("self_drive", regex=False)
+                | cal_audit["mode_combo"].astype(str).str.contains("selfdrive", regex=False)
+                | cal_audit["mode_combo"].astype(str).str.contains("self_drive", regex=False)
+            ).sum()
+        )
+        total_cost_delta = round(float(cal_audit["cost_delta"].sum()), 2)
         report = f"""# 新疆旅游第二问 Q2-V3 两年境内交通费用最小化报告
 
 ## 1. 问题重定义
@@ -1701,6 +1956,10 @@ class Q2V3Builder:
 - 口岸接驳标签：{len(self.gateway_labels)} 条。
 
 交通标签由增强 OD、高德道路 OD、铁路 12306 种子和航班种子共同构成，并经过费用、时间、风险、疲劳维度的非支配筛选。
+
+为避免低估新疆境内交通费用，Q2-V3 对交通标签进行了费用校准。原始数据中 `scenic_shuttle` 若费用缺失或为 0，不再被视作免费交通，而是按转场时间设置最低接驳费用；`self_drive` 不作为最终交通方式输出，而是按转场时间统一归类为 `taxi_transfer`、`rental_car` 或 `charter_car`。
+
+成本校准版本：`{self.config["cost_calibration_version"]}`。本轮共有 {floor_count} 条标签应用 scenic shuttle 成本下限，{self_drive_norm_count} 条原始 self-drive 标签被规范化，标签层总校准增量为 {total_cost_delta} 元。
 
 ## 3. 数学模型
 
@@ -1742,7 +2001,8 @@ s.t. 每年可从候选口岸中选择入疆口岸和离疆口岸
     "year2_entry_gateway", "year2_exit_gateway", "covered_spots", "year1_days", "year2_days",
     "year_day_difference", "red_days", "time_window_violations",
     "total_intra_transport_cost", "external_premium_break_even", "operational_success_probability",
-    "strict_comfort_success_probability", "cvar75_loss", "schedule_strict_feasible", "selection_status"
+    "strict_comfort_success_probability", "cvar75_loss", "schedule_strict_feasible", "selection_status",
+    "cost_calibration_version"
 ], 8)}
 
 说明：`OPEN_GATEWAY_MIN_INTRA_COST` 是新疆境内交通费用下界方案；`ROBUST_TWO_YEAR_MAIN` 额外要求硬排程可行、两年天数差不超过 {self.config["max_year_day_difference"]} 天且运营成功率达标，更适合作为可执行主推。
@@ -1769,22 +2029,34 @@ s.t. 每年可从候选口岸中选择入疆口岸和离疆口岸
 
 {self.md_table(exact, [
     "check_id", "selected_role", "year", "node_count", "heuristic_cost",
-    "exact_held_karp_cost", "relative_gap", "status"
+    "exact_held_karp_cost", "relative_gap", "end_anchor_type", "end_anchor", "status"
 ], 12)}
 
-20节点两路径 MILP 当前保留接口，但因未配置 OR-Tools/Gurobi/CPLEX，输出为 `not_run_no_mip_solver`。因此本报告不声称完整38点两路径全局最优。
+前缀校验若该年路线仍有后续景点，则使用下一景点作为续接锚点；只有前缀覆盖该年全部景点时才直接返回口岸。20节点两路径 MILP 当前保留接口，但因未配置 OR-Tools/Gurobi/CPLEX，输出为 `not_run_no_mip_solver`。因此本报告不声称完整38点两路径全局最优。
 
-## 9. 模型边界审计
+## 9. 成本校准敏感性
+
+{self.md_table(sensitivity, [
+    "scenario", "multiplier", "rooted_plan_id", "rooted_cost", "open_min_plan_id",
+    "open_min_cost", "robust_plan_id", "robust_cost", "break_even_external_premium",
+    "selected_plan_changed", "notes"
+], 10)}
+
+说明：敏感性实验采用固定候选集重计价，不重新搜索路线，用于观察接驳费用下限对代表方案和多口岸阈值的局部影响。
+
+## 10. 模型边界审计
 
 {self.md_table(audit, ["audit_id", "module", "claim", "status", "remaining_limitation"], 10)}
 
-## 10. 结论
+## 11. 结论
 
 Q2-V3 已将第二问从“区域聚类/道路基线”升级为“两年鲁棒多模式路径覆盖”闭环。推荐叙事应分三层：
 
 1. 保守执行：固定乌鲁木齐起讫方案，实施难度最低；
 2. 省境内交通：开放式多口岸方案，给出新疆境内费用下界；
 3. 现实总费用最优：比较多口岸外部大交通额外差价是否低于阈值。
+
+修正后，所有 scenic_shuttle 标签均计入最低接驳费用，所有 self_drive 标签均按转场时长映射为 taxi_transfer、rental_car 或 charter_car。由此得到的交通费用更适合作为“新疆境内交通费用最小化”的目标函数输入。
 
 当前版本为高质量可行解与局部精确校验，不是商业求解器证明的全局最优解。
 """
@@ -1801,6 +2073,8 @@ Q2-V3 已将第二问从“区域聚类/道路基线”升级为“两年鲁棒�
             "simulation_summary": self.simulation_summary,
             "gateway_thresholds": self.gateway_thresholds,
             "pareto_front": self.pareto_front,
+            "cost_calibration_audit": self.transport_cost_calibration_audit,
+            "cost_sensitivity": self.cost_calibration_sensitivity,
             "model_audit": self.model_audit,
             "exact_order_check": self.exact_checks,
             "small_mip_check": self.small_mip_check,
@@ -1862,6 +2136,8 @@ outputs/q2_v3_schedule_summary.csv
 outputs/q2_v3_simulation_summary.csv
 outputs/q2_v3_gateway_thresholds.csv
 outputs/q2_v3_feasible_pareto_front.csv
+outputs/q2_v3_transport_cost_calibration_audit.csv
+outputs/q2_v3_cost_calibration_sensitivity.csv
 outputs/q2_v3_model_audit.csv
 outputs/q2_v3_small_exact_check.csv
 reports/新疆旅游第二问Q2_V3两年交通费用优化报告.md
@@ -1874,6 +2150,7 @@ reports/新疆旅游第二问Q2_V3两年交通费用优化结果.xlsx
 - 主目标：两人新疆境内交通费用最小；
 - 固定口岸：乌鲁木齐起讫作为保守主方案；
 - 开放口岸：多口岸方案作为境内费用下界和阈值策略；
+- 成本校准：scenic_shuttle 施加最低接驳费用，self_drive 拆分为 taxi_transfer/rental_car/charter_car；
 - 特殊点：楼兰古城、尼雅遗址进入审批扩展，不进入普通游客主线；
 - 最优性：matheuristic 高质量可行解 + 小规模 Held-Karp 校验，不声称完整全局最优。
 """
@@ -1883,18 +2160,35 @@ reports/新疆旅游第二问Q2_V3两年交通费用优化结果.xlsx
         self.load_inputs()
         self.multimodal_labels = self.build_multimodal_labels()
         self.gateway_labels = self.build_gateway_labels()
+        self.build_transport_cost_calibration_audit()
         self.build_candidate_plans()
+        self.validate_no_zero_cost_scenic_shuttle()
         self.build_schedule_summary()
         self.simulate_plans()
         self.build_gateway_thresholds()
         self.select_representative_plans()
+        self.build_cost_calibration_sensitivity()
+        self.validate_no_self_drive_mode()
         self.build_pareto_front()
         self.build_exact_checks()
         self.build_model_audit()
         self.build_figures()
         self.build_reports()
         self.build_readme()
-        self.update_package_manifest()
+        floor_count = int(
+            self.transport_cost_calibration_audit["cost_calibration_note"]
+            .astype(str)
+            .str.contains("scenic_shuttle_cost_floor_applied")
+            .sum()
+        )
+        self_drive_norm_count = int(
+            (
+                self.transport_cost_calibration_audit["raw_mode"].astype(str).str.contains("self_drive", regex=False)
+                | self.transport_cost_calibration_audit["mode_combo"].astype(str).str.contains("selfdrive", regex=False)
+                | self.transport_cost_calibration_audit["mode_combo"].astype(str).str.contains("self_drive", regex=False)
+            ).sum()
+        )
+        total_cost_delta = round(float(self.transport_cost_calibration_audit["cost_delta"].sum()), 2)
         solve_summary = {
             "ordinary_spots": len(self.ordinary_ids),
             "special_spots": len(self.special_ids),
@@ -1903,10 +2197,15 @@ reports/新疆旅游第二问Q2_V3两年交通费用优化结果.xlsx
             "candidate_plans": int(len(self.candidate_plans)),
             "selected_plans": int(len(self.selected_plans)),
             "pareto_front_size": int(len(self.pareto_front)),
+            "cost_calibration_version": self.config["cost_calibration_version"],
+            "scenic_shuttle_cost_floor_applied_count": floor_count,
+            "self_drive_normalized_count": self_drive_norm_count,
+            "total_cost_delta_from_calibration": total_cost_delta,
             "report": str(self.report_path.relative_to(self.q2v3_dir)),
             "workbook": str(self.workbook_path.relative_to(self.q2v3_dir)),
         }
         (self.outputs / "solve_summary.json").write_text(json.dumps(solve_summary, ensure_ascii=False, indent=2), encoding="utf-8")
+        self.update_package_manifest()
         print(json.dumps(solve_summary, ensure_ascii=False, indent=2))
 
 

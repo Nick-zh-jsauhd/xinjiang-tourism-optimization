@@ -21,6 +21,8 @@ outputs/q2_v3_schedule_summary.csv
 outputs/q2_v3_simulation_summary.csv
 outputs/q2_v3_gateway_thresholds.csv
 outputs/q2_v3_feasible_pareto_front.csv
+outputs/q2_v3_transport_cost_calibration_audit.csv
+outputs/q2_v3_cost_calibration_sensitivity.csv
 outputs/q2_v3_model_audit.csv
 outputs/q2_v3_small_exact_check.csv
 reports/新疆旅游第二问Q2_V3两年交通费用优化报告.md
@@ -33,5 +35,6 @@ reports/新疆旅游第二问Q2_V3两年交通费用优化结果.xlsx
 - 主目标：两人新疆境内交通费用最小；
 - 固定口岸：乌鲁木齐起讫作为保守主方案；
 - 开放口岸：多口岸方案作为境内费用下界和阈值策略；
+- 成本校准：scenic_shuttle 施加最低接驳费用，self_drive 拆分为 taxi_transfer/rental_car/charter_car；
 - 特殊点：楼兰古城、尼雅遗址进入审批扩展，不进入普通游客主线；
 - 最优性：matheuristic 高质量可行解 + 小规模 Held-Karp 校验，不声称完整全局最优。

@@ -5,3 +5,5 @@ Q2V3-A3,multimodal_labels,生成直接道路、增强OD公共交通与铁路/航
 Q2V3-A4,gateway_policy,同时输出固定乌鲁木齐起讫与开放式多口岸两种口径,implemented,outputs/q2_v3_gateway_thresholds.csv,开放式多口岸外部大交通价格仍以情景仿真表达,接入实时机票/铁路票价后把外部差价变成实时报价策略
 Q2V3-A5,route_specific_simulation,对每条候选两年方案进行route-specific Monte Carlo仿真,implemented,outputs/q2_v3_simulation_summary.csv,扰动分布为校准仿真，不是真实实时天气/库存,接入天气、道路封闭、票价和酒店房态API
 Q2V3-A6,exact_check,增加小规模Held-Karp排序精确校验，20节点MIP接口保留,implemented_scope_limited,outputs/q2_v3_small_exact_check.csv,仅校验固定子集排序，不证明完整38点两路径全局最优,安装OR-Tools/Gurobi后运行20节点两路径MILP
+Q2V3-A7,scenic_shuttle_cost_calibration,scenic_shuttle不再允许0元参与费用最小化,implemented,outputs/q2_v3_transport_cost_calibration_audit.csv,接驳费用为代理估计，非实时票价,接入景区区间车/当地包车/出租价格数据
+Q2V3-A8,road_mode_normalization,self_drive统一映射为taxi_transfer/rental_car/charter_car,implemented,outputs/q2_v3_multimodal_labels.csv,当前道路成本仍为代理成本，未拆分完整租车日租/包车日费,建立真实租车/包车/司机费用模型

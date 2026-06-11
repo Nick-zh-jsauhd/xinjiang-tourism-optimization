@@ -1,11 +1,15 @@
 {
   "ordinary_spots": 38,
   "special_spots": 2,
-  "multimodal_labels": 3038,
+  "multimodal_labels": 2845,
   "gateway_labels": 800,
-  "candidate_plans": 87,
+  "candidate_plans": 89,
   "selected_plans": 6,
-  "pareto_front_size": 9,
+  "pareto_front_size": 15,
+  "cost_calibration_version": "scenic_floor_base_v1 + road_mode_normalization_q1v3",
+  "scenic_shuttle_cost_floor_applied_count": 33,
+  "self_drive_normalized_count": 2470,
+  "total_cost_delta_from_calibration": 2270.0,
   "report": "reports\\新疆旅游第二问Q2_V3两年交通费用优化报告.md",
   "workbook": "reports\\新疆旅游第二问Q2_V3两年交通费用优化结果.xlsx"
 }
