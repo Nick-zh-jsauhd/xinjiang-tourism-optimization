@@ -8,11 +8,15 @@
   "main_route_id": "Q1V2_BALANCED_30_BUFFER2",
   "outputs": [
     "E:\\Desktop\\运筹学项目\\第一问_30天路线优化材料包\\08_Q1_V2强化\\outputs\\enhanced_od_labels_v2.csv",
+    "E:\\Desktop\\运筹学项目\\第一问_30天路线优化材料包\\08_Q1_V2强化\\outputs\\q1_v2_route_family.csv",
     "E:\\Desktop\\运筹学项目\\第一问_30天路线优化材料包\\08_Q1_V2强化\\outputs\\q1_v2_pareto_routes.csv",
     "E:\\Desktop\\运筹学项目\\第一问_30天路线优化材料包\\08_Q1_V2强化\\outputs\\q1_v2_daily_itinerary.csv",
     "E:\\Desktop\\运筹学项目\\第一问_30天路线优化材料包\\08_Q1_V2强化\\outputs\\q1_v2_robustness_summary.csv",
     "E:\\Desktop\\运筹学项目\\第一问_30天路线优化材料包\\08_Q1_V2强化\\outputs\\q1_v2_epsilon_grid.csv",
+    "E:\\Desktop\\运筹学项目\\第一问_30天路线优化材料包\\08_Q1_V2强化\\outputs\\q1_v2_model_audit.csv",
+    "E:\\Desktop\\运筹学项目\\第一问_30天路线优化材料包\\08_Q1_V2强化\\outputs\\q1_v2_loulan_substitution.csv",
     "E:\\Desktop\\运筹学项目\\第一问_30天路线优化材料包\\08_Q1_V2强化\\reports\\新疆旅游第一问Q1_V2强化建模与实验报告.md",
+    "E:\\Desktop\\运筹学项目\\第一问_30天路线优化材料包\\08_Q1_V2强化\\reports\\楼兰古城不可普通访问与文化替代说明.md",
     "E:\\Desktop\\运筹学项目\\第一问_30天路线优化材料包\\08_Q1_V2强化\\reports\\新疆旅游第一问Q1_V2强化结果.xlsx"
   ]
 }

@@ -1,5 +1,5 @@
 ﻿from_spot_id,from_spot_name,to_spot_id,to_spot_name,scenario_id,mode_combo,dominant_mode,time_hours,cost_yuan_for_two,fatigue_score,risk_score,is_night_transport,requires_transfer,label_rank,generalized_cost_score,label_quality_note
-P001,天山天池,P001,天山天池,base_summer,same_spot,nan,0.0,0.0,0.0,0.02,False,False,1,12.0,amap_or_model_road_edge
+P001,天山天池,P001,天山天池,base_summer,same_spot,same_spot,0.0,0.0,0.0,0.0,False,False,1,0.0,diagonal_zero_edge
 P001,天山天池,P002,达坂城古镇,base_summer,self_drive,rental_car,2.131,93.7,2.387,0.117,False,False,1,345.9,amap_or_model_road_edge
 P001,天山天池,P003,火焰山,base_summer,self_drive,rental_car,3.57,160.62,3.998,0.157,False,False,1,559.68,amap_or_model_road_edge
 P001,天山天池,P004,葡萄沟,base_summer,self_drive,rental_car,3.231,148.51,3.619,0.15,False,False,1,514.45,amap_or_model_road_edge
@@ -40,7 +40,7 @@ P001,天山天池,P038,尼雅遗址,base_summer,self_drive -> transfer -> air ->
 P001,天山天池,P039,千里葡萄长廊,base_summer,self_drive -> transfer -> air -> transfer -> scenic_shuttle,air,8.086,2424.25,9.061,0.269,False,True,1,3276.405,public_transport_candidate_needs_schedule_confirmation
 P001,天山天池,P040,奥依塔克冰川,base_summer,self_drive -> transfer -> air -> transfer -> scenic_shuttle,air,9.786,2612.25,13.187,0.295,False,True,1,3725.175,public_transport_candidate_needs_schedule_confirmation
 P002,达坂城古镇,P001,天山天池,base_summer,self_drive,rental_car,1.921,92.74,2.152,0.116,False,False,1,326.415,amap_or_model_road_edge
-P002,达坂城古镇,P002,达坂城古镇,base_summer,same_spot,nan,0.0,0.0,0.0,0.02,False,False,1,12.0,amap_or_model_road_edge
+P002,达坂城古镇,P002,达坂城古镇,base_summer,same_spot,same_spot,0.0,0.0,0.0,0.0,False,False,1,0.0,diagonal_zero_edge
 P002,达坂城古镇,P003,火焰山,base_summer,self_drive,taxi_transfer,1.617,68.76,1.294,0.092,False,False,1,238.785,amap_or_model_road_edge
 P002,达坂城古镇,P004,葡萄沟,base_summer,self_drive,taxi_transfer,1.296,56.65,1.037,0.084,False,False,1,199.075,amap_or_model_road_edge
 P002,达坂城古镇,P005,坎儿井民俗园,base_summer,self_drive,taxi_transfer,1.307,54.64,1.046,0.083,False,False,1,197.255,amap_or_model_road_edge
@@ -81,7 +81,7 @@ P002,达坂城古镇,P039,千里葡萄长廊,base_summer,self_drive -> transfer 
 P002,达坂城古镇,P040,奥依塔克冰川,base_summer,self_drive -> transfer -> air -> transfer -> scenic_shuttle,air,9.974,2629.93,13.707,0.308,False,True,1,3780.635,public_transport_candidate_needs_schedule_confirmation
 P003,火焰山,P001,天山天池,base_summer,self_drive,rental_car,3.571,159.44,4.0,0.157,False,False,1,558.625,amap_or_model_road_edge
 P003,火焰山,P002,达坂城古镇,base_summer,self_drive,taxi_transfer,2.086,81.4,1.669,0.099,False,False,1,288.915,amap_or_model_road_edge
-P003,火焰山,P003,火焰山,base_summer,same_spot,nan,0.0,0.0,0.0,0.02,False,False,1,12.0,amap_or_model_road_edge
+P003,火焰山,P003,火焰山,base_summer,same_spot,same_spot,0.0,0.0,0.0,0.0,False,False,1,0.0,diagonal_zero_edge
 P003,火焰山,P004,葡萄沟,base_summer,self_drive,taxi_transfer,0.578,16.67,0.462,0.06,False,False,1,93.69,amap_or_model_road_edge
 P003,火焰山,P005,坎儿井民俗园,base_summer,self_drive,taxi_transfer,0.679,18.14,0.543,0.061,False,False,1,102.94,amap_or_model_road_edge
 P003,火焰山,P006,交河故城,base_summer,self_drive,taxi_transfer,0.801,22.99,0.641,0.064,False,False,1,118.27,amap_or_model_road_edge
@@ -122,7 +122,7 @@ P003,火焰山,P040,奥依塔克冰川,base_summer,self_drive -> transfer -> air
 P004,葡萄沟,P001,天山天池,base_summer,self_drive,rental_car,3.245,147.52,3.634,0.149,False,False,1,514.025,amap_or_model_road_edge
 P004,葡萄沟,P002,达坂城古镇,base_summer,self_drive,taxi_transfer,1.772,69.48,1.418,0.092,False,False,1,250.51,amap_or_model_road_edge
 P004,葡萄沟,P003,火焰山,base_summer,self_drive,taxi_transfer,0.571,16.79,0.457,0.06,False,False,1,93.34,amap_or_model_road_edge
-P004,葡萄沟,P004,葡萄沟,base_summer,same_spot,nan,0.0,0.0,0.0,0.02,False,False,1,12.0,amap_or_model_road_edge
+P004,葡萄沟,P004,葡萄沟,base_summer,same_spot,same_spot,0.0,0.0,0.0,0.0,False,False,1,0.0,diagonal_zero_edge
 P004,葡萄沟,P005,坎儿井民俗园,base_summer,self_drive,taxi_transfer,0.416,7.54,0.333,0.055,False,False,1,70.085,amap_or_model_road_edge
 P004,葡萄沟,P006,交河故城,base_summer,self_drive,taxi_transfer,0.54,11.18,0.432,0.057,False,False,1,83.72,amap_or_model_road_edge
 P004,葡萄沟,P007,楼兰古城,base_summer,self_drive -> transfer -> air -> transfer -> scenic_shuttle -> self_drive,air,9.69,2685.87,12.926,0.377,False,True,1,3832.89,public_transport_candidate_needs_schedule_confirmation
@@ -163,7 +163,7 @@ P005,坎儿井民俗园,P001,天山天池,base_summer,self_drive,rental_car,3.26
 P005,坎儿井民俗园,P002,达坂城古镇,base_summer,self_drive,taxi_transfer,1.794,67.52,1.435,0.091,False,False,1,249.485,amap_or_model_road_edge
 P005,坎儿井民俗园,P003,火焰山,base_summer,self_drive,taxi_transfer,0.669,18.0,0.535,0.061,False,False,1,102.09,amap_or_model_road_edge
 P005,坎儿井民俗园,P004,葡萄沟,base_summer,self_drive,taxi_transfer,0.442,7.9,0.354,0.055,False,False,1,72.3,amap_or_model_road_edge
-P005,坎儿井民俗园,P005,坎儿井民俗园,base_summer,same_spot,nan,0.0,0.0,0.0,0.02,False,False,1,12.0,amap_or_model_road_edge
+P005,坎儿井民俗园,P005,坎儿井民俗园,base_summer,same_spot,same_spot,0.0,0.0,0.0,0.0,False,False,1,0.0,diagonal_zero_edge
 P005,坎儿井民俗园,P006,交河故城,base_summer,self_drive,taxi_transfer,0.223,4.16,0.178,0.053,False,False,1,51.775,amap_or_model_road_edge
 P005,坎儿井民俗园,P007,楼兰古城,base_summer,self_drive -> transfer -> air -> transfer -> scenic_shuttle -> self_drive,air,9.702,2683.91,12.959,0.377,False,True,1,3832.835,public_transport_candidate_needs_schedule_confirmation
 P005,坎儿井民俗园,P008,赛里木湖,base_summer,self_drive,charter_car,8.023,403.84,11.097,0.37,False,False,1,1406.01,amap_or_model_road_edge
@@ -204,7 +204,7 @@ P006,交河故城,P002,达坂城古镇,base_summer,self_drive,taxi_transfer,1.99
 P006,交河故城,P003,火焰山,base_summer,self_drive,taxi_transfer,0.865,24.08,0.692,0.065,False,False,1,124.495,amap_or_model_road_edge
 P006,交河故城,P004,葡萄沟,base_summer,scenic_shuttle -> scenic_shuttle,scenic_shuttle,0.6,30.0,1.34,0.095,False,True,1,168.3,amap_or_model_road_edge
 P006,交河故城,P005,坎儿井民俗园,base_summer,self_drive,taxi_transfer,0.302,5.37,0.242,0.053,False,False,1,58.63,amap_or_model_road_edge
-P006,交河故城,P006,交河故城,base_summer,same_spot,nan,0.0,0.0,0.0,0.02,False,False,1,12.0,amap_or_model_road_edge
+P006,交河故城,P006,交河故城,base_summer,same_spot,same_spot,0.0,0.0,0.0,0.0,False,False,1,0.0,diagonal_zero_edge
 P006,交河故城,P007,楼兰古城,base_summer,scenic_shuttle -> transfer -> rail -> transfer -> transfer -> air -> transfer -> scenic_shuttle -> self_drive,air,9.716,2680.16,12.996,0.392,False,True,1,3840.24,public_transport_candidate_needs_schedule_confirmation
 P006,交河故城,P008,赛里木湖,base_summer,self_drive,charter_car,8.267,408.14,11.71,0.376,False,False,1,1450.035,amap_or_model_road_edge
 P006,交河故城,P009,那拉提草原,base_summer,scenic_shuttle -> scenic_shuttle -> self_drive,scenic_shuttle,9.996,372.22,16.268,0.442,False,True,1,1719.34,amap_or_model_road_edge
@@ -245,7 +245,7 @@ P007,楼兰古城,P003,火焰山,base_summer,self_drive -> scenic_shuttle -> tra
 P007,楼兰古城,P004,葡萄沟,base_summer,self_drive -> scenic_shuttle -> transfer -> air -> transfer -> self_drive,air,9.647,2686.97,12.81,0.378,False,True,1,3827.865,public_transport_candidate_needs_schedule_confirmation
 P007,楼兰古城,P005,坎儿井民俗园,base_summer,self_drive -> scenic_shuttle -> transfer -> air -> transfer -> self_drive,air,9.665,2684.96,12.859,0.377,False,True,1,3828.09,public_transport_candidate_needs_schedule_confirmation
 P007,楼兰古城,P006,交河故城,base_summer,self_drive -> scenic_shuttle -> transfer -> air -> transfer -> self_drive,air,9.772,2688.05,13.149,0.38,False,True,1,3849.775,public_transport_candidate_needs_schedule_confirmation
-P007,楼兰古城,P007,楼兰古城,base_summer,same_spot,nan,0.0,0.0,0.0,0.02,False,False,1,12.0,amap_or_model_road_edge
+P007,楼兰古城,P007,楼兰古城,base_summer,same_spot,same_spot,0.0,0.0,0.0,0.0,False,False,1,0.0,diagonal_zero_edge
 P007,楼兰古城,P008,赛里木湖,base_summer,self_drive -> scenic_shuttle -> transfer -> air -> transfer -> self_drive,air,13.08,2877.22,24.142,0.544,False,True,1,4747.81,public_transport_candidate_needs_schedule_confirmation
 P007,楼兰古城,P009,那拉提草原,base_summer,self_drive,charter_car,13.591,571.05,30.421,0.459,False,False,1,2691.08,amap_or_model_road_edge
 P007,楼兰古城,P010,喀拉峻大草原,base_summer,self_drive -> scenic_shuttle -> transfer -> air -> air -> transfer -> self_drive -> scenic_shuttle,air,15.648,3772.98,35.393,0.541,False,True,1,6237.945,public_transport_candidate_needs_schedule_confirmation
@@ -286,7 +286,7 @@ P008,赛里木湖,P004,葡萄沟,base_summer,self_drive,charter_car,7.845,409.97
 P008,赛里木湖,P005,坎儿井民俗园,base_summer,self_drive,charter_car,7.874,407.96,10.733,0.33,False,False,1,1364.535,amap_or_model_road_edge
 P008,赛里木湖,P006,交河故城,base_summer,self_drive,charter_car,7.977,411.05,10.984,0.334,False,False,1,1384.925,amap_or_model_road_edge
 P008,赛里木湖,P007,楼兰古城,base_summer,self_drive -> transfer -> air -> transfer -> scenic_shuttle -> self_drive,air,13.082,2880.31,24.15,0.546,False,True,1,4752.53,public_transport_candidate_needs_schedule_confirmation
-P008,赛里木湖,P008,赛里木湖,base_summer,same_spot,nan,0.0,0.0,0.0,0.02,False,False,1,12.0,amap_or_model_road_edge
+P008,赛里木湖,P008,赛里木湖,base_summer,same_spot,same_spot,0.0,0.0,0.0,0.0,False,False,1,0.0,diagonal_zero_edge
 P008,赛里木湖,P009,那拉提草原,base_summer,self_drive,rental_car,5.421,219.14,6.435,0.193,False,False,1,814.25,amap_or_model_road_edge
 P008,赛里木湖,P010,喀拉峻大草原,base_summer,self_drive,rental_car,4.661,167.09,5.299,0.161,False,False,1,665.28,amap_or_model_road_edge
 P008,赛里木湖,P011,高昌故城,base_summer,self_drive,charter_car,8.465,426.77,12.223,0.382,False,False,1,1502.28,amap_or_model_road_edge
@@ -327,7 +327,7 @@ P009,那拉提草原,P005,坎儿井民俗园,base_summer,self_drive -> self_driv
 P009,那拉提草原,P006,交河故城,base_summer,self_drive -> self_drive,charter_car,9.542,345.43,16.061,0.397,False,True,1,1640.345,amap_or_model_road_edge
 P009,那拉提草原,P007,楼兰古城,base_summer,self_drive,charter_car,13.358,576.0,29.388,0.455,False,False,1,2638.99,amap_or_model_road_edge
 P009,那拉提草原,P008,赛里木湖,base_summer,self_drive -> scenic_shuttle -> scenic_shuttle,scenic_shuttle,5.054,231.73,5.549,0.257,False,True,1,812.525,amap_or_model_road_edge
-P009,那拉提草原,P009,那拉提草原,base_summer,same_spot,nan,0.0,0.0,0.0,0.02,False,False,1,12.0,amap_or_model_road_edge
+P009,那拉提草原,P009,那拉提草原,base_summer,same_spot,same_spot,0.0,0.0,0.0,0.0,False,False,1,0.0,diagonal_zero_edge
 P009,那拉提草原,P010,喀拉峻大草原,base_summer,self_drive,rental_car,5.087,149.69,5.91,0.151,False,False,1,684.285,amap_or_model_road_edge
 P009,那拉提草原,P011,高昌故城,base_summer,self_drive,charter_car,9.823,359.31,16.123,0.37,False,False,1,1650.65,amap_or_model_road_edge
 P009,那拉提草原,P012,苏公塔,base_summer,self_drive -> self_drive,charter_car,9.513,345.4,15.974,0.397,False,True,1,1635.385,amap_or_model_road_edge
@@ -368,7 +368,7 @@ P010,喀拉峻大草原,P006,交河故城,base_summer,self_drive -> self_drive,c
 P010,喀拉峻大草原,P007,楼兰古城,base_summer,scenic_shuttle -> self_drive -> transfer -> air -> air -> transfer -> scenic_shuttle -> self_drive,air,15.583,3772.41,35.079,0.54,False,True,1,6220.37,public_transport_candidate_needs_schedule_confirmation
 P010,喀拉峻大草原,P008,赛里木湖,base_summer,self_drive -> scenic_shuttle -> scenic_shuttle,scenic_shuttle,4.255,179.7,4.641,0.226,False,True,1,673.07,amap_or_model_road_edge
 P010,喀拉峻大草原,P009,那拉提草原,base_summer,self_drive,rental_car,4.997,147.98,5.776,0.15,False,False,1,672.795,amap_or_model_road_edge
-P010,喀拉峻大草原,P010,喀拉峻大草原,base_summer,same_spot,nan,0.0,0.0,0.0,0.02,False,False,1,12.0,amap_or_model_road_edge
+P010,喀拉峻大草原,P010,喀拉峻大草原,base_summer,same_spot,same_spot,0.0,0.0,0.0,0.0,False,False,1,0.0,diagonal_zero_edge
 P010,喀拉峻大草原,P011,高昌故城,base_summer,self_drive -> self_drive,charter_car,12.666,590.62,27.237,0.576,False,True,1,2605.195,amap_or_model_road_edge
 P010,喀拉峻大草原,P012,苏公塔,base_summer,self_drive -> self_drive,charter_car,12.137,574.86,25.098,0.568,False,True,1,2469.865,amap_or_model_road_edge
 P010,喀拉峻大草原,P013,吐峪沟麻扎村,base_summer,self_drive -> self_drive,charter_car,12.577,602.79,26.87,0.575,False,True,1,2597.135,amap_or_model_road_edge
@@ -409,7 +409,7 @@ P011,高昌故城,P007,楼兰古城,base_summer,scenic_shuttle -> transfer -> ra
 P011,高昌故城,P008,赛里木湖,base_summer,self_drive,charter_car,8.773,423.43,13.049,0.387,False,False,1,1549.89,amap_or_model_road_edge
 P011,高昌故城,P009,那拉提草原,base_summer,self_drive,charter_car,10.122,359.85,17.071,0.375,False,False,1,1707.315,amap_or_model_road_edge
 P011,高昌故城,P010,喀拉峻大草原,base_summer,scenic_shuttle -> transfer -> rail -> rail -> transfer -> self_drive -> scenic_shuttle,rail,12.966,344.25,23.99,0.389,True,True,1,2111.01,public_transport_candidate_needs_schedule_confirmation
-P011,高昌故城,P011,高昌故城,base_summer,same_spot,nan,0.0,0.0,0.0,0.02,False,False,1,12.0,amap_or_model_road_edge
+P011,高昌故城,P011,高昌故城,base_summer,same_spot,same_spot,0.0,0.0,0.0,0.0,False,False,1,0.0,diagonal_zero_edge
 P011,高昌故城,P012,苏公塔,base_summer,self_drive,taxi_transfer,0.9,21.42,0.72,0.063,False,False,1,123.12,amap_or_model_road_edge
 P011,高昌故城,P013,吐峪沟麻扎村,base_summer,self_drive,taxi_transfer,0.594,11.08,0.475,0.057,False,False,1,87.445,amap_or_model_road_edge
 P011,高昌故城,P014,霍城薰衣草花田,base_summer,self_drive,charter_car,9.651,457.36,15.592,0.4,False,False,1,1736.785,amap_or_model_road_edge
@@ -450,7 +450,7 @@ P012,苏公塔,P008,赛里木湖,base_summer,self_drive,charter_car,8.087,406.85
 P012,苏公塔,P009,那拉提草原,base_summer,self_drive -> self_drive,charter_car,9.694,347.22,16.524,0.4,False,True,1,1670.09,amap_or_model_road_edge
 P012,苏公塔,P010,喀拉峻大草原,base_summer,scenic_shuttle -> transfer -> rail -> rail -> transfer -> self_drive -> scenic_shuttle,rail,12.266,344.25,21.413,0.379,True,True,1,1964.545,public_transport_candidate_needs_schedule_confirmation
 P012,苏公塔,P011,高昌故城,base_summer,self_drive,taxi_transfer,0.796,20.27,0.637,0.062,False,False,1,113.995,amap_or_model_road_edge
-P012,苏公塔,P012,苏公塔,base_summer,same_spot,nan,0.0,0.0,0.0,0.02,False,False,1,12.0,amap_or_model_road_edge
+P012,苏公塔,P012,苏公塔,base_summer,same_spot,same_spot,0.0,0.0,0.0,0.0,False,False,1,0.0,diagonal_zero_edge
 P012,苏公塔,P013,吐峪沟麻扎村,base_summer,self_drive,taxi_transfer,0.841,26.11,0.673,0.066,False,False,1,125.43,amap_or_model_road_edge
 P012,苏公塔,P014,霍城薰衣草花田,base_summer,self_drive,charter_car,9.057,440.78,13.841,0.391,False,False,1,1615.22,amap_or_model_road_edge
 P012,苏公塔,P015,昭苏草原,base_summer,self_drive -> self_drive,charter_car,14.7,593.48,36.402,0.609,False,True,1,3111.47,amap_or_model_road_edge
@@ -491,7 +491,7 @@ P013,吐峪沟麻扎村,P009,那拉提草原,base_summer,self_drive,charter_car,
 P013,吐峪沟麻扎村,P010,喀拉峻大草原,base_summer,scenic_shuttle -> transfer -> rail -> rail -> transfer -> self_drive -> scenic_shuttle,rail,12.966,344.25,23.99,0.389,True,True,1,2111.01,public_transport_candidate_needs_schedule_confirmation
 P013,吐峪沟麻扎村,P011,高昌故城,base_summer,self_drive,taxi_transfer,0.424,9.8,0.339,0.056,False,False,1,73.495,amap_or_model_road_edge
 P013,吐峪沟麻扎村,P012,苏公塔,base_summer,self_drive,taxi_transfer,0.846,26.25,0.677,0.066,False,False,1,125.925,amap_or_model_road_edge
-P013,吐峪沟麻扎村,P013,吐峪沟麻扎村,base_summer,same_spot,nan,0.0,0.0,0.0,0.02,False,False,1,12.0,amap_or_model_road_edge
+P013,吐峪沟麻扎村,P013,吐峪沟麻扎村,base_summer,same_spot,same_spot,0.0,0.0,0.0,0.0,False,False,1,0.0,diagonal_zero_edge
 P013,吐峪沟麻扎村,P014,霍城薰衣草花田,base_summer,self_drive,charter_car,9.633,462.19,15.537,0.399,False,False,1,1737.91,amap_or_model_road_edge
 P013,吐峪沟麻扎村,P015,昭苏草原,base_summer,self_drive -> self_drive,charter_car,15.276,614.89,39.268,0.617,False,True,1,3286.81,amap_or_model_road_edge
 P013,吐峪沟麻扎村,P016,夏塔古道,base_summer,scenic_shuttle -> transfer -> rail -> rail -> transfer -> self_drive -> scenic_shuttle,rail,13.966,445.0,27.978,0.404,True,True,1,2435.22,public_transport_candidate_needs_schedule_confirmation
@@ -532,7 +532,7 @@ P014,霍城薰衣草花田,P010,喀拉峻大草原,base_summer,self_drive,rental
 P014,霍城薰衣草花田,P011,高昌故城,base_summer,self_drive,charter_car,9.298,460.01,14.536,0.394,False,False,1,1675.96,amap_or_model_road_edge
 P014,霍城薰衣草花田,P012,苏公塔,base_summer,self_drive,charter_car,8.766,444.26,13.03,0.386,False,False,1,1569.02,amap_or_model_road_edge
 P014,霍城薰衣草花田,P013,吐峪沟麻扎村,base_summer,self_drive,charter_car,9.207,472.19,14.271,0.393,False,False,1,1672.43,amap_or_model_road_edge
-P014,霍城薰衣草花田,P014,霍城薰衣草花田,base_summer,same_spot,nan,0.0,0.0,0.0,0.02,False,False,1,12.0,amap_or_model_road_edge
+P014,霍城薰衣草花田,P014,霍城薰衣草花田,base_summer,same_spot,same_spot,0.0,0.0,0.0,0.0,False,False,1,0.0,diagonal_zero_edge
 P014,霍城薰衣草花田,P015,昭苏草原,base_summer,self_drive,rental_car,5.643,152.7,6.806,0.153,False,False,1,748.275,amap_or_model_road_edge
 P014,霍城薰衣草花田,P016,夏塔古道,base_summer,self_drive,rental_car,4.994,190.65,5.771,0.176,False,False,1,730.735,amap_or_model_road_edge
 P014,霍城薰衣草花田,P017,果子沟大桥,base_summer,self_drive,taxi_transfer,0.597,19.1,0.478,0.062,False,False,1,98.705,amap_or_model_road_edge
@@ -573,7 +573,7 @@ P015,昭苏草原,P011,高昌故城,base_summer,self_drive -> self_drive,charter
 P015,昭苏草原,P012,苏公塔,base_summer,self_drive -> self_drive,charter_car,14.188,596.06,33.955,0.612,False,True,1,2987.815,amap_or_model_road_edge
 P015,昭苏草原,P013,吐峪沟麻扎村,base_summer,self_drive -> self_drive,charter_car,14.628,623.99,36.052,0.618,False,True,1,3129.11,amap_or_model_road_edge
 P015,昭苏草原,P014,霍城薰衣草花田,base_summer,self_drive,rental_car,5.55,152.57,6.648,0.152,False,False,1,737.18,amap_or_model_road_edge
-P015,昭苏草原,P015,昭苏草原,base_summer,same_spot,nan,0.0,0.0,0.0,0.02,False,False,1,12.0,amap_or_model_road_edge
+P015,昭苏草原,P015,昭苏草原,base_summer,same_spot,same_spot,0.0,0.0,0.0,0.0,False,False,1,0.0,diagonal_zero_edge
 P015,昭苏草原,P016,夏塔古道,base_summer,self_drive,rental_car,3.716,66.06,4.162,0.1,False,False,1,443.41,amap_or_model_road_edge
 P015,昭苏草原,P017,果子沟大桥,base_summer,self_drive,rental_car,6.006,170.9,7.451,0.164,False,False,1,814.805,amap_or_model_road_edge
 P015,昭苏草原,P018,喀纳斯湖,base_summer,self_drive -> self_drive -> scenic_shuttle -> scenic_shuttle,scenic_shuttle,14.967,648.97,35.92,0.704,False,True,1,3211.615,amap_or_model_road_edge
@@ -614,7 +614,7 @@ P016,夏塔古道,P012,苏公塔,base_summer,scenic_shuttle -> self_drive -> tra
 P016,夏塔古道,P013,吐峪沟麻扎村,base_summer,self_drive -> self_drive,charter_car,13.838,661.92,32.336,0.63,False,True,1,2979.37,amap_or_model_road_edge
 P016,夏塔古道,P014,霍城薰衣草花田,base_summer,self_drive,rental_car,4.739,190.51,5.406,0.175,False,False,1,704.645,amap_or_model_road_edge
 P016,夏塔古道,P015,昭苏草原,base_summer,self_drive,rental_car,3.726,66.27,4.173,0.1,False,False,1,444.465,amap_or_model_road_edge
-P016,夏塔古道,P016,夏塔古道,base_summer,same_spot,nan,0.0,0.0,0.0,0.02,False,False,1,12.0,amap_or_model_road_edge
+P016,夏塔古道,P016,夏塔古道,base_summer,same_spot,same_spot,0.0,0.0,0.0,0.0,False,False,1,0.0,diagonal_zero_edge
 P016,夏塔古道,P017,果子沟大桥,base_summer,self_drive,rental_car,5.216,208.83,6.108,0.187,False,False,1,778.45,amap_or_model_road_edge
 P016,夏塔古道,P018,喀纳斯湖,base_summer,self_drive -> self_drive -> scenic_shuttle -> scenic_shuttle,scenic_shuttle,14.177,686.9,32.202,0.715,False,True,1,3061.185,amap_or_model_road_edge
 P016,夏塔古道,P019,禾木村,base_summer,self_drive -> self_drive -> scenic_shuttle -> scenic_shuttle,scenic_shuttle,14.177,686.9,32.202,0.715,False,True,1,3061.185,amap_or_model_road_edge
@@ -655,7 +655,7 @@ P017,果子沟大桥,P013,吐峪沟麻扎村,base_summer,self_drive,charter_car,
 P017,果子沟大桥,P014,霍城薰衣草花田,base_summer,scenic_shuttle -> scenic_shuttle -> self_drive,scenic_shuttle,1.455,67.03,2.11,0.157,False,True,1,307.105,amap_or_model_road_edge
 P017,果子沟大桥,P015,昭苏草原,base_summer,scenic_shuttle -> scenic_shuttle -> self_drive,scenic_shuttle,6.934,218.26,8.59,0.263,False,True,1,1005.3,amap_or_model_road_edge
 P017,果子沟大桥,P016,夏塔古道,base_summer,scenic_shuttle -> scenic_shuttle -> self_drive,scenic_shuttle,6.326,256.21,7.467,0.277,False,True,1,979.835,amap_or_model_road_edge
-P017,果子沟大桥,P017,果子沟大桥,base_summer,same_spot,nan,0.0,0.0,0.0,0.02,False,False,1,12.0,amap_or_model_road_edge
+P017,果子沟大桥,P017,果子沟大桥,base_summer,same_spot,same_spot,0.0,0.0,0.0,0.0,False,False,1,0.0,diagonal_zero_edge
 P017,果子沟大桥,P018,喀纳斯湖,base_summer,self_drive -> scenic_shuttle -> scenic_shuttle,scenic_shuttle,8.961,478.07,13.295,0.469,False,True,1,1671.38,amap_or_model_road_edge
 P017,果子沟大桥,P019,禾木村,base_summer,self_drive -> scenic_shuttle -> scenic_shuttle,scenic_shuttle,8.961,478.07,13.295,0.469,False,True,1,1671.38,amap_or_model_road_edge
 P017,果子沟大桥,P020,白哈巴村,base_summer,self_drive -> scenic_shuttle -> scenic_shuttle -> self_drive,scenic_shuttle,9.819,495.3,15.732,0.532,False,True,1,1866.105,amap_or_model_road_edge
@@ -696,7 +696,7 @@ P018,喀纳斯湖,P014,霍城薰衣草花田,base_summer,scenic_shuttle -> sceni
 P018,喀纳斯湖,P015,昭苏草原,base_summer,scenic_shuttle -> scenic_shuttle -> self_drive -> self_drive,scenic_shuttle,15.491,645.63,38.51,0.7,False,True,1,3340.765,amap_or_model_road_edge
 P018,喀纳斯湖,P016,夏塔古道,base_summer,scenic_shuttle -> scenic_shuttle -> self_drive -> self_drive,scenic_shuttle,14.842,683.58,35.317,0.714,False,True,1,3220.715,amap_or_model_road_edge
 P018,喀纳斯湖,P017,果子沟大桥,base_summer,scenic_shuttle -> scenic_shuttle -> self_drive -> scenic_shuttle -> scenic_shuttle,scenic_shuttle,9.273,489.0,14.151,0.554,False,True,1,1782.75,amap_or_model_road_edge
-P018,喀纳斯湖,P018,喀纳斯湖,base_summer,same_spot,nan,0.0,0.0,0.0,0.02,False,False,1,12.0,amap_or_model_road_edge
+P018,喀纳斯湖,P018,喀纳斯湖,base_summer,same_spot,same_spot,0.0,0.0,0.0,0.0,False,False,1,0.0,diagonal_zero_edge
 P018,喀纳斯湖,P019,禾木村,base_summer,scenic_shuttle -> scenic_shuttle,scenic_shuttle,0.3,30.0,1.07,0.095,False,True,1,145.65,amap_or_model_road_edge
 P018,喀纳斯湖,P020,白哈巴村,base_summer,self_drive,taxi_transfer,0.858,17.23,0.686,0.06,False,False,1,114.13,amap_or_model_road_edge
 P018,喀纳斯湖,P021,可可托海,base_summer,scenic_shuttle -> scenic_shuttle -> self_drive,scenic_shuttle,5.272,217.05,5.836,0.248,False,True,1,812.99,amap_or_model_road_edge
@@ -737,7 +737,7 @@ P019,禾木村,P015,昭苏草原,base_summer,scenic_shuttle -> scenic_shuttle ->
 P019,禾木村,P016,夏塔古道,base_summer,scenic_shuttle -> scenic_shuttle -> self_drive -> self_drive,scenic_shuttle,14.842,683.58,35.317,0.714,False,True,1,3220.715,amap_or_model_road_edge
 P019,禾木村,P017,果子沟大桥,base_summer,scenic_shuttle -> scenic_shuttle -> self_drive -> scenic_shuttle -> scenic_shuttle,scenic_shuttle,9.273,489.0,14.151,0.554,False,True,1,1782.75,amap_or_model_road_edge
 P019,禾木村,P018,喀纳斯湖,base_summer,scenic_shuttle -> scenic_shuttle,scenic_shuttle,0.3,30.0,1.07,0.095,False,True,1,145.65,amap_or_model_road_edge
-P019,禾木村,P019,禾木村,base_summer,same_spot,nan,0.0,0.0,0.0,0.02,False,False,1,12.0,amap_or_model_road_edge
+P019,禾木村,P019,禾木村,base_summer,same_spot,same_spot,0.0,0.0,0.0,0.0,False,False,1,0.0,diagonal_zero_edge
 P019,禾木村,P020,白哈巴村,base_summer,scenic_shuttle -> scenic_shuttle -> self_drive,scenic_shuttle,1.158,47.23,1.842,0.145,False,True,1,257.65,amap_or_model_road_edge
 P019,禾木村,P021,可可托海,base_summer,scenic_shuttle -> scenic_shuttle -> self_drive,scenic_shuttle,5.272,217.05,5.836,0.248,False,True,1,812.99,amap_or_model_road_edge
 P019,禾木村,P022,五彩滩,base_summer,scenic_shuttle -> scenic_shuttle,scenic_shuttle,0.3,30.0,1.07,0.095,False,True,1,145.65,amap_or_model_road_edge
@@ -778,7 +778,7 @@ P020,白哈巴村,P016,夏塔古道,base_summer,self_drive -> scenic_shuttle -> 
 P020,白哈巴村,P017,果子沟大桥,base_summer,self_drive -> scenic_shuttle -> scenic_shuttle -> self_drive -> scenic_shuttle -> scenic_shuttle,scenic_shuttle,10.402,509.95,17.539,0.624,False,True,1,2037.675,amap_or_model_road_edge
 P020,白哈巴村,P018,喀纳斯湖,base_summer,self_drive,taxi_transfer,1.129,20.95,0.903,0.063,False,False,1,138.9,amap_or_model_road_edge
 P020,白哈巴村,P019,禾木村,base_summer,self_drive -> scenic_shuttle -> scenic_shuttle,scenic_shuttle,1.429,50.95,2.086,0.148,False,True,1,283.635,amap_or_model_road_edge
-P020,白哈巴村,P020,白哈巴村,base_summer,same_spot,nan,0.0,0.0,0.0,0.02,False,False,1,12.0,amap_or_model_road_edge
+P020,白哈巴村,P020,白哈巴村,base_summer,same_spot,same_spot,0.0,0.0,0.0,0.0,False,False,1,0.0,diagonal_zero_edge
 P020,白哈巴村,P021,可可托海,base_summer,self_drive -> scenic_shuttle -> scenic_shuttle -> self_drive,scenic_shuttle,6.401,238.0,7.599,0.307,False,True,1,988.19,amap_or_model_road_edge
 P020,白哈巴村,P022,五彩滩,base_summer,self_drive -> scenic_shuttle -> scenic_shuttle,scenic_shuttle,1.429,50.95,2.086,0.148,False,True,1,283.635,amap_or_model_road_edge
 P020,白哈巴村,P023,世界魔鬼城,base_summer,self_drive -> scenic_shuttle -> scenic_shuttle -> self_drive,scenic_shuttle,4.501,182.11,4.896,0.267,False,True,1,720.165,amap_or_model_road_edge
@@ -819,7 +819,7 @@ P021,可可托海,P017,果子沟大桥,base_summer,self_drive -> self_drive -> s
 P021,可可托海,P018,喀纳斯湖,base_summer,self_drive -> scenic_shuttle -> scenic_shuttle,scenic_shuttle,5.395,216.71,6.006,0.248,False,True,1,824.605,amap_or_model_road_edge
 P021,可可托海,P019,禾木村,base_summer,self_drive -> scenic_shuttle -> scenic_shuttle,scenic_shuttle,5.395,216.71,6.006,0.248,False,True,1,824.605,amap_or_model_road_edge
 P021,可可托海,P020,白哈巴村,base_summer,self_drive -> scenic_shuttle -> scenic_shuttle -> self_drive,scenic_shuttle,6.253,233.94,7.341,0.302,False,True,1,964.34,amap_or_model_road_edge
-P021,可可托海,P021,可可托海,base_summer,same_spot,nan,0.0,0.0,0.0,0.02,False,False,1,12.0,amap_or_model_road_edge
+P021,可可托海,P021,可可托海,base_summer,same_spot,same_spot,0.0,0.0,0.0,0.0,False,False,1,0.0,diagonal_zero_edge
 P021,可可托海,P022,五彩滩,base_summer,self_drive,rental_car,5.095,186.71,5.922,0.173,False,False,1,735.325,amap_or_model_road_edge
 P021,可可托海,P023,世界魔鬼城,base_summer,self_drive,rental_car,5.63,254.04,6.784,0.214,False,False,1,884.77,amap_or_model_road_edge
 P021,可可托海,P024,喀什古城,base_summer,self_drive -> transfer -> air -> transfer -> scenic_shuttle,air,12.801,2863.11,23.063,0.492,False,True,1,4644.18,public_transport_candidate_needs_schedule_confirmation
@@ -860,7 +860,7 @@ P022,五彩滩,P018,喀纳斯湖,base_summer,scenic_shuttle -> scenic_shuttle,sc
 P022,五彩滩,P019,禾木村,base_summer,scenic_shuttle -> scenic_shuttle,scenic_shuttle,0.3,30.0,1.07,0.095,False,True,1,145.65,amap_or_model_road_edge
 P022,五彩滩,P020,白哈巴村,base_summer,scenic_shuttle -> scenic_shuttle -> self_drive,scenic_shuttle,1.158,47.23,1.842,0.145,False,True,1,257.65,amap_or_model_road_edge
 P022,五彩滩,P021,可可托海,base_summer,self_drive,rental_car,4.972,187.05,5.739,0.173,False,False,1,723.125,amap_or_model_road_edge
-P022,五彩滩,P022,五彩滩,base_summer,same_spot,nan,0.0,0.0,0.0,0.02,False,False,1,12.0,amap_or_model_road_edge
+P022,五彩滩,P022,五彩滩,base_summer,same_spot,same_spot,0.0,0.0,0.0,0.0,False,False,1,0.0,diagonal_zero_edge
 P022,五彩滩,P023,世界魔鬼城,base_summer,self_drive,rental_car,3.072,131.16,3.441,0.139,False,False,1,476.925,amap_or_model_road_edge
 P022,五彩滩,P024,喀什古城,base_summer,self_drive -> transfer -> air -> transfer -> scenic_shuttle,air,12.983,2872.54,23.764,0.5,False,True,1,4696.325,public_transport_candidate_needs_schedule_confirmation
 P022,五彩滩,P025,艾提尕尔清真寺,base_summer,self_drive -> transfer -> air -> transfer -> scenic_shuttle,air,12.983,2872.54,23.764,0.5,False,True,1,4696.325,public_transport_candidate_needs_schedule_confirmation
@@ -901,7 +901,7 @@ P023,世界魔鬼城,P019,禾木村,base_summer,self_drive -> scenic_shuttle -> 
 P023,世界魔鬼城,P020,白哈巴村,base_summer,self_drive -> scenic_shuttle -> scenic_shuttle -> self_drive,scenic_shuttle,4.332,179.26,4.719,0.265,False,True,1,702.235,amap_or_model_road_edge
 P023,世界魔鬼城,P021,可可托海,base_summer,self_drive,rental_car,5.36,263.32,6.336,0.22,False,False,1,868.04,amap_or_model_road_edge
 P023,世界魔鬼城,P022,五彩滩,base_summer,self_drive,rental_car,3.174,132.03,3.555,0.14,False,False,1,487.095,amap_or_model_road_edge
-P023,世界魔鬼城,P023,世界魔鬼城,base_summer,same_spot,nan,0.0,0.0,0.0,0.02,False,False,1,12.0,amap_or_model_road_edge
+P023,世界魔鬼城,P023,世界魔鬼城,base_summer,same_spot,same_spot,0.0,0.0,0.0,0.0,False,False,1,0.0,diagonal_zero_edge
 P023,世界魔鬼城,P024,喀什古城,base_summer,self_drive -> transfer -> air -> transfer -> scenic_shuttle,air,11.911,2812.21,19.807,0.448,False,True,1,4389.21,public_transport_candidate_needs_schedule_confirmation
 P023,世界魔鬼城,P025,艾提尕尔清真寺,base_summer,self_drive -> transfer -> air -> transfer -> scenic_shuttle,air,11.911,2812.21,19.807,0.448,False,True,1,4389.21,public_transport_candidate_needs_schedule_confirmation
 P023,世界魔鬼城,P026,香妃园,base_summer,self_drive -> transfer -> air -> transfer -> scenic_shuttle,air,11.911,2812.21,19.807,0.448,False,True,1,4389.21,public_transport_candidate_needs_schedule_confirmation
@@ -942,7 +942,7 @@ P024,喀什古城,P020,白哈巴村,base_summer,scenic_shuttle -> transfer -> ai
 P024,喀什古城,P021,可可托海,base_summer,scenic_shuttle -> transfer -> air -> transfer -> self_drive,air,13.013,2863.14,23.881,0.495,False,True,1,4690.24,public_transport_candidate_needs_schedule_confirmation
 P024,喀什古城,P022,五彩滩,base_summer,scenic_shuttle -> transfer -> air -> transfer -> self_drive,air,13.232,2873.68,24.742,0.504,False,True,1,4752.59,public_transport_candidate_needs_schedule_confirmation
 P024,喀什古城,P023,世界魔鬼城,base_summer,scenic_shuttle -> transfer -> air -> transfer -> self_drive,air,11.555,2811.9,18.585,0.442,False,True,1,4317.85,public_transport_candidate_needs_schedule_confirmation
-P024,喀什古城,P024,喀什古城,base_summer,same_spot,nan,0.0,0.0,0.0,0.02,False,False,1,12.0,amap_or_model_road_edge
+P024,喀什古城,P024,喀什古城,base_summer,same_spot,same_spot,0.0,0.0,0.0,0.0,False,False,1,0.0,diagonal_zero_edge
 P024,喀什古城,P025,艾提尕尔清真寺,base_summer,self_drive,taxi_transfer,0.195,1.72,0.156,0.051,False,False,1,46.165,amap_or_model_road_edge
 P024,喀什古城,P026,香妃园,base_summer,self_drive,taxi_transfer,0.232,2.08,0.186,0.051,False,False,1,49.17,amap_or_model_road_edge
 P024,喀什古城,P027,帕米尔高原白沙湖,base_summer,self_drive,rental_car,3.715,105.27,4.161,0.124,False,False,1,496.94,amap_or_model_road_edge
@@ -983,7 +983,7 @@ P025,艾提尕尔清真寺,P021,可可托海,base_summer,scenic_shuttle -> trans
 P025,艾提尕尔清真寺,P022,五彩滩,base_summer,scenic_shuttle -> transfer -> air -> transfer -> self_drive,air,13.232,2873.68,24.742,0.504,False,True,1,4752.59,public_transport_candidate_needs_schedule_confirmation
 P025,艾提尕尔清真寺,P023,世界魔鬼城,base_summer,scenic_shuttle -> transfer -> air -> transfer -> self_drive,air,11.555,2811.9,18.585,0.442,False,True,1,4317.85,public_transport_candidate_needs_schedule_confirmation
 P025,艾提尕尔清真寺,P024,喀什古城,base_summer,self_drive,taxi_transfer,0.151,1.2,0.121,0.051,False,False,1,42.53,amap_or_model_road_edge
-P025,艾提尕尔清真寺,P025,艾提尕尔清真寺,base_summer,same_spot,nan,0.0,0.0,0.0,0.02,False,False,1,12.0,amap_or_model_road_edge
+P025,艾提尕尔清真寺,P025,艾提尕尔清真寺,base_summer,same_spot,same_spot,0.0,0.0,0.0,0.0,False,False,1,0.0,diagonal_zero_edge
 P025,艾提尕尔清真寺,P026,香妃园,base_summer,self_drive,taxi_transfer,0.304,2.93,0.243,0.052,False,False,1,55.705,amap_or_model_road_edge
 P025,艾提尕尔清真寺,P027,帕米尔高原白沙湖,base_summer,self_drive,rental_car,3.647,104.63,4.085,0.123,False,False,1,489.9,amap_or_model_road_edge
 P025,艾提尕尔清真寺,P028,石头城遗址,base_summer,scenic_shuttle -> self_drive -> scenic_shuttle,scenic_shuttle,5.1,189.5,5.608,0.175,False,True,1,725.36,amap_or_model_road_edge
@@ -1024,7 +1024,7 @@ P026,香妃园,P022,五彩滩,base_summer,scenic_shuttle -> transfer -> air -> t
 P026,香妃园,P023,世界魔鬼城,base_summer,scenic_shuttle -> transfer -> air -> transfer -> self_drive,air,11.555,2811.9,18.585,0.442,False,True,1,4317.85,public_transport_candidate_needs_schedule_confirmation
 P026,香妃园,P024,喀什古城,base_summer,self_drive,taxi_transfer,0.262,2.4,0.21,0.051,False,False,1,51.62,amap_or_model_road_edge
 P026,香妃园,P025,艾提尕尔清真寺,base_summer,self_drive,taxi_transfer,0.287,2.72,0.23,0.052,False,False,1,54.315,amap_or_model_road_edge
-P026,香妃园,P026,香妃园,base_summer,same_spot,nan,0.0,0.0,0.0,0.02,False,False,1,12.0,amap_or_model_road_edge
+P026,香妃园,P026,香妃园,base_summer,same_spot,same_spot,0.0,0.0,0.0,0.0,False,False,1,0.0,diagonal_zero_edge
 P026,香妃园,P027,帕米尔高原白沙湖,base_summer,self_drive,rental_car,3.847,106.63,4.309,0.125,False,False,1,510.18,amap_or_model_road_edge
 P026,香妃园,P028,石头城遗址,base_summer,scenic_shuttle -> self_drive -> scenic_shuttle,scenic_shuttle,5.1,189.5,5.608,0.175,False,True,1,725.36,amap_or_model_road_edge
 P026,香妃园,P029,天山神秘大峡谷,base_summer,self_drive,charter_car,8.306,416.2,11.81,0.38,False,False,1,1466.36,amap_or_model_road_edge
@@ -1065,7 +1065,7 @@ P027,帕米尔高原白沙湖,P023,世界魔鬼城,base_summer,self_drive -> sce
 P027,帕米尔高原白沙湖,P024,喀什古城,base_summer,self_drive,rental_car,3.489,100.08,3.908,0.121,False,False,1,470.655,amap_or_model_road_edge
 P027,帕米尔高原白沙湖,P025,艾提尕尔清真寺,base_summer,self_drive,rental_car,3.447,99.76,3.861,0.12,False,False,1,466.15,amap_or_model_road_edge
 P027,帕米尔高原白沙湖,P026,香妃园,base_summer,self_drive,rental_car,3.637,101.69,4.073,0.122,False,False,1,485.47,amap_or_model_road_edge
-P027,帕米尔高原白沙湖,P027,帕米尔高原白沙湖,base_summer,same_spot,nan,0.0,0.0,0.0,0.02,False,False,1,12.0,amap_or_model_road_edge
+P027,帕米尔高原白沙湖,P027,帕米尔高原白沙湖,base_summer,same_spot,same_spot,0.0,0.0,0.0,0.0,False,False,1,0.0,diagonal_zero_edge
 P027,帕米尔高原白沙湖,P028,石头城遗址,base_summer,self_drive,taxi_transfer,1.602,55.56,1.282,0.084,False,False,1,219.72,amap_or_model_road_edge
 P027,帕米尔高原白沙湖,P029,天山神秘大峡谷,base_summer,self_drive,charter_car,11.155,517.82,20.593,0.422,False,False,1,2088.13,amap_or_model_road_edge
 P027,帕米尔高原白沙湖,P030,库车王府,base_summer,self_drive,charter_car,9.941,490.61,16.493,0.404,False,False,1,1823.13,amap_or_model_road_edge
@@ -1106,7 +1106,7 @@ P028,石头城遗址,P024,喀什古城,base_summer,self_drive -> self_drive,rent
 P028,石头城遗址,P025,艾提尕尔清真寺,base_summer,self_drive,rental_car,4.918,154.73,5.66,0.154,False,False,1,673.96,amap_or_model_road_edge
 P028,石头城遗址,P026,香妃园,base_summer,scenic_shuttle -> self_drive -> scenic_shuttle,scenic_shuttle,5.1,189.5,5.608,0.175,False,True,1,725.36,amap_or_model_road_edge
 P028,石头城遗址,P027,帕米尔高原白沙湖,base_summer,self_drive,taxi_transfer,1.471,55.09,1.177,0.083,False,False,1,209.34,amap_or_model_road_edge
-P028,石头城遗址,P028,石头城遗址,base_summer,same_spot,nan,0.0,0.0,0.0,0.02,False,False,1,12.0,amap_or_model_road_edge
+P028,石头城遗址,P028,石头城遗址,base_summer,same_spot,same_spot,0.0,0.0,0.0,0.0,False,False,1,0.0,diagonal_zero_edge
 P028,石头城遗址,P029,天山神秘大峡谷,base_summer,self_drive,charter_car,12.545,572.79,25.939,0.443,False,False,1,2444.92,amap_or_model_road_edge
 P028,石头城遗址,P030,库车王府,base_summer,self_drive,charter_car,11.343,545.58,21.275,0.425,False,False,1,2154.96,amap_or_model_road_edge
 P028,石头城遗址,P031,克孜尔石窟,base_summer,self_drive,charter_car,11.752,539.93,22.804,0.431,False,False,1,2236.03,amap_or_model_road_edge
@@ -1147,7 +1147,7 @@ P029,天山神秘大峡谷,P025,艾提尕尔清真寺,base_summer,self_drive,cha
 P029,天山神秘大峡谷,P026,香妃园,base_summer,self_drive,charter_car,8.063,421.48,11.196,0.376,False,False,1,1433.105,amap_or_model_road_edge
 P029,天山神秘大峡谷,P027,帕米尔高原白沙湖,base_summer,self_drive,charter_car,11.059,527.3,20.249,0.421,False,False,1,2078.17,amap_or_model_road_edge
 P029,天山神秘大峡谷,P028,石头城遗址,base_summer,self_drive,charter_car,12.538,582.14,25.91,0.443,False,False,1,2452.72,amap_or_model_road_edge
-P029,天山神秘大峡谷,P029,天山神秘大峡谷,base_summer,same_spot,nan,0.0,0.0,0.0,0.02,False,False,1,12.0,amap_or_model_road_edge
+P029,天山神秘大峡谷,P029,天山神秘大峡谷,base_summer,same_spot,same_spot,0.0,0.0,0.0,0.0,False,False,1,0.0,diagonal_zero_edge
 P029,天山神秘大峡谷,P030,库车王府,base_summer,self_drive,taxi_transfer,1.301,36.48,1.041,0.072,False,False,1,172.06,amap_or_model_road_edge
 P029,天山神秘大峡谷,P031,克孜尔石窟,base_summer,self_drive,taxi_transfer,1.497,46.35,1.198,0.078,False,False,1,199.455,amap_or_model_road_edge
 P029,天山神秘大峡谷,P032,博斯腾湖,base_summer,scenic_shuttle -> transfer -> rail -> transfer -> scenic_shuttle,rail,5.65,157.0,4.567,0.165,False,True,1,659.265,public_transport_candidate_needs_schedule_confirmation
@@ -1188,7 +1188,7 @@ P030,库车王府,P026,香妃园,base_summer,self_drive,charter_car,7.131,389.15
 P030,库车王府,P027,帕米尔高原白沙湖,base_summer,self_drive,charter_car,10.148,494.97,17.155,0.407,False,False,1,1866.325,amap_or_model_road_edge
 P030,库车王府,P028,石头城遗址,base_summer,self_drive,charter_car,11.624,549.81,22.319,0.429,False,False,1,2218.405,amap_or_model_road_edge
 P030,库车王府,P029,天山神秘大峡谷,base_summer,self_drive,taxi_transfer,1.317,36.6,1.054,0.072,False,False,1,173.325,amap_or_model_road_edge
-P030,库车王府,P030,库车王府,base_summer,same_spot,nan,0.0,0.0,0.0,0.02,False,False,1,12.0,amap_or_model_road_edge
+P030,库车王府,P030,库车王府,base_summer,same_spot,same_spot,0.0,0.0,0.0,0.0,False,False,1,0.0,diagonal_zero_edge
 P030,库车王府,P031,克孜尔石窟,base_summer,self_drive,taxi_transfer,1.271,35.86,1.017,0.072,False,False,1,169.31,amap_or_model_road_edge
 P030,库车王府,P032,博斯腾湖,base_summer,scenic_shuttle -> transfer -> rail -> transfer -> scenic_shuttle,rail,4.45,157.0,3.417,0.165,False,True,1,565.515,public_transport_candidate_needs_schedule_confirmation
 P030,库车王府,P033,巴音布鲁克草原,base_summer,scenic_shuttle -> self_drive -> scenic_shuttle,scenic_shuttle,4.45,173.0,4.841,0.445,False,True,1,813.595,amap_or_model_road_edge
@@ -1229,7 +1229,7 @@ P031,克孜尔石窟,P027,帕米尔高原白沙湖,base_summer,self_drive,charte
 P031,克孜尔石窟,P028,石头城遗址,base_summer,self_drive,charter_car,11.956,543.93,23.589,0.434,False,False,1,2284.295,amap_or_model_road_edge
 P031,克孜尔石窟,P029,天山神秘大峡谷,base_summer,self_drive,taxi_transfer,1.523,46.5,1.218,0.078,False,False,1,201.415,amap_or_model_road_edge
 P031,克孜尔石窟,P030,库车王府,base_summer,self_drive,taxi_transfer,1.287,35.87,1.03,0.072,False,False,1,170.465,amap_or_model_road_edge
-P031,克孜尔石窟,P031,克孜尔石窟,base_summer,same_spot,nan,0.0,0.0,0.0,0.02,False,False,1,12.0,amap_or_model_road_edge
+P031,克孜尔石窟,P031,克孜尔石窟,base_summer,same_spot,same_spot,0.0,0.0,0.0,0.0,False,False,1,0.0,diagonal_zero_edge
 P031,克孜尔石窟,P032,博斯腾湖,base_summer,scenic_shuttle -> transfer -> rail -> transfer -> scenic_shuttle,rail,5.65,157.0,4.567,0.165,False,True,1,659.265,public_transport_candidate_needs_schedule_confirmation
 P031,克孜尔石窟,P033,巴音布鲁克草原,base_summer,self_drive,rental_car,4.761,150.47,5.437,0.151,False,False,1,652.37,amap_or_model_road_edge
 P031,克孜尔石窟,P034,罗布人村寨,base_summer,self_drive,rental_car,6.169,244.31,7.756,0.211,False,False,1,935.845,amap_or_model_road_edge
@@ -1270,7 +1270,7 @@ P032,博斯腾湖,P028,石头城遗址,base_summer,scenic_shuttle -> transfer ->
 P032,博斯腾湖,P029,天山神秘大峡谷,base_summer,scenic_shuttle -> transfer -> rail -> transfer -> scenic_shuttle,rail,5.65,157.0,4.567,0.165,False,True,1,659.265,public_transport_candidate_needs_schedule_confirmation
 P032,博斯腾湖,P030,库车王府,base_summer,scenic_shuttle -> transfer -> rail -> transfer -> scenic_shuttle,rail,4.45,157.0,3.417,0.165,False,True,1,565.515,public_transport_candidate_needs_schedule_confirmation
 P032,博斯腾湖,P031,克孜尔石窟,base_summer,scenic_shuttle -> transfer -> rail -> transfer -> scenic_shuttle,rail,5.65,157.0,4.567,0.165,False,True,1,659.265,public_transport_candidate_needs_schedule_confirmation
-P032,博斯腾湖,P032,博斯腾湖,base_summer,same_spot,nan,0.0,0.0,0.0,0.02,False,False,1,12.0,amap_or_model_road_edge
+P032,博斯腾湖,P032,博斯腾湖,base_summer,same_spot,same_spot,0.0,0.0,0.0,0.0,False,False,1,0.0,diagonal_zero_edge
 P032,博斯腾湖,P033,巴音布鲁克草原,base_summer,self_drive,rental_car,6.521,208.52,8.447,0.194,False,False,1,933.27,amap_or_model_road_edge
 P032,博斯腾湖,P034,罗布人村寨,base_summer,scenic_shuttle -> scenic_shuttle,scenic_shuttle,1.3,30.0,1.97,0.095,False,True,1,221.15,amap_or_model_road_edge
 P032,博斯腾湖,P035,江布拉克草原,base_summer,self_drive,charter_car,7.266,316.36,9.331,0.266,False,False,1,1150.165,amap_or_model_road_edge
@@ -1311,7 +1311,7 @@ P033,巴音布鲁克草原,P029,天山神秘大峡谷,base_summer,self_drive,ren
 P033,巴音布鲁克草原,P030,库车王府,base_summer,scenic_shuttle -> self_drive -> scenic_shuttle,scenic_shuttle,4.45,173.0,4.841,0.445,False,True,1,813.595,amap_or_model_road_edge
 P033,巴音布鲁克草原,P031,克孜尔石窟,base_summer,self_drive,rental_car,4.648,150.31,5.281,0.151,False,False,1,641.235,amap_or_model_road_edge
 P033,巴音布鲁克草原,P032,博斯腾湖,base_summer,self_drive,rental_car,6.412,208.34,8.229,0.192,False,False,1,918.265,amap_or_model_road_edge
-P033,巴音布鲁克草原,P033,巴音布鲁克草原,base_summer,same_spot,nan,0.0,0.0,0.0,0.02,False,False,1,12.0,amap_or_model_road_edge
+P033,巴音布鲁克草原,P033,巴音布鲁克草原,base_summer,same_spot,same_spot,0.0,0.0,0.0,0.0,False,False,1,0.0,diagonal_zero_edge
 P033,巴音布鲁克草原,P034,罗布人村寨,base_summer,self_drive,rental_car,6.515,243.19,8.435,0.215,False,False,1,979.79,amap_or_model_road_edge
 P033,巴音布鲁克草原,P035,江布拉克草原,base_summer,self_drive,charter_car,8.411,347.54,12.081,0.342,False,False,1,1390.77,amap_or_model_road_edge
 P033,巴音布鲁克草原,P036,北庭故城遗址,base_summer,self_drive,charter_car,7.728,314.14,10.384,0.271,False,False,1,1214.5,amap_or_model_road_edge
@@ -1352,7 +1352,7 @@ P034,罗布人村寨,P030,库车王府,base_summer,scenic_shuttle -> transfer ->
 P034,罗布人村寨,P031,克孜尔石窟,base_summer,scenic_shuttle -> transfer -> rail -> transfer -> scenic_shuttle,rail,6.35,157.0,5.477,0.17,False,True,1,727.715,public_transport_candidate_needs_schedule_confirmation
 P034,罗布人村寨,P032,博斯腾湖,base_summer,scenic_shuttle -> scenic_shuttle,scenic_shuttle,1.3,30.0,1.97,0.095,False,True,1,221.15,amap_or_model_road_edge
 P034,罗布人村寨,P033,巴音布鲁克草原,base_summer,self_drive,rental_car,6.582,243.67,8.572,0.217,False,False,1,989.98,amap_or_model_road_edge
-P034,罗布人村寨,P034,罗布人村寨,base_summer,same_spot,nan,0.0,0.0,0.0,0.02,False,False,1,12.0,amap_or_model_road_edge
+P034,罗布人村寨,P034,罗布人村寨,base_summer,same_spot,same_spot,0.0,0.0,0.0,0.0,False,False,1,0.0,diagonal_zero_edge
 P034,罗布人村寨,P035,江布拉克草原,base_summer,self_drive,charter_car,7.377,351.51,9.577,0.289,False,False,1,1214.07,amap_or_model_road_edge
 P034,罗布人村寨,P036,北庭故城遗址,base_summer,self_drive,rental_car,6.685,318.12,8.785,0.263,False,False,1,1105.22,amap_or_model_road_edge
 P034,罗布人村寨,P037,和田博物馆,base_summer,self_drive,charter_car,11.752,529.69,22.804,0.431,False,False,1,2225.79,amap_or_model_road_edge
@@ -1393,7 +1393,7 @@ P035,江布拉克草原,P031,克孜尔石窟,base_summer,self_drive -> transfer 
 P035,江布拉克草原,P032,博斯腾湖,base_summer,self_drive,charter_car,7.369,316.57,9.559,0.268,False,False,1,1165.44,amap_or_model_road_edge
 P035,江布拉克草原,P033,巴音布鲁克草原,base_summer,self_drive,charter_car,8.53,347.43,12.394,0.344,False,False,1,1410.11,amap_or_model_road_edge
 P035,江布拉克草原,P034,罗布人村寨,base_summer,self_drive,charter_car,7.477,351.42,9.803,0.29,False,False,1,1228.25,amap_or_model_road_edge
-P035,江布拉克草原,P035,江布拉克草原,base_summer,same_spot,nan,0.0,0.0,0.0,0.02,False,False,1,12.0,amap_or_model_road_edge
+P035,江布拉克草原,P035,江布拉克草原,base_summer,same_spot,same_spot,0.0,0.0,0.0,0.0,False,False,1,0.0,diagonal_zero_edge
 P035,江布拉克草原,P036,北庭故城遗址,base_summer,self_drive,taxi_transfer,1.279,38.52,1.023,0.073,False,False,1,173.12,amap_or_model_road_edge
 P035,江布拉克草原,P037,和田博物馆,base_summer,self_drive -> transfer -> air -> transfer -> scenic_shuttle,air,9.731,2513.6,13.037,0.348,False,True,1,3649.65,public_transport_candidate_needs_schedule_confirmation
 P035,江布拉克草原,P038,尼雅遗址,base_summer,self_drive -> transfer -> air -> transfer -> self_drive -> scenic_shuttle,air,12.931,2574.1,23.562,0.476,False,True,1,4372.575,public_transport_candidate_needs_schedule_confirmation
@@ -1434,7 +1434,7 @@ P036,北庭故城遗址,P032,博斯腾湖,base_summer,self_drive,rental_car,6.68
 P036,北庭故城遗址,P033,巴音布鲁克草原,base_summer,self_drive,charter_car,7.888,314.08,10.767,0.273,False,False,1,1238.475,amap_or_model_road_edge
 P036,北庭故城遗址,P034,罗布人村寨,base_summer,self_drive,rental_car,6.787,318.07,9.0,0.265,False,False,1,1119.615,amap_or_model_road_edge
 P036,北庭故城遗址,P035,江布拉克草原,base_summer,self_drive,taxi_transfer,1.334,38.39,1.067,0.073,False,False,1,176.895,amap_or_model_road_edge
-P036,北庭故城遗址,P036,北庭故城遗址,base_summer,same_spot,nan,0.0,0.0,0.0,0.02,False,False,1,12.0,amap_or_model_road_edge
+P036,北庭故城遗址,P036,北庭故城遗址,base_summer,same_spot,same_spot,0.0,0.0,0.0,0.0,False,False,1,0.0,diagonal_zero_edge
 P036,北庭故城遗址,P037,和田博物馆,base_summer,self_drive -> transfer -> air -> transfer -> scenic_shuttle,air,9.061,2480.26,11.3,0.318,False,True,1,3496.695,public_transport_candidate_needs_schedule_confirmation
 P036,北庭故城遗址,P038,尼雅遗址,base_summer,self_drive -> transfer -> air -> transfer -> self_drive -> scenic_shuttle,air,12.261,2540.76,21.054,0.446,False,True,1,4184.925,public_transport_candidate_needs_schedule_confirmation
 P036,北庭故城遗址,P039,千里葡萄长廊,base_summer,self_drive -> transfer -> air -> transfer -> scenic_shuttle,air,9.061,2480.26,11.3,0.318,False,True,1,3496.695,public_transport_candidate_needs_schedule_confirmation
@@ -1475,7 +1475,7 @@ P037,和田博物馆,P033,巴音布鲁克草原,base_summer,self_drive,charter_c
 P037,和田博物馆,P034,罗布人村寨,base_summer,self_drive,charter_car,11.522,528.18,21.937,0.428,False,False,1,2175.415,amap_or_model_road_edge
 P037,和田博物馆,P035,江布拉克草原,base_summer,scenic_shuttle -> transfer -> air -> transfer -> self_drive,air,9.742,2513.68,13.067,0.348,False,True,1,3651.465,public_transport_candidate_needs_schedule_confirmation
 P037,和田博物馆,P036,北庭故城遗址,base_summer,scenic_shuttle -> transfer -> air -> transfer -> self_drive,air,9.047,2480.29,11.266,0.318,False,True,1,3494.705,public_transport_candidate_needs_schedule_confirmation
-P037,和田博物馆,P037,和田博物馆,base_summer,same_spot,nan,0.0,0.0,0.0,0.02,False,False,1,12.0,amap_or_model_road_edge
+P037,和田博物馆,P037,和田博物馆,base_summer,same_spot,same_spot,0.0,0.0,0.0,0.0,False,False,1,0.0,diagonal_zero_edge
 P037,和田博物馆,P038,尼雅遗址,base_summer,scenic_shuttle -> self_drive -> scenic_shuttle,scenic_shuttle,3.8,90.5,4.22,0.175,False,True,1,518.4,amap_or_model_road_edge
 P037,和田博物馆,P039,千里葡萄长廊,base_summer,self_drive,taxi_transfer,0.396,6.93,0.317,0.054,False,False,1,67.455,amap_or_model_road_edge
 P037,和田博物馆,P040,奥依塔克冰川,base_summer,self_drive,rental_car,6.777,321.5,8.978,0.267,False,False,1,1122.905,amap_or_model_road_edge
@@ -1516,7 +1516,7 @@ P038,尼雅遗址,P034,罗布人村寨,base_summer,self_drive,charter_car,9.146,
 P038,尼雅遗址,P035,江布拉克草原,base_summer,scenic_shuttle -> self_drive -> transfer -> air -> transfer -> self_drive,air,12.942,2574.18,23.605,0.476,False,True,1,4374.975,public_transport_candidate_needs_schedule_confirmation
 P038,尼雅遗址,P036,北庭故城遗址,base_summer,scenic_shuttle -> self_drive -> transfer -> air -> transfer -> self_drive,air,12.247,2540.79,21.003,0.446,False,True,1,4182.17,public_transport_candidate_needs_schedule_confirmation
 P038,尼雅遗址,P037,和田博物馆,base_summer,scenic_shuttle -> self_drive -> scenic_shuttle,scenic_shuttle,3.8,90.5,4.22,0.175,False,True,1,518.4,amap_or_model_road_edge
-P038,尼雅遗址,P038,尼雅遗址,base_summer,same_spot,nan,0.0,0.0,0.0,0.02,False,False,1,12.0,amap_or_model_road_edge
+P038,尼雅遗址,P038,尼雅遗址,base_summer,same_spot,same_spot,0.0,0.0,0.0,0.0,False,False,1,0.0,diagonal_zero_edge
 P038,尼雅遗址,P039,千里葡萄长廊,base_summer,scenic_shuttle -> self_drive -> scenic_shuttle,scenic_shuttle,3.8,90.5,4.22,0.175,False,True,1,518.4,amap_or_model_road_edge
 P038,尼雅遗址,P040,奥依塔克冰川,base_summer,scenic_shuttle -> self_drive -> scenic_shuttle -> self_drive,scenic_shuttle,10.541,409.89,17.988,0.477,False,True,1,1874.485,amap_or_model_road_edge
 P039,千里葡萄长廊,P001,天山天池,base_summer,scenic_shuttle -> transfer -> air -> transfer -> self_drive,air,8.017,2424.02,8.916,0.267,False,True,1,3266.035,public_transport_candidate_needs_schedule_confirmation
@@ -1557,7 +1557,7 @@ P039,千里葡萄长廊,P035,江布拉克草原,base_summer,scenic_shuttle -> tr
 P039,千里葡萄长廊,P036,北庭故城遗址,base_summer,scenic_shuttle -> transfer -> air -> transfer -> self_drive,air,9.047,2480.29,11.266,0.318,False,True,1,3494.705,public_transport_candidate_needs_schedule_confirmation
 P039,千里葡萄长廊,P037,和田博物馆,base_summer,self_drive,taxi_transfer,0.449,7.63,0.359,0.055,False,False,1,72.5,amap_or_model_road_edge
 P039,千里葡萄长廊,P038,尼雅遗址,base_summer,scenic_shuttle -> self_drive -> scenic_shuttle,scenic_shuttle,3.8,90.5,4.22,0.175,False,True,1,518.4,amap_or_model_road_edge
-P039,千里葡萄长廊,P039,千里葡萄长廊,base_summer,same_spot,nan,0.0,0.0,0.0,0.02,False,False,1,12.0,amap_or_model_road_edge
+P039,千里葡萄长廊,P039,千里葡萄长廊,base_summer,same_spot,same_spot,0.0,0.0,0.0,0.0,False,False,1,0.0,diagonal_zero_edge
 P039,千里葡萄长廊,P040,奥依塔克冰川,base_summer,self_drive,rental_car,6.741,319.39,8.902,0.265,False,False,1,1114.915,amap_or_model_road_edge
 P040,奥依塔克冰川,P001,天山天池,base_summer,scenic_shuttle -> transfer -> air -> transfer -> self_drive,air,9.717,2612.02,12.999,0.293,False,True,1,3712.87,public_transport_candidate_needs_schedule_confirmation
 P040,奥依塔克冰川,P002,达坂城古镇,base_summer,scenic_shuttle -> transfer -> air -> transfer -> self_drive,air,10.083,2630.43,14.014,0.31,False,True,1,3799.965,public_transport_candidate_needs_schedule_confirmation
@@ -1598,4 +1598,4 @@ P040,奥依塔克冰川,P036,北庭故城遗址,base_summer,scenic_shuttle -> tr
 P040,奥依塔克冰川,P037,和田博物馆,base_summer,self_drive,rental_car,6.738,316.54,8.896,0.263,False,False,1,1110.49,amap_or_model_road_edge
 P040,奥依塔克冰川,P038,尼雅遗址,base_summer,self_drive -> scenic_shuttle -> self_drive -> scenic_shuttle,scenic_shuttle,10.538,407.04,17.978,0.475,False,True,1,1869.88,amap_or_model_road_edge
 P040,奥依塔克冰川,P039,千里葡萄长廊,base_summer,self_drive,rental_car,6.841,318.87,9.115,0.266,False,False,1,1128.08,amap_or_model_road_edge
-P040,奥依塔克冰川,P040,奥依塔克冰川,base_summer,same_spot,nan,0.0,0.0,0.0,0.02,False,False,1,12.0,amap_or_model_road_edge
+P040,奥依塔克冰川,P040,奥依塔克冰川,base_summer,same_spot,same_spot,0.0,0.0,0.0,0.0,False,False,1,0.0,diagonal_zero_edge

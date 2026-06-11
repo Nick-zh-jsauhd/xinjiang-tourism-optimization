@@ -25,7 +25,7 @@
 | `05_画像与鲁棒性/` | 游客画像、自适应删点、数字孪生、风险策略相关数据 |
 | `06_图表/` | 第一问相关可视化图表 |
 | `07_报告与工作簿/` | 第一问及其相关强化实验报告和 Excel 工作簿 |
-| `08_Q1_V2强化/` | 按 `q1_v2_plan.md` 新增的路线方案族、交通标签、稳健性和汇报成果 |
+| `08_Q1_V2强化/` | 按 `q1_v2_plan.md` 新增的候选路线族、交通标签、稳健性审计和汇报成果 |
 
 ## 3. 第一问当前主模型口径
 
@@ -136,17 +136,20 @@ Time-Windowed Multimodal Prize-Collecting Orienteering Problem
 08_Q1_V2强化/scripts/q1_v2_build_all.py
 ```
 
-它将第一问从“单条 32 景点硬 30 天路线”升级为“路线方案族 + 稳健性主评价”。
+它将第一问从“单条 32 景点硬 30 天路线”升级为“epsilon-coverage 候选路线族 + 后验稳健性评价”。当前 V2.1 是工程强化版，不应在论文中强称为严格 Pareto 前沿、完整多交通方式标签选择优化或 chance-constrained 主模型。
 
 核心输出：
 
 ```text
 08_Q1_V2强化/outputs/enhanced_od_labels_v2.csv
-08_Q1_V2强化/outputs/q1_v2_pareto_routes.csv
+08_Q1_V2强化/outputs/q1_v2_route_family.csv
 08_Q1_V2强化/outputs/q1_v2_daily_itinerary.csv
 08_Q1_V2强化/outputs/q1_v2_robustness_summary.csv
 08_Q1_V2强化/outputs/q1_v2_epsilon_grid.csv
+08_Q1_V2强化/outputs/q1_v2_model_audit.csv
+08_Q1_V2强化/outputs/q1_v2_loulan_substitution.csv
 08_Q1_V2强化/reports/新疆旅游第一问Q1_V2强化建模与实验报告.md
+08_Q1_V2强化/reports/楼兰古城不可普通访问与文化替代说明.md
 08_Q1_V2强化/reports/新疆旅游第一问Q1_V2强化结果.xlsx
 ```
 
@@ -157,7 +160,7 @@ V2 当前结论：
 - `亲子舒适版`：30 景点、30 天，通过低日强度换取舒适性；
 - `长者慢游版`：20 景点、30 天，保留 7 天缓冲，控制高海拔、长转场和连续疲劳。
 
-论文中建议将第一版 32 景点路线写成“覆盖上界/极限方案”，将 V2 均衡稳健版写成“现实推荐方案”。
+论文中建议将第一版 32 景点路线写成“覆盖上界/极限方案”，将 V2 均衡稳健版写成“现实推荐方案”。同时需要说明：楼兰古城虽然是题面偏好点，但因审批和普通游客限制不进入基准自由行主线，模型通过交河故城、高昌故城、北庭故城遗址、克孜尔石窟、罗布人村寨等文化节点进行替代满足。
 
 ## 10. 文件索引
 

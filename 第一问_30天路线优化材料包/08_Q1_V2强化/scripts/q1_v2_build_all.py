@@ -196,9 +196,11 @@ class Q1V2Builder:
 
     def build_transport_labels_v2(self) -> pd.DataFrame:
         def dominant_mode(path_modes: str, time_hours: float, cost: float) -> str:
-            text = str(path_modes or "").lower()
-            if not text.strip():
-                return "same_spot"
+            if pd.isna(path_modes):
+                return "same_spot" if abs(time_hours) < 1e-9 and abs(cost) < 1e-9 else "unknown"
+            text = str(path_modes).strip().lower()
+            if text in {"", "nan", "none", "null"}:
+                return "same_spot" if abs(time_hours) < 1e-9 and abs(cost) < 1e-9 else "unknown"
             if "air" in text or "flight" in text:
                 return "air"
             if "rail" in text or "train" in text:
@@ -248,7 +250,8 @@ class Q1V2Builder:
             dominant_mode(m, t, c)
             for m, t, c in zip(labels["path_modes"], labels["time_hours"], labels["cost_yuan_for_two"])
         ]
-        labels["mode_combo"] = labels["path_modes"].fillna("").replace("", "same_spot")
+        labels["mode_combo"] = labels["path_modes"].fillna("").astype(str).str.strip()
+        labels.loc[labels["mode_combo"].isin(["", "nan", "None", "null"]), "mode_combo"] = "same_spot"
         labels["is_night_transport"] = (
             labels["dominant_mode"].isin(["rail", "coach"]) & labels["time_hours"].ge(8.0)
         )
@@ -266,7 +269,9 @@ class Q1V2Builder:
             )
         ]
         labels["risk_score"] = [
-            round(min(0.95, to_float(base) + mode_risk_add.get(mode, 0.02) + max(0.0, t - 6.0) * 0.015), 3)
+            0.0
+            if mode == "same_spot"
+            else round(min(0.95, to_float(base) + mode_risk_add.get(mode, 0.02) + max(0.0, t - 6.0) * 0.015), 3)
             for base, mode, t in zip(labels["path_risk"], labels["dominant_mode"], labels["time_hours"])
         ]
         labels["generalized_cost_score"] = (
@@ -828,6 +833,18 @@ class Q1V2Builder:
         total_cost = round(transport + ticket + hotel + robust["policy_cost_penalty_yuan"], 2)
         route_sequence = " -> ".join(spot_names)
         chance_pass = robust["weighted_success_probability"] >= 0.8
+        if spec.persona_id == "extreme_coverage":
+            generation_method = "V1混合元启发式硬30天路线；V2作为极限覆盖对照"
+            robustness_source = "route_specific_monte_carlo_trials"
+        elif spec.route_type == "epsilon-coverage-grid":
+            generation_method = "基于32景点基准路线的嵌套删点候选；非每个q下重新最优化"
+            robustness_source = "borrowed_standard_active_policy_scenarios"
+        elif spec.persona_id == "balanced_robust":
+            generation_method = "普通体力型人性化转场结构 + drop_low_value删点策略"
+            robustness_source = "borrowed_standard_active_drop_low_value_policy"
+        else:
+            generation_method = "既有人群画像自适应排程复用；非重新联合求解"
+            robustness_source = f"borrowed_{spec.policy_persona_id or spec.persona_id}_policy_scenarios"
 
         return {
             "route_id": spec.route_id,
@@ -835,6 +852,13 @@ class Q1V2Builder:
             "persona_id": spec.persona_id,
             "persona_name": spec.persona_name,
             "recommendation_role": spec.recommendation_role,
+            "generation_method": generation_method,
+            "strict_pareto_front": False,
+            "transport_choice_layer_status": "基于enhanced_od_matrix闭包重标注；尚未从multimodal_edges重建多标签候选路径",
+            "robustness_source": robustness_source,
+            "risk_constraint_role": "后验/借用型鲁棒评价；尚未作为主求解器chance constraint或CVaR目标",
+            "diversity_constraint_role": "覆盖价值与多样性统计；尚未作为区域/主题硬约束或边际收益递减项",
+            "schedule_granularity": "日级强度排程；尚未细化到小时级开放时间/午休/check-in",
             "spots_count": len(spot_names),
             "active_or_transfer_days": active_days,
             "planned_trip_days": int(days["day"].max()) if not days.empty else 0,
@@ -959,6 +983,7 @@ class Q1V2Builder:
                 "route_id",
                 "route_type",
                 "recommendation_role",
+                "generation_method",
                 "spots_count",
                 "planned_trip_days",
                 "buffer_days",
@@ -968,6 +993,8 @@ class Q1V2Builder:
                 "tail_loss_cvar75",
                 "expected_loss",
                 "chance_constraint_weighted_pass",
+                "robustness_source",
+                "risk_constraint_role",
                 "policy_name",
                 "red_days",
                 "yellow_days",
@@ -976,6 +1003,8 @@ class Q1V2Builder:
         ].copy()
 
         daily.to_csv(OUT_DIR / "q1_v2_daily_itinerary.csv", index=False, encoding="utf-8-sig")
+        summary.to_csv(OUT_DIR / "q1_v2_route_family.csv", index=False, encoding="utf-8-sig")
+        # Compatibility alias retained for earlier notebooks/reports. The report no longer claims this is a strict Pareto front.
         summary.to_csv(OUT_DIR / "q1_v2_pareto_routes.csv", index=False, encoding="utf-8-sig")
         robustness.to_csv(OUT_DIR / "q1_v2_robustness_summary.csv", index=False, encoding="utf-8-sig")
         return summary, daily, robustness
@@ -1095,10 +1124,11 @@ class Q1V2Builder:
         ax.plot(grid["spots_count"], grid["total_cost_yuan_excluding_meals"], color="#94a3b8", linestyle="--", linewidth=1.2, label="epsilon候选网格")
         ax.set_xlabel("覆盖景点数")
         ax.set_ylabel("除餐饮外费用（元/两人）")
-        ax.set_title("Q1-V2 路线族 Pareto 视图：覆盖-费用-成功率")
+        ax.set_title("Q1-V2 路线候选族视图：覆盖-费用-成功率")
         ax.grid(alpha=0.25)
         ax.legend()
         fig.tight_layout()
+        fig.savefig(FIG_DIR / "fig_q1_v2_candidate_route_family.png")
         fig.savefig(FIG_DIR / "fig_q1_v2_pareto_route_family.png")
         plt.close(fig)
 
@@ -1135,6 +1165,99 @@ class Q1V2Builder:
                 for sheet_name, table in tables.items():
                     table.to_excel(writer, sheet_name=sheet_name[:31], index=False)
 
+    def build_model_audit(self, summary: pd.DataFrame) -> pd.DataFrame:
+        rows = [
+            {
+                "audit_id": "A1",
+                "issue": "self_drive拆分目前主要是解释层重标注",
+                "current_evidence": "enhanced_od_labels_v2.csv来自enhanced_od_matrix闭包；dominant_mode/fatigue/risk/generalized_cost为后加字段",
+                "v2_1_correction": "报告和主表明确标注transport_choice_layer_status；修复same_spot对角线标签与风险",
+                "strict_upgrade": "从multimodal_edges.csv构建OD多标签候选集L_ij={(mode,time,cost,risk,fatigue,path)}，并在路线求解中选择标签",
+                "status": "partially_fixed",
+            },
+            {
+                "audit_id": "A2",
+                "issue": "epsilon网格是嵌套删点候选，不是严格Pareto最优前沿",
+                "current_evidence": "sequence_for_target(q)从32景点基准路线按drop_order删点",
+                "v2_1_correction": "新增q1_v2_route_family.csv为规范主表；strict_pareto_front=False；报告改为epsilon-coverage候选方案族",
+                "strict_upgrade": "每个q下重新求min C(R), s.t. coverage(R)>=q，并对覆盖/费用/舒适/风险做非支配筛选",
+                "status": "wording_and_metadata_fixed",
+            },
+            {
+                "audit_id": "A3",
+                "issue": "鲁棒性主要是后验或画像策略借用，不是主求解约束",
+                "current_evidence": "极限版使用route-specific Monte Carlo；均衡/亲子/长者引用persona robustness与policy selection",
+                "v2_1_correction": "主表新增robustness_source与risk_constraint_role；chance_pass改为后验判定说明",
+                "strict_upgrade": "把P(T(R,omega)<=30)>=0.8或min CVaR(L(R,omega))纳入主优化器，并对每条候选路线重新仿真",
+                "status": "wording_and_metadata_fixed",
+            },
+            {
+                "audit_id": "A4",
+                "issue": "区域覆盖、偏好满足、内容多样性主要是评价项，不是优化约束",
+                "current_evidence": "coverage_value与summarize_route统计主题/文化/自然/区域，但未做区域硬约束或边际收益递减",
+                "v2_1_correction": "主表新增diversity_constraint_role；报告增加楼兰不可普通访问与文化替代链",
+                "strict_upgrade": "引入区域最低覆盖、题面偏好组软/硬约束、同区域边际收益递减和楼兰文化替代组约束",
+                "status": "wording_and_loulan_explanation_fixed",
+            },
+            {
+                "audit_id": "A5",
+                "issue": "人性化排程是日级强度排程，不是小时级时间窗排程",
+                "current_evidence": "q1_v2_daily_itinerary.csv含活动时长、交通时长、舒适度、压力等级，但无出发/到达/午休/check-in",
+                "v2_1_correction": "主表新增schedule_granularity；报告明确红黄绿用于识别高压日而非完全消除高压日",
+                "strict_upgrade": "生成小时级排程变量，加入景区open/close、午休块、酒店check-in、晚到酒店惩罚和长转场恢复约束",
+                "status": "wording_and_metadata_fixed",
+            },
+        ]
+        audit = pd.DataFrame(rows)
+        audit.to_csv(OUT_DIR / "q1_v2_model_audit.csv", index=False, encoding="utf-8-sig")
+        return audit
+
+    def build_loulan_substitution_note(self, summary: pd.DataFrame) -> pd.DataFrame:
+        main = summary[summary["recommendation_role"].eq("主推")].iloc[0]
+        route_names = set(parse_sequence(main["route_sequence"]))
+        cultural_substitutes = []
+        for name in route_names:
+            info = self.spot_info(name)
+            if boolish(info.get("is_cultural")) and not boolish(info.get("ordinary_tourist_restricted")):
+                cultural_substitutes.append(
+                    {
+                        "spot_id": info.get("spot_id"),
+                        "spot_name": name,
+                        "region_cluster": info.get("region_cluster"),
+                        "priority_score_for_op": info.get("priority_score_for_op"),
+                        "substitution_role": "楼兰文化/西域文化可普通访问替代节点",
+                    }
+                )
+        sub = pd.DataFrame(cultural_substitutes).sort_values(["priority_score_for_op", "spot_name"], ascending=[False, True])
+        sub.to_csv(OUT_DIR / "q1_v2_loulan_substitution.csv", index=False, encoding="utf-8-sig")
+
+        loulan = self.spots[self.spots["spot_name"].eq("楼兰古城")]
+        if not loulan.empty:
+            row = loulan.iloc[0]
+            approval_note = (
+                f"楼兰古城（{row['spot_id']}）在数据中为题面偏好文化点，但 "
+                f"requires_approval={row['requires_approval']}、ordinary_tourist_restricted={row['ordinary_tourist_restricted']}。"
+            )
+        else:
+            approval_note = "数据中未找到楼兰古城。"
+
+        note = f"""# 楼兰古城不可普通访问与文化替代说明
+
+{approval_note}
+
+第一问面向王先生夫妇的普通游客 30 天自由行，不能把需要长期审批、持证向导、越野车辆或最低成团规模的特殊点作为基准路线必选点。因此，V2.1 将楼兰古城从普通游客主路线中排除，不解释为偏好失败，而解释为：
+
+> 偏好点存在准入不可行性，模型采用可普通访问的西域文化/丝路文化节点进行替代满足。
+
+主推路线中的文化替代节点见 `outputs/q1_v2_loulan_substitution.csv`，包括交河故城、高昌故城、北庭故城遗址、库车王府、克孜尔石窟、喀什古城、罗布人村寨、和田博物馆等。
+
+论文/答辩建议表述：
+
+> 楼兰古城虽为题面向往点，但其审批、向导和普通游客限制使其不适合作为30天普通自由行必达点。模型将其纳入特殊准入约束，并通过同类文化遗产节点补偿偏好满足。
+"""
+        (REPORT_DIR / "楼兰古城不可普通访问与文化替代说明.md").write_text(note, encoding="utf-8")
+        return sub
+
     def build_report(
         self,
         summary: pd.DataFrame,
@@ -1142,6 +1265,8 @@ class Q1V2Builder:
         grid: pd.DataFrame,
         cards: pd.DataFrame,
         matrix: pd.DataFrame,
+        audit: pd.DataFrame,
+        loulan_substitution: pd.DataFrame,
     ) -> None:
         main = summary[summary["recommendation_role"].eq("主推")].iloc[0]
         extreme = summary[summary["route_type"].eq("极限覆盖版")].iloc[0]
@@ -1149,7 +1274,7 @@ class Q1V2Builder:
         def markdown_table(df: pd.DataFrame, cols: list[str]) -> str:
             return df[cols].to_markdown(index=False)
 
-        report = f"""# 第一问 Q1-V2 强化建模与实验报告
+        report = f"""# 第一问 Q1-V2.1 强化建模与实验报告
 
 ## 1. 本轮改进定位
 
@@ -1158,6 +1283,8 @@ class Q1V2Builder:
 > 面向真实游客体验的鲁棒多模式奖励收集定向游模型。
 
 因此，本轮输出从“单条路线”改为“路线方案族”：极限覆盖版、均衡稳健版、亲子舒适版、长者慢游版。32 景点路线保留为算法能力展示和对照基准，主推方案改为有缓冲、有删减、有风险评价的均衡稳健路线。
+
+V2.1 同时修正一个重要表述边界：当前结果是 **基于极限覆盖路线的 epsilon-coverage 候选方案族**，不是严格意义上在每个覆盖下界下重新求解得到的 Pareto 最优前沿。
 
 ## 2. V2 数学建模要点
 
@@ -1168,17 +1295,20 @@ class Q1V2Builder:
 - $F_3(R)$：平均舒适度，来自日活动时长、转场时长、高温暴露、高海拔/远程点；
 - $F_4(R)$：风险暴露，使用加权成功率、红色风险日、CVaR75 尾部损失描述。
 
-求解上采用 epsilon-constraint 思路，对覆盖下界 $q=20,22,24,26,28,30,32$ 形成候选网格，再从覆盖、费用、舒适度、稳健性中筛选路线族。
+当前求解上采用 epsilon-coverage 候选网格思路，对覆盖下界 $q=20,22,24,26,28,30,32$ 从基准路线中形成嵌套删点候选，再从覆盖、费用、舒适度、稳健性中筛选路线族。严格的 epsilon-constraint 多目标优化需要在每个 $q$ 下重新求解 `min C(R), s.t. coverage(R)>=q`，本版本尚未完成该层重优化。
 
 ## 3. 本轮生成的数据资产
 
-- `outputs/enhanced_od_labels_v2.csv`：把原 OD 拆成 rail/air/rental_car/charter_car/taxi_transfer/scenic_shuttle 等真实交通标签，并补充疲劳分、风险分、夜间交通、换乘标记。
+- `outputs/enhanced_od_labels_v2.csv`：在原 OD 闭包上补充 rail/air/rental_car/charter_car/taxi_transfer/scenic_shuttle 等解释性交通标签，并补充疲劳分、风险分、夜间交通、换乘标记。
 - `outputs/q1_v2_epsilon_grid.csv`：不同覆盖下界的候选解网格。
-- `outputs/q1_v2_pareto_routes.csv`：最终路线族摘要。
+- `outputs/q1_v2_route_family.csv`：最终路线族规范主表。
+- `outputs/q1_v2_pareto_routes.csv`：兼容旧文件名的路线族别名，不再声明为严格 Pareto 前沿。
 - `outputs/q1_v2_daily_itinerary.csv`：逐日人性化行程，含红黄绿压力日、缓冲日、舒适度与风险备注。
 - `outputs/q1_v2_robustness_summary.csv`：稳健性与 CVaR 汇总。
 - `outputs/q1_v2_route_product_cards.csv`：汇报用路线产品卡。
 - `outputs/q1_v2_risk_strategy_matrix.csv`：预约、道路、天气、高温、酒店风险应对矩阵。
+- `outputs/q1_v2_model_audit.csv`：V2.1 对交通、候选网格、鲁棒性、多样性、排程粒度的实现边界审计。
+- `outputs/q1_v2_loulan_substitution.csv`：楼兰古城不可普通访问时的文化替代节点说明。
 
 ## 4. 路线族结果
 
@@ -1194,24 +1324,36 @@ class Q1V2Builder:
 
 它相对极限覆盖版牺牲了 {int(extreme.spots_count - main.spots_count)} 个低收益/高扰动边际景点，但把路线从“压线可行”改成“留有机动天数”。这更符合暑期新疆真实旅行中的预约失败、道路延误、高温错峰和酒店满房风险。
 
-## 6. epsilon 候选网格
+## 6. 实现边界审计
+
+{markdown_table(audit, ["audit_id", "issue", "v2_1_correction", "strict_upgrade", "status"])}
+
+## 7. 楼兰古城处理逻辑
+
+楼兰古城在数据中为题面偏好文化点，但 `requires_approval=True` 且 `ordinary_tourist_restricted=True`。第一问的对象是王先生夫妇普通游客 30 天自由行，因此 V2.1 不把楼兰古城作为基准路线必达点，而是把它作为特殊准入点排除，并用可普通访问的西域文化/丝路文化节点补偿文化偏好。
+
+主推路线中的文化替代节点：
+
+{markdown_table(loulan_substitution.head(12), ["spot_id", "spot_name", "region_cluster", "substitution_role"])}
+
+## 8. epsilon-coverage 候选网格
 
 {markdown_table(grid, [
     "epsilon_q", "spots_count", "planned_trip_days", "buffer_days", "total_cost_yuan_excluding_meals",
     "mean_comfort_score", "weighted_success_probability", "tail_loss_cvar75"
 ])}
 
-## 7. 风险策略矩阵
+## 9. 风险策略矩阵
 
 {markdown_table(matrix, ["risk_type", "trigger", "strategy", "applies_to"])}
 
-## 8. 结论
+## 10. 结论
 
 第一问 V2 的最终表述应调整为：
 
 > 在 30 天暑期周期内，32 景点路线是硬约束下的覆盖上界，不作为现实主推；对普通游客，推荐 30 景点、28 天有效行程、2 天机动缓冲的均衡稳健版；对亲子和长者，分别给出低日强度和慢游删减方案。
 
-这一版本更适合汇报：它承认“游尽可能多的地方”和“真实可执行”之间的冲突，并用 Pareto 方案族、CVaR 尾部风险和人性化日程把冲突显式表达出来。
+这一版本更适合汇报：它承认“游尽可能多的地方”和“真实可执行”之间的冲突，并用候选路线族、CVaR 尾部风险和人性化日程把冲突显式表达出来。但论文中必须准确表述为候选方案族和后验鲁棒评价，不应声称已经完成严格多目标 Pareto 重优化或 chance-constrained 主模型求解。
 """
         (REPORT_DIR / "新疆旅游第一问Q1_V2强化建模与实验报告.md").write_text(report, encoding="utf-8")
 
@@ -1220,6 +1362,8 @@ class Q1V2Builder:
         summary, daily, robustness = self.build_route_family()
         grid = self.build_epsilon_grid()
         cards, matrix = self.build_cards_and_matrix(summary, robustness)
+        audit = self.build_model_audit(summary)
+        loulan_substitution = self.build_loulan_substitution_note(summary)
         self.build_figures(summary, grid)
         self.build_workbook(
             {
@@ -1230,9 +1374,11 @@ class Q1V2Builder:
                 "transport_labels": transport,
                 "product_cards": cards,
                 "risk_matrix": matrix,
+                "model_audit": audit,
+                "loulan_substitution": loulan_substitution,
             }
         )
-        self.build_report(summary, robustness, grid, cards, matrix)
+        self.build_report(summary, robustness, grid, cards, matrix, audit, loulan_substitution)
         solve_summary = {
             "package_root": str(PKG_ROOT),
             "v2_root": str(V2_ROOT),
@@ -1243,11 +1389,15 @@ class Q1V2Builder:
             "main_route_id": "Q1V2_BALANCED_30_BUFFER2",
             "outputs": [
                 str(OUT_DIR / "enhanced_od_labels_v2.csv"),
+                str(OUT_DIR / "q1_v2_route_family.csv"),
                 str(OUT_DIR / "q1_v2_pareto_routes.csv"),
                 str(OUT_DIR / "q1_v2_daily_itinerary.csv"),
                 str(OUT_DIR / "q1_v2_robustness_summary.csv"),
                 str(OUT_DIR / "q1_v2_epsilon_grid.csv"),
+                str(OUT_DIR / "q1_v2_model_audit.csv"),
+                str(OUT_DIR / "q1_v2_loulan_substitution.csv"),
                 str(REPORT_DIR / "新疆旅游第一问Q1_V2强化建模与实验报告.md"),
+                str(REPORT_DIR / "楼兰古城不可普通访问与文化替代说明.md"),
                 str(REPORT_DIR / "新疆旅游第一问Q1_V2强化结果.xlsx"),
             ],
         }

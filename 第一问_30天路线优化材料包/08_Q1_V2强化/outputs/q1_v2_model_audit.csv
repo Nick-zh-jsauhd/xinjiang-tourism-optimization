@@ -1,0 +1,6 @@
+﻿audit_id,issue,current_evidence,v2_1_correction,strict_upgrade,status
+A1,self_drive拆分目前主要是解释层重标注,enhanced_od_labels_v2.csv来自enhanced_od_matrix闭包；dominant_mode/fatigue/risk/generalized_cost为后加字段,报告和主表明确标注transport_choice_layer_status；修复same_spot对角线标签与风险,"从multimodal_edges.csv构建OD多标签候选集L_ij={(mode,time,cost,risk,fatigue,path)}，并在路线求解中选择标签",partially_fixed
+A2,epsilon网格是嵌套删点候选，不是严格Pareto最优前沿,sequence_for_target(q)从32景点基准路线按drop_order删点,新增q1_v2_route_family.csv为规范主表；strict_pareto_front=False；报告改为epsilon-coverage候选方案族,"每个q下重新求min C(R), s.t. coverage(R)>=q，并对覆盖/费用/舒适/风险做非支配筛选",wording_and_metadata_fixed
+A3,鲁棒性主要是后验或画像策略借用，不是主求解约束,极限版使用route-specific Monte Carlo；均衡/亲子/长者引用persona robustness与policy selection,主表新增robustness_source与risk_constraint_role；chance_pass改为后验判定说明,"把P(T(R,omega)<=30)>=0.8或min CVaR(L(R,omega))纳入主优化器，并对每条候选路线重新仿真",wording_and_metadata_fixed
+A4,区域覆盖、偏好满足、内容多样性主要是评价项，不是优化约束,coverage_value与summarize_route统计主题/文化/自然/区域，但未做区域硬约束或边际收益递减,主表新增diversity_constraint_role；报告增加楼兰不可普通访问与文化替代链,引入区域最低覆盖、题面偏好组软/硬约束、同区域边际收益递减和楼兰文化替代组约束,wording_and_loulan_explanation_fixed
+A5,人性化排程是日级强度排程，不是小时级时间窗排程,q1_v2_daily_itinerary.csv含活动时长、交通时长、舒适度、压力等级，但无出发/到达/午休/check-in,主表新增schedule_granularity；报告明确红黄绿用于识别高压日而非完全消除高压日,生成小时级排程变量，加入景区open/close、午休块、酒店check-in、晚到酒店惩罚和长转场恢复约束,wording_and_metadata_fixed
