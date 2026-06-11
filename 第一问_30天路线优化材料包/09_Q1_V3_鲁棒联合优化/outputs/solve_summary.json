@@ -15,12 +15,14 @@
   "transport_labels": 1841,
   "candidate_routes": 126,
   "simulation_routes": 126,
-  "pareto_front_routes": 45,
+  "pareto_front_routes": 44,
+  "feasible_robust_pareto_front_routes": 14,
+  "small_exact_checks": 1,
   "selected_route_ids": [
     {
       "selected_role": "极限覆盖版",
       "route_id": "Q1V3_Q32_340",
-      "selection_status": "criteria_pass"
+      "selection_status": "coverage_upper_bound_only_not_feasible: 小时级排程/仿真不可作为现实执行方案"
     },
     {
       "selected_role": "30景点均衡覆盖候选版",
@@ -34,16 +36,16 @@
     },
     {
       "selected_role": "亲子舒适版",
-      "route_id": "Q1V3_Q24_120",
-      "selection_status": "criteria_pass"
+      "route_id": "Q1V3_Q20_011",
+      "selection_status": "fallback_relaxed: 未找到0红日的严格亲子路线，改按亲子效用函数在放宽红日约束后选择折中方案"
     },
     {
       "selected_role": "长者慢游版",
-      "route_id": "Q1V3_Q22_092",
-      "selection_status": "criteria_pass"
+      "route_id": "Q1V3_Q20_012",
+      "selection_status": "fallback_relaxed: 未找到0红日的严格长者路线，改按长者效用函数在放宽红日约束后选择折中方案"
     }
   ],
   "success_threshold": 0.8,
   "global_optimality_claimed": false,
-  "solver_type": "matheuristic: multi-label shortest paths + coverage-grid search + heuristic hourly scheduler + Monte Carlo simulation + Pareto filtering"
+  "solver_type": "matheuristic: multimodal template labels + non-dominated filtering + coverage-grid search + heuristic hourly scheduler + Monte Carlo simulation + Pareto filtering"
 }

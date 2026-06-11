@@ -5,3 +5,4 @@ V3-A3,chance_constraint,路线成功率阈值用于主推方案筛选,implemente
 V3-A4,hourly_schedule,已实现小时级开放时间、午休、高温避让、长转场恢复和晚到检查,implemented_heuristic,outputs/q1_v3_hourly_itinerary.csv,未安装OR-Tools，当前为启发式排程修复而非CP-SAT证明可行,安装OR-Tools后将日内活动块转为optional interval模型
 V3-A5,route_simulation,对每条候选路线进行route-specific Monte Carlo仿真并计算CVaR,implemented,outputs/q1_v3_simulation_summary.csv,容量/酒店部分字段含模拟补全，仿真结果应解释为压力测试,接入景区预约余量和酒店真实房态
 V3-A6,global_optimality,不声称全局最优,explicitly_not_claimed,reports/新疆旅游第一问Q1_V3鲁棒联合优化报告.md,启发式质量依赖候选生成多样性,增加并行多启动和精确下界对照
+V3-A7,small_exact_check,已增加15节点固定子集路径排序精确校验,implemented_scope_limited,outputs/q1_v3_small_exact_check.csv,仅校验排序子问题，不证明完整景点选择+随机仿真模型全局最优,安装OR-Tools/Gurobi后构建小规模MILP/CP-SAT定向游精确模型

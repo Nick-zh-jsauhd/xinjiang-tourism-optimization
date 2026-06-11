@@ -1,0 +1,2 @@
+﻿check_id,selected_role,route_id,node_count,heuristic_metric,exact_metric,relative_gap,heuristic_order,exact_order,check_scope
+held_karp_15_node_ordering,鲁棒稳健主推版,Q1V3_Q24_120,15,158.7738,158.7738,0.0,P001 -> P035 -> P036 -> P034 -> P037 -> P039 -> P025 -> P026 -> P030 -> P031 -> P009 -> P015 -> P014 -> P017 -> P020,P001 -> P035 -> P036 -> P034 -> P037 -> P039 -> P025 -> P026 -> P030 -> P031 -> P009 -> P015 -> P014 -> P017 -> P020,固定15节点子集的路径排序精确校验；不等同于完整鲁棒定向游全局最优证明
