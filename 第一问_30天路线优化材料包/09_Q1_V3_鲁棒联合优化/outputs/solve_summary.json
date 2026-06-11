@@ -15,9 +15,10 @@
   "transport_labels": 1841,
   "candidate_routes": 126,
   "simulation_routes": 126,
-  "pareto_front_routes": 44,
-  "feasible_robust_pareto_front_routes": 14,
-  "small_exact_checks": 1,
+  "pareto_front_routes": 43,
+  "feasible_robust_pareto_front_routes": 18,
+  "strict_comfort_pareto_front_routes": 0,
+  "small_exact_checks": 5,
   "selected_route_ids": [
     {
       "selected_role": "极限覆盖版",
@@ -27,21 +28,26 @@
     {
       "selected_role": "30景点均衡覆盖候选版",
       "route_id": "Q1V3_Q30_279",
-      "selection_status": "coverage_candidate_not_strict_robust: 满足30景点和2缓冲，但未同时满足80%成功率或红日<=1，应作为覆盖候选而非最终稳健主推"
+      "selection_status": "coverage_candidate_not_strict_robust: 满足30景点和2缓冲，但未同时满足80%运营成功率或红日<=1，应作为覆盖候选而非最终稳健主推"
     },
     {
-      "selected_role": "鲁棒稳健主推版",
+      "selected_role": "运营鲁棒主推版",
       "route_id": "Q1V3_Q24_120",
-      "selection_status": "criteria_pass_relaxed_coverage: 成功率>=80%、红日<=2、缓冲>=2；覆盖降至24+以换取稳健性"
+      "selection_status": "criteria_pass_operational: 运营成功率>=80%、红日<=2、缓冲>=2；覆盖降至24+以换取运营稳健性"
+    },
+    {
+      "selected_role": "严格舒适主推备选",
+      "route_id": "Q1V3_Q20_011",
+      "selection_status": "fallback_relaxed: 未找到spots>=22、buffer>=6、red_days<=1、严格舒适成功率>=80%的路线，改选严格舒适成功率最高的严格时间窗可行路线"
     },
     {
       "selected_role": "亲子舒适版",
-      "route_id": "Q1V3_Q20_011",
+      "route_id": "Q1V3_Q20_012",
       "selection_status": "fallback_relaxed: 未找到0红日的严格亲子路线，改按亲子效用函数在放宽红日约束后选择折中方案"
     },
     {
       "selected_role": "长者慢游版",
-      "route_id": "Q1V3_Q20_012",
+      "route_id": "Q1V3_Q22_070",
       "selection_status": "fallback_relaxed: 未找到0红日的严格长者路线，改按长者效用函数在放宽红日约束后选择折中方案"
     }
   ],

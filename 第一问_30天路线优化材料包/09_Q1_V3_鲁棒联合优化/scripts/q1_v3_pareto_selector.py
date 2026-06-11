@@ -7,6 +7,7 @@ if __name__ == "__main__":
     builder.candidate_routes = read_csv(builder.outputs / "q1_v3_candidate_routes.csv")
     builder.simulation_summary = read_csv(builder.outputs / "q1_v3_simulation_summary.csv")
     builder.select_robust_pareto_front()
+    builder.build_small_exact_check()
     builder.build_figures()
     builder.build_report()
     builder.build_solve_summary()

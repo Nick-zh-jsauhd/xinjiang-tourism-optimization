@@ -2127,6 +2127,8 @@ class Q1V3Builder:
             sim_days_values = []
             sim_cost_values = []
             success_values = []
+            operational_success_values = []
+            strict_comfort_success_values = []
             red_values = []
             comfort_values = []
             for _, sc in scenarios.iterrows():
@@ -2184,13 +2186,13 @@ class Q1V3Builder:
                     + max(0.0, simulated_cost - base_cost) * 0.30
                     + max(0.0, 75.0 - comfort) * 45.0
                 )
-                success = bool(
+                operational_success = bool(
                     simulated_days <= 30
                     and comfort >= 75.0
                     and reservation_failures <= 2
                     and hotel_full_events <= 2
-                    and red_days <= max(1, base_red + 1)
                 )
+                strict_comfort_success = bool(operational_success and red_days <= 1)
                 rows.append(
                     {
                         "route_id": route_id,
@@ -2206,20 +2208,26 @@ class Q1V3Builder:
                         "red_days": red_days,
                         "mean_comfort_score": round(comfort, 3),
                         "loss": round(loss, 3),
-                        "success": success,
+                        "operational_success": operational_success,
+                        "strict_comfort_success": strict_comfort_success,
+                        "success": operational_success,
                     }
                 )
                 losses.append(loss)
                 sim_days_values.append(simulated_days)
                 sim_cost_values.append(simulated_cost)
-                success_values.append(1.0 if success else 0.0)
+                operational_success_values.append(1.0 if operational_success else 0.0)
+                strict_comfort_success_values.append(1.0 if strict_comfort_success else 0.0)
+                success_values.append(1.0 if operational_success else 0.0)
                 red_values.append(red_days)
                 comfort_values.append(comfort)
             summary_rows.append(
                 {
                     "route_id": route_id,
                     "simulation_samples": len(scenarios),
-                    "success_probability": round(float(np.mean(success_values)), 4),
+                    "operational_success_probability": round(float(np.mean(operational_success_values)), 4),
+                    "strict_comfort_success_probability": round(float(np.mean(strict_comfort_success_values)), 4),
+                    "success_probability": round(float(np.mean(operational_success_values)), 4),
                     "overrun_probability": round(float(np.mean([d > 30 for d in sim_days_values])), 4),
                     "expected_days": round(float(np.mean(sim_days_values)), 3),
                     "p90_days": round(percentile(sim_days_values, 90), 3),
@@ -2233,8 +2241,10 @@ class Q1V3Builder:
                     "prob_red_days_gt1": round(float(np.mean([r > 1 for r in red_values])), 4),
                     "mean_simulated_comfort": round(float(np.mean(comfort_values)), 3),
                     "p10_simulated_comfort": round(percentile(comfort_values, 10), 3),
-                    "chance_constraint_pass": bool(float(np.mean(success_values)) >= as_float(self.config["success_threshold"], 0.8)),
-                    "simulation_note": "route-specific Monte Carlo；扰动由路线交通方式、缓冲日、预约点、酒店压力和高温暴露共同驱动",
+                    "operational_chance_constraint_pass": bool(float(np.mean(operational_success_values)) >= as_float(self.config["success_threshold"], 0.8)),
+                    "strict_comfort_chance_constraint_pass": bool(float(np.mean(strict_comfort_success_values)) >= as_float(self.config["success_threshold"], 0.8)),
+                    "chance_constraint_pass": bool(float(np.mean(operational_success_values)) >= as_float(self.config["success_threshold"], 0.8)),
+                    "simulation_note": "route-specific Monte Carlo；operational_success不限制红色压力日，strict_comfort_success要求red_days<=1",
                 }
             )
         trials = pd.DataFrame(rows)
@@ -2259,12 +2269,16 @@ class Q1V3Builder:
         ]
         rows = []
         for _, r in df.iterrows():
+            success_metric = as_float(
+                r.get("operational_success_probability", r.get("success_probability", 0)),
+                0,
+            )
             rows.append(
                 (
                     as_float(r.get("spots_count", 0)),
                     as_float(r.get("total_cost_yuan_excluding_meals", 1e9)),
                     as_float(r.get("mean_comfort_score", 0)),
-                    as_float(r.get("success_probability", 0)),
+                    success_metric,
                     as_float(r.get("cvar75_loss", 1e9)),
                 )
             )
@@ -2365,6 +2379,8 @@ class Q1V3Builder:
             "total_cost_yuan_excluding_meals",
             "mean_comfort_score",
             "success_probability",
+            "operational_success_probability",
+            "strict_comfort_success_probability",
             "cvar75_loss",
             "buffer_days",
             "red_days",
@@ -2383,6 +2399,10 @@ class Q1V3Builder:
             if col not in merged.columns:
                 merged[col] = False
             merged[col] = merged[col].map(as_bool)
+        if "operational_success_probability" not in merged.columns:
+            merged["operational_success_probability"] = merged["success_probability"]
+        if "strict_comfort_success_probability" not in merged.columns:
+            merged["strict_comfort_success_probability"] = 0.0
         merged["robust_utility"] = self.robust_utility(merged).round(5)
         def norm_high(series):
             s = pd.to_numeric(series, errors="coerce").fillna(0)
@@ -2393,7 +2413,7 @@ class Q1V3Builder:
             return 1.0 - norm_high(series)
 
         merged["family_utility"] = (
-            0.28 * norm_high(merged["success_probability"])
+            0.28 * norm_high(merged["strict_comfort_success_probability"])
             + 0.22 * norm_low(merged["red_days"])
             + 0.18 * norm_low(merged["max_day_active_hours"])
             + 0.12 * norm_low(merged["long_transfer_days"])
@@ -2402,7 +2422,7 @@ class Q1V3Builder:
             + 0.05 * norm_low(merged["time_window_violations"])
         ).round(5)
         merged["senior_utility"] = (
-            0.26 * norm_high(merged["success_probability"])
+            0.26 * norm_high(merged["strict_comfort_success_probability"])
             + 0.22 * norm_low(merged["red_days"])
             + 0.18 * norm_low(merged["mean_day_active_hours"])
             + 0.12 * norm_low(merged["remote_or_high_altitude_spots"])
@@ -2417,7 +2437,7 @@ class Q1V3Builder:
         )
         write_csv(front, self.outputs / "q1_v3_robust_pareto_front.csv")
         feasible_pool = merged[
-            (merged["success_probability"] >= as_float(self.config["success_threshold"], 0.8))
+            (merged["operational_success_probability"] >= as_float(self.config["success_threshold"], 0.8))
             & (merged["schedule_strict_feasible"])
         ].copy()
         if not feasible_pool.empty:
@@ -2429,6 +2449,19 @@ class Q1V3Builder:
         else:
             feasible_front = feasible_pool
         write_csv(feasible_front, self.outputs / "q1_v3_feasible_robust_pareto_front.csv")
+        strict_comfort_pool = merged[
+            (merged["strict_comfort_success_probability"] >= as_float(self.config["success_threshold"], 0.8))
+            & (merged["schedule_strict_feasible"])
+        ].copy()
+        if not strict_comfort_pool.empty:
+            strict_comfort_pool["is_strict_comfort_pareto"] = self.is_pareto_front(strict_comfort_pool)
+            strict_comfort_front = strict_comfort_pool[strict_comfort_pool["is_strict_comfort_pareto"]].copy().sort_values(
+                ["spots_count", "strict_comfort_success_probability", "cvar75_loss"],
+                ascending=[False, False, True],
+            )
+        else:
+            strict_comfort_front = strict_comfort_pool
+        write_csv(strict_comfort_front, self.outputs / "q1_v3_strict_comfort_pareto_front.csv")
         extreme_mask = merged["spots_count"] == merged["spots_count"].max()
         coverage30_mask = (
             (merged["spots_count"] >= int(self.config["main_route_min_spots"]))
@@ -2438,14 +2471,21 @@ class Q1V3Builder:
         robust_main_mask = (
             (merged["spots_count"] >= 24)
             & (merged["buffer_days"] >= 2)
-            & (merged["success_probability"] >= as_float(self.config["success_threshold"], 0.8))
+            & (merged["operational_success_probability"] >= as_float(self.config["success_threshold"], 0.8))
             & (merged["red_days"] <= 2)
             & (merged["mean_comfort_score"] >= 85)
             & (merged["schedule_strict_feasible"])
         )
+        strict_comfort_main_mask = (
+            (merged["spots_count"] >= 22)
+            & (merged["buffer_days"] >= 6)
+            & (merged["red_days"] <= 1)
+            & (merged["strict_comfort_success_probability"] >= as_float(self.config["success_threshold"], 0.8))
+            & (merged["schedule_strict_feasible"])
+        )
         family_mask = (
             (merged["spots_count"].between(22, 26))
-            & (merged["success_probability"] >= 0.80)
+            & (merged["strict_comfort_success_probability"] >= 0.80)
             & (merged["mean_day_active_hours"] <= as_float(self.config["daily_active_limit_family"], 7.0))
             & (merged["red_days"] <= int(self.config["max_red_days_family"]))
             & (merged["late_hotel_days"] == 0)
@@ -2454,7 +2494,7 @@ class Q1V3Builder:
         )
         senior_mask = (
             (merged["spots_count"].between(20, 24))
-            & (merged["success_probability"] >= 0.82)
+            & (merged["strict_comfort_success_probability"] >= 0.80)
             & (merged["mean_day_active_hours"] <= as_float(self.config["daily_active_limit_senior"], 6.5))
             & (merged["red_days"] <= int(self.config["max_red_days_senior"]))
             & (merged["remote_or_high_altitude_spots"] <= 1)
@@ -2464,28 +2504,42 @@ class Q1V3Builder:
         )
         family_relaxed = (
             (merged["spots_count"].between(20, 26))
-            & (merged["success_probability"] >= 0.78)
+            & (merged["operational_success_probability"] >= 0.78)
             & (merged["late_hotel_days"] == 0)
             & (merged["buffer_days"] >= 4)
             & (merged["schedule_soft_feasible"])
         )
         senior_relaxed = (
             (merged["spots_count"].between(20, 24))
-            & (merged["success_probability"] >= 0.78)
+            & (merged["operational_success_probability"] >= 0.78)
             & (merged["remote_or_high_altitude_spots"] <= 1)
             & (merged["buffer_days"] >= 6)
             & (merged["schedule_soft_feasible"])
         )
         extreme = self.pick_best(merged, extreme_mask, "极限覆盖版", "仅按最大覆盖选择")
         coverage30 = self.pick_best(merged, coverage30_mask, "30景点均衡覆盖候选版", "未找到30景点且2缓冲的可执行路线，取鲁棒效用最高者")
-        robust_main = self.pick_best(merged, robust_main_mask, "鲁棒稳健主推版", "未找到24景点以上且成功率>=80%、红日<=2、严格时间窗可行的路线，取鲁棒效用最高者")
+        robust_main = self.pick_best(merged, robust_main_mask, "运营鲁棒主推版", "未找到24景点以上且运营成功率>=80%、红日<=2、严格时间窗可行的路线，取鲁棒效用最高者")
+        strict_comfort_main = self.pick_best_with_metric(
+            merged,
+            strict_comfort_main_mask,
+            "严格舒适主推备选",
+            "strict_comfort_success_probability",
+            "未找到spots>=22、buffer>=6、red_days<=1、严格舒适成功率>=80%的路线，改选严格舒适成功率最高的严格时间窗可行路线",
+            exclude_route_ids=[str(robust_main.get("route_id", ""))],
+            relaxed_mask=(
+                (merged["spots_count"] >= 20)
+                & (merged["buffer_days"] >= 6)
+                & (merged["red_days"] <= 1)
+                & (merged["schedule_strict_feasible"])
+            ),
+        )
         family = self.pick_best_with_metric(
             merged,
             family_mask,
             "亲子舒适版",
             "family_utility",
             "未找到0红日的严格亲子路线，改按亲子效用函数在放宽红日约束后选择折中方案",
-            exclude_route_ids=[str(robust_main.get("route_id", ""))],
+            exclude_route_ids=[str(robust_main.get("route_id", "")), str(strict_comfort_main.get("route_id", ""))],
             relaxed_mask=family_relaxed,
         )
         senior = self.pick_best_with_metric(
@@ -2494,22 +2548,22 @@ class Q1V3Builder:
             "长者慢游版",
             "senior_utility",
             "未找到0红日的严格长者路线，改按长者效用函数在放宽红日约束后选择折中方案",
-            exclude_route_ids=[str(robust_main.get("route_id", "")), str(family.get("route_id", ""))],
+            exclude_route_ids=[str(robust_main.get("route_id", "")), str(strict_comfort_main.get("route_id", "")), str(family.get("route_id", ""))],
             relaxed_mask=senior_relaxed,
         )
-        selections = [extreme, coverage30, robust_main, family, senior]
+        selections = [extreme, coverage30, robust_main, strict_comfort_main, family, senior]
         for row in selections:
             if row["selected_role"] == "极限覆盖版":
-                if (not as_bool(row.get("schedule_strict_feasible", False))) or as_float(row.get("success_probability", 0.0), 0.0) < as_float(self.config["success_threshold"], 0.8):
+                if (not as_bool(row.get("schedule_strict_feasible", False))) or as_float(row.get("operational_success_probability", row.get("success_probability", 0.0)), 0.0) < as_float(self.config["success_threshold"], 0.8):
                     row["selection_status"] = "coverage_upper_bound_only_not_feasible: 小时级排程/仿真不可作为现实执行方案"
             if row["selected_role"] == "30景点均衡覆盖候选版":
-                if as_float(row.get("success_probability", 0.0), 0.0) < as_float(self.config["success_threshold"], 0.8) or as_int(row.get("red_days", 0), 0) > int(self.config["max_red_days_standard"]):
+                if as_float(row.get("operational_success_probability", row.get("success_probability", 0.0)), 0.0) < as_float(self.config["success_threshold"], 0.8) or as_int(row.get("red_days", 0), 0) > int(self.config["max_red_days_standard"]):
                     row["selection_status"] = (
                         "coverage_candidate_not_strict_robust: 满足30景点和2缓冲，"
-                        "但未同时满足80%成功率或红日<=1，应作为覆盖候选而非最终稳健主推"
+                        "但未同时满足80%运营成功率或红日<=1，应作为覆盖候选而非最终稳健主推"
                     )
-            if row["selected_role"] == "鲁棒稳健主推版" and row.get("selection_status") == "criteria_pass":
-                row["selection_status"] = "criteria_pass_relaxed_coverage: 成功率>=80%、红日<=2、缓冲>=2；覆盖降至24+以换取稳健性"
+            if row["selected_role"] == "运营鲁棒主推版" and row.get("selection_status") == "criteria_pass":
+                row["selection_status"] = "criteria_pass_operational: 运营成功率>=80%、红日<=2、缓冲>=2；覆盖降至24+以换取运营稳健性"
         selected = pd.DataFrame(selections)
         selected = selected.drop_duplicates(subset=["selected_role"], keep="first")
         write_csv(selected, self.outputs / "q1_v3_selected_routes.csv")
@@ -2558,7 +2612,7 @@ class Q1V3Builder:
             result = pd.DataFrame()
             write_csv(result, self.outputs / "q1_v3_small_exact_check.csv")
             return result
-        target = self.selected_routes[self.selected_routes["selected_role"].astype(str).str.contains("鲁棒稳健主推")]
+        target = self.selected_routes[self.selected_routes["selected_role"].astype(str).str.contains("运营鲁棒主推")]
         row = target.iloc[0] if not target.empty else self.selected_routes.iloc[0]
         route_id = str(row["route_id"])
         seq = [sid.strip() for sid in str(row.get("spot_id_sequence", "")).split("->") if sid.strip()]
@@ -2566,62 +2620,95 @@ class Q1V3Builder:
             result = pd.DataFrame()
             write_csv(result, self.outputs / "q1_v3_small_exact_check.csv")
             return result
-        # Keep the verifier small enough for exact Held-Karp while preserving
-        # the route's regional order signal.
-        sample = seq[: min(15, len(seq))]
-        n = len(sample)
-        edge = np.zeros((n, n), dtype=float)
-        for i, a in enumerate(sample):
-            for j, b in enumerate(sample):
-                edge[i, j] = 0.0 if i == j else self.edge_metric(a, b, "balanced")
-        dp: Dict[Tuple[int, int], Tuple[float, int]] = {}
-        for i, sid in enumerate(sample):
-            dp[(1 << i, i)] = (self.depot_metric_to_spot(sid, "to"), -1)
-        for mask in range(1, 1 << n):
-            for last in range(n):
-                state = (mask, last)
-                if state not in dp:
-                    continue
-                base_cost = dp[state][0]
-                for nxt in range(n):
-                    if mask & (1 << nxt):
+        def held_karp_row(sample: Sequence[str], check_id: str, scope: str) -> dict:
+            n = len(sample)
+            edge = np.zeros((n, n), dtype=float)
+            for i, a in enumerate(sample):
+                for j, b in enumerate(sample):
+                    edge[i, j] = 0.0 if i == j else self.edge_metric(a, b, "balanced")
+            dp: Dict[Tuple[int, int], Tuple[float, int]] = {}
+            for i, sid in enumerate(sample):
+                dp[(1 << i, i)] = (self.depot_metric_to_spot(sid, "to"), -1)
+            for mask in range(1, 1 << n):
+                for last in range(n):
+                    state = (mask, last)
+                    if state not in dp:
                         continue
-                    nm = mask | (1 << nxt)
-                    cand = base_cost + edge[last, nxt]
-                    old = dp.get((nm, nxt))
-                    if old is None or cand < old[0]:
-                        dp[(nm, nxt)] = (cand, last)
-        full = (1 << n) - 1
-        best_last = min(range(n), key=lambda i: dp[(full, i)][0] + self.depot_metric_to_spot(sample[i], "from"))
-        exact_metric = dp[(full, best_last)][0] + self.depot_metric_to_spot(sample[best_last], "from")
-        order_idx = []
-        mask = full
-        last = best_last
-        while last >= 0:
-            order_idx.append(last)
-            prev = dp[(mask, last)][1]
-            mask ^= 1 << last
-            last = prev
-        order_idx.reverse()
-        exact_seq = [sample[i] for i in order_idx]
-        heuristic_metric = self.sequence_metric_for_exact_check(sample)
-        gap = (heuristic_metric - exact_metric) / exact_metric if exact_metric > 0 else 0.0
-        result = pd.DataFrame(
-            [
-                {
-                    "check_id": "held_karp_15_node_ordering",
-                    "selected_role": str(row["selected_role"]),
-                    "route_id": route_id,
-                    "node_count": n,
-                    "heuristic_metric": round(heuristic_metric, 4),
-                    "exact_metric": round(exact_metric, 4),
-                    "relative_gap": round(gap, 4),
-                    "heuristic_order": " -> ".join(sample),
-                    "exact_order": " -> ".join(exact_seq),
-                    "check_scope": "固定15节点子集的路径排序精确校验；不等同于完整鲁棒定向游全局最优证明",
-                }
-            ]
+                    base_cost = dp[state][0]
+                    for nxt in range(n):
+                        if mask & (1 << nxt):
+                            continue
+                        nm = mask | (1 << nxt)
+                        cand = base_cost + edge[last, nxt]
+                        old = dp.get((nm, nxt))
+                        if old is None or cand < old[0]:
+                            dp[(nm, nxt)] = (cand, last)
+            full = (1 << n) - 1
+            best_last = min(range(n), key=lambda i: dp[(full, i)][0] + self.depot_metric_to_spot(sample[i], "from"))
+            exact_metric = dp[(full, best_last)][0] + self.depot_metric_to_spot(sample[best_last], "from")
+            order_idx = []
+            mask = full
+            last = best_last
+            while last >= 0:
+                order_idx.append(last)
+                prev = dp[(mask, last)][1]
+                mask ^= 1 << last
+                last = prev
+            order_idx.reverse()
+            exact_seq = [sample[i] for i in order_idx]
+            heuristic_metric = self.sequence_metric_for_exact_check(sample)
+            gap = (heuristic_metric - exact_metric) / exact_metric if exact_metric > 0 else 0.0
+            return {
+                "check_id": check_id,
+                "selected_role": str(row["selected_role"]),
+                "route_id": route_id,
+                "node_count": n,
+                "status": "solved_exact_ordering",
+                "heuristic_metric": round(heuristic_metric, 4),
+                "exact_metric": round(exact_metric, 4),
+                "relative_gap": round(gap, 4),
+                "heuristic_order": " -> ".join(sample),
+                "exact_order": " -> ".join(exact_seq),
+                "check_scope": scope,
+            }
+
+        rows: List[dict] = []
+        prefix_sample = seq[: min(15, len(seq))]
+        rows.append(
+            held_karp_row(
+                prefix_sample,
+                "held_karp_prefix_15_node_ordering",
+                "主推路线前15节点的路径排序精确校验；不等同于完整鲁棒定向游全局最优证明",
+            )
         )
+        sampler = random.Random(int(self.config["random_seed"]) + 37)
+        if len(seq) >= 15:
+            for k in range(1, 4):
+                idx = sorted(sampler.sample(range(len(seq)), 15))
+                sample = [seq[i] for i in idx]
+                rows.append(
+                    held_karp_row(
+                        sample,
+                        f"held_karp_random15_subset_{k}",
+                        "主推路线随机15节点子集的路径排序精确校验；检验启发式排序质量，不检验完整选点最优性",
+                    )
+                )
+        rows.append(
+            {
+                "check_id": "prize_collecting_20_node_mip",
+                "selected_role": str(row["selected_role"]),
+                "route_id": route_id,
+                "node_count": 20,
+                "status": "not_run_no_mip_solver",
+                "heuristic_metric": "",
+                "exact_metric": "",
+                "relative_gap": "",
+                "heuristic_order": "",
+                "exact_order": "",
+                "check_scope": "当前环境未安装OR-Tools/Gurobi/CPLEX；20节点prize-collecting MILP作为下一步精确校验任务保留",
+            }
+        )
+        result = pd.DataFrame(rows)
         write_csv(result, self.outputs / "q1_v3_small_exact_check.csv")
         return result
 
@@ -2777,10 +2864,10 @@ class Q1V3Builder:
             {
                 "audit_id": "V3-A7",
                 "module": "small_exact_check",
-                "claim": "已增加15节点固定子集路径排序精确校验",
+                "claim": "已增加前缀与随机15节点子集路径排序精确校验",
                 "status": "implemented_scope_limited",
                 "evidence_file": "outputs/q1_v3_small_exact_check.csv",
-                "remaining_limitation": "仅校验排序子问题，不证明完整景点选择+随机仿真模型全局最优",
+                "remaining_limitation": "仅校验排序子问题；20节点prize-collecting MILP因缺少MILP求解器未运行",
                 "next_upgrade": "安装OR-Tools/Gurobi后构建小规模MILP/CP-SAT定向游精确模型",
             },
         ]
@@ -2793,6 +2880,8 @@ class Q1V3Builder:
         front = self.robust_front if not self.robust_front.empty else read_csv(self.outputs / "q1_v3_robust_pareto_front.csv")
         feasible_front_path = self.outputs / "q1_v3_feasible_robust_pareto_front.csv"
         feasible_front = read_csv(feasible_front_path) if feasible_front_path.exists() else pd.DataFrame()
+        strict_comfort_front_path = self.outputs / "q1_v3_strict_comfort_pareto_front.csv"
+        strict_comfort_front = read_csv(strict_comfort_front_path) if strict_comfort_front_path.exists() else pd.DataFrame()
         exact_check_path = self.outputs / "q1_v3_small_exact_check.csv"
         exact_check = read_csv(exact_check_path) if exact_check_path.exists() else pd.DataFrame()
         labels = self.transport_labels if not self.transport_labels.empty else read_csv(self.outputs / "q1_v3_multimodal_labels.csv")
@@ -2819,13 +2908,17 @@ Q1-V3 将 V2.1 中仍属于后验解释的部分推进到求解流程内：从�
 
 主问题可表述为鲁棒多目标多模式定向游问题。给定覆盖下界 q，模型在候选景点集合 V 中选择 y_i，在交通标签集合 L_ij 中选择 x_ijell，并最大化覆盖、区域、偏好与主题多样性价值，同时惩罚费用、疲劳、风险代理和 CVaR 代理。
 
-机会约束在本实现中采用“仿真后筛选”口径：
+机会约束在本实现中采用“仿真后筛选”口径，并拆分两个成功率：
 
 ```text
-P(T(R,w)<=30, Comfort(R,w)>=75, ReservationFail<=2) >= 0.8
+operational_success_probability:
+T(R,w)<=30, Comfort(R,w)>=75, ReservationFail<=2, HotelFull<=2
+
+strict_comfort_success_probability:
+T(R,w)<=30, Comfort(R,w)>=75, ReservationFail<=2, HotelFull<=2, RedDays<=1
 ```
 
-它用于主推路线筛选，不被包装成精确随机 MILP 硬约束。
+运营鲁棒主推使用 operational_success_probability；严格舒适备选使用 strict_comfort_success_probability。二者都不被包装成精确随机 MILP 硬约束。
 
 ## 4. 求解流程
 
@@ -2838,35 +2931,41 @@ P(T(R,w)<=30, Comfort(R,w)>=75, ReservationFail<=2) >= 0.8
 
 ## 5. 代表方案
 
-{self.md_table(selected, ["selected_role", "route_id", "spots_count", "buffer_days", "success_probability", "cvar75_loss", "mean_comfort_score", "time_window_violations", "schedule_strict_feasible", "selection_status"], 8)}
+{self.md_table(selected, ["selected_role", "route_id", "spots_count", "buffer_days", "red_days", "operational_success_probability", "strict_comfort_success_probability", "prob_red_days_gt1", "time_window_violations", "schedule_strict_feasible", "selection_status"], 8)}
 
 ## 6. 严格可行鲁棒 Pareto 前沿样例
 
-本表只保留 `success_probability >= 0.8` 且 `schedule_strict_feasible=True` 的候选；完整数学前沿仍输出到 `q1_v3_robust_pareto_front.csv` 作为覆盖-风险权衡审计。
+本表只保留 `operational_success_probability >= 0.8` 且 `schedule_strict_feasible=True` 的候选；完整数学前沿仍输出到 `q1_v3_robust_pareto_front.csv` 作为覆盖-风险权衡审计。由于当前主要风险已从“超30天”转向“红色压力日”，表中显式展示红色压力指标。
 
-{self.md_table(feasible_front, ["route_id", "spots_count", "buffer_days", "success_probability", "cvar75_loss", "mean_comfort_score", "time_window_violations", "total_cost_yuan_excluding_meals"], 12)}
+{self.md_table(feasible_front, ["route_id", "spots_count", "buffer_days", "red_days", "operational_success_probability", "strict_comfort_success_probability", "prob_red_days_gt1", "cvar75_loss", "mean_comfort_score", "time_window_violations", "total_cost_yuan_excluding_meals"], 12)}
 
-## 7. 仿真结果摘要
+## 7. 严格舒适鲁棒前沿
 
-{self.md_table(sim.sort_values("success_probability", ascending=False), ["route_id", "success_probability", "overrun_probability", "p95_days", "expected_loss", "cvar75_loss", "prob_red_days_gt1"], 12)}
+本表要求 `strict_comfort_success_probability >= 0.8` 且 `schedule_strict_feasible=True`。如果为空，说明当前数据和路线空间下尚未找到“严格舒适成功率80%”的路线，应继续降低覆盖或加强排程修复。
 
-## 8. 小规模精确校验
+{self.md_table(strict_comfort_front, ["route_id", "spots_count", "buffer_days", "red_days", "strict_comfort_success_probability", "operational_success_probability", "prob_red_days_gt1", "cvar75_loss"], 12)}
 
-当前环境未安装 OR-Tools/Gurobi，因此 V3 先增加固定 15 节点子集的 Held-Karp 精确排序校验。该校验只用于衡量路线排序子问题的启发式缺口，不等同于完整随机定向游模型的全局最优证明。
+## 8. 仿真结果摘要
 
-{self.md_table(exact_check, ["check_id", "route_id", "node_count", "heuristic_metric", "exact_metric", "relative_gap", "check_scope"], 5)}
+{self.md_table(sim.sort_values("operational_success_probability", ascending=False), ["route_id", "operational_success_probability", "strict_comfort_success_probability", "overrun_probability", "p95_days", "expected_loss", "cvar75_loss", "prob_red_days_gt1"], 12)}
 
-## 9. 楼兰特殊准入处理
+## 9. 小规模精确校验
+
+当前环境未安装 OR-Tools/Gurobi，因此 V3 先增加前缀 15 节点和 3 个随机 15 节点子集的 Held-Karp 精确排序校验。该校验只用于衡量路线排序子问题的启发式缺口，不等同于完整随机定向游模型的全局最优证明；20 节点 prize-collecting MILP 已列为下一步求解器增强任务。
+
+{self.md_table(exact_check, ["check_id", "route_id", "node_count", "status", "heuristic_metric", "exact_metric", "relative_gap", "check_scope"], 8)}
+
+## 10. 楼兰特殊准入处理
 
 楼兰古城在特殊准入表中标记为普通游客不可作为基准路线节点，因此 V3 继续执行 `y_楼兰古城=0`。题面中对楼兰文化的偏好通过“楼兰文化替代组”约束表达，至少选择 2 个丝路遗址、宗教城市文化或南疆/巴州文化补偿节点，例如交河故城、高昌故城、北庭故城、克孜尔石窟、喀什古城、艾提尕尔清真寺、库车王府等。
 
-## 10. 模型审计
+## 11. 模型审计
 
 {self.md_table(audit, ["audit_id", "module", "claim", "status", "remaining_limitation"], 10)}
 
-## 11. 结论
+## 12. 结论
 
-Q1-V3 已经从“候选路线族 + 后验评价”升级为“交通标签选择 + 覆盖重搜索 + 小时级排程 + 路线级仿真 + 鲁棒前沿筛选”。汇报时应强调：该方案给出的是可复现、约束透明、风险可解释的高质量鲁棒可行解；若要进一步追求严格最优性，应在小规模子问题上引入 MILP/Gurobi/CP-SAT 作为下界与校验。
+Q1-V3 已经从“候选路线族 + 后验评价”升级为“交通标签选择 + 覆盖重搜索 + 小时级排程 + 路线级仿真 + 鲁棒前沿筛选”。当前主推方案应表述为“运营鲁棒主推”，不是“完全舒适主推”；如果追求严格舒适鲁棒，还需要进一步降低红色压力日。汇报时应强调：该方案给出的是可复现、约束透明、风险可解释的高质量鲁棒可行解；若要进一步追求严格最优性，应在小规模子问题上引入 MILP/Gurobi/CP-SAT 作为下界与校验。
 """
         report_path = self.reports / "新疆旅游第一问Q1_V3鲁棒联合优化报告.md"
         report_path.write_text(report, encoding="utf-8")
@@ -2889,6 +2988,7 @@ python .\\scripts\\q1_v3_build_all.py
 - `outputs/q1_v3_simulation_summary.csv`
 - `outputs/q1_v3_robust_pareto_front.csv`
 - `outputs/q1_v3_feasible_robust_pareto_front.csv`
+- `outputs/q1_v3_strict_comfort_pareto_front.csv`
 - `outputs/q1_v3_selected_routes.csv`
 - `outputs/q1_v3_small_exact_check.csv`
 - `reports/新疆旅游第一问Q1_V3鲁棒联合优化报告.md`
@@ -2904,6 +3004,7 @@ python .\\scripts\\q1_v3_build_all.py
             selected.to_excel(writer, sheet_name="selected_routes", index=False)
             front.to_excel(writer, sheet_name="robust_pareto", index=False)
             feasible_front.to_excel(writer, sheet_name="feasible_robust_pareto", index=False)
+            strict_comfort_front.to_excel(writer, sheet_name="strict_comfort_pareto", index=False)
             read_csv(self.outputs / "q1_v3_candidate_routes_enriched.csv").to_excel(writer, sheet_name="candidate_routes", index=False)
             sim.to_excel(writer, sheet_name="simulation_summary", index=False)
             read_csv(self.outputs / "q1_v3_schedule_summary.csv").to_excel(writer, sheet_name="schedule_summary", index=False)
@@ -2929,6 +3030,7 @@ python .\\scripts\\q1_v3_build_all.py
             "simulation_routes": int(len(sim)),
             "pareto_front_routes": int(len(read_csv(self.outputs / "q1_v3_robust_pareto_front.csv"))),
             "feasible_robust_pareto_front_routes": int(len(read_csv(self.outputs / "q1_v3_feasible_robust_pareto_front.csv"))),
+            "strict_comfort_pareto_front_routes": int(len(read_csv(self.outputs / "q1_v3_strict_comfort_pareto_front.csv"))),
             "small_exact_checks": int(len(exact)),
             "selected_route_ids": selected[["selected_role", "route_id", "selection_status"]].to_dict(orient="records"),
             "success_threshold": as_float(self.config["success_threshold"], 0.8),

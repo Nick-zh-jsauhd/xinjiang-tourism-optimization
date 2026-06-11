@@ -16,6 +16,7 @@ python .\scripts\q1_v3_build_all.py
 - `outputs/q1_v3_simulation_summary.csv`
 - `outputs/q1_v3_robust_pareto_front.csv`
 - `outputs/q1_v3_feasible_robust_pareto_front.csv`
+- `outputs/q1_v3_strict_comfort_pareto_front.csv`
 - `outputs/q1_v3_selected_routes.csv`
 - `outputs/q1_v3_small_exact_check.csv`
 - `reports/新疆旅游第一问Q1_V3鲁棒联合优化报告.md`
