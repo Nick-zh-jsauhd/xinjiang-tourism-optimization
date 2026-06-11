@@ -2870,6 +2870,15 @@ class Q1V3Builder:
                 "remaining_limitation": "仅校验排序子问题；20节点prize-collecting MILP因缺少MILP求解器未运行",
                 "next_upgrade": "安装OR-Tools/Gurobi后构建小规模MILP/CP-SAT定向游精确模型",
             },
+            {
+                "audit_id": "V3-A8",
+                "module": "success_metrics",
+                "claim": "success_probability为历史兼容字段，等同于operational_success_probability",
+                "status": "implemented_alias",
+                "evidence_file": "outputs/q1_v3_simulation_summary.csv",
+                "remaining_limitation": "旧代码可能继续读取success_probability，需要在论文和报告中优先展示拆分后的两类成功率",
+                "next_upgrade": "下一个大版本可移除兼容字段或重命名为operational_success_probability",
+            },
         ]
         audit = pd.DataFrame(audit_rows)
         write_csv(audit, self.outputs / "q1_v3_model_audit.csv")
@@ -2926,14 +2935,16 @@ T(R,w)<=30, Comfort(R,w)>=75, ReservationFail<=2, HotelFull<=2, RedDays<=1
 2. 覆盖重搜索：对 q in {self.config["coverage_grid"]} 分别生成候选，不再只从 32 点路线嵌套删点。
 3. 标签选择：路线边直接选择 label_id，费用、时间、疲劳和风险来自交通标签。
 4. 小时排程：显式记录出发/到达、开放时间、午休、高温避让、长转场和晚到酒店。
-5. 路线仿真：每条候选路线使用 {int(self.config["scenario_samples"])} 个样本计算成功率、P95天数、CVaR75/90。
+5. 路线仿真：每条候选路线使用 {int(self.config["scenario_samples"])} 个样本计算运营成功率、严格舒适成功率、P95天数、CVaR75/90。
 6. Pareto 筛选：按覆盖、费用、舒适度、成功率、CVaR 做非支配过滤。
+
+兼容说明：`success_probability` 为历史兼容字段，等同于 `operational_success_probability`；严格舒适成功率以 `strict_comfort_success_probability` 为准。
 
 ## 5. 代表方案
 
 {self.md_table(selected, ["selected_role", "route_id", "spots_count", "buffer_days", "red_days", "operational_success_probability", "strict_comfort_success_probability", "prob_red_days_gt1", "time_window_violations", "schedule_strict_feasible", "selection_status"], 8)}
 
-## 6. 严格可行鲁棒 Pareto 前沿样例
+## 6. 运营可行鲁棒 Pareto 前沿样例
 
 本表只保留 `operational_success_probability >= 0.8` 且 `schedule_strict_feasible=True` 的候选；完整数学前沿仍输出到 `q1_v3_robust_pareto_front.csv` 作为覆盖-风险权衡审计。由于当前主要风险已从“超30天”转向“红色压力日”，表中显式展示红色压力指标。
 
