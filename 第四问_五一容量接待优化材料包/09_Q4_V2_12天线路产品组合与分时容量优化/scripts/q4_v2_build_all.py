@@ -463,6 +463,102 @@ VARIANTS = [
     },
 ]
 
+PRODUCT_TYPE_ZH = {
+    "capacity_balanced": "大众均衡",
+    "family_comfort": "亲子舒适",
+    "senior_slow": "长者慢游",
+    "decongested_route": "错峰分流",
+    "culture_deep": "文化深游",
+    "nature_flagship": "自然风景",
+    "premium_reserve": "精品预约",
+}
+
+SEED_THEME_ZH = {
+    "North_Kanas": "北疆喀纳斯线",
+    "Ili_Lake_Grass": "伊犁湖泊草原线",
+    "East_Heritage": "东疆文化遗产线",
+    "South_Culture": "南疆文化线",
+    "Bazhou_Desert": "巴州沙漠湖泊线",
+    "Hotan_Plus": "和田南疆扩展线",
+    "Short_Urumqi_East": "乌鲁木齐东疆短线",
+    "SilkRoad_Deep": "丝路深游线",
+    "Border_Pamir": "帕米尔边境线",
+}
+
+SPOT_TOKEN_PRIORITY = {
+    "P001": "乌鲁木齐",
+    "P002": "乌鲁木齐",
+    "P003": "东疆",
+    "P004": "东疆",
+    "P005": "东疆",
+    "P006": "东疆",
+    "P011": "东疆",
+    "P012": "东疆",
+    "P013": "东疆",
+    "P008": "赛湖",
+    "P017": "赛湖",
+    "P009": "伊犁",
+    "P010": "伊犁",
+    "P014": "伊犁",
+    "P015": "伊犁",
+    "P016": "伊犁",
+    "P018": "北疆",
+    "P019": "北疆",
+    "P020": "北疆",
+    "P021": "北疆",
+    "P022": "北疆",
+    "P023": "北疆",
+    "P024": "喀什",
+    "P025": "喀什",
+    "P026": "喀什",
+    "P027": "帕米尔",
+    "P028": "帕米尔",
+    "P040": "帕米尔",
+    "P029": "巴州",
+    "P030": "巴州",
+    "P031": "巴州",
+    "P032": "巴州",
+    "P033": "巴州",
+    "P034": "巴州",
+    "P037": "和田",
+    "P039": "和田",
+}
+
+
+def compressed_route_tokens(sequence: list[str]) -> list[str]:
+    tokens = ordered_unique([SPOT_TOKEN_PRIORITY.get(sid, "") for sid in sequence if SPOT_TOKEN_PRIORITY.get(sid, "")])
+    token_set = set(tokens)
+    if {"东疆", "赛湖", "喀什"}.issubset(token_set):
+        return ["东疆", "赛湖", "喀什"]
+    if {"北疆", "伊犁", "东疆"}.issubset(token_set):
+        return ["北疆", "伊犁", "东疆"]
+    if {"巴州", "东疆", "乌鲁木齐"}.issubset(token_set) and len(tokens) > 3:
+        return ["巴州", "东疆", "乌鲁木齐"]
+    if len(tokens) <= 3:
+        return tokens
+    if "乌鲁木齐" in tokens and len(tokens) > 3:
+        tokens = [t for t in tokens if t != "乌鲁木齐"]
+    if len(tokens) <= 3:
+        return tokens
+    return [tokens[0], tokens[len(tokens) // 2], tokens[-1]]
+
+
+def build_route_product_name(
+    sequence: list[str],
+    seed_theme: str,
+    product_type: str,
+) -> tuple[str, str]:
+    tokens = compressed_route_tokens(sequence)
+    if not tokens:
+        tokens = [SEED_THEME_ZH.get(seed_theme, seed_theme)]
+    product_type_zh = PRODUCT_TYPE_ZH.get(product_type, product_type)
+    name = f"{'—'.join(tokens)}{product_type_zh}12日线"
+    seed_zh = SEED_THEME_ZH.get(seed_theme, seed_theme)
+    note = f"由{seed_zh}种子生成的{product_type_zh}12天产品；seed仅表示初始线路来源，不等同于最终空间范围。"
+    if seed_theme == "Short_Urumqi_East" and len(set(tokens)) >= 3:
+        note = f"由乌鲁木齐东疆短线种子扩展为跨区{product_type_zh}12天产品，不再按短线产品解释。"
+    return name, note
+
 
 def candidate_pool_for_seed(
     seed_ids: list[str],
@@ -581,9 +677,17 @@ def build_daily_itinerary_for_candidate(
         row = meta.loc[sid]
         travel_hours = od_lookup.get((previous_spot, sid), (1.2, 160.0))[0] if previous_spot else 1.3
         travel_hours = min(float(travel_hours), 8.5)
-        visit_hours = float(row["visit_hours_mid"])
+        raw_visit_hours = float(row["visit_hours_mid"])
+        visit_hours = raw_visit_hours
+        long_stay_note = ""
+        if raw_visit_hours > 8.0:
+            visit_hours = 6.8
+            long_stay_note = "；原始建议为1-2天深度停留，运营排程按半日主活动+住宿体验处理"
         slot = choose_primary_slot(row, day, str(candidate["focus"]))
         activity_hours = visit_hours + min(travel_hours, 4.5) * 0.72
+        if activity_hours > 9.5:
+            activity_hours = 9.5
+            long_stay_note += "；当日强度按产品质量红线封顶，需现场拆分团队或增加小交通"
         rows.append(
             {
                 "route_id": route_id,
@@ -600,7 +704,7 @@ def build_daily_itinerary_for_candidate(
                 "day_active_hours_proxy": round(activity_hours, 2),
                 "overnight_hub_name": preferred_overnight_hub(row["hub_name"]),
                 "time_window_note": f'{row.get("open_time", "")}-{row.get("close_time", "")}',
-                "arrangement_note": "主景点预约入园；按分时策略拆分团队",
+                "arrangement_note": f"主景点预约入园；按分时策略拆分团队{long_stay_note}",
             }
         )
         day += 1
@@ -730,11 +834,17 @@ def generate_route_candidates(inputs: dict[str, pd.DataFrame], spot_meta: pd.Dat
                 - 1.8 * resource_intensity
             )
             route_id = f"Q4V2_R{len(candidates) + 1:03d}"
+            route_theme_code = f"{seed_theme}_{variant['variant_code']}"
+            route_product_name_zh, route_name_note = build_route_product_name(
+                sequence, seed_theme, str(variant["product_type"])
+            )
             candidate = {
                 "route_id": route_id,
                 "seed_column_id": seed["column_id"],
                 "seed_route_theme": seed_theme,
-                "route_theme": f"{seed_theme}_{variant['variant_code']}",
+                "route_theme_code": route_theme_code,
+                "route_theme": route_product_name_zh,
+                "route_name_note": route_name_note,
                 "product_type": variant["product_type"],
                 "target_segment": variant["target_segment"],
                 "variant_code": variant["variant_code"],
@@ -897,6 +1007,8 @@ def build_capacity_ratio_allocation(candidates: pd.DataFrame, inputs: dict[str, 
             {
                 "route_id": route.route_id,
                 "route_theme": route.route_theme,
+                "route_theme_code": route.route_theme_code,
+                "route_name_note": route.route_name_note,
                 "seed_column_id": route.seed_column_id,
                 "seed_route_theme": route.seed_route_theme,
                 "product_type": route.product_type,
@@ -938,6 +1050,7 @@ def selected_portfolio_table(candidates: pd.DataFrame, allocation: pd.DataFrame)
         "selection_order",
         "route_id",
         "route_theme",
+        "route_theme_code",
         "seed_column_id",
         "seed_route_theme",
         "product_type",
@@ -956,9 +1069,59 @@ def selected_portfolio_table(candidates: pd.DataFrame, allocation: pd.DataFrame)
         "diversity_score",
         "avg_interspot_travel_hours_proxy",
         "route_sequence",
+        "route_name_note",
         "generation_note",
     ]
     return out[cols]
+
+
+def build_route_quality_audit(selected: pd.DataFrame, itinerary: pd.DataFrame) -> pd.DataFrame:
+    rows = []
+    selected_lookup = selected.set_index("route_id")
+    for route_id, group in itinerary[itinerary["route_id"].isin(set(selected["route_id"]))].groupby("route_id"):
+        active = group[group["day_type"] == "active"].copy()
+        route = selected_lookup.loc[route_id]
+        max_day = float(active["day_active_hours_proxy"].max()) if not active.empty else 0.0
+        red_days = int((active["day_active_hours_proxy"] > 9.0).sum()) if not active.empty else 0
+        orange_days = int(((active["day_active_hours_proxy"] > 8.0) & (active["day_active_hours_proxy"] <= 9.0)).sum()) if not active.empty else 0
+        long_transfer_days = int((active["inbound_travel_hours_proxy"] > 6.5).sum()) if not active.empty else 0
+        buffer_days = int(route["buffer_days"])
+        problem_days = active[
+            (active["day_active_hours_proxy"] > 8.0) | (active["inbound_travel_hours_proxy"] > 6.5)
+        ][["day_index", "spot_name", "day_active_hours_proxy", "inbound_travel_hours_proxy"]]
+        quality_pass = bool(max_day <= 9.0 and red_days == 0 and long_transfer_days <= 3 and buffer_days >= 3)
+        notes = []
+        if max_day > 9.5:
+            notes.append("存在超过9.5小时的单日强度，需拆分景点或增加缓冲")
+        elif red_days > 0:
+            notes.append("存在9小时以上高强度日，不建议直接作为普通团队产品投放，需分批/小交通/拆段修复")
+        if long_transfer_days > 3:
+            notes.append("长转场日偏多，建议改为跨区全疆产品或拆成两段销售")
+        if buffer_days < 3:
+            notes.append("缓冲日不足，抗天气/交通扰动能力弱")
+        if not notes:
+            notes.append("产品强度处于可投放范围")
+        rows.append(
+            {
+                "route_id": route_id,
+                "route_theme": route["route_theme"],
+                "route_theme_code": route["route_theme_code"],
+                "seed_route_theme": route["seed_route_theme"],
+                "product_type": route["product_type"],
+                "max_day_active_hours": round(max_day, 3),
+                "red_days": red_days,
+                "orange_days": orange_days,
+                "long_transfer_days": long_transfer_days,
+                "buffer_days": buffer_days,
+                "quality_pass": quality_pass,
+                "highest_pressure_days": "; ".join(
+                    f"D{int(r.day_index)}:{r.spot_name}/{float(r.day_active_hours_proxy):.1f}h/{float(r.inbound_travel_hours_proxy):.1f}h_travel"
+                    for r in problem_days.itertuples(index=False)
+                ),
+                "quality_note": "；".join(notes),
+            }
+        )
+    return pd.DataFrame(rows).sort_values(["quality_pass", "max_day_active_hours"], ascending=[True, False])
 
 
 def load_by_spot_slot(
@@ -1564,6 +1727,7 @@ def build_policy_selection(summary: pd.DataFrame) -> pd.DataFrame:
             served = np.average(group["served_ratio"], weights=group["scenario_weight"])
             loss = np.average(group["expected_loss_index"], weights=group["scenario_weight"])
             pass_rate = np.average(group["policy_pass"].astype(float), weights=group["scenario_weight"])
+            strict_pass_rate = np.average(group["strict_policy_pass"].astype(float), weights=group["scenario_weight"])
             max_wait = float(group["congestion_wait_index"].max())
             score = (
                 w_served * served * 100
@@ -1571,7 +1735,7 @@ def build_policy_selection(summary: pd.DataFrame) -> pd.DataFrame:
                 - w_loss * (loss / max(q4["expected_loss_index"].max(), 1) * 100)
                 - 4.0 * max_wait
             )
-            policy_scores.append((policy_id, score, served, loss, pass_rate, max_wait))
+            policy_scores.append((policy_id, score, served, loss, pass_rate, strict_pass_rate, max_wait))
         policy_scores.sort(key=lambda x: x[1], reverse=True)
         best = policy_scores[0]
         rows.append(
@@ -1583,7 +1747,8 @@ def build_policy_selection(summary: pd.DataFrame) -> pd.DataFrame:
                 "weighted_served_ratio": round(best[2], 4),
                 "weighted_expected_loss": round(best[3], 4),
                 "weighted_policy_pass_rate": round(best[4], 4),
-                "max_wait_index": round(best[5], 4),
+                "weighted_strict_policy_pass_rate": round(best[5], 4),
+                "max_wait_index": round(best[6], 4),
                 "selection_reason": "按接待率、损失指数、策略通过率和拥挤等待综合评分；不同画像改变峰值风险权重。",
             }
         )
@@ -1593,6 +1758,7 @@ def build_policy_selection(summary: pd.DataFrame) -> pd.DataFrame:
 def build_model_audit(
     candidates: pd.DataFrame,
     selected: pd.DataFrame,
+    quality_audit: pd.DataFrame,
     allocation: pd.DataFrame,
     spot_load: pd.DataFrame,
     hotel_load: pd.DataFrame,
@@ -1613,6 +1779,16 @@ def build_model_audit(
     rows.append(
         {
             "audit_id": "Q4V2-A2",
+            "module": "route_product_quality",
+            "status": "implemented",
+            "evidence": "q4_v2_route_quality_audit.csv",
+            "metric": f"quality_pass={int(quality_audit['quality_pass'].sum())}/{len(quality_audit)}, max_day={quality_audit['max_day_active_hours'].max():.2f}h",
+            "limitation": "质量审计基于日级强度代理，不是逐小时导游排班表；高强度路线需人工微调。",
+        }
+    )
+    rows.append(
+        {
+            "audit_id": "Q4V2-A3",
             "module": "capacity_ratio_allocation",
             "status": "implemented",
             "evidence": "q4_v2_capacity_ratio_allocation.csv",
@@ -1622,7 +1798,7 @@ def build_model_audit(
     )
     rows.append(
         {
-            "audit_id": "Q4V2-A3",
+            "audit_id": "Q4V2-A4",
             "module": "timeslot_capacity",
             "status": "implemented",
             "evidence": "q4_v2_spot_timeslot_load.csv",
@@ -1632,7 +1808,7 @@ def build_model_audit(
     )
     rows.append(
         {
-            "audit_id": "Q4V2-A4",
+            "audit_id": "Q4V2-A5",
             "module": "hotel_resource_capacity",
             "status": "implemented",
             "evidence": "q4_v2_hotel_resource_load.csv",
@@ -1642,7 +1818,7 @@ def build_model_audit(
     )
     rows.append(
         {
-            "audit_id": "Q4V2-A5",
+            "audit_id": "Q4V2-A6",
             "module": "vehicle_guide_shuttle_capacity",
             "status": "implemented",
             "evidence": "q4_v2_vehicle_guide_resource_load.csv",
@@ -1654,7 +1830,7 @@ def build_model_audit(
     q4_resource = scenario_summary[scenario_summary["portfolio_type"] == "q4v2"]
     rows.append(
         {
-            "audit_id": "Q4V2-A6",
+            "audit_id": "Q4V2-A7",
             "module": "scenario_policy_simulation",
             "status": "implemented",
             "evidence": "q4_v2_scenario_simulation_summary.csv",
@@ -1664,7 +1840,7 @@ def build_model_audit(
     )
     rows.append(
         {
-            "audit_id": "Q4V2-A7",
+            "audit_id": "Q4V2-A8",
             "module": "mathematical_optimality",
             "status": "partial",
             "evidence": "reports/新疆旅游第四问Q4_V2五一路线产品组合优化报告.md",
@@ -1739,6 +1915,7 @@ def write_workbook(paths: Paths, tables: dict[str, pd.DataFrame]) -> None:
         sheet_map = {
             "candidate_route_products": "候选12天线路",
             "selected_route_portfolio": "入选线路组合",
+            "route_quality_audit": "线路质量审计",
             "capacity_ratio_allocation": "容量比例分配",
             "spot_timeslot_load": "景区分时负载",
             "hotel_resource_load": "住宿资源负载",
@@ -1764,6 +1941,7 @@ def df_to_md(df: pd.DataFrame, n: int = 8) -> str:
 def write_report(paths: Paths, tables: dict[str, pd.DataFrame], inputs: dict[str, pd.DataFrame]) -> None:
     candidates = tables["candidate_route_products"]
     selected = tables["selected_route_portfolio"]
+    quality_audit = tables["route_quality_audit"]
     allocation = tables["capacity_ratio_allocation"]
     scenario = tables["scenario_simulation_summary"]
     policy_selection = tables["policy_selection"]
@@ -1781,7 +1959,16 @@ def write_report(paths: Paths, tables: dict[str, pd.DataFrame], inputs: dict[str
     ].iloc[0]
     red_slots = int((spot_load["pressure_level"] == "red").sum())
     max_slot = float(spot_load["utilization"].max())
-    best_policies = policy_selection[["profile_name", "recommended_policy_id", "weighted_served_ratio", "weighted_expected_loss"]]
+    best_policies = policy_selection[
+        [
+            "profile_name",
+            "recommended_policy_id",
+            "weighted_served_ratio",
+            "weighted_policy_pass_rate",
+            "weighted_strict_policy_pass_rate",
+            "weighted_expected_loss",
+        ]
+    ]
 
     report = f"""# 新疆旅游第四问 Q4-V2：五一 12 天游线路产品组合与分时容量优化报告
 
@@ -1837,15 +2024,27 @@ max route_diversity + low_pressure_capacity
 
 从旧 9 条线路种子出发，按大众均衡、亲子舒适、长者慢游、错峰分流、文化深游、自然风景、精品预约 7 类变体扩展，生成 `{len(candidates)}` 条完整 12 天线路产品，最终选择 `{len(selected)}` 条进入 V2 组合，合计投放容量 `{selected_cap}` 人。
 
-入选组合样例：
+入选组合样例。`route_theme` 为中文运营产品名，`route_theme_code` 为英文机器码；当短线种子被扩展成跨区线路时，最终解释以中文产品名和 `route_name_note` 为准。
 
-{df_to_md(selected[["selection_order","route_id","seed_route_theme","product_type","route_capacity_persons_12day","balanced_optimized_visitors","comfort_score","low_pressure_score"]], 12)}
+{df_to_md(selected[["selection_order","route_id","route_theme","route_theme_code","seed_route_theme","route_capacity_persons_12day","balanced_optimized_visitors","comfort_score","low_pressure_score"]], 12)}
+
+## 3.1 线路产品质量审计
+
+第四问的主目标是节假日容量接待，但“提高接待质量”要求线路产品不能出现过多高强度日。V2 对每条入选线路输出质量审计：`red_days` 表示单日活动强度超过 9 小时，`long_transfer_days` 表示跨区转场超过 6.5 小时，`quality_pass` 表示产品可直接作为团队线路投放；未通过者需要拆分销售、增加缓冲或改成小团深度产品。
+
+{df_to_md(quality_audit[["route_id","route_theme","max_day_active_hours","red_days","long_transfer_days","buffer_days","quality_pass","quality_note"]], 18)}
 
 ## 4. 容量比例分配与偏好弹性对照
 
-题设中“游客按线路容量比例分配”的口径在 `strict_capacity_ratio_visitors` 字段中保留；V2 同时给出 `preference_elastic_visitors` 和 `balanced_optimized_visitors`，用于表达游客更偏好高吸引力线路，但不能无限制挤向 East_Heritage 或传统热点。
+分配口径分三层，答辩时应先讲第一层：
 
-{df_to_md(allocation[["route_id","seed_route_theme","route_capacity_persons_12day","strict_capacity_ratio_visitors","preference_elastic_visitors","balanced_optimized_visitors","balanced_utilization"]], 12)}
+1. `strict_capacity_ratio_visitors`：题面基准口径，游客人数严格按线路接待能力比例分配。
+2. `preference_elastic_visitors`：现实偏好扩展，考虑游客更偏好高吸引力线路，但不能无限制挤向 East_Heritage 或传统热点。
+3. `balanced_optimized_visitors`：运营优化口径，在偏好、容量、舒适度和低压分流之间折中，用于后续数字孪生仿真。
+
+因此，本问没有忽略“按容量比例分配”的题设假设；它被保留为基准列，并与现实扩展/运营优化进行并列表达。
+
+{df_to_md(allocation[["route_id","route_theme","route_capacity_persons_12day","strict_capacity_ratio_visitors","preference_elastic_visitors","balanced_optimized_visitors","balanced_utilization"]], 12)}
 
 ## 5. 分时段容量与多资源瓶颈
 
@@ -1859,7 +2058,7 @@ max route_diversity + low_pressure_capacity
 
 实验比较旧 9 线路基线、Q4-V2 全量放票、95%安全上限、90%舒适上限、分时预约、补运力+分时预约，在 1.00、1.05、1.10、1.20、1.35 倍需求冲击下的接待率、溢出、分时瓶颈和资源短缺。
 
-输出中 `policy_pass` 与 `soft_policy_pass` 等价，表示软可行：接待率达标且分时/资源利用率在可通过现场调度修复的安全带内；`strict_policy_pass` 表示严格可行，即景区分时段、酒店、车辆导游摆渡资源全部不超过 100%。旧 9 线路缺少分时和多资源核验，因此只作为总容量基线，不作为严格资源可行证明。
+输出中 `policy_pass` 与 `soft_policy_pass` 等价，表示软可行：接待率达标且分时/资源利用率在可通过现场调度修复的安全带内；`strict_policy_pass` 表示严格可行，即景区分时段、酒店、车辆导游摆渡资源全部不超过 100%。服务率高只说明游客总量能被接收，不等价于所有时段都不拥挤；`strict_policy_pass` 才表示接待质量完全可控。旧 9 线路缺少分时和多资源核验，因此只作为总容量基线，不作为严格资源可行证明。
 
 基准场景下，`q4v2_staggered_prebooking` 接待 `{int(q4v2_base.served_visitors)}` 人，接待率 `{q4v2_base.served_ratio:.3f}`，溢出 `{int(q4v2_base.rejected_or_overflow_visitors)}` 人。复合极端 1.35 倍需求下，`q4v2_add_capacity_plus_stagger` 接待 `{int(q4v2_extreme.served_visitors)}` 人，接待率 `{q4v2_extreme.served_ratio:.3f}`，溢出 `{int(q4v2_extreme.rejected_or_overflow_visitors)}` 人。
 
@@ -1899,11 +2098,13 @@ def write_readme(paths: Paths, tables: dict[str, pd.DataFrame]) -> None:
 
 1. 生成 `{len(tables['candidate_route_products'])}` 条完整 12 天线路产品候选列；
 2. 选择 `{len(selected)}` 条线路构成五一投放组合；
-3. 对比容量比例分配、偏好弹性分配和平衡优化分配；
-4. 将景区日容量拆为早/午/晚分时预约槽；
-5. 引入住宿、车辆、导游、摆渡/停车多资源容量；
-6. 比较 1.00/1.05/1.10/1.20/1.35 五类需求冲击和多种预约政策；
-7. 输出瓶颈影子价格、动态分流矩阵、分时预约策略和模型审计。
+3. 将最终 `route_theme` 整理为中文运营产品名，英文追溯码保留在 `route_theme_code`；
+4. 增加线路产品质量审计，检查高强度日、长转场日和缓冲日；
+5. 对比题面容量比例分配、现实偏好弹性分配和平衡优化分配；
+6. 将景区日容量拆为早/午/晚分时预约槽；
+7. 引入住宿、车辆、导游、摆渡/停车多资源容量；
+8. 比较 1.00/1.05/1.10/1.20/1.35 五类需求冲击和多种预约政策；
+9. 输出瓶颈影子价格、动态分流矩阵、分时预约策略和模型审计。
 
 ## 复现
 
@@ -1918,6 +2119,7 @@ python -X utf8 .\\第四问_五一容量接待优化材料包\\09_Q4_V2_12天线
 - `outputs/q4_v2_candidate_route_products.csv`
 - `outputs/q4_v2_route_daily_itinerary.csv`
 - `outputs/q4_v2_selected_route_portfolio.csv`
+- `outputs/q4_v2_route_quality_audit.csv`
 - `outputs/q4_v2_capacity_ratio_allocation.csv`
 - `outputs/q4_v2_spot_timeslot_load.csv`
 - `outputs/q4_v2_hotel_resource_load.csv`
@@ -1936,6 +2138,8 @@ python -X utf8 .\\第四问_五一容量接待优化材料包\\09_Q4_V2_12天线
 - 入选线路产品总容量：`{int(selected['route_capacity_persons_12day'].sum())}` 人。
 - 旧 9 线路基线总容量：`111956` 人，基准接待：`106358` 人。
 - Q4-V2 不是个人路径规划，而是线路产品投放、预约名额、多资源容量和动态分流的运营模型。
+- `strict_capacity_ratio_visitors` 是题面比例假设基准；`preference_elastic_visitors` 是现实偏好扩展；`balanced_optimized_visitors` 用于运营仿真。
+- `policy_pass/soft_policy_pass` 表示软可行；`strict_policy_pass` 才表示所有分时段与多资源利用率均不超过 100%。
 - 多资源容量中的酒店房量、车辆、导游、摆渡/停车仍为校准模拟参数，需在论文和答辩中说明。
 
 ## 模型审计
@@ -1979,6 +2183,7 @@ def main() -> None:
     allocation = build_capacity_ratio_allocation(candidates, inputs)
     selected = selected_portfolio_table(candidates, allocation)
     selected_full = candidates[candidates["selected_in_portfolio"]].sort_values("selection_order").copy()
+    quality_audit = build_route_quality_audit(selected, itinerary_all)
 
     spot_load = load_by_spot_slot(
         itinerary_all,
@@ -2022,6 +2227,7 @@ def main() -> None:
     model_audit = build_model_audit(
         candidates,
         selected,
+        quality_audit,
         allocation,
         spot_load,
         hotel_load,
@@ -2036,6 +2242,7 @@ def main() -> None:
         "candidate_route_products": candidates.sort_values(["selected_in_portfolio", "selection_order", "route_id"], ascending=[False, True, True]),
         "route_daily_itinerary": itinerary_selected,
         "selected_route_portfolio": selected,
+        "route_quality_audit": quality_audit,
         "capacity_ratio_allocation": allocation,
         "spot_timeslot_load": spot_load,
         "hotel_resource_load": hotel_load,
@@ -2051,6 +2258,7 @@ def main() -> None:
         "candidate_route_products": "q4_v2_candidate_route_products.csv",
         "route_daily_itinerary": "q4_v2_route_daily_itinerary.csv",
         "selected_route_portfolio": "q4_v2_selected_route_portfolio.csv",
+        "route_quality_audit": "q4_v2_route_quality_audit.csv",
         "capacity_ratio_allocation": "q4_v2_capacity_ratio_allocation.csv",
         "spot_timeslot_load": "q4_v2_spot_timeslot_load.csv",
         "hotel_resource_load": "q4_v2_hotel_resource_load.csv",
@@ -2074,6 +2282,7 @@ def main() -> None:
     summary = {
         "candidate_routes": int(len(candidates)),
         "selected_routes": int(candidates["selected_in_portfolio"].sum()),
+        "quality_pass_routes": int(quality_audit["quality_pass"].sum()),
         "selected_capacity_persons_12day": int(selected["route_capacity_persons_12day"].sum()),
         "legacy_9route_capacity_persons_12day": int(inputs["routes"]["route_capacity_persons_12day"].sum()),
         "baseline_demand": BASE_DEMAND,

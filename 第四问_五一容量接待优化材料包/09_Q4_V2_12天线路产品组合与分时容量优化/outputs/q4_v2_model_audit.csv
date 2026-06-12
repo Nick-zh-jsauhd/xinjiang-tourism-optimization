@@ -1,8 +1,9 @@
 ﻿audit_id,module,status,evidence,metric,limitation
 Q4V2-A1,route_product_generation,implemented,q4_v2_candidate_route_products.csv,63 candidates / 18 selected,候选线路由规则化列生成产生，不是所有可行线路全集。
-Q4V2-A2,capacity_ratio_allocation,implemented,q4_v2_capacity_ratio_allocation.csv,"baseline demand=106358, balanced overflow=0",游客偏好参数为模型校准，未接入真实订单点击/转化数据。
-Q4V2-A3,timeslot_capacity,implemented,q4_v2_spot_timeslot_load.csv,"max utilization=1.058, red slots=1",时段容量由日容量按早/午/晚比例拆分，仍需景区闸机小时级数据校准。
-Q4V2-A4,hotel_resource_capacity,implemented,q4_v2_hotel_resource_load.csv,max utilization=0.553,酒店房量为枢纽可协调房源池的校准容量，不是携程/美团实时库存。
-Q4V2-A5,vehicle_guide_shuttle_capacity,implemented,q4_v2_vehicle_guide_resource_load.csv,max utilization=0.376,车辆、导游、摆渡车库存由枢纽可协调房源池和景区规模推导，需旅行社/景区调度台账核验。
-Q4V2-A6,scenario_policy_simulation,implemented,q4_v2_scenario_simulation_summary.csv,"best row=q4v2_add_capacity_plus_stagger/base_1_00, loss=298.44, soft_pass=4, strict_pass=2",情景概率和冲击分布为专家设定；后续应接入历年五一客流/天气/道路事件。
-Q4V2-A7,mathematical_optimality,partial,reports/新疆旅游第四问Q4_V2五一路线产品组合优化报告.md,matheuristic closed loop,当前为生成式候选列+启发式组合选择+仿真评估；若需严格全局最优，应转为Gurobi/Pyomo混合整数二次规划或列生成主问题。
+Q4V2-A2,route_product_quality,implemented,q4_v2_route_quality_audit.csv,"quality_pass=8/18, max_day=9.24h",质量审计基于日级强度代理，不是逐小时导游排班表；高强度路线需人工微调。
+Q4V2-A3,capacity_ratio_allocation,implemented,q4_v2_capacity_ratio_allocation.csv,"baseline demand=106358, balanced overflow=0",游客偏好参数为模型校准，未接入真实订单点击/转化数据。
+Q4V2-A4,timeslot_capacity,implemented,q4_v2_spot_timeslot_load.csv,"max utilization=1.058, red slots=1",时段容量由日容量按早/午/晚比例拆分，仍需景区闸机小时级数据校准。
+Q4V2-A5,hotel_resource_capacity,implemented,q4_v2_hotel_resource_load.csv,max utilization=0.553,酒店房量为枢纽可协调房源池的校准容量，不是携程/美团实时库存。
+Q4V2-A6,vehicle_guide_shuttle_capacity,implemented,q4_v2_vehicle_guide_resource_load.csv,max utilization=0.376,车辆、导游、摆渡车库存由枢纽可协调房源池和景区规模推导，需旅行社/景区调度台账核验。
+Q4V2-A7,scenario_policy_simulation,implemented,q4_v2_scenario_simulation_summary.csv,"best row=q4v2_add_capacity_plus_stagger/base_1_00, loss=298.44, soft_pass=4, strict_pass=2",情景概率和冲击分布为专家设定；后续应接入历年五一客流/天气/道路事件。
+Q4V2-A8,mathematical_optimality,partial,reports/新疆旅游第四问Q4_V2五一路线产品组合优化报告.md,matheuristic closed loop,当前为生成式候选列+启发式组合选择+仿真评估；若需严格全局最优，应转为Gurobi/Pyomo混合整数二次规划或列生成主问题。

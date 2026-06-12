@@ -1,6 +1,7 @@
 {
   "candidate_routes": 63,
   "selected_routes": 18,
+  "quality_pass_routes": 8,
   "selected_capacity_persons_12day": 160190,
   "legacy_9route_capacity_persons_12day": 111956,
   "baseline_demand": 106358,

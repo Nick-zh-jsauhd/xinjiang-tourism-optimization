@@ -137,9 +137,13 @@ python -X utf8 scripts/build_visual_assets.py
 
 - 生成 63 条完整 12 天线路产品候选列，选择 18 条进入五一投放组合。
 - 保留题设“按线路容量比例分配游客”的严格基准，同时输出偏好弹性与平衡优化分配。
+- 将最终 `route_theme` 整理为中文运营产品名，英文追溯码保留在 `route_theme_code`，避免“短线种子”与“跨区12天产品”混淆。
+- 新增 `q4_v2_route_quality_audit.csv`，审计单日强度、红色日、长转场日和缓冲日。
 - 建立早/午/晚分时预约槽，并输出景区时段负载、预约释放策略和瓶颈影子价格。
 - 将酒店房源池、车辆、导游、摆渡/停车作为多资源约束纳入仿真。
 - 比较 1.00、1.05、1.10、1.20、1.35 倍需求冲击下的全量放票、预约上限、分时预约和补运力策略。
+- `strict_capacity_ratio_visitors` 为题面基准，`preference_elastic_visitors` 为现实偏好扩展，`balanced_optimized_visitors` 为运营仿真口径。
+- `policy_pass/soft_policy_pass` 表示软可行，`strict_policy_pass` 才表示所有景区时段与多资源约束均不超过 100%。
 
 复现命令：
 
