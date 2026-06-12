@@ -1,0 +1,13 @@
+﻿evidence_name,path,exists,rows_if_csv,purpose
+Q1主路线,hybrid_30day_outputs\hard30_route_summary.csv,True,1,32景点30天硬约束路线
+Q1画像路线,adaptive_strategy_outputs\q1_variant_summary.csv,True,4,四类游客画像路线与舒适度
+Q2交通主模型,problem2_openpath_outputs\scenario_totals.csv,True,2,乌鲁木齐起讫与开放式多口岸对比
+Q2价格仿真,policy_simulation_outputs\q2_gateway_price_summary.csv,True,3,多口岸票价溢价敏感性
+Q2效率审计,solver_efficiency_outputs\highs_log_status.csv,True,4,DFJ/flow/long MILP日志状态
+Q3文化MinMax,enhanced_model_outputs\problem3_minmax_summary.csv,True,3,三组文化考察均衡结果
+Q3缓冲仿真,policy_simulation_outputs\q3_project_buffer_curve.csv,True,10,项目缓冲天数成功概率
+Q4容量流,enhanced_model_outputs\problem4_capacity_flow.csv,True,9,五一线路容量与分配
+Q4分流策略,adaptive_strategy_outputs\q4_reallocation_summary.csv,True,4,需求冲击下动态分流
+数字孪生,digital_twin_outputs\recommendation_atlas.csv,True,24,四问复合情景风险图谱
+风险策略,risk_policy_outputs\integrated_policy_portfolio.csv,True,4,不同风险偏好策略组合
+视觉图表,visual_assets_outputs\visual_index.csv,True,7,PPT图表索引

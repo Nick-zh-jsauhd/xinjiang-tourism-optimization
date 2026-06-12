@@ -1,0 +1,8 @@
+﻿layer,role,main_artifacts,value
+数据底座,把题面Excel、景点、门票、时长、OD、容量、酒店等统一成可建模表,outputs/新疆旅游优化建模数据底座.xlsx; enhanced_data/*; model_data/*,解决原始数据散、口径不统一的问题
+确定性优化,分别回答四问的核心目标：30天路线、两年交通费、文化MinMax、五一容量流,hybrid_30day_outputs; problem2_openpath_outputs; enhanced_model_outputs,给出可计算、可复现的主答案
+元启发式/局部搜索,ACO+ALNS+SA+2-opt 构造高质量可行路线，并修复时间/舒适度约束,hybrid_metaheuristic_outputs; hybrid_30day_outputs,提升路径质量和工程可运行性
+人性化画像,将普通体力、探索紧凑、亲子舒适、长者慢游映射为不同天数/舒适度/删点策略,adaptive_strategy_outputs; humanized_scenario_outputs,让路线从数学最短路变成可旅行方案
+数字孪生仿真,同时扰动天气、道路、预约、票价、审批、客流，验证路线和策略鲁棒性,digital_twin_outputs; outputs/新疆旅游四问数字孪生鲁棒性实验报告.md,解释真实世界不确定性下模型是否扛得住
+风险感知决策,用期望损失+CVaR尾部风险为不同风险偏好选择策略组合,risk_policy_outputs; outputs/新疆旅游四问风险感知策略选择模型报告.md,将仿真结果转化为论文主方案、保守方案和应急方案
+求解效率研究,说明HiGHS/DFJ瓶颈，并给出OR-Tools warm start + Gurobi/CPLEX lazy cuts升级路径,solver_efficiency_outputs; scripts/solve_problem2_ortools_routing.py,避免把未证明最优的解误写成全局最优，同时给出工程强化方向

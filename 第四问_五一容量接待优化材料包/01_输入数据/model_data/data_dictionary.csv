@@ -1,0 +1,10 @@
+﻿table_name,meaning,optimization_use
+spot_clean,景点建模主表,OP收益、停留时间、门票、特殊准入约束
+hub_clean,交通枢纽/城市节点表,"构建主交通图G=(H,E)"
+spot_hub_map,景点到交通枢纽映射表,把景点P挂接到枢纽H，处理名称不一致
+edge_road_directed,双向公路边表,路径模型、最短路闭包、时间约束
+hotel_options_clean,住宿价格选项,住宿费用估计；双人房按房间计费
+hotel_place_default,默认住宿价,快速路线估算时默认采用经济型/最低可用价
+transport_cost_clean,交通费用目录,机票/火车/大巴/包车/租车/景区交通费用参数
+scenario_parameters,场景参数,五个小问的时间、人数、容量阈值等默认值
+data_quality_issues,数据质量与建模风险,建模前必须处理或在报告中说明的问题

@@ -1,0 +1,16 @@
+﻿scenario_id,probability,mode,time_factor,cost_factor,risk_add,description
+base_summer,0.45,road,1.0,1.0,0.0,暑假普通日，使用基础时间。
+summer_peak,0.2,road,1.15,1.05,0.03,7-8月高峰，路面和景区接驳轻度拥堵。
+mayday_peak,0.15,road,1.35,1.1,0.06,五一长假，高速/景区接驳拥堵。
+duku_weather_disruption,0.1,road,1.8,1.0,0.25,独库/山区道路天气扰动，含临时封闭风险。
+hotel_full_price_surge,0.1,road,1.1,1.3,0.08,住宿紧张导致费用上浮。
+base_summer,0.45,rail,1.0,1.0,0.0,铁路按班次运行，时间相对稳定。
+summer_peak,0.2,rail,1.05,1.1,0.02,暑期票源紧张，等待和费用小幅上升。
+mayday_peak,0.15,rail,1.08,1.2,0.04,五一铁路票源紧张。
+base_summer,0.45,air,1.0,1.0,0.0,航班基础情景。
+summer_peak,0.2,air,1.05,1.25,0.04,暑期机票上浮。
+mayday_peak,0.15,air,1.1,1.35,0.06,五一机票上浮。
+base_summer,0.45,bus,1.0,1.0,0.0,大巴基础情景。
+mayday_peak,0.15,bus,1.3,1.1,0.05,五一班车和道路拥堵。
+base_summer,0.45,scenic_shuttle,1.0,1.0,0.0,景区接驳基础情景。
+mayday_peak,0.15,scenic_shuttle,1.5,1.0,0.05,五一景区排队时间上升。

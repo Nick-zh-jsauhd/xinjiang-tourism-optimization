@@ -1,0 +1,21 @@
+﻿source_id,source_name,url,data_used,reliability
+SRC_XJ_MAYDAY_2025,新疆维吾尔自治区人民政府网：2025五一游客量,https://www.xinjiang.gov.cn/xinjiang/bmdt/202505/fad7fa3a38d54bd4a5b7e98a93a6b005.shtml,2025五一新疆累计接待游客919.55万人次、游客花费89.24亿元；喀什古城接待84.04万人次。,official
+SRC_MCT_MAYDAY_2025,中国政府网/文旅部：2025五一全国出游数据,https://www.gov.cn/lianbo/bumen/202505/content_7022682.htm,2025五一全国国内出游3.14亿人次、总花费1802.69亿元，用于宏观客流校准。,official
+SRC_TIANCHI_CAP,昌吉州政府网：天山天池夏季最大承载量公告,https://www.cj.gov.cn/p1/tzgg/20250811/369611.html,天山天池景区夏季日最大承载量2.58万人。,official
+SRC_SAILIMU_CAP,霍城县政府网：果子沟-赛里木湖承载量公告,https://www.xjhc.gov.cn/xjhc/c113326/202508/31639fa047ca40588c5f20ea77f9660e.shtml,果子沟-赛里木湖景区日最大承载量22000人、瞬时承载量5570人。,official
+SRC_KANAS_CAP,喀纳斯夏季游览通告转引,https://wlmq.bendibao.com/xiuxian/2026416/67787.shtm,喀纳斯主要景区日最大承载量5.5万人，分区：喀纳斯2.7万、禾木2万、白哈巴0.8万。,secondary_public_notice
+SRC_DUKU_CCTV_2026,央视网：2026独库公路6月1日恢复通车,https://news.cctv.com/2026/06/01/ARTIp28O3A6i8NutdCt1Au4y260601.shtml,2026年6月1日独库公路正式恢复全线通车，且部分路段白天保通行、夜间保施工。,central_media
+SRC_DUKU_CTNEWS_2026,中国旅游新闻网：独库公路恢复全线通车,https://www.ctnews.com.cn/dongtai/content/2026-06/01/content_187964.html,2026年6月1日上午G217独库公路恢复全线通车。,industry_media
+SRC_DUKU_FIRSTDAY,中国日报网：独库公路通车首日车流超6000辆,https://xj.chinadaily.com.cn/a/202606/02/WS6a1e9e68a310942cc49afb09.html,2026年通车首日库车段车流超6000辆，用于路段拥堵/容量情景校准。,official_media
+SRC_RUOQIANG_RAIL_2026,中新网新疆：若羌-库尔勒城际列车优化,https://www.xj.chinanews.com.cn/dizhou/2026-04-13/detail-ihfcqyyi3989347.shtml,C981次若羌至库尔勒12:50发车、16:47到达，全程3小时57分。,news_from_rail_adjustment
+SRC_URUMQI_KASHI_RAIL,铁路网/列车吧：乌鲁木齐至喀什列车时刻,https://www.crecc.com/huoche/k9768.html,乌鲁木齐南至喀什列车全程约18小时级别，用于修正原表3.5小时异常值。,secondary_schedule
+SRC_YINING_RAIL,铁路网：伊宁站列车时刻表,https://www.crecc.com/xinjiang/yili/yining.html,伊宁至乌鲁木齐城际动车约5小时49分、旅游列车约7小时55分。,secondary_schedule
+SRC_XJ_CULTURE_OVERVIEW,新疆维吾尔自治区人民政府网：新疆文化底蕴,https://www.xinjiang.gov.cn/xinjiang/xjgk/202406/6cf3555600ee440690c18781e1c2494d.shtml,高昌故城、交河故城、北庭故城遗址、克孜尔石窟等为新疆首批世界文化遗产相关遗产点。,official
+SRC_TURPAN_HERITAGE,吐鲁番市政府网：交河/高昌故城申遗,https://www.tlf.gov.cn/tlfs/c106444/201406/0ce8cb00f68d452aa6d5f22767ba7ce3.shtml,交河故城、高昌故城作为丝绸之路重要遗址列入世界文化遗产。,official
+SRC_KASHI_IDKAH,喀什地区行政公署：艾提尕尔清真寺简介,https://www.kashi.gov.cn/ksdqxzgs/c106707/202307/28cd99dc43a244619788bda878887922.shtml,艾提尕尔清真寺始建于1442年，具有浓郁民族风格和宗教色彩。,official
+SRC_KIZIL_REGULATION,新疆政府规章库：克孜尔千佛洞保护管理办法,https://www.xinjiang.gov.cn/xinjiang/gzk/202112/ea65632e645544fdba2332872387ea72/files/e595c959f7394608a279e0b025e7b293.PDF,克孜尔千佛洞为全国重点文物保护单位，用于文化考察标签。,official_pdf
+SRC_12306_PORTAL,中国铁路12306,https://www.12306.cn/,铁路班次/票价应以12306实时查询为准；本模型将外部公开时刻作为近似。,official_portal
+RAIL_12306_MODEL_OPTIONS,本项目抓取的12306核心铁路OD模型候选表,enhanced_data/rail_12306_model_options.csv,2026-06-20核心铁路OD的最快、最便宜、夜间/早晚代表车次；用于替换铁路层假设边。,official_api_snapshot
+AIR_PUBLIC_SCHEDULE_SEED,本项目整理的公开航班时刻与OTA报价快照,enhanced_data/air_public_schedule_seed.csv,乌鲁木齐至喀什、伊宁、库尔勒、阿克苏、和田、库车、阿勒泰、喀纳斯等航线时刻/价格代理。,public_page_and_ota_proxy
+SRC_AMAP_PORTAL,高德开放平台,https://lbs.amap.com/,完整OD矩阵和实时拥堵数据建议通过地图API批量获取；本轮已使用高德驾车OD快照接入道路层。,official_api_portal
+AMAP_DISTANCE_API,高德 Distance/Direction API 驾车OD快照,enhanced_data/amap_driving_od_matrix_clean.csv,40个景点两两驾车时长/距离，以及乌鲁木齐出发地到景点的往返接驳；用于替换增强模型道路层中的景点级自驾边。,official_api_snapshot

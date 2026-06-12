@@ -1,0 +1,13 @@
+{
+  "status": "success",
+  "final_answers": 4,
+  "model_layers": 7,
+  "evidence_items": 12,
+  "missing_evidence_items": 0,
+  "figures": [
+    "final_research_package_v2_outputs\\figures\\fig01_data_evidence_maturity.png",
+    "final_research_package_v2_outputs\\figures\\fig02_final_model_stack_v2.png"
+  ],
+  "workbook": "outputs/新疆旅游最终科研交付总包v2.xlsx",
+  "report": "outputs/新疆旅游最终科研交付总包v2.md"
+}

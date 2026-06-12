@@ -1,0 +1,17 @@
+{
+  "status": "success",
+  "trials_per_scenario": 4000,
+  "scenario_count": 6,
+  "q1_rows": 24,
+  "q2_rows": 6,
+  "q3_rows": 30,
+  "q4_rows": 30,
+  "figures": [
+    "digital_twin_outputs\\figures\\fig01_q1_persona_robustness_heatmap.png",
+    "digital_twin_outputs\\figures\\fig02_q2_gateway_robustness.png",
+    "digital_twin_outputs\\figures\\fig03_q3_best_buffer_policy.png",
+    "digital_twin_outputs\\figures\\fig04_q4_capacity_policy_robustness.png"
+  ],
+  "workbook": "outputs/新疆旅游数字孪生鲁棒性实验结果.xlsx",
+  "report": "outputs/新疆旅游四问数字孪生鲁棒性实验报告.md"
+}

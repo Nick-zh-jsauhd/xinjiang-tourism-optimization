@@ -1,0 +1,22 @@
+{
+  "tables": {
+    "notation": {
+      "rows": 16,
+      "columns": 3
+    },
+    "algorithm_index": {
+      "rows": 9,
+      "columns": 4
+    },
+    "experiment_matrix": {
+      "rows": 10,
+      "columns": 5
+    },
+    "master_metrics": {
+      "rows": 14,
+      "columns": 6
+    }
+  },
+  "workbook": "outputs/新疆旅游论文建模章节表格索引.xlsx",
+  "chapter": "outputs/新疆旅游论文建模章节草案.md"
+}

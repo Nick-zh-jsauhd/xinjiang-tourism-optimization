@@ -1,0 +1,8 @@
+﻿paper_section,insert_content,evidence
+摘要/创新点,提出数据底座-确定性优化-元启发式-数字孪生-风险感知决策的分层建模框架,final_research_package_v2_outputs/model_stack_v2.csv
+数据预处理,说明高德OD为真实API，酒店/容量/预约/天气为校准仿真或情景参数,final_research_package_v2_outputs/data_truth_table.csv
+问题一模型,从单一30天路线扩展到游客画像和CVaR风险策略，解释亲子/长者为什么需要拆段,adaptive_strategy_outputs/q1_variant_summary.csv; risk_policy_outputs/q1_policy_selection.csv
+问题二模型,保留乌鲁木齐起讫主方案，同时加入开放式多口岸阈值和实时比价策略,problem2_openpath_outputs/scenario_totals.csv; risk_policy_outputs/q2_policy_selection.csv
+问题三模型,MinMax主模型后加入项目缓冲和机动小组策略，区分普通与极端情景,enhanced_model_outputs/problem3_minmax_summary.csv; risk_policy_outputs/q3_policy_selection.csv
+问题四模型,容量流后加入预约上限、动态分流、分时预约，说明极端场景仍需前置限流,enhanced_model_outputs/problem4_capacity_flow.csv; digital_twin_outputs/q4_capacity_policy.csv
+算法与复杂度,说明SciPy/HiGHS可得高质量可行解，DFJ全局证明未完成；提出OR-Tools+Gurobi升级方向,solver_efficiency_outputs/highs_log_status.csv

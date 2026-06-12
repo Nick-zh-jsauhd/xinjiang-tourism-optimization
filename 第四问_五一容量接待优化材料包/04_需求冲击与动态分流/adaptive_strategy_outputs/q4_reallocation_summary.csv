@@ -1,0 +1,5 @@
+﻿demand_multiplier,requested_visitors,served_without_reallocation,served_after_reallocation,additional_served_by_reallocation,unresolved_overflow_visitors,routes_at_capacity_after_reallocation,management_decision
+1.05,111676,106843,111676,4833,0,8,可通过既有线路替代分流消化需求上浮
+1.1,116994,107328,111956,4628,5038,9,仅靠既有线路分流不足，需要新增运力/限流
+1.2,127630,108298,111956,3658,15674,9,仅靠既有线路分流不足，需要新增运力/限流
+1.35,143583,109754,111956,2202,31627,9,仅靠既有线路分流不足，需要新增运力/限流
