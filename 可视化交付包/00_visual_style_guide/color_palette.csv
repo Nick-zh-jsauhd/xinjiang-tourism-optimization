@@ -1,0 +1,12 @@
+color_key,hex,usage
+model_blue,#1F4E79,Q1主模型与主推方案
+xinjiang_gold,#D9A441,新疆地理与丝路文化背景
+low_risk_green,#2E7D32,可行/低压力/质量通过
+medium_risk_orange,#F59E0B,注意/软可行/需微调
+high_risk_red,#C62828,失败/超载/红色压力
+culture_purple,#6A4C93,Q3文化考察
+capacity_teal,#008B8B,Q4容量运营
+neutral_gray,#D9D9D9,背景网格与缓冲日
+ink,#222222,正文与坐标文字
+light_background,#F7F7F4,浅背景
+

@@ -1,0 +1,11 @@
+﻿constraint_family,constraint_id,day_index,location,resource_or_slot,load,capacity,utilization,overload,shadow_price_index,interpretation
+spot_timeslot_capacity,D11_P013_morning,11,吐峪沟麻扎村,morning,2534.0,2394.0,1.0585,140.0,70.68,增加一个分时预约容量单位对拥挤罚项的边际缓解强度
+vehicle_guide_shuttle_capacity,D4_赛里木湖_scenic_shuttle_or_parking,4,赛里木湖,scenic_shuttle_or_parking,8.6815,339.9,0.0255,0.0,50.0,增加车辆/导游/摆渡资源对系统服务损失的边际缓解强度
+vehicle_guide_shuttle_capacity,D9_巴音布鲁克_licensed_guide,9,巴音布鲁克,licensed_guide,7.9857,337.9688,0.0236,0.0,50.0,增加车辆/导游/摆渡资源对系统服务损失的边际缓解强度
+vehicle_guide_shuttle_capacity,D3_库车市_scenic_shuttle_or_parking,3,库车市,scenic_shuttle_or_parking,11.3889,473.8,0.024,0.0,50.0,增加车辆/导游/摆渡资源对系统服务损失的边际缓解强度
+vehicle_guide_shuttle_capacity,D3_库车市_licensed_guide,3,库车市,licensed_guide,18.3036,740.3125,0.0247,0.0,50.0,增加车辆/导游/摆渡资源对系统服务损失的边际缓解强度
+vehicle_guide_shuttle_capacity,D6_库尔勒市_scenic_shuttle_or_parking,6,库尔勒市,scenic_shuttle_or_parking,19.5407,782.8,0.025,0.0,50.0,增加车辆/导游/摆渡资源对系统服务损失的边际缓解强度
+vehicle_guide_shuttle_capacity,D11_霍城县(惠远古城)_scenic_shuttle_or_parking,11,霍城县(惠远古城),scenic_shuttle_or_parking,5.9444,236.9,0.0251,0.0,50.0,增加车辆/导游/摆渡资源对系统服务损失的边际缓解强度
+vehicle_guide_shuttle_capacity,D8_禾木村_coach_bus,8,禾木村,coach_bus,7.2697,286.1111,0.0254,0.0,50.0,增加车辆/导游/摆渡资源对系统服务损失的边际缓解强度
+vehicle_guide_shuttle_capacity,D3_库车市_coach_bus,3,库车市,coach_bus,13.4868,526.4444,0.0256,0.0,50.0,增加车辆/导游/摆渡资源对系统服务损失的边际缓解强度
+vehicle_guide_shuttle_capacity,D7_阿勒泰市_coach_bus,7,阿勒泰市,coach_bus,11.3816,503.5556,0.0226,0.0,50.0,增加车辆/导游/摆渡资源对系统服务损失的边际缓解强度

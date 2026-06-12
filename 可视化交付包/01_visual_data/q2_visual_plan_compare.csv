@@ -1,0 +1,5 @@
+﻿plot_order,selected_role,visual_role_label,plan_id,gateway_policy,covered_spots,year1_days,year2_days,year_day_difference,total_intra_transport_cost,external_premium_break_even,operational_success_probability,strict_comfort_success_probability,red_days,time_window_violations,year1_entry_gateway,year1_exit_gateway,year2_entry_gateway,year2_exit_gateway
+1,ROOTED_URUMQI_MAIN,固定乌鲁木齐起讫,Q2V3_072_ROOTED_URUMQI,rooted_urumqi,38,12,19,7,4027.71,0.0,1.0,0.934,1,0,乌鲁木齐市,乌鲁木齐市,乌鲁木齐市,乌鲁木齐市
+2,OPEN_GATEWAY_MIN_INTRA_COST,开放多口岸最低费用,Q2V3_010_OPEN_GATEWAY,open_gateway,38,24,5,19,2856.8,1170.91,0.98,0.97,0,0,伊宁市(伊犁),阿勒泰市,和田市,喀什市
+3,ROBUST_TWO_YEAR_MAIN,开放多口岸鲁棒主推,Q2V3_073_OPEN_GATEWAY,open_gateway,38,12,17,5,3099.91,927.8,1.0,0.994,0,0,阿勒泰市,吐鲁番市,和田市,伊宁市(伊犁)
+4,COMFORT_BALANCED_BACKUP,舒适均衡备选,Q2V3_006_OPEN_GATEWAY,open_gateway,38,15,15,0,3507.5,520.21,0.996,0.976,0,0,那拉提镇,乌鲁木齐市,乌鲁木齐市,和田市

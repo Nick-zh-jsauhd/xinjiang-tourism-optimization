@@ -1,0 +1,11 @@
+﻿policy_id,policy_name,strategy_tier,selection_status,policy_order,metric_key,metric_label,success_probability
+buffer_4d,4天项目缓冲,常规可控选项,normal_or_controlled_option,1,weighted_success_probability,加权成功率,0.6303
+buffer_4d,4天项目缓冲,常规可控选项,normal_or_controlled_option,1,worst_success_probability,最弱场景成功率,0.056
+buffer_5d,5天项目缓冲,成本敏感均衡策略,cost_sensitive_balanced_strategy,2,weighted_success_probability,加权成功率,0.719
+buffer_5d,5天项目缓冲,成本敏感均衡策略,cost_sensitive_balanced_strategy,2,worst_success_probability,最弱场景成功率,0.14
+mobile_team_4d,机动小组+4天缓冲,成本敏感高风险备选,cost_sensitive_high_risk_backup,3,weighted_success_probability,加权成功率,0.7213
+mobile_team_4d,机动小组+4天缓冲,成本敏感高风险备选,cost_sensitive_high_risk_backup,3,worst_success_probability,最弱场景成功率,0.166
+mobile_team_5d,机动小组+5天缓冲,高可靠执行策略,high_reliability_execution_strategy,4,weighted_success_probability,加权成功率,0.817
+mobile_team_5d,机动小组+5天缓冲,高可靠执行策略,high_reliability_execution_strategy,4,worst_success_probability,最弱场景成功率,0.374
+split_or_postpone_7d,延后/拆期+7天缓冲,复合极端预案,compound_extreme_contingency_plan,5,weighted_success_probability,加权成功率,0.956
+split_or_postpone_7d,延后/拆期+7天缓冲,复合极端预案,compound_extreme_contingency_plan,5,worst_success_probability,最弱场景成功率,0.808

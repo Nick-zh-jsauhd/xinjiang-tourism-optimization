@@ -1,0 +1,6 @@
+﻿policy_id,policy_name,weighted_success_probability,worst_success_probability,max_p95_project_completion_days,expected_delay_loss_days,cvar90_delay_loss_days,expected_extra_cost_yuan,selection_status,strategy_tier,policy_order
+buffer_4d,4天项目缓冲,0.6303,0.056,26.0,1.232,5.867,2272.58,normal_or_controlled_option,常规可控选项,1
+buffer_5d,5天项目缓冲,0.719,0.14,27.0,0.905,4.951,2275.12,cost_sensitive_balanced_strategy,成本敏感均衡策略,2
+mobile_team_4d,机动小组+4天缓冲,0.7213,0.166,24.0,0.777,4.481,4344.52,cost_sensitive_high_risk_backup,成本敏感高风险备选,3
+mobile_team_5d,机动小组+5天缓冲,0.817,0.374,24.0,0.484,3.544,4334.6,high_reliability_execution_strategy,高可靠执行策略,4
+split_or_postpone_7d,延后/拆期+7天缓冲,0.956,0.808,23.0,0.09,0.09,5751.42,compound_extreme_contingency_plan,复合极端预案,5

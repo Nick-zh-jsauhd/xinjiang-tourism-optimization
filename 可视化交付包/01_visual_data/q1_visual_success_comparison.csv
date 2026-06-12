@@ -1,0 +1,13 @@
+﻿selected_role,route_id,spots_count,buffer_days,metric_key,metric_label,probability
+极限覆盖版,Q1V3_Q32_340,32,0,operational_success_probability,运营成功率,0.0
+极限覆盖版,Q1V3_Q32_340,32,0,strict_comfort_success_probability,严格舒适成功率,0.0
+30景点均衡覆盖候选版,Q1V3_Q30_279,30,2,operational_success_probability,运营成功率,0.808
+30景点均衡覆盖候选版,Q1V3_Q30_279,30,2,strict_comfort_success_probability,严格舒适成功率,0.0
+运营鲁棒主推版,Q1V3_Q24_120,24,5,operational_success_probability,运营成功率,0.94
+运营鲁棒主推版,Q1V3_Q24_120,24,5,strict_comfort_success_probability,严格舒适成功率,0.0
+严格舒适主推备选,Q1V3_Q20_011,20,9,operational_success_probability,运营成功率,0.964
+严格舒适主推备选,Q1V3_Q20_011,20,9,strict_comfort_success_probability,严格舒适成功率,0.432
+亲子舒适版,Q1V3_Q20_012,20,9,operational_success_probability,运营成功率,0.95
+亲子舒适版,Q1V3_Q20_012,20,9,strict_comfort_success_probability,严格舒适成功率,0.428
+长者慢游版,Q1V3_Q22_070,22,7,operational_success_probability,运营成功率,0.918
+长者慢游版,Q1V3_Q22_070,22,7,strict_comfort_success_probability,严格舒适成功率,0.362

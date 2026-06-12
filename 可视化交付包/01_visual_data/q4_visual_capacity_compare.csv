@@ -1,0 +1,5 @@
+﻿item,capacity_persons,item_type
+旧9线路容量,111956,legacy_capacity
+Q4-V2 18线路容量,160190,q4v2_capacity
+基准需求,106358,baseline_demand
+复合极端补运力可接待,143583,extreme_add_capacity_served

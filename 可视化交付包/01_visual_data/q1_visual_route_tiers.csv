@@ -1,0 +1,7 @@
+﻿selected_role,route_id,spots_count,planned_trip_days,active_or_transfer_days,buffer_days,red_days,yellow_days,time_window_violations,schedule_strict_feasible,operational_success_probability,strict_comfort_success_probability,mean_comfort_score,total_cost_yuan_excluding_meals,selection_status,tier_order,visual_role_note
+极限覆盖版,Q1V3_Q32_340,32,35,35,0,5,8,3,False,0.0,0.0,89.062,12971.28,coverage_upper_bound_only_not_feasible: 小时级排程/仿真不可作为现实执行方案,1,覆盖上界，不作为现实执行方案
+30景点均衡覆盖候选版,Q1V3_Q30_279,30,30,28,2,3,10,1,False,0.808,0.0,86.594,13578.13,coverage_candidate_not_strict_robust: 满足30景点和2缓冲，但未同时满足80%运营成功率或红日<=1，应作为覆盖候选而非最终稳健主推,2,高覆盖候选，未达到严格鲁棒阈值
+运营鲁棒主推版,Q1V3_Q24_120,24,30,25,5,2,7,0,True,0.94,0.0,87.522,9919.65,criteria_pass_operational: 运营成功率>=80%、红日<=2、缓冲>=2；覆盖降至24+以换取运营稳健性,3,运营鲁棒主推，不等于严格舒适主推
+严格舒适主推备选,Q1V3_Q20_011,20,30,21,9,1,7,0,True,0.964,0.432,88.758,9881.09,fallback_relaxed: 未找到spots>=22、buffer>=6、red_days<=1、严格舒适成功率>=80%的路线，改选严格舒适成功率最高的严格时间窗可行路线,4,更保守，严格舒适成功率仍未达80%
+亲子舒适版,Q1V3_Q20_012,20,30,21,9,1,6,0,True,0.95,0.428,89.842,8055.84,fallback_relaxed: 未找到0红日的严格亲子路线，改按亲子效用函数在放宽红日约束后选择折中方案,5,亲子扩展方案
+长者慢游版,Q1V3_Q22_070,22,30,23,7,1,7,0,True,0.918,0.362,88.833,8580.51,fallback_relaxed: 未找到0红日的严格长者路线，改按长者效用函数在放宽红日约束后选择折中方案,6,长者扩展方案
