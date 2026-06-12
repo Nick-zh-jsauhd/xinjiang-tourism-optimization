@@ -108,9 +108,10 @@ python -X utf8 "第一问_30天路线优化材料包/09_Q1_V3_鲁棒联合优化
 
 ```bash
 python -X utf8 "可视化交付包/scripts/build_visual_data.py"
+python -X utf8 "可视化交付包/scripts/build_p0_figures.py"
 ```
 
-该脚本只读取四问最终输出，生成论文图和答辩图所需的稳定 visual CSV，不改变模型实验结果。
+可视化脚本只读取四问最终输出和 visual CSV，生成论文图和答辩图所需的稳定数据底座与 P0 核心图，不改变模型实验结果。
 
 Q1-V3 核心输出：
 

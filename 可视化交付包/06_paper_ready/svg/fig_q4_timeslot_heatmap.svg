@@ -1,0 +1,390 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="996.768469pt" height="552.068344pt" viewBox="0 0 996.768469 552.068344" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:date>2026-06-12T14:48:50.620981</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.7.5, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 552.068344 
+L 996.768469 552.068344 
+L 996.768469 0 
+L 0 0 
+z
+" style="fill: #f7f7f4"/>
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path d="M 155.088 513.936 
+L 915.5736 513.936 
+L 915.5736 103.248 
+L 155.088 103.248 
+z
+" style="fill: #ffffff"/>
+   </g>
+   <g clip-path="url(#p2d2e046731)">
+    <image xlink:href="data:image/png;base64,
+iVBORw0KGgoAAAANSUhEUgAABCEAAAI7CAYAAADS74E5AAAOcElEQVR4nO3asQ3CABAEQUBOaIyUWp26I0tOEaFdBfsBMw3cx6u/75/jvAEAAAD82GP6AAAAAOA/iBAAAABAQoQAAAAAEiIEAAAAkBAhAAAAgIQIAQAAACRECAAAACAhQgAAAAAJEQIAAABIiBAAAABAQoQAAAAAEiIEAAAAkBAhAAAAgIQIAQAAACRECAAAACAhQgAAAAAJEQIAAABIiBAAAABAQoQAAAAAEiIEAAAAkBAhAAAAgIQIAQAAACRECAAAACAhQgAAAAAJEQIAAABIiBAAAABAQoQAAAAAEiIEAAAAkBAhAAAAgIQIAQAAACRECAAAACAhQgAAAAAJEQIAAABIiBAAAABAQoQAAAAAEiIEAAAAkBAhAAAAgIQIAQAAACRECAAAACAhQgAAAAAJEQIAAABIiBAAAABAQoQAAAAAEiIEAAAAkBAhAAAAgIQIAQAAACRECAAAACAhQgAAAAAJEQIAAABIiBAAAABAQoQAAAAAEiIEAAAAkBAhAAAAgIQIAQAAACRECAAAACAhQgAAAAAJEQIAAABIiBAAAABAQoQAAAAAEiIEAAAAkBAhAAAAgIQIAQAAACRECAAAACAhQgAAAAAJEQIAAABIiBAAAABAQoQAAAAAEiIEAAAAkBAhAAAAgIQIAQAAACRECAAAACAhQgAAAAAJEQIAAABIiBAAAABAQoQAAAAAEiIEAAAAkBAhAAAAgIQIAQAAACRECAAAACAhQgAAAAAJEQIAAABIiBAAAABAQoQAAAAAEiIEAAAAkBAhAAAAgIQIAQAAACRECAAAACAhQgAAAAAJEQIAAABIiBAAAABAQoQAAAAAEiIEAAAAkBAhAAAAgIQIAQAAACRECAAAACAhQgAAAAAJEQIAAABIiBAAAABAQoQAAAAAEiIEAAAAkBAhAAAAgIQIAQAAACRECAAAACAhQgAAAAAJEQIAAABIiBAAAABAQoQAAAAAEiIEAAAAkBAhAAAAgIQIAQAAACRECAAAACAhQgAAAAAJEQIAAABIiBAAAABAQoQAAAAAEiIEAAAAkBAhAAAAgIQIAQAAACRECAAAACAhQgAAAAAJEQIAAABIiBAAAABAQoQAAAAAEiIEAAAAkBAhAAAAgIQIAQAAACRECAAAACAhQgAAAAAJEQIAAABIiBAAAABAQoQAAAAAEiIEAAAAkBAhAAAAgIQIAQAAACRECAAAACAhQgAAAAAJEQIAAABIiBAAAABAQoQAAAAAEiIEAAAAkBAhAAAAgIQIAQAAACRECAAAACAhQgAAAAAJEQIAAABIiBAAAABAQoQAAAAAEiIEAAAAkBAhAAAAgIQIAQAAACRECAAAACAhQgAAAAAJEQIAAABIiBAAAABAQoQAAAAAEiIEAAAAkBAhAAAAgIQIAQAAACRECAAAACAhQgAAAAAJEQIAAABIiBAAAABAQoQAAAAAEiIEAAAAkBAhAAAAgIQIAQAAACRECAAAACAhQgAAAAAJEQIAAABIiBAAAABAQoQAAAAAEiIEAAAAkBAhAAAAgIQIAQAAACRECAAAACAhQgAAAAAJEQIAAABIiBAAAABAQoQAAAAAEiIEAAAAkBAhAAAAgIQIAQAAACRECAAAACAhQgAAAAAJEQIAAABIiBAAAABAQoQAAAAAEiIEAAAAkBAhAAAAgIQIAQAAACRECAAAACAhQgAAAAAJEQIAAABIiBAAAABAQoQAAAAAEiIEAAAAkBAhAAAAgIQIAQAAACRECAAAACAhQgAAAAAJEQIAAABIiBAAAABAQoQAAAAAEiIEAAAAkBAhAAAAgIQIAQAAACRECAAAACAhQgAAAAAJEQIAAABIiBAAAABAQoQAAAAAEiIEAAAAkBAhAAAAgIQIAQAAACRECAAAACAhQgAAAAAJEQIAAABIiBAAAABAQoQAAAAAEiIEAAAAkBAhAAAAgIQIAQAAACRECAAAACAhQgAAAAAJEQIAAABIiBAAAABAQoQAAAAAEiIEAAAAkBAhAAAAgIQIAQAAACRECAAAACAhQgAAAAAJEQIAAABIiBAAAABAQoQAAAAAEiIEAAAAkBAhAAAAgIQIAQAAACRECAAAACAhQgAAAAAJEQIAAABIiBAAAABAQoQAAAAAEiIEAAAAkBAhAAAAgIQIAQAAACRECAAAACAhQgAAAAAJEQIAAABIiBAAAABAQoQAAAAAEiIEAAAAkBAhAAAAgIQIAQAAACRECAAAACAhQgAAAAAJEQIAAABIiBAAAABAQoQAAAAAEiIEAAAAkBAhAAAAgIQIAQAAACRECAAAACAhQgAAAAAJEQIAAABIiBAAAABAQoQAAAAAEiIEAAAAkBAhAAAAgIQIAQAAACRECAAAACAhQgAAAAAJEQIAAABIiBAAAABAQoQAAAAAEiIEAAAAkBAhAAAAgIQIAQAAACRECAAAACAhQgAAAAAJEQIAAABIiBAAAABAQoQAAAAAEiIEAAAAkBAhAAAAgIQIAQAAACRECAAAACAhQgAAAAAJEQIAAABIiBAAAABAQoQAAAAAEiIEAAAAkBAhAAAAgIQIAQAAACRECAAAACAhQgAAAAAJEQIAAABIiBAAAABAQoQAAAAAEiIEAAAAkBAhAAAAgIQIAQAAACRECAAAACAhQgAAAAAJEQIAAABIiBAAAABAQoQAAAAAEiIEAAAAkBAhAAAAgIQIAQAAACRECAAAACAhQgAAAAAJEQIAAABIiBAAAABAQoQAAAAAEiIEAAAAkBAhAAAAgIQIAQAAACRECAAAACAhQgAAAAAJEQIAAABIiBAAAABAQoQAAAAAEiIEAAAAkBAhAAAAgIQIAQAAACRECAAAACAhQgAAAAAJEQIAAABIiBAAAABAQoQAAAAAEiIEAAAAkBAhAAAAgIQIAQAAACRECAAAACAhQgAAAAAJEQIAAABIiBAAAABAQoQAAAAAEiIEAAAAkBAhAAAAgIQIAQAAACRECAAAACAhQgAAAAAJEQIAAABIiBAAAABAQoQAAAAAEiIEAAAAkBAhAAAAgIQIAQAAACRECAAAACAhQgAAAAAJEQIAAABIiBAAAABAQoQAAAAAEiIEAAAAkBAhAAAAgIQIAQAAACRECAAAACAhQgAAAAAJEQIAAABIiBAAAABAQoQAAAAAEiIEAAAAkBAhAAAAgIQIAQAAACRECAAAACAhQgAAAAAJEQIAAABIiBAAAABAQoQAAAAAEiIEAAAAkBAhAAAAgIQIAQAAACRECAAAACAhQgAAAAAJEQIAAABIiBAAAABAQoQAAAAAEiIEAAAAkBAhAAAAgIQIAQAAACRECAAAACAhQgAAAAAJEQIAAABIiBAAAABAQoQAAAAAEiIEAAAAkBAhAAAAgIQIAQAAACRECAAAACAhQgAAAAAJEQIAAABIiBAAAABAQoQAAAAAEiIEAAAAkBAhAAAAgIQIAQAAACRECAAAACAhQgAAAAAJEQIAAABIiBAAAABAQoQAAAAAEiIEAAAAkBAhAAAAgIQIAQAAACRECAAAACAhQgAAAAAJEQIAAABIiBAAAABAQoQAAAAAEiIEAAAAkBAhAAAAgIQIAQAAACRECAAAACAhQgAAAAAJEQIAAABIiBAAAABAQoQAAAAAEiIEAAAAkBAhAAAAgIQIAQAAACRECAAAACAhQgAAAAAJEQIAAABIiBAAAABAQoQAAAAAEiIEAAAAkBAhAAAAgIQIAQAAACRECAAAACAhQgAAAAAJEQIAAABIiBAAAABAQoQAAAAAEiIEAAAAkBAhAAAAgIQIAQAAACRECAAAACAhQgAAAAAJEQIAAABIiBAAAABAQoQAAAAAEiIEAAAAkBAhAAAAgIQIAQAAACRECAAAACAhQgAAAAAJEQIAAABIiBAAAABAQoQAAAAAEiIEAAAAkBAhAAAAgIQIAQAAACRECAAAACAhQgAAAAAJEQIAAABIiBAAAABAQoQAAAAAEiIEAAAAkBAhAAAAgIQIAQAAACRECAAAACAhQgAAAAAJEQIAAABIiBAAAABAQoQAAAAAEiIEAAAAkBAhAAAAgIQIAQAAACRECAAAACAhQgAAAAAJEQIAAABIiBAAAABAQoQAAAAAEiIEAAAAkBAhAAAAgIQIAQAAACRECAAAACAhQgAAAAAJEQIAAABIiBAAAABAQoQAAAAAEiIEAAAAkBAhAAAAgIQIAQAAACRECAAAACAhQgAAAAAJEQIAAABIiBAAAABAQoQAAAAAEiIEAAAAkBAhAAAAgIQIAQAAACRECAAAACAhQgAAAAAJEQIAAABIiBAAAABAQoQAAAAAEiIEAAAAkBAhAAAAgIQIAQAAACRECAAAACAhQgAAAAAJEQIAAABIiBAAAABAQoQAAAAAEiIEAAAAkBAhAAAAgIQIAQAAACRECAAAACAhQgAAAAAJEQIAAABIiBAAAABAQoQAAAAAEiIEAAAAkBAhAAAAgIQIAQAAACRECAAAACAhQgAAAAAJEQIAAABIiBAAAABAQoQAAAAAEiIEAAAAkBAhAAAAgIQIAQAAACRECAAAACAhQgAAAAAJEQIAAABIiBAAAABAQoQAAAAAEiIEAAAAkBAhAAAAgIQIAQAAACRECAAAACAhQgAAAAAJEQIAAABIiBAAAABAYpk+AAAAACrPdRvd/75fo/vTfEIAAAAACRECAAAASIgQAAAAQEKEAAAAABIiBAAAAJAQIQAAAICECAEAAAAkRAgAAAAgIUIAAAAACRECAAAASIgQAAAAQEKEAAAAABIiBAAAAJAQIQAAAICECAEAAAAkRAgAAAAgIUIAAAAACRECAAAASIgQAAAAQEKEAAAAABIiBAAAAJAQIQAAAICECAEAAAAkRAgAAAAgIUIAAAAACRECAAAASIgQAAAAQEKEAAAAABIiBAAAAJAQIQAAAICECAEAAAAkLp8fC0HjvKhvAAAAAElFTkSuQmCC" id="image6c10b59bc1" transform="scale(1 -1) translate(0 -411.12)" x="155.088" y="-102.816" width="761.04" height="411.12"/>
+   </g>
+   <g id="matplotlib.axis_1">
+    <g id="xtick_1">
+     <g id="line2d_1"/>
+     <g id="text_1">
+      <text style="fill: #666666; font: 9px 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif; text-anchor: middle" x="166.610509" y="523.685375" transform="rotate(-0 166.610509 523.685375)">D01</text>
+     </g>
+    </g>
+    <g id="xtick_2">
+     <g id="line2d_2"/>
+     <g id="text_2">
+      <text style="fill: #666666; font: 9px 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif; text-anchor: middle" x="235.745564" y="523.685375" transform="rotate(-0 235.745564 523.685375)">D02</text>
+     </g>
+    </g>
+    <g id="xtick_3">
+     <g id="line2d_3"/>
+     <g id="text_3">
+      <text style="fill: #666666; font: 9px 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif; text-anchor: middle" x="304.880618" y="523.685375" transform="rotate(-0 304.880618 523.685375)">D03</text>
+     </g>
+    </g>
+    <g id="xtick_4">
+     <g id="line2d_4"/>
+     <g id="text_4">
+      <text style="fill: #666666; font: 9px 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif; text-anchor: middle" x="374.015673" y="523.685375" transform="rotate(-0 374.015673 523.685375)">D04</text>
+     </g>
+    </g>
+    <g id="xtick_5">
+     <g id="line2d_5"/>
+     <g id="text_5">
+      <text style="fill: #666666; font: 9px 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif; text-anchor: middle" x="443.150727" y="523.685375" transform="rotate(-0 443.150727 523.685375)">D05</text>
+     </g>
+    </g>
+    <g id="xtick_6">
+     <g id="line2d_6"/>
+     <g id="text_6">
+      <text style="fill: #666666; font: 9px 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif; text-anchor: middle" x="512.285782" y="523.685375" transform="rotate(-0 512.285782 523.685375)">D06</text>
+     </g>
+    </g>
+    <g id="xtick_7">
+     <g id="line2d_7"/>
+     <g id="text_7">
+      <text style="fill: #666666; font: 9px 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif; text-anchor: middle" x="581.420836" y="523.685375" transform="rotate(-0 581.420836 523.685375)">D07</text>
+     </g>
+    </g>
+    <g id="xtick_8">
+     <g id="line2d_8"/>
+     <g id="text_8">
+      <text style="fill: #666666; font: 9px 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif; text-anchor: middle" x="650.555891" y="523.685375" transform="rotate(-0 650.555891 523.685375)">D08</text>
+     </g>
+    </g>
+    <g id="xtick_9">
+     <g id="line2d_9"/>
+     <g id="text_9">
+      <text style="fill: #666666; font: 9px 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif; text-anchor: middle" x="719.690945" y="523.685375" transform="rotate(-0 719.690945 523.685375)">D09</text>
+     </g>
+    </g>
+    <g id="xtick_10">
+     <g id="line2d_10"/>
+     <g id="text_10">
+      <text style="fill: #666666; font: 9px 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif; text-anchor: middle" x="788.826" y="523.685375" transform="rotate(-0 788.826 523.685375)">D10</text>
+     </g>
+    </g>
+    <g id="xtick_11">
+     <g id="line2d_11"/>
+     <g id="text_11">
+      <text style="fill: #666666; font: 9px 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif; text-anchor: middle" x="857.961055" y="523.685375" transform="rotate(-0 857.961055 523.685375)">D11</text>
+     </g>
+    </g>
+    <g id="text_12">
+     <text style="fill: #222222; font: 700 10px 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif; text-anchor: middle" x="535.3308" y="543.579281" transform="rotate(-0 535.3308 543.579281)">日期（每列组含早/午/晚三个时段）</text>
+    </g>
+   </g>
+   <g id="matplotlib.axis_2">
+    <g id="ytick_1">
+     <g id="line2d_12"/>
+     <g id="text_13">
+      <text style="fill: #666666; font: 9px 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif; text-anchor: end" x="151.588" y="118.259516" transform="rotate(-0 151.588 118.259516)">吐峪沟麻扎村</text>
+     </g>
+    </g>
+    <g id="ytick_2">
+     <g id="line2d_13"/>
+     <g id="text_14">
+      <text style="fill: #666666; font: 9px 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif; text-anchor: end" x="151.588" y="141.040359" transform="rotate(-0 151.588 141.040359)">坎儿井民俗园</text>
+     </g>
+    </g>
+    <g id="ytick_3">
+     <g id="line2d_14"/>
+     <g id="text_15">
+      <text style="fill: #666666; font: 9px 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif; text-anchor: end" x="151.588" y="163.856359" transform="rotate(-0 151.588 163.856359)">达坂城古镇</text>
+     </g>
+    </g>
+    <g id="ytick_4">
+     <g id="line2d_15"/>
+     <g id="text_16">
+      <text style="fill: #666666; font: 9px 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif; text-anchor: end" x="151.588" y="186.689938" transform="rotate(-0 151.588 186.689938)">高昌故城</text>
+     </g>
+    </g>
+    <g id="ytick_5">
+     <g id="line2d_16"/>
+     <g id="text_17">
+      <text style="fill: #666666; font: 9px 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif; text-anchor: end" x="151.588" y="209.488359" transform="rotate(-0 151.588 209.488359)">交河故城</text>
+     </g>
+    </g>
+    <g id="ytick_6">
+     <g id="line2d_17"/>
+     <g id="text_18">
+      <text style="fill: #666666; font: 9px 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif; text-anchor: end" x="151.588" y="232.339516" transform="rotate(-0 151.588 232.339516)">罗布人村寨</text>
+     </g>
+    </g>
+    <g id="ytick_7">
+     <g id="line2d_18"/>
+     <g id="text_19">
+      <text style="fill: #666666; font: 9px 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif; text-anchor: end" x="151.588" y="255.137938" transform="rotate(-0 151.588 255.137938)">克孜尔石窟</text>
+     </g>
+    </g>
+    <g id="ytick_8">
+     <g id="line2d_19"/>
+     <g id="text_20">
+      <text style="fill: #666666; font: 9px 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif; text-anchor: end" x="151.588" y="277.901203" transform="rotate(-0 151.588 277.901203)">苏公塔</text>
+     </g>
+    </g>
+    <g id="ytick_9">
+     <g id="line2d_20"/>
+     <g id="text_21">
+      <text style="fill: #666666; font: 9px 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif; text-anchor: end" x="151.588" y="300.734781" transform="rotate(-0 151.588 300.734781)">葡萄沟</text>
+     </g>
+    </g>
+    <g id="ytick_10">
+     <g id="line2d_21"/>
+     <g id="text_22">
+      <text style="fill: #666666; font: 9px 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif; text-anchor: end" x="151.588" y="323.568359" transform="rotate(-0 151.588 323.568359)">石头城遗址</text>
+     </g>
+    </g>
+    <g id="ytick_11">
+     <g id="line2d_22"/>
+     <g id="text_23">
+      <text style="fill: #666666; font: 9px 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif; text-anchor: end" x="151.588" y="346.384359" transform="rotate(-0 151.588 346.384359)">火焰山</text>
+     </g>
+    </g>
+    <g id="ytick_12">
+     <g id="line2d_23"/>
+     <g id="text_24">
+      <text style="fill: #666666; font: 9px 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif; text-anchor: end" x="151.588" y="369.217937" transform="rotate(-0 151.588 369.217937)">帕米尔高原白沙湖</text>
+     </g>
+    </g>
+    <g id="ytick_13">
+     <g id="line2d_24"/>
+     <g id="text_25">
+      <text style="fill: #666666; font: 9px 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif; text-anchor: end" x="151.588" y="391.910891" transform="rotate(-0 151.588 391.910891)">天山天池</text>
+     </g>
+    </g>
+    <g id="ytick_14">
+     <g id="line2d_25"/>
+     <g id="text_26">
+      <text style="fill: #666666; font: 9px 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif; text-anchor: end" x="151.588" y="414.867516" transform="rotate(-0 151.588 414.867516)">江布拉克草原</text>
+     </g>
+    </g>
+    <g id="ytick_15">
+     <g id="line2d_26"/>
+     <g id="text_27">
+      <text style="fill: #666666; font: 9px 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif; text-anchor: end" x="151.588" y="437.683516" transform="rotate(-0 151.588 437.683516)">库车王府</text>
+     </g>
+    </g>
+    <g id="ytick_16">
+     <g id="line2d_27"/>
+     <g id="text_28">
+      <text style="fill: #666666; font: 9px 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif; text-anchor: end" x="151.588" y="460.481937" transform="rotate(-0 151.588 460.481937)">北庭故城遗址</text>
+     </g>
+    </g>
+    <g id="ytick_17">
+     <g id="line2d_28"/>
+     <g id="text_29">
+      <text style="fill: #666666; font: 9px 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif; text-anchor: end" x="151.588" y="483.245203" transform="rotate(-0 151.588 483.245203)">博斯腾湖</text>
+     </g>
+    </g>
+    <g id="ytick_18">
+     <g id="line2d_29"/>
+     <g id="text_30">
+      <text style="fill: #666666; font: 9px 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif; text-anchor: end" x="151.588" y="506.096359" transform="rotate(-0 151.588 506.096359)">霍城薰衣草花田</text>
+     </g>
+    </g>
+   </g>
+   <g id="patch_3">
+    <path d="M 155.088 513.936 
+L 155.088 103.248 
+" style="fill: none; stroke: #e6e8f0; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="patch_4">
+    <path d="M 155.088 513.936 
+L 915.5736 513.936 
+" style="fill: none; stroke: #e6e8f0; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="text_31">
+    <text style="fill: #c62828; font: 700 7.2px 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif; text-anchor: middle" x="857.961055" y="116.269813" transform="rotate(-0 857.961055 116.269813)">1.06</text>
+   </g>
+  </g>
+  <g id="axes_2">
+   <g id="patch_5">
+    <path d="M 931.5 507.672 
+L 951.408 507.672 
+L 951.408 109.512 
+L 931.5 109.512 
+z
+" style="fill: #ffffff"/>
+   </g>
+   <g id="QuadMesh_1">
+    <path d="M 931.5 507.672 
+L 951.408 507.672 
+L 951.408 408.132 
+L 931.5 408.132 
+L 931.5 507.672 
+" clip-path="url(#pc1dbb6bdb0)" style="fill: #e9f5ec"/>
+    <path d="M 931.5 408.132 
+L 951.408 408.132 
+L 951.408 308.592 
+L 931.5 308.592 
+L 931.5 408.132 
+" clip-path="url(#pc1dbb6bdb0)" style="fill: #fff4c2"/>
+    <path d="M 931.5 308.592 
+L 951.408 308.592 
+L 951.408 209.052 
+L 931.5 209.052 
+L 931.5 308.592 
+" clip-path="url(#pc1dbb6bdb0)" style="fill: #ffd9b3"/>
+    <path d="M 931.5 209.052 
+L 951.408 209.052 
+L 951.408 109.512 
+L 931.5 109.512 
+L 931.5 209.052 
+" clip-path="url(#pc1dbb6bdb0)" style="fill: #f2a6a6"/>
+   </g>
+   <g id="matplotlib.axis_3"/>
+   <g id="matplotlib.axis_4">
+    <g id="ytick_19">
+     <g id="line2d_30">
+      <defs>
+       <path id="ma6c94c7306" d="M 0 0 
+L 3.5 0 
+" style="stroke: #666666; stroke-width: 0.8"/>
+      </defs>
+      <g>
+       <use xlink:href="#ma6c94c7306" x="951.408" y="457.902" style="fill: #666666; stroke: #666666; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_32">
+      <text style="fill: #666666; font: 8.5px 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif; text-anchor: start" x="958.408" y="460.853094" transform="rotate(-0 958.408 460.853094)">&lt;75%</text>
+     </g>
+    </g>
+    <g id="ytick_20">
+     <g id="line2d_31">
+      <g>
+       <use xlink:href="#ma6c94c7306" x="951.408" y="358.362" style="fill: #666666; stroke: #666666; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_33">
+      <text style="fill: #666666; font: 8.5px 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif; text-anchor: start" x="958.408" y="361.313094" transform="rotate(-0 958.408 361.313094)">75-90%</text>
+     </g>
+    </g>
+    <g id="ytick_21">
+     <g id="line2d_32">
+      <g>
+       <use xlink:href="#ma6c94c7306" x="951.408" y="258.822" style="fill: #666666; stroke: #666666; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_34">
+      <text style="fill: #666666; font: 8.5px 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif; text-anchor: start" x="958.408" y="261.773094" transform="rotate(-0 958.408 261.773094)">90-100%</text>
+     </g>
+    </g>
+    <g id="ytick_22">
+     <g id="line2d_33">
+      <g>
+       <use xlink:href="#ma6c94c7306" x="951.408" y="186.6555" style="fill: #666666; stroke: #666666; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_35">
+      <text style="fill: #666666; font: 8.5px 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif; text-anchor: start" x="958.408" y="189.606594" transform="rotate(-0 958.408 189.606594)">&gt;100%</text>
+     </g>
+    </g>
+    <g id="ytick_23">
+     <g id="line2d_34">
+      <defs>
+       <path id="m05b1c0425c" d="M 0 0 
+L 2 0 
+" style="stroke: #666666; stroke-width: 0.6"/>
+      </defs>
+      <g>
+       <use xlink:href="#m05b1c0425c" x="951.408" y="507.672" style="fill: #666666; stroke: #666666; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="ytick_24">
+     <g id="line2d_35">
+      <g>
+       <use xlink:href="#m05b1c0425c" x="951.408" y="408.132" style="fill: #666666; stroke: #666666; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="ytick_25">
+     <g id="line2d_36">
+      <g>
+       <use xlink:href="#m05b1c0425c" x="951.408" y="308.592" style="fill: #666666; stroke: #666666; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="ytick_26">
+     <g id="line2d_37">
+      <g>
+       <use xlink:href="#m05b1c0425c" x="951.408" y="209.052" style="fill: #666666; stroke: #666666; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+    <g id="ytick_27">
+     <g id="line2d_38">
+      <g>
+       <use xlink:href="#m05b1c0425c" x="951.408" y="109.512" style="fill: #666666; stroke: #666666; stroke-width: 0.6"/>
+      </g>
+     </g>
+    </g>
+   </g>
+   <g id="LineCollection_1"/>
+   <g id="patch_6">
+    <path d="M 931.5 507.672 
+L 941.454 507.672 
+L 951.408 507.672 
+L 951.408 109.512 
+L 941.454 109.512 
+L 931.5 109.512 
+L 931.5 507.672 
+z
+" style="fill: none; stroke: #e6e8f0; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+  </g>
+  <g id="text_36">
+   <text style="fill: #222222; font: 700 18px 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif; text-anchor: start" x="7.2" y="21.54375" transform="rotate(-0 7.2 21.54375)">总量不超载不代表某日某时段不拥挤</text>
+  </g>
+  <g id="text_37">
+   <text style="fill: #666666; font: 10.5px 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif; text-anchor: start" x="7.2" y="55.352203" transform="rotate(-0 7.2 55.352203)">热力图显示各景区分时段利用率；超过100%的红色单元是分时预约和补运力优先处理对象。</text>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="p2d2e046731">
+   <rect x="155.088" y="103.248" width="760.4856" height="410.688"/>
+  </clipPath>
+  <clipPath id="pc1dbb6bdb0">
+   <rect x="931.5" y="109.512" width="19.908" height="398.16"/>
+  </clipPath>
+ </defs>
+</svg>

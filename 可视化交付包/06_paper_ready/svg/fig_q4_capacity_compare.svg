@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="806.976pt" height="433.140875pt" viewBox="0 0 806.976 433.140875" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:date>2026-06-12T14:48:43.641882</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.7.5, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 433.140875 
+L 806.976 433.140875 
+L 806.976 0 
+L 0 0 
+z
+" style="fill: #f7f7f4"/>
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path d="M 71.712 414.144 
+L 799.776 414.144 
+L 799.776 92.736 
+L 71.712 92.736 
+z
+" style="fill: #ffffff"/>
+   </g>
+   <g id="patch_3">
+    <path d="M 104.805818 414.144 
+L 339.665173 414.144 
+L 339.665173 223.7792 
+L 104.805818 223.7792 
+z
+" clip-path="url(#pe53b024ec2)" style="fill: #d9d9d9; stroke: #222222; stroke-width: 0.8; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_4">
+    <path d="M 531.822827 414.144 
+L 766.682182 414.144 
+L 766.682182 141.764339 
+L 531.822827 141.764339 
+z
+" clip-path="url(#pe53b024ec2)" style="fill: #008b8b; stroke: #222222; stroke-width: 0.8; stroke-linejoin: miter"/>
+   </g>
+   <g id="matplotlib.axis_1">
+    <g id="xtick_1">
+     <g id="line2d_1"/>
+     <g id="text_1">
+      <text style="fill: #666666; font: 9px 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif; text-anchor: middle" x="222.235496" y="424.780719" transform="rotate(-0 222.235496 424.780719)">旧9线路容量</text>
+     </g>
+    </g>
+    <g id="xtick_2">
+     <g id="line2d_2"/>
+     <g id="text_2">
+      <text style="fill: #666666; font: 9px 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif; text-anchor: middle" x="649.252504" y="424.780719" transform="rotate(-0 649.252504 424.780719)">Q4-V2 18线路容量</text>
+     </g>
+    </g>
+   </g>
+   <g id="matplotlib.axis_2">
+    <g id="ytick_1">
+     <g id="line2d_3">
+      <path d="M 71.712 414.144 
+L 799.776 414.144 
+" clip-path="url(#pe53b024ec2)" style="fill: none; stroke: #e6e8f0; stroke-opacity: 0.9; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_4"/>
+     <g id="text_3">
+      <text style="fill: #666666; font: 9px 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif; text-anchor: end" x="68.212" y="417.268687" transform="rotate(-0 68.212 417.268687)">0</text>
+     </g>
+    </g>
+    <g id="ytick_2">
+     <g id="line2d_5">
+      <path d="M 71.712 371.635157 
+L 799.776 371.635157 
+" clip-path="url(#pe53b024ec2)" style="fill: none; stroke: #e6e8f0; stroke-opacity: 0.9; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_6"/>
+     <g id="text_4">
+      <text style="fill: #666666; font: 9px 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif; text-anchor: end" x="68.212" y="374.759845" transform="rotate(-0 68.212 374.759845)">25000</text>
+     </g>
+    </g>
+    <g id="ytick_3">
+     <g id="line2d_7">
+      <path d="M 71.712 329.126314 
+L 799.776 329.126314 
+" clip-path="url(#pe53b024ec2)" style="fill: none; stroke: #e6e8f0; stroke-opacity: 0.9; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_8"/>
+     <g id="text_5">
+      <text style="fill: #666666; font: 9px 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif; text-anchor: end" x="68.212" y="332.251002" transform="rotate(-0 68.212 332.251002)">50000</text>
+     </g>
+    </g>
+    <g id="ytick_4">
+     <g id="line2d_9">
+      <path d="M 71.712 286.617472 
+L 799.776 286.617472 
+" clip-path="url(#pe53b024ec2)" style="fill: none; stroke: #e6e8f0; stroke-opacity: 0.9; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_10"/>
+     <g id="text_6">
+      <text style="fill: #666666; font: 9px 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif; text-anchor: end" x="68.212" y="289.742159" transform="rotate(-0 68.212 289.742159)">75000</text>
+     </g>
+    </g>
+    <g id="ytick_5">
+     <g id="line2d_11">
+      <path d="M 71.712 244.108629 
+L 799.776 244.108629 
+" clip-path="url(#pe53b024ec2)" style="fill: none; stroke: #e6e8f0; stroke-opacity: 0.9; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_12"/>
+     <g id="text_7">
+      <text style="fill: #666666; font: 9px 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif; text-anchor: end" x="68.212" y="247.233316" transform="rotate(-0 68.212 247.233316)">100000</text>
+     </g>
+    </g>
+    <g id="ytick_6">
+     <g id="line2d_13">
+      <path d="M 71.712 201.599786 
+L 799.776 201.599786 
+" clip-path="url(#pe53b024ec2)" style="fill: none; stroke: #e6e8f0; stroke-opacity: 0.9; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_14"/>
+     <g id="text_8">
+      <text style="fill: #666666; font: 9px 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif; text-anchor: end" x="68.212" y="204.724474" transform="rotate(-0 68.212 204.724474)">125000</text>
+     </g>
+    </g>
+    <g id="ytick_7">
+     <g id="line2d_15">
+      <path d="M 71.712 159.090943 
+L 799.776 159.090943 
+" clip-path="url(#pe53b024ec2)" style="fill: none; stroke: #e6e8f0; stroke-opacity: 0.9; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_16"/>
+     <g id="text_9">
+      <text style="fill: #666666; font: 9px 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif; text-anchor: end" x="68.212" y="162.215631" transform="rotate(-0 68.212 162.215631)">150000</text>
+     </g>
+    </g>
+    <g id="ytick_8">
+     <g id="line2d_17">
+      <path d="M 71.712 116.582101 
+L 799.776 116.582101 
+" clip-path="url(#pe53b024ec2)" style="fill: none; stroke: #e6e8f0; stroke-opacity: 0.9; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_18"/>
+     <g id="text_10">
+      <text style="fill: #666666; font: 9px 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif; text-anchor: end" x="68.212" y="119.706788" transform="rotate(-0 68.212 119.706788)">175000</text>
+     </g>
+    </g>
+    <g id="text_11">
+     <text style="fill: #222222; font: 700 10px 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif; text-anchor: middle" x="31.922938" y="253.44" transform="rotate(-90 31.922938 253.44)">12天容量/需求（人）</text>
+    </g>
+   </g>
+   <g id="line2d_19">
+    <path d="M 71.712 233.29778 
+L 799.776 233.29778 
+" clip-path="url(#pe53b024ec2)" style="fill: none; stroke-dasharray: 5.18,2.24; stroke-dashoffset: 0; stroke: #f59e0b; stroke-width: 1.4"/>
+   </g>
+   <g id="line2d_20">
+    <path d="M 71.712 170.002113 
+L 799.776 170.002113 
+" clip-path="url(#pe53b024ec2)" style="fill: none; stroke-dasharray: 1.4,2.31; stroke-dashoffset: 0; stroke: #1f4e79; stroke-width: 1.4"/>
+   </g>
+   <g id="patch_5">
+    <path d="M 71.712 414.144 
+L 71.712 92.736 
+" style="fill: none; stroke: #e6e8f0; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="patch_6">
+    <path d="M 71.712 414.144 
+L 799.776 414.144 
+" style="fill: none; stroke: #e6e8f0; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="text_12">
+    <text style="font: 9px 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif; text-anchor: middle" x="222.235496" y="216.752983" transform="rotate(-0 222.235496 216.752983)">111,956</text>
+   </g>
+   <g id="text_13">
+    <text style="font: 9px 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif; text-anchor: middle" x="649.252504" y="134.738122" transform="rotate(-0 649.252504 134.738122)">160,190</text>
+   </g>
+   <g id="legend_1">
+    <g id="line2d_21">
+     <path d="M 80.712 99.854715 
+L 90.712 99.854715 
+L 100.712 99.854715 
+" style="fill: none; stroke-dasharray: 5.18,2.24; stroke-dashoffset: 0; stroke: #f59e0b; stroke-width: 1.4"/>
+    </g>
+    <g id="text_14">
+     <text style="font: 10px 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif; text-anchor: start" x="108.712" y="103.354715" transform="rotate(-0 108.712 103.354715)">基准需求 106,358</text>
+    </g>
+    <g id="line2d_22">
+     <path d="M 80.712 114.268777 
+L 90.712 114.268777 
+L 100.712 114.268777 
+" style="fill: none; stroke-dasharray: 1.4,2.31; stroke-dashoffset: 0; stroke: #1f4e79; stroke-width: 1.4"/>
+    </g>
+    <g id="text_15">
+     <text style="font: 10px 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif; text-anchor: start" x="108.712" y="117.768777" transform="rotate(-0 108.712 117.768777)">复合极端补运力可接待 143,583</text>
+    </g>
+   </g>
+  </g>
+  <g id="text_16">
+   <text style="fill: #222222; font: 700 18px 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif; text-anchor: start" x="7.2" y="21.473437" transform="rotate(-0 7.2 21.473437)">Q4-V2将五一可投放容量从111956提升到160190</text>
+  </g>
+  <g id="text_17">
+   <text style="fill: #666666; font: 10.5px 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif; text-anchor: start" x="7.2" y="46.712203" transform="rotate(-0 7.2 46.712203)">18条12天线路产品扩展容量；基准需求106358人可被接收，但仍需分时和多资源审计。</text>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="pe53b024ec2">
+   <rect x="71.712" y="92.736" width="728.064" height="321.408"/>
+  </clipPath>
+ </defs>
+</svg>
