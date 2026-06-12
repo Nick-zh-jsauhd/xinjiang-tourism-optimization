@@ -6,7 +6,7 @@
 
 | 图号 | 文件 | 论文作用 |
 |---|---|---|
-| fig_q1_01_candidate_space | `png/fig_q1_01_candidate_space.png` | 候选解空间收缩：解释为何高覆盖路线不能直接作为推荐。 |
+| fig_q1_01_screening_contraction | `png/fig_q1_01_screening_contraction.png` | 筛选收缩证据：用聚合图和代表方案表解释为何高覆盖路线不能直接作为推荐。 |
 | fig_q1_02_route_tiers | `png/fig_q1_02_route_tiers.png` | 代表方案层级：拆分覆盖上界、覆盖候选、运营主推和舒适备选。 |
 | fig_q1_03_main_route_map | `png/fig_q1_03_main_route_map.png` | 空间结构：展示24景点运营主推路线的跨区域覆盖。 |
 | fig_q1_04_itinerary_pressure | `png/fig_q1_04_itinerary_pressure.png` | 小时级可执行性：展示每日交通、游览、午休与缓冲日。 |

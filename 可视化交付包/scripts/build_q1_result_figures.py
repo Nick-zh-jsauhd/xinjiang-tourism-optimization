@@ -233,7 +233,7 @@ def red_band_color(label: str) -> str:
     }.get(label, COLORS["muted"])
 
 
-def fig_q1_01_candidate_space() -> None:
+def fig_q1_01_candidate_space_legacy() -> None:
     candidates = read_q1("q1_v3_candidate_routes_enriched.csv")
     feasible = read_q1("q1_v3_feasible_robust_pareto_front.csv")
     selected = read_q1("q1_v3_selected_routes.csv")
@@ -366,6 +366,204 @@ def fig_q1_01_candidate_space() -> None:
         "q1_v3_candidate_routes_enriched.csv; q1_v3_selected_routes.csv; q1_v3_feasible_robust_pareto_front.csv",
         "scatter",
         "展示126条候选路线在覆盖、运营成功率、红日和严格排程维度上的收缩。",
+    )
+
+
+def build_screening_counts(candidates: pd.DataFrame) -> pd.DataFrame:
+    rows: list[dict[str, float | int]] = []
+    for q, group in candidates.groupby("spots_count"):
+        strict_schedule = group["schedule_strict_feasible"].astype(bool)
+        operational = strict_schedule & (group["operational_success_probability"] >= 0.8)
+        strict_comfort = operational & (group["strict_comfort_success_probability"] >= 0.8)
+        rows.append(
+            {
+                "spots_count": int(q),
+                "candidate": int(len(group)),
+                "strict_schedule": int(strict_schedule.sum()),
+                "operational_robust": int(operational.sum()),
+                "strict_comfort_robust": int(strict_comfort.sum()),
+            }
+        )
+    return pd.DataFrame(rows).sort_values("spots_count")
+
+
+def fig_q1_01_screening_contraction() -> None:
+    candidates = read_q1("q1_v3_candidate_routes_enriched.csv")
+    selected = read_q1("q1_v3_selected_routes.csv")
+    counts = build_screening_counts(candidates)
+
+    fig = plt.figure(figsize=(11.8, 5.6))
+    gs = fig.add_gridspec(1, 2, width_ratios=[1.05, 1.38], wspace=0.23)
+    ax_l = fig.add_subplot(gs[0, 0])
+    ax_t = fig.add_subplot(gs[0, 1])
+    fig.subplots_adjust(top=0.78, left=0.07, right=0.985, bottom=0.15)
+    figure_title(
+        fig,
+        "Q1：30天路线由最大覆盖收缩到鲁棒可执行方案",
+        "候选路线先按覆盖数生成，再依次经过严格小时级排程、运营成功率≥80%、严格舒适成功率≥80%筛选。",
+    )
+
+    q = counts["spots_count"].to_numpy()
+    series = [
+        ("原始候选", "candidate", COLORS["muted"], "o"),
+        ("严格小时排程", "strict_schedule", COLORS["q1"], "o"),
+        ("运营鲁棒", "operational_robust", COLORS["orange"], "s"),
+        ("严格舒适鲁棒", "strict_comfort_robust", COLORS["red"], "D"),
+    ]
+    for label, col, color, marker in series:
+        ax_l.plot(
+            q,
+            counts[col],
+            color=color,
+            lw=1.8,
+            marker=marker,
+            markersize=5.4,
+            markerfacecolor=COLORS["white"] if label == "原始候选" else color,
+            markeredgecolor=color,
+            markeredgewidth=1.1,
+            label=label,
+            zorder=3,
+        )
+
+    for q_focus, note, y_note in [(24, "24景点：运营主推可行档", 13.5), (30, "30景点：严格排程已归零", 2.5)]:
+        ax_l.axvline(q_focus, color=COLORS["light"], lw=0.85, ls=(0, (3, 4)), zorder=0)
+        ax_l.text(q_focus + 0.15, y_note, note, ha="left", va="center", fontproperties=FONT_CN_REG, fontsize=8, color=COLORS["muted"])
+
+    for _, row in counts.iterrows():
+        if int(row["spots_count"]) in [20, 24, 28, 30, 32]:
+            ax_l.text(
+                float(row["spots_count"]),
+                float(row["operational_robust"]) + 0.52,
+                str(int(row["operational_robust"])),
+                ha="center",
+                va="bottom",
+                fontproperties=FONT_EN,
+                fontsize=7.8,
+                color=COLORS["orange"],
+            )
+
+    ax_l.set_xlim(19.4, 32.8)
+    ax_l.set_ylim(-0.6, 19.1)
+    ax_l.set_xticks([20, 22, 24, 26, 28, 30, 32])
+    ax_l.set_yticks([0, 6, 12, 18])
+    ax_l.set_xlabel("覆盖景点数", fontproperties=FONT_CN_REG, fontsize=9.2)
+    ax_l.set_ylabel("存活候选路线数", fontproperties=FONT_CN_REG, fontsize=9.2)
+    panel_label(ax_l, "A")
+    clean_axis(ax_l)
+    ax_l.legend(loc="lower left", frameon=False, prop=FONT_CN_REG, fontsize=8, handlelength=1.6)
+
+    core_ids = ["Q1V3_Q32_340", "Q1V3_Q30_279", "Q1V3_Q24_120", "Q1V3_Q20_011"]
+    rows = selected[selected["route_id"].isin(core_ids)].copy()
+    order = {rid: i for i, rid in enumerate(core_ids)}
+    rows["order"] = rows["route_id"].map(order)
+    rows = rows.sort_values("order")
+    role_map = {
+        "极限覆盖版": "覆盖上界",
+        "30景点均衡覆盖候选版": "高覆盖候选",
+        "运营鲁棒主推版": "运营主推",
+        "严格舒适主推备选": "舒适备选",
+    }
+    conclusion = {
+        "Q1V3_Q32_340": "仅作上界",
+        "Q1V3_Q30_279": "不作主推",
+        "Q1V3_Q24_120": "推荐",
+        "Q1V3_Q20_011": "保守备选",
+    }
+    table_rows = []
+    for _, row in rows.iterrows():
+        table_rows.append(
+            [
+                role_map.get(str(row["selected_role"]), str(row["selected_role"])),
+                int(row["spots_count"]),
+                int(row["buffer_days"]),
+                int(row["red_days"]),
+                int(row["time_window_violations"]),
+                "是" if bool(row["schedule_strict_feasible"]) else "否",
+                percent(float(row["operational_success_probability"])),
+                percent(float(row["strict_comfort_success_probability"])),
+                conclusion.get(str(row["route_id"]), ""),
+            ]
+        )
+
+    ax_t.axis("off")
+    panel_label(ax_t, "B")
+    ax_t.text(
+        0.0,
+        1.02,
+        "代表方案证据表",
+        transform=ax_t.transAxes,
+        ha="left",
+        va="bottom",
+        fontproperties=FONT_CN,
+        fontsize=10,
+        color=COLORS["ink"],
+    )
+    ax_t.text(
+        0.0,
+        0.965,
+        "表格用于精确判断路线定位；图形用于展示候选解随约束增强而收缩。",
+        transform=ax_t.transAxes,
+        ha="left",
+        va="bottom",
+        fontproperties=FONT_CN_REG,
+        fontsize=7.8,
+        color=COLORS["muted"],
+    )
+
+    headers = ["定位", "景点", "缓冲", "红日", "时窗", "严排", "运营", "严舒", "判定"]
+    table = ax_t.table(
+        cellText=table_rows,
+        colLabels=headers,
+        cellLoc="center",
+        colLoc="center",
+        loc="center",
+        bbox=[0.0, 0.10, 1.0, 0.76],
+        colWidths=[0.16, 0.075, 0.075, 0.065, 0.065, 0.065, 0.115, 0.115, 0.17],
+    )
+    table.auto_set_font_size(False)
+    table.set_fontsize(8.2)
+
+    for (r, c), cell in table.get_celld().items():
+        cell.visible_edges = "horizontal"
+        cell.set_edgecolor(COLORS["light"])
+        cell.set_linewidth(0.75)
+        cell.get_text().set_fontproperties(FONT_CN_REG if c in [0, 5, 8] or r == 0 else FONT_EN)
+        cell.get_text().set_color(COLORS["ink"])
+        if r == 0:
+            cell.set_facecolor("#EEF3F7")
+            cell.get_text().set_fontproperties(FONT_CN)
+            cell.set_height(0.145)
+        else:
+            cell.set_height(0.155)
+            role = table_rows[r - 1][0]
+            if role == "运营主推":
+                cell.set_facecolor("#EAF1F6")
+            elif role == "舒适备选":
+                cell.set_facecolor("#EEF5EE")
+            elif role == "覆盖上界":
+                cell.set_facecolor("#F7F7F7")
+            else:
+                cell.set_facecolor(COLORS["white"])
+
+    ax_t.text(
+        0.0,
+        0.02,
+        "结论：32景点覆盖最高但不可执行；30景点仍非严格排程；24景点以5天缓冲和0时间窗违规换取运营鲁棒性。",
+        transform=ax_t.transAxes,
+        ha="left",
+        va="bottom",
+        fontproperties=FONT_CN_REG,
+        fontsize=8,
+        color=COLORS["muted"],
+    )
+
+    save_figure(
+        fig,
+        "fig_q1_01_screening_contraction",
+        "Q1最大覆盖到鲁棒可执行方案的筛选收缩",
+        "q1_v3_candidate_routes_enriched.csv; q1_v3_selected_routes.csv",
+        "line-dot plus evidence table",
+        "用聚合筛选曲线和代表方案表替代拥挤散点，直接支撑24景点运营主推的筛选逻辑。",
     )
 
 
@@ -820,7 +1018,7 @@ def write_index_and_readme() -> None:
         "|---|---|---|",
     ]
     role = {
-        "fig_q1_01_candidate_space": "候选解空间收缩：解释为何高覆盖路线不能直接作为推荐。",
+        "fig_q1_01_screening_contraction": "筛选收缩证据：用聚合图和代表方案表解释为何高覆盖路线不能直接作为推荐。",
         "fig_q1_02_route_tiers": "代表方案层级：拆分覆盖上界、覆盖候选、运营主推和舒适备选。",
         "fig_q1_03_main_route_map": "空间结构：展示24景点运营主推路线的跨区域覆盖。",
         "fig_q1_04_itinerary_pressure": "小时级可执行性：展示每日交通、游览、午休与缓冲日。",
@@ -847,7 +1045,7 @@ def write_index_and_readme() -> None:
 def main() -> None:
     ensure_dirs(clean=True)
     setup_theme()
-    fig_q1_01_candidate_space()
+    fig_q1_01_screening_contraction()
     fig_q1_02_route_tiers()
     fig_q1_03_main_route_map()
     fig_q1_04_itinerary_pressure()
