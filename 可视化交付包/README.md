@@ -9,6 +9,7 @@
 - 统一视觉风格规范；
 - 四问可视化数据底座 `01_visual_data/`；
 - Nature 风格 P0 核心图组；
+- 第一问结果分析专项图组 `08_q1_result_figures/`；
 - 论文可用 PNG/SVG/PDF 与 PPT 预览 PNG 导出。
 
 暂不作为主图使用：
@@ -39,9 +40,16 @@
 │   ├── svg/
 │   └── pdf/
 ├── 07_ppt_ready/
+├── 08_q1_result_figures/
+│   ├── png/
+│   ├── svg/
+│   ├── pdf/
+│   ├── README.md
+│   └── q1_figure_index.csv
 ├── scripts/
 │   ├── build_visual_data.py
-│   └── build_p0_figures.py
+│   ├── build_p0_figures.py
+│   └── build_q1_result_figures.py
 └── figure_index.csv
 ```
 
@@ -60,6 +68,14 @@ python -X utf8 "可视化交付包/scripts/build_p0_figures.py"
 ```
 
 绘图脚本会清理旧版 P0 图像输出，然后重新导出当前推荐的 6 张核心图。
+
+生成第一问“结果分析与可视化”专项图组：
+
+```bash
+python -X utf8 "可视化交付包/scripts/build_q1_result_figures.py"
+```
+
+该脚本会导出 6 张 Q1-V3 论文图：候选解空间、代表方案层级、主推路线空间结构、逐日小时级强度、Monte Carlo 鲁棒性分布和小规模精确校验审计。
 
 ## 当前 P0 核心图
 
