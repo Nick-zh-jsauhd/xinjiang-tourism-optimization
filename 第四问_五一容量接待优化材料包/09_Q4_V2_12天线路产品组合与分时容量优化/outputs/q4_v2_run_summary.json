@@ -1,0 +1,12 @@
+{
+  "candidate_routes": 63,
+  "selected_routes": 18,
+  "selected_capacity_persons_12day": 160190,
+  "legacy_9route_capacity_persons_12day": 111956,
+  "baseline_demand": 106358,
+  "baseline_q4v2_staggered_served": 106358,
+  "extreme_add_capacity_served": 143583,
+  "max_spot_timeslot_utilization_base": 1.0585,
+  "red_spot_timeslots_base": 1,
+  "outputs_dir": "E:\\Desktop\\运筹学项目\\第四问_五一容量接待优化材料包\\09_Q4_V2_12天线路产品组合与分时容量优化\\outputs"
+}

@@ -1,0 +1,5 @@
+﻿profile_id,profile_name,recommended_policy_id,score,weighted_served_ratio,weighted_expected_loss,weighted_policy_pass_rate,max_wait_index,selection_reason
+cost_sensitive,成本敏感均衡策略,q4v2_add_capacity_plus_stagger,30.5179,1.0,1024.9216,0.7432,0.8848,按接待率、损失指数、策略通过率和拥挤等待综合评分；不同画像改变峰值风险权重。
+balanced_operation,运营均衡主推策略,q4v2_add_capacity_plus_stagger,45.1377,1.0,1183.4283,0.682,0.8848,按接待率、损失指数、策略通过率和拥挤等待综合评分；不同画像改变峰值风险权重。
+high_reliability,高可靠执行策略,q4v2_add_capacity_plus_stagger,50.2746,1.0,1456.5769,0.5406,0.8848,按接待率、损失指数、策略通过率和拥挤等待综合评分；不同画像改变峰值风险权重。
+extreme_backup,复合极端预案,q4v2_add_capacity_plus_stagger,50.0098,1.0,1931.5747,0.4287,0.8848,按接待率、损失指数、策略通过率和拥挤等待综合评分；不同画像改变峰值风险权重。
