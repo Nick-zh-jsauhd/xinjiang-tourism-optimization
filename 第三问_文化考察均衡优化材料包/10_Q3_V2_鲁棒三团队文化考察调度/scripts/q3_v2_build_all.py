@@ -67,13 +67,24 @@ def normalize_mode(path_modes: object, hours: float) -> str:
         return "coach"
     if "scenic_shuttle" in text:
         return "scenic_shuttle"
-    if "self_drive" in text or "fallback_road" in text:
+    if (
+        "self_drive" in text
+        or "selfdrive" in text
+        or "drive" in text
+        or "driving" in text
+        or "fallback_road" in text
+        or "depot_access" in text
+    ):
         if hours <= 1.5:
             return "taxi_transfer"
         if hours <= 6.0:
             return "rental_car"
         return "charter_car"
-    return "mixed_transfer"
+    if hours <= 1.5:
+        return "taxi_transfer"
+    if hours <= 6.0:
+        return "rental_car"
+    return "charter_car"
 
 
 def load_inputs(root: Path) -> dict[str, pd.DataFrame]:
@@ -709,7 +720,7 @@ def build_daily_schedule(
                 "按当前组收尾城市或乌鲁木齐统筹",
                 "standby_team",
                 "green",
-                notes="Q3-V2稳健主推预留5天项目缓冲",
+                notes="Q3-V2成本敏感均衡策略预留5天项目缓冲",
                 buffer_flag=True,
             )
     return pd.DataFrame(rows)
@@ -900,12 +911,20 @@ def simulate_routes(route_summary: pd.DataFrame, scenarios: pd.DataFrame) -> tup
     policy_df["selection_status"] = "candidate"
     status_map = {
         "buffer_4d": "normal_or_controlled_option",
-        "buffer_5d": "balanced_robust_main",
-        "mobile_team_4d": "cost_sensitive_extreme_backup",
-        "mobile_team_5d": "extreme_risk_backup",
-        "split_or_postpone_7d": "compound_extreme_contingency",
+        "buffer_5d": "cost_sensitive_balanced_strategy",
+        "mobile_team_4d": "cost_sensitive_high_risk_backup",
+        "mobile_team_5d": "high_reliability_execution_strategy",
+        "split_or_postpone_7d": "compound_extreme_contingency_plan",
     }
     policy_df["selection_status"] = policy_df["policy_id"].map(status_map).fillna("candidate")
+    tier_map = {
+        "buffer_4d": "常规可控选项",
+        "buffer_5d": "成本敏感均衡策略",
+        "mobile_team_4d": "成本敏感高风险备选",
+        "mobile_team_5d": "高可靠执行策略",
+        "split_or_postpone_7d": "复合极端预案",
+    }
+    policy_df["strategy_tier"] = policy_df["policy_id"].map(tier_map).fillna("候选策略")
     return trials_df, summary_df, policy_df
 
 
@@ -1002,8 +1021,15 @@ def write_report(
     sim_policy: pd.DataFrame,
     audit: pd.DataFrame,
 ) -> None:
-    selected_policy = sim_policy[sim_policy["selection_status"].eq("balanced_robust_main")]
-    policy_text = selected_policy.iloc[0]["policy_name"] if not selected_policy.empty else "未选出"
+    balanced_policy = sim_policy[sim_policy["selection_status"].eq("cost_sensitive_balanced_strategy")]
+    reliable_policy = sim_policy[sim_policy["selection_status"].eq("high_reliability_execution_strategy")]
+    contingency_policy = sim_policy[sim_policy["selection_status"].eq("compound_extreme_contingency_plan")]
+    balanced_name = balanced_policy.iloc[0]["policy_name"] if not balanced_policy.empty else "未选出"
+    balanced_success = balanced_policy.iloc[0]["weighted_success_probability"] if not balanced_policy.empty else "NA"
+    balanced_worst = balanced_policy.iloc[0]["worst_success_probability"] if not balanced_policy.empty else "NA"
+    reliable_name = reliable_policy.iloc[0]["policy_name"] if not reliable_policy.empty else "未选出"
+    contingency_name = contingency_policy.iloc[0]["policy_name"] if not contingency_policy.empty else "未选出"
+    policy_note = "该最优性结果是在楼兰古城和尼雅遗址固定由专项审批组执行、三组均乌鲁木齐起讫、资源不跨组共享的政策空间内成立。"
     lines = [
         "# 新疆旅游第三问 Q3-V2 鲁棒三团队文化考察调度报告",
         "",
@@ -1027,13 +1053,17 @@ def write_report(
         "",
         exact_check.to_markdown(index=False),
         "",
+        policy_note,
+        "",
         "## 4. Q3-V2 主结果",
         "",
         route_summary[["route_id", "group_role", "spots_count", "travel_hours", "fieldwork_hours", "safety_buffer_hours", "total_hours", "days", "risk_score", "route_sequence"]].to_markdown(index=False),
         "",
+        policy_note,
+        "",
         "## 5. 鲁棒缓冲策略",
         "",
-        f"route-specific Monte Carlo 仿真后，当前均衡稳健主推策略为：**{policy_text}**。4天缓冲适合常规可控情景，5天缓冲更适合作为均衡稳健主推；复合极端情景下 5 天缓冲仍不足，应使用机动小组或延后/拆期策略。",
+        f"route-specific Monte Carlo 仿真后，**{balanced_name}** 的加权成功率为 {balanced_success}、最差情景成功率为 {balanced_worst}，因此将其定位为**成本敏感均衡策略**，不把它表述为高可靠主推。若汇报强调执行可靠性，应采用 **{reliable_name}** 作为高可靠执行策略；遇到复合极端情景时采用 **{contingency_name}** 作为复合极端预案。",
         "",
         sim_policy.to_markdown(index=False),
         "",
@@ -1148,7 +1178,10 @@ def main() -> None:
         "selected_balance_gap_hours": float(route_summary["balance_gap_hours"].max()),
         "base_project_days": int(route_summary["days"].max()),
         "simulation_trials": int(len(trials)),
-        "robust_main_policy": str(sim_policy[sim_policy["selection_status"].eq("balanced_robust_main")]["policy_name"].iloc[0]),
+        "cost_sensitive_balanced_policy": str(sim_policy[sim_policy["selection_status"].eq("cost_sensitive_balanced_strategy")]["policy_name"].iloc[0]),
+        "high_reliability_execution_policy": str(sim_policy[sim_policy["selection_status"].eq("high_reliability_execution_strategy")]["policy_name"].iloc[0]),
+        "compound_extreme_contingency_plan": str(sim_policy[sim_policy["selection_status"].eq("compound_extreme_contingency_plan")]["policy_name"].iloc[0]),
+        "legacy_selected_policy_alias": str(sim_policy[sim_policy["selection_status"].eq("cost_sensitive_balanced_strategy")]["policy_name"].iloc[0]),
         "exact_check_gap": float(exact_check.iloc[0]["optimality_gap_under_constraints"]),
         "report": str(report_path.relative_to(root)),
         "workbook": str(workbook_path.relative_to(root)),
