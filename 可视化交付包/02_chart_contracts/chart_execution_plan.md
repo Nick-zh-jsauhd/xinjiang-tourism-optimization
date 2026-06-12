@@ -1,45 +1,47 @@
 # 图表执行计划
 
-本计划修订自 `xinjiang_visualization_plan.md`，目标是先完成最能支撑论文和答辩主叙事的图，再补充地图、附录和审计图。
+本计划修订自 `xinjiang_visualization_plan.md`。当前阶段不再追求“所有结果都可视化”，而是围绕论文主结论保留少数高信息密度图。旧版 P0 中的模型演化卡片、漏斗图、独立信息卡、大面积热力图已从 paper-ready 主输出撤下。
 
-## P0：第一批必须完成
+## P0：Nature 风格核心证据图
 
 | 编号 | 图名 | 图型 | 数据表 | 关键口径 |
 |---|---|---|---|---|
-| Fig. 0 | 四问决策主体与模型演化总览 | 流程卡片 | `overview_model_evolution.csv` | 四问主模型已冻结 |
-| Fig. 1-1 | Q1方案漏斗：覆盖上界到运营主推 | 阶梯/漏斗 | `q1_visual_route_tiers.csv` | 24景点是运营鲁棒，不是严格舒适 |
-| Fig. 1-2 | Q1两类成功率对比 | 分组柱状 | `q1_visual_success_comparison.csv` | operational 与 strict comfort 必须并列 |
-| Fig. 2-1 | Q2三方案费用与外部差价阈值 | 柱状+阈值标尺 | `q2_visual_plan_compare.csv`, `q2_visual_gateway_threshold.csv` | 多口岸是否划算取决于外部大交通差价 |
-| Fig. 3-1 | Q3三组完成时间对比 | 横向条形 | `q3_visual_group_summary.csv` | MinMax按完成时间均衡，不按点数均分 |
-| Fig. 3-2 | Q3固定政策空间 exact gap=0 | 信息卡 | `q3_visual_exact_check_card.csv` | 只在固定特殊准入政策空间成立 |
-| Fig. 4-1 | Q4旧9线路与Q4-V2容量对比 | 双柱+需求线 | `q4_visual_capacity_compare.csv` | 18条12天产品提升投放容量 |
-| Fig. 4-2 | Q4线路质量审计 | 横向条形 | `q4_visual_quality_audit.csv` | 8条可直接投放，10条需微调/储备 |
-| Fig. 4-3 | Q4景区分时压力热力图 | 热力图 | `q4_visual_timeslot_pressure.csv` | 总量不超载不代表分时不过载 |
+| Fig. 1 | Q1 覆盖、缓冲与两类成功率取舍 | paired dot plot | `q1_visual_route_tiers.csv` | 24景点是运营鲁棒主推，不等于严格舒适主推 |
+| Fig. 2 | Q2 多口岸费用与差价阈值 | lollipop + threshold axis | `q2_visual_plan_compare.csv`, `q2_visual_gateway_threshold.csv` | 多口岸是否划算取决于外部大交通差价 |
+| Fig. 3 | Q3 三组完成时间与最优性审计 | lollipop + audit table | `q3_visual_group_summary.csv`, `q3_visual_exact_check_card.csv` | exact gap=0 只在固定特殊准入政策空间下成立 |
+| Fig. 4 | Q4 容量提升证据图 | lollipop | `q4_visual_capacity_compare.csv` | 18条12天产品把可投放容量提升至160190人 |
+| Fig. 5 | Q4 线路质量审计点图 | ranked dot plot | `q4_visual_quality_audit.csv` | 8条可直接投放，10条需要微调或储备 |
+| Fig. 6 | Q4 瓶颈影子价格排序 | ranked lollipop | `q4_visual_shadow_top10.csv` | 服务率高不代表分时与资源约束完全无压力 |
 
-## P1：第二批增强图
+## 视觉纪律
+
+1. 白底，无网格线。
+2. 轴线使用细黑/深灰线，避免装饰性背景。
+3. 单图原则上只使用一个主题色，风险或失败才使用橙/红。
+4. 避免大面积柱状色块，优先使用点图、哑铃图、lollipop 和直接标注。
+5. 图题必须是结论句或清晰问题句，不能只写“某某对比图”。
+6. 密集中文标签用宋体常规，标题和轴标签用宋体加粗。
+
+## P1：后续可补充但不抢主图的图
 
 | 编号 | 图名 | 图型 | 数据表 | 备注 |
 |---|---|---|---|---|
-| Fig. 1-3 | Q1主推路线地图 | 地图路线 | `q1_visual_route_map_nodes.csv` 待生成 | 需要坐标与路线节点拆分 |
-| Fig. 1-4 | Q1每日压力条带图 | 条带图 | `q1_visual_daily_pressure.csv` | 从小时行程派生，不是原表字段 |
-| Fig. 2-2 | Q2年度负担均衡图 | 分组柱状 | `q2_visual_year_balance.csv` | 说明最低费用方案负担不均衡 |
-| Fig. 3-3 | Q3缓冲策略成功率点图 | 离散点图 | `q3_visual_buffer_policy_long.csv` | 不使用连续折线 |
-| Fig. 4-4 | Q4需求冲击-策略表现热力图 | 热力图 | `q4_visual_strategy_matrix.csv` | 主色用 expected_loss，叠加 strict pass |
+| Fig. 1-2 | Q1 主推路线地图 | 路线地图 | 待补路线节点坐标表 | 用于答辩，不作为论文核心证据图 |
+| Fig. 1-3 | Q1 每日压力条带 | 条带图 | `q1_visual_daily_pressure.csv` | 若主文需要解释红色压力日，可补 |
+| Fig. 2-2 | Q2 年度负担均衡图 | paired dot plot | `q2_visual_year_balance.csv` | 用于解释最低费用方案为何不是主推 |
+| Fig. 3-2 | Q3 缓冲策略成功率 | discrete dot plot | `q3_visual_buffer_policy_long.csv` | 离散策略，不画连续趋势线 |
+| Fig. 4-2 | Q4 需求冲击策略表现 | compact heatmap | `q4_visual_strategy_matrix.csv` | 需要严格控制色阶和标签密度 |
 
-## P2：答辩加分图
+## 禁用或降级的旧图
 
-| 编号 | 图名 | 图型 | 数据表 |
-|---|---|---|---|
-| Fig. 2-3 | Q2交通方式构成 | 堆叠条形 | `q2_visual_mode_mix.csv` |
-| Fig. 3-4 | Q3资源占用日历 | 热力日历 | `q3_visual_resource_calendar.csv` |
-| Fig. 4-5 | Q4瓶颈影子价格 Top 10 | 横向条形 | `q4_visual_shadow_top10.csv` |
-| Fig. 4-6 | Q4三种分配口径对比 | 分组柱状/小多图 | `q4_visual_allocation_comparison_long.csv` |
+- `fig_00_model_evolution`：信息密度不足，适合口头开场，不适合作为论文主图。
+- `fig_q1_route_funnel`：漏斗会误导为单调筛选过程，已用取舍点图替代。
+- `fig_q3_exact_gap_card`：独立卡片信息量低，已合并到 Q3 审计面板。
+- `fig_q4_timeslot_heatmap`：大面积空白且主信息被稀释，已用瓶颈影子价格 Top 排序替代。
 
-## 关键修正
+## 关键口径
 
-1. Q1 主推方案只能称为“运营鲁棒主推”，严格舒适成功率另行展示。
-2. Q2 交通方式构成必须过滤到代表方案，不能混入候选池。
-3. Q3 缓冲策略是离散政策，不画连续趋势线。
-4. Q4 `served_ratio=1` 不等于资源严格通过，热力图必须保留 `strict_policy_pass`。
-5. 18条线路矩阵在PPT中拆成“直接投放”和“储备微调”两块，完整表放附录。
-
+1. Q1 主推方案称为“运营鲁棒主推”，严格舒适成功率另行展示。
+2. Q2 所有费用图必须注明只统计新疆境内交通费用。
+3. Q3 的 exact gap=0 不能脱离固定特殊准入政策空间表述。
+4. Q4 的 `served_ratio=1` 不等于资源严格通过，必须保留分时和多资源瓶颈解释。
