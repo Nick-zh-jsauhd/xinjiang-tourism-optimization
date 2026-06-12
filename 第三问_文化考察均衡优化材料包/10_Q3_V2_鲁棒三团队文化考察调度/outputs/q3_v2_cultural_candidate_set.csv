@@ -1,0 +1,15 @@
+﻿spot_id,spot_name,region_cluster,hub_name,culture_value_score,tag_silk_road,tag_religion,tag_ethnic_folk,tag_archaeology,tag_world_or_key_heritage,selected_for_q3,selection_reason,requires_approval_final,approval_lead_days,requires_licensed_guide,requires_offroad_vehicle,requires_border_permit,minimum_group_size,tour_visit_hours,fieldwork_hours,safety_buffer_hours,fieldwork_plus_buffer_hours,ticket_high_total_yuan_per_person,remote_or_approval_flag,ordinary_tourist_allowed,constraint_note
+P007,楼兰古城,巴州-南疆北线,若羌县(楼兰),10,True,False,False,True,True,True,culture_value_score>=5;requires_approval;requires_licensed_guide;requires_offroad_vehicle;archaeology;silk_road,True,90,True,True,False,4,8.0,32.0,4.0,36.0,4000.0,True,False,特殊准入点，不作为普通游客基准路线必选点
+P038,尼雅遗址,南疆,民丰县(尼雅遗址),10,True,False,False,True,True,True,culture_value_score>=5;requires_approval;requires_licensed_guide;requires_offroad_vehicle;archaeology;silk_road,True,30,True,True,False,4,8.0,32.0,4.0,36.0,45.0,True,False,特殊准入点，不作为普通游客基准路线必选点
+P013,吐峪沟麻扎村,东疆,吐鲁番市,10,True,True,True,False,True,True,culture_value_score>=5;silk_road,False,0,False,False,False,1,2.5,10.0,0.0,10.0,30.0,False,True,
+P031,克孜尔石窟,巴州-南疆北线,库车市,10,True,True,False,True,True,True,culture_value_score>=5;archaeology;silk_road,False,0,False,False,False,1,2.5,10.0,0.0,10.0,70.0,False,True,
+P006,交河故城,东疆,吐鲁番市,8,True,False,False,True,True,True,culture_value_score>=5;archaeology;silk_road,False,0,False,False,False,1,1.75,7.0,0.0,7.0,30.0,False,True,
+P011,高昌故城,东疆,吐鲁番市,8,True,False,False,True,True,True,culture_value_score>=5;archaeology;silk_road,False,0,False,False,False,1,2.5,10.0,0.0,10.0,70.0,False,True,
+P012,苏公塔,东疆,吐鲁番市,8,True,True,False,False,True,True,culture_value_score>=5;silk_road,False,0,False,False,False,1,1.5,6.0,0.0,6.0,45.0,False,True,
+P036,北庭故城遗址,乌鲁木齐周边,乌鲁木齐市,8,True,False,False,True,True,True,culture_value_score>=5;archaeology;silk_road,False,0,False,False,False,1,1.5,6.0,0.0,6.0,38.0,False,True,
+P024,喀什古城,南疆,喀什市,7,False,False,True,True,True,True,culture_value_score>=5;archaeology,False,0,False,False,False,1,3.5,14.0,0.0,14.0,0.0,False,True,
+P025,艾提尕尔清真寺,南疆,喀什市,7,False,True,True,False,True,True,culture_value_score>=5,False,0,False,False,False,1,1.5,6.0,0.0,6.0,30.0,False,True,
+P026,香妃园,南疆,喀什市,7,False,True,True,False,True,True,culture_value_score>=5,False,0,False,False,False,1,2.5,10.0,0.0,10.0,60.0,False,True,
+P028,石头城遗址,南疆,塔什库尔干县(帕米尔高原),6,False,False,False,True,True,True,culture_value_score>=5;archaeology,False,0,False,False,True,1,2.5,10.0,2.0,12.0,30.0,True,True,特殊准入点，不作为普通游客基准路线必选点
+P030,库车王府,巴州-南疆北线,库车市,6,True,False,False,False,True,True,culture_value_score>=5;silk_road,False,0,False,False,False,1,1.5,6.0,0.0,6.0,40.0,False,True,
+P034,罗布人村寨,巴州-南疆北线,库尔勒市,6,False,False,True,False,True,True,culture_value_score>=5,False,0,False,False,False,1,2.5,10.0,0.0,10.0,35.0,False,True,

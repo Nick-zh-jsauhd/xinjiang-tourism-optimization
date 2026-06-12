@@ -14,4 +14,8 @@ Q3-A12,06_缓冲仿真与风险策略/risk_policy_outputs/q3_policy_selection.cs
 Q3-A13,06_缓冲仿真与风险策略/humanized_scenario_outputs/q3_fairness.csv,fairness_audit,已整理,是,解释第三问为什么应按任务难度而非景点数量均衡
 Q3-A14,07_图表/fig04_q3_buffer_curve.png,figure,已整理,是,第三问项目缓冲可靠性图
 Q3-A15,08_报告与工作簿/新疆旅游论文建模章节草案.md,report_context,已整理,可引用,包含第三问建模章节草案
-
+Q3-A16,10_Q3_V2_鲁棒三团队文化考察调度/outputs/q3_v2_assignment_routes.csv,v2_main_result,已实现,是,Q3-V2鲁棒三团队文化考察调度主结果
+Q3-A17,10_Q3_V2_鲁棒三团队文化考察调度/outputs/q3_v2_exact_check.csv,v2_exact_check,已实现,是,固定特殊准入组政策下枚举分配+Held-Karp gap为0
+Q3-A18,10_Q3_V2_鲁棒三团队文化考察调度/outputs/q3_v2_daily_fieldwork_schedule.csv,v2_schedule,已实现,是,三组日级文化考察任务表
+Q3-A19,10_Q3_V2_鲁棒三团队文化考察调度/outputs/q3_v2_resource_usage_calendar.csv,v2_resource_calendar,已实现,是,持证向导/越野车/安全员/设备资源占用日历
+Q3-A20,10_Q3_V2_鲁棒三团队文化考察调度/outputs/q3_v2_buffer_policy.csv,v2_robust_policy,已实现,是,route-specific仿真后的缓冲策略

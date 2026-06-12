@@ -1,0 +1,84 @@
+﻿route_id,group_id,day,task_order,task_type,spot_id,spot_name,task_hours,travel_hours,fieldwork_hours,safety_buffer_hours,lodging_hub,resource_used,risk_level,buffer_flag,notes
+Q3V2_Group1,1,1,1,跨区/本地转场,P007,楼兰古城,7.18,7.18,0.0,0.0,若羌县(楼兰),,red,False,乌鲁木齐起点 -> 楼兰古城；charter_car
+Q3V2_Group1,1,1,2,遗址测绘/考古记录,P007,楼兰古城,0.82,0.0,0.82,0.0,若羌县(楼兰),fieldwork_equipment,red,False,考察时间按普通观光时间4倍计算
+Q3V2_Group1,1,2,3,遗址测绘/考古记录,P007,楼兰古城,8.0,0.0,8.0,0.0,若羌县(楼兰),fieldwork_equipment,red,False,考察时间按普通观光时间4倍计算
+Q3V2_Group1,1,3,4,遗址测绘/考古记录,P007,楼兰古城,8.0,0.0,8.0,0.0,若羌县(楼兰),fieldwork_equipment,red,False,考察时间按普通观光时间4倍计算
+Q3V2_Group1,1,4,5,遗址测绘/考古记录,P007,楼兰古城,8.0,0.0,8.0,0.0,若羌县(楼兰),fieldwork_equipment,red,False,考察时间按普通观光时间4倍计算
+Q3V2_Group1,1,5,6,遗址测绘/考古记录,P007,楼兰古城,7.18,0.0,7.18,0.0,若羌县(楼兰),fieldwork_equipment,red,False,考察时间按普通观光时间4倍计算
+Q3V2_Group1,1,5,7,安全缓冲/通行检查,P007,楼兰古城,0.82,0.0,0.0,0.82,若羌县(楼兰),safety_staff,red,False,特殊准入或远程点安全缓冲
+Q3V2_Group1,1,6,8,安全缓冲/通行检查,P007,楼兰古城,3.18,0.0,0.0,3.18,若羌县(楼兰),safety_staff,red,False,特殊准入或远程点安全缓冲
+Q3V2_Group1,1,6,9,跨区/本地转场,P038,尼雅遗址,4.82,4.82,0.0,0.0,民丰县(尼雅遗址),,red,False,楼兰古城 -> 尼雅遗址；mixed_transfer
+Q3V2_Group1,1,7,10,跨区/本地转场,P038,尼雅遗址,4.94,4.94,0.0,0.0,民丰县(尼雅遗址),,red,False,楼兰古城 -> 尼雅遗址；mixed_transfer
+Q3V2_Group1,1,7,11,遗址测绘/考古记录,P038,尼雅遗址,3.06,0.0,3.06,0.0,民丰县(尼雅遗址),fieldwork_equipment,red,False,考察时间按普通观光时间4倍计算
+Q3V2_Group1,1,8,12,遗址测绘/考古记录,P038,尼雅遗址,8.0,0.0,8.0,0.0,民丰县(尼雅遗址),fieldwork_equipment,red,False,考察时间按普通观光时间4倍计算
+Q3V2_Group1,1,9,13,遗址测绘/考古记录,P038,尼雅遗址,8.0,0.0,8.0,0.0,民丰县(尼雅遗址),fieldwork_equipment,red,False,考察时间按普通观光时间4倍计算
+Q3V2_Group1,1,10,14,遗址测绘/考古记录,P038,尼雅遗址,8.0,0.0,8.0,0.0,民丰县(尼雅遗址),fieldwork_equipment,red,False,考察时间按普通观光时间4倍计算
+Q3V2_Group1,1,11,15,遗址测绘/考古记录,P038,尼雅遗址,4.94,0.0,4.94,0.0,民丰县(尼雅遗址),fieldwork_equipment,red,False,考察时间按普通观光时间4倍计算
+Q3V2_Group1,1,11,16,安全缓冲/通行检查,P038,尼雅遗址,3.06,0.0,0.0,3.06,民丰县(尼雅遗址),safety_staff,red,False,特殊准入或远程点安全缓冲
+Q3V2_Group1,1,12,17,安全缓冲/通行检查,P038,尼雅遗址,0.94,0.0,0.0,0.94,民丰县(尼雅遗址),safety_staff,red,False,特殊准入或远程点安全缓冲
+Q3V2_Group1,1,12,18,返回乌鲁木齐,,,7.06,7.06,0.0,0.0,乌鲁木齐市,,green,False,尼雅遗址 -> 乌鲁木齐
+Q3V2_Group1,1,13,19,返回乌鲁木齐,,,3.19,3.19,0.0,0.0,乌鲁木齐市,,green,False,尼雅遗址 -> 乌鲁木齐
+Q3V2_Group1,1,14,20,项目缓冲/机动复核,,,8.0,0.0,0.0,0.0,按当前组收尾城市或乌鲁木齐统筹,standby_team,green,True,Q3-V2稳健主推预留5天项目缓冲
+Q3V2_Group1,1,15,21,项目缓冲/机动复核,,,8.0,0.0,0.0,0.0,按当前组收尾城市或乌鲁木齐统筹,standby_team,green,True,Q3-V2稳健主推预留5天项目缓冲
+Q3V2_Group1,1,16,22,项目缓冲/机动复核,,,8.0,0.0,0.0,0.0,按当前组收尾城市或乌鲁木齐统筹,standby_team,green,True,Q3-V2稳健主推预留5天项目缓冲
+Q3V2_Group1,1,17,23,项目缓冲/机动复核,,,8.0,0.0,0.0,0.0,按当前组收尾城市或乌鲁木齐统筹,standby_team,green,True,Q3-V2稳健主推预留5天项目缓冲
+Q3V2_Group1,1,18,24,项目缓冲/机动复核,,,8.0,0.0,0.0,0.0,按当前组收尾城市或乌鲁木齐统筹,standby_team,green,True,Q3-V2稳健主推预留5天项目缓冲
+Q3V2_Group2,2,1,25,跨区/本地转场,P013,吐峪沟麻扎村,2.86,2.86,0.0,0.0,吐鲁番市,,green,False,乌鲁木齐起点 -> 吐峪沟麻扎村；rental_car
+Q3V2_Group2,2,1,26,宗教民族文化访谈,P013,吐峪沟麻扎村,5.14,0.0,5.14,0.0,吐鲁番市,fieldwork_equipment,green,False,考察时间按普通观光时间4倍计算
+Q3V2_Group2,2,2,27,宗教民族文化访谈,P013,吐峪沟麻扎村,4.86,0.0,4.86,0.0,吐鲁番市,fieldwork_equipment,green,False,考察时间按普通观光时间4倍计算
+Q3V2_Group2,2,2,28,跨区/本地转场,P012,苏公塔,0.85,0.85,0.0,0.0,吐鲁番市,,green,False,吐峪沟麻扎村 -> 苏公塔；mixed_transfer
+Q3V2_Group2,2,2,29,宗教民族文化访谈,P012,苏公塔,2.29,0.0,2.29,0.0,吐鲁番市,fieldwork_equipment,green,False,考察时间按普通观光时间4倍计算
+Q3V2_Group2,2,3,30,宗教民族文化访谈,P012,苏公塔,3.71,0.0,3.71,0.0,吐鲁番市,fieldwork_equipment,green,False,考察时间按普通观光时间4倍计算
+Q3V2_Group2,2,3,31,跨区/本地转场,P006,交河故城,0.39,0.39,0.0,0.0,吐鲁番市,,green,False,苏公塔 -> 交河故城；mixed_transfer
+Q3V2_Group2,2,3,32,遗址测绘/考古记录,P006,交河故城,3.9,0.0,3.9,0.0,吐鲁番市,fieldwork_equipment,green,False,考察时间按普通观光时间4倍计算
+Q3V2_Group2,2,4,33,遗址测绘/考古记录,P006,交河故城,3.1,0.0,3.1,0.0,吐鲁番市,fieldwork_equipment,green,False,考察时间按普通观光时间4倍计算
+Q3V2_Group2,2,4,34,跨区/本地转场,P034,罗布人村寨,4.9,4.9,0.0,0.0,库尔勒市,,green,False,交河故城 -> 罗布人村寨；mixed_transfer
+Q3V2_Group2,2,5,35,跨区/本地转场,P034,罗布人村寨,1.38,1.38,0.0,0.0,库尔勒市,,green,False,交河故城 -> 罗布人村寨；mixed_transfer
+Q3V2_Group2,2,5,36,民俗访谈与影像记录,P034,罗布人村寨,6.62,0.0,6.62,0.0,库尔勒市,fieldwork_equipment,green,False,考察时间按普通观光时间4倍计算
+Q3V2_Group2,2,6,37,民俗访谈与影像记录,P034,罗布人村寨,3.38,0.0,3.38,0.0,库尔勒市,fieldwork_equipment,green,False,考察时间按普通观光时间4倍计算
+Q3V2_Group2,2,6,38,跨区/本地转场,P030,库车王府,4.62,4.62,0.0,0.0,库车市,,green,False,罗布人村寨 -> 库车王府；mixed_transfer
+Q3V2_Group2,2,7,39,跨区/本地转场,P030,库车王府,0.81,0.81,0.0,0.0,库车市,,green,False,罗布人村寨 -> 库车王府；mixed_transfer
+Q3V2_Group2,2,7,40,遗产点资料记录,P030,库车王府,6.0,0.0,6.0,0.0,库车市,fieldwork_equipment,green,False,考察时间按普通观光时间4倍计算
+Q3V2_Group2,2,7,41,跨区/本地转场,P025,艾提尕尔清真寺,1.19,1.19,0.0,0.0,喀什市,,green,False,库车王府 -> 艾提尕尔清真寺；mixed_transfer
+Q3V2_Group2,2,8,42,跨区/本地转场,P025,艾提尕尔清真寺,5.99,5.99,0.0,0.0,喀什市,,green,False,库车王府 -> 艾提尕尔清真寺；mixed_transfer
+Q3V2_Group2,2,8,43,宗教民族文化访谈,P025,艾提尕尔清真寺,2.01,0.0,2.01,0.0,喀什市,fieldwork_equipment,green,False,考察时间按普通观光时间4倍计算
+Q3V2_Group2,2,9,44,宗教民族文化访谈,P025,艾提尕尔清真寺,3.99,0.0,3.99,0.0,喀什市,fieldwork_equipment,green,False,考察时间按普通观光时间4倍计算
+Q3V2_Group2,2,9,45,跨区/本地转场,P024,喀什古城,0.15,0.15,0.0,0.0,喀什市,,green,False,艾提尕尔清真寺 -> 喀什古城；mixed_transfer
+Q3V2_Group2,2,9,46,遗址测绘/考古记录,P024,喀什古城,3.86,0.0,3.86,0.0,喀什市,fieldwork_equipment,green,False,考察时间按普通观光时间4倍计算
+Q3V2_Group2,2,10,47,遗址测绘/考古记录,P024,喀什古城,8.0,0.0,8.0,0.0,喀什市,fieldwork_equipment,green,False,考察时间按普通观光时间4倍计算
+Q3V2_Group2,2,11,48,遗址测绘/考古记录,P024,喀什古城,2.14,0.0,2.14,0.0,喀什市,fieldwork_equipment,green,False,考察时间按普通观光时间4倍计算
+Q3V2_Group2,2,11,49,返回乌鲁木齐,,,5.86,5.86,0.0,0.0,乌鲁木齐市,,green,False,喀什古城 -> 乌鲁木齐
+Q3V2_Group2,2,12,50,返回乌鲁木齐,,,1.19,1.19,0.0,0.0,乌鲁木齐市,,green,False,喀什古城 -> 乌鲁木齐
+Q3V2_Group2,2,13,51,项目缓冲/机动复核,,,8.0,0.0,0.0,0.0,按当前组收尾城市或乌鲁木齐统筹,standby_team,green,True,Q3-V2稳健主推预留5天项目缓冲
+Q3V2_Group2,2,14,52,项目缓冲/机动复核,,,8.0,0.0,0.0,0.0,按当前组收尾城市或乌鲁木齐统筹,standby_team,green,True,Q3-V2稳健主推预留5天项目缓冲
+Q3V2_Group2,2,15,53,项目缓冲/机动复核,,,8.0,0.0,0.0,0.0,按当前组收尾城市或乌鲁木齐统筹,standby_team,green,True,Q3-V2稳健主推预留5天项目缓冲
+Q3V2_Group2,2,16,54,项目缓冲/机动复核,,,8.0,0.0,0.0,0.0,按当前组收尾城市或乌鲁木齐统筹,standby_team,green,True,Q3-V2稳健主推预留5天项目缓冲
+Q3V2_Group2,2,17,55,项目缓冲/机动复核,,,8.0,0.0,0.0,0.0,按当前组收尾城市或乌鲁木齐统筹,standby_team,green,True,Q3-V2稳健主推预留5天项目缓冲
+Q3V2_Group3,3,1,56,跨区/本地转场,P036,北庭故城遗址,2.0,2.0,0.0,0.0,乌鲁木齐市,,green,False,乌鲁木齐起点 -> 北庭故城遗址；rental_car
+Q3V2_Group3,3,1,57,遗址测绘/考古记录,P036,北庭故城遗址,6.0,0.0,6.0,0.0,乌鲁木齐市,fieldwork_equipment,green,False,考察时间按普通观光时间4倍计算
+Q3V2_Group3,3,1,58,跨区/本地转场,P011,高昌故城,0.0,0.0,0.0,0.0,吐鲁番市,,green,False,北庭故城遗址 -> 高昌故城；mixed_transfer
+Q3V2_Group3,3,2,59,跨区/本地转场,P011,高昌故城,4.97,4.97,0.0,0.0,吐鲁番市,,green,False,北庭故城遗址 -> 高昌故城；mixed_transfer
+Q3V2_Group3,3,2,60,遗址测绘/考古记录,P011,高昌故城,3.03,0.0,3.03,0.0,吐鲁番市,fieldwork_equipment,green,False,考察时间按普通观光时间4倍计算
+Q3V2_Group3,3,3,61,遗址测绘/考古记录,P011,高昌故城,6.97,0.0,6.97,0.0,吐鲁番市,fieldwork_equipment,green,False,考察时间按普通观光时间4倍计算
+Q3V2_Group3,3,3,62,跨区/本地转场,P031,克孜尔石窟,1.03,1.03,0.0,0.0,库车市,,green,False,高昌故城 -> 克孜尔石窟；mixed_transfer
+Q3V2_Group3,3,4,63,跨区/本地转场,P031,克孜尔石窟,8.0,8.0,0.0,0.0,库车市,,green,False,高昌故城 -> 克孜尔石窟；mixed_transfer
+Q3V2_Group3,3,5,64,跨区/本地转场,P031,克孜尔石窟,1.29,1.29,0.0,0.0,库车市,,green,False,高昌故城 -> 克孜尔石窟；mixed_transfer
+Q3V2_Group3,3,5,65,遗址测绘/考古记录,P031,克孜尔石窟,6.71,0.0,6.71,0.0,库车市,fieldwork_equipment,green,False,考察时间按普通观光时间4倍计算
+Q3V2_Group3,3,6,66,遗址测绘/考古记录,P031,克孜尔石窟,3.29,0.0,3.29,0.0,库车市,fieldwork_equipment,green,False,考察时间按普通观光时间4倍计算
+Q3V2_Group3,3,6,67,跨区/本地转场,P028,石头城遗址,4.71,4.71,0.0,0.0,塔什库尔干县(帕米尔高原),,yellow,False,克孜尔石窟 -> 石头城遗址；mixed_transfer
+Q3V2_Group3,3,7,68,跨区/本地转场,P028,石头城遗址,7.24,7.24,0.0,0.0,塔什库尔干县(帕米尔高原),,yellow,False,克孜尔石窟 -> 石头城遗址；mixed_transfer
+Q3V2_Group3,3,7,69,遗址测绘/考古记录,P028,石头城遗址,0.76,0.0,0.76,0.0,塔什库尔干县(帕米尔高原),fieldwork_equipment,yellow,False,考察时间按普通观光时间4倍计算
+Q3V2_Group3,3,8,70,遗址测绘/考古记录,P028,石头城遗址,8.0,0.0,8.0,0.0,塔什库尔干县(帕米尔高原),fieldwork_equipment,yellow,False,考察时间按普通观光时间4倍计算
+Q3V2_Group3,3,9,71,遗址测绘/考古记录,P028,石头城遗址,1.24,0.0,1.24,0.0,塔什库尔干县(帕米尔高原),fieldwork_equipment,yellow,False,考察时间按普通观光时间4倍计算
+Q3V2_Group3,3,9,72,安全缓冲/通行检查,P028,石头城遗址,2.0,0.0,0.0,2.0,塔什库尔干县(帕米尔高原),safety_staff,yellow,False,特殊准入或远程点安全缓冲
+Q3V2_Group3,3,9,73,跨区/本地转场,P026,香妃园,4.76,4.76,0.0,0.0,喀什市,,green,False,石头城遗址 -> 香妃园；mixed_transfer
+Q3V2_Group3,3,10,74,跨区/本地转场,P026,香妃园,0.35,0.35,0.0,0.0,喀什市,,green,False,石头城遗址 -> 香妃园；mixed_transfer
+Q3V2_Group3,3,10,75,宗教民族文化访谈,P026,香妃园,7.65,0.0,7.65,0.0,喀什市,fieldwork_equipment,green,False,考察时间按普通观光时间4倍计算
+Q3V2_Group3,3,11,76,宗教民族文化访谈,P026,香妃园,2.35,0.0,2.35,0.0,喀什市,fieldwork_equipment,green,False,考察时间按普通观光时间4倍计算
+Q3V2_Group3,3,11,77,返回乌鲁木齐,,,5.65,5.65,0.0,0.0,乌鲁木齐市,,green,False,香妃园 -> 乌鲁木齐
+Q3V2_Group3,3,12,78,返回乌鲁木齐,,,1.4,1.4,0.0,0.0,乌鲁木齐市,,green,False,香妃园 -> 乌鲁木齐
+Q3V2_Group3,3,13,79,项目缓冲/机动复核,,,8.0,0.0,0.0,0.0,按当前组收尾城市或乌鲁木齐统筹,standby_team,green,True,Q3-V2稳健主推预留5天项目缓冲
+Q3V2_Group3,3,14,80,项目缓冲/机动复核,,,8.0,0.0,0.0,0.0,按当前组收尾城市或乌鲁木齐统筹,standby_team,green,True,Q3-V2稳健主推预留5天项目缓冲
+Q3V2_Group3,3,15,81,项目缓冲/机动复核,,,8.0,0.0,0.0,0.0,按当前组收尾城市或乌鲁木齐统筹,standby_team,green,True,Q3-V2稳健主推预留5天项目缓冲
+Q3V2_Group3,3,16,82,项目缓冲/机动复核,,,8.0,0.0,0.0,0.0,按当前组收尾城市或乌鲁木齐统筹,standby_team,green,True,Q3-V2稳健主推预留5天项目缓冲
+Q3V2_Group3,3,17,83,项目缓冲/机动复核,,,8.0,0.0,0.0,0.0,按当前组收尾城市或乌鲁木齐统筹,standby_team,green,True,Q3-V2稳健主推预留5天项目缓冲

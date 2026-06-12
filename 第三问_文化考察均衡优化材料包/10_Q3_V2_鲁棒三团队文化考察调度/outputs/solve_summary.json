@@ -1,0 +1,18 @@
+{
+  "model": "Q3-V2 Robust Multi-Team Cultural Fieldwork Scheduling",
+  "candidate_spots": 14,
+  "evaluated_partitions": 474254,
+  "feasible_partitions": 474254,
+  "selected_max_completion_hours": 99.19,
+  "selected_balance_gap_hours": 9.99,
+  "base_project_days": 13,
+  "simulation_trials": 15000,
+  "robust_main_policy": "5天项目缓冲",
+  "exact_check_gap": 0.0,
+  "report": "reports\\新疆旅游第三问Q3_V2鲁棒三团队文化考察报告.md",
+  "workbook": "reports\\新疆旅游第三问Q3_V2鲁棒三团队文化考察结果.xlsx",
+  "figures": [
+    "figures\\fig_q3_v2_group_hours.png",
+    "figures\\fig_q3_v2_buffer_policy_success.png"
+  ]
+}

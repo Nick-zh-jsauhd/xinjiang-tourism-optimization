@@ -1,0 +1,10 @@
+﻿audit_id,module,claim,status,remaining_limitation
+Q3V2-A1,problem_definition,第三问目标为尽早完成三组文化考察任务,implemented,不以费用最小或景点数量均衡为主目标
+Q3V2-A2,fieldwork_time,考察时间为旅游观光时间四倍,implemented,具体考察工作内容仍为模型化估计
+Q3V2-A3,cultural_candidate_set,文化点由文化标签与特殊准入筛选,implemented,文化权重需专家校准
+Q3V2-A4,special_access,楼兰/尼雅审批、向导、越野车约束显式进入候选和资源日历,implemented,许可概率仍为情景估计参数
+Q3V2-A5,minmax_assignment,三组任务按完成时间 MinMax 均衡,implemented,审批点固定同组是资源政策假设
+Q3V2-A6,exact_check,14点小规模精确/半精确校验,implemented,在固定特殊准入组政策下 gap=0
+Q3V2-A7,daily_schedule,输出日级考察任务表,implemented,仍未细化到小时级开闭园与访谈预约
+Q3V2-A8,route_simulation,做 route-specific 考察延期仿真,implemented,分布为情景校准仿真，不是历史拟合
+Q3V2-A9,global_optimality,不声称完整全局最优,explicit,若开放特殊资源跨组共享，需要重新求解

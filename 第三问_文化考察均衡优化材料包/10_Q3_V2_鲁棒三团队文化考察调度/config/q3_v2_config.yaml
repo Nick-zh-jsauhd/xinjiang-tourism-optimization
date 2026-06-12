@@ -1,0 +1,18 @@
+model_name: Robust Multi-Team Cultural Fieldwork Scheduling
+model_name_cn: 鲁棒三团队文化考察调度模型
+day_hours: 8.0
+fieldwork_multiplier: 4.0
+culture_value_threshold: 5
+groups: 3
+force_approval_points_to_group: 1
+min_spots_per_group: 2
+simulation_trials_per_scenario_policy: 500
+random_seed: 20260612
+primary_objective: min_max_completion_hours
+secondary_objectives:
+  - balance_gap_hours
+  - route_risk_score
+  - transport_cost_yuan
+candidate_rule: culture_value_score >= 5 OR requires_approval == true
+traffic_source: spot-to-spot uses amap_driving_od_matrix_clean when available; depot access uses depot_access_matrix; missing arcs fall back to enhanced_od_matrix_with_amap
+approval_lead_time_note: 审批提前期作为项目准备约束，不计入新疆现场考察天数

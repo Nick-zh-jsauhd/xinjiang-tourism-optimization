@@ -1,0 +1,4 @@
+﻿route_id,group_id,group_role,spots_count,approval_spots_count,remote_or_approval_count,travel_hours,fieldwork_hours,safety_buffer_hours,service_hours,total_hours,days,transport_cost_yuan,ticket_yuan,risk_score,culture_value_total,route_sequence,max_completion_hours,balance_gap_hours,fieldwork_time_rule
+Q3V2_Group1,1,special_approval_group,2,2,2,27.19,64.0,8.0,72.0,99.19,13,5488.49,8090.0,1.943,20.0,楼兰古城 -> 尼雅遗址,99.19,9.99,fieldwork_hours = 4 * tour_visit_hours
+Q3V2_Group2,2,standard_cultural_group,7,0,0,30.19,59.0,0.0,59.0,89.19,12,3596.67,420.0,0.82,52.0,吐峪沟麻扎村 -> 苏公塔 -> 交河故城 -> 罗布人村寨 -> 库车王府 -> 艾提尕尔清真寺 -> 喀什古城,99.19,9.99,fieldwork_hours = 4 * tour_visit_hours
+Q3V2_Group3,3,standard_cultural_group,5,0,1,41.4,46.0,2.0,48.0,89.4,12,3977.2,536.0,0.881,39.0,北庭故城遗址 -> 高昌故城 -> 克孜尔石窟 -> 石头城遗址 -> 香妃园,99.19,9.99,fieldwork_hours = 4 * tour_visit_hours
