@@ -1,0 +1,5 @@
+﻿solver,phase,status,objective_value,wall_time_seconds,mip_gap,mip_node_count,mip_dual_bound,variables,constraints,Z_scaled,W_scaled,gap_scaled,risk_scaled,cost_scaled,selected_pairs,selected_masks,lexicographic_gap_scaled
+HiGHS-MILP,min_max_completion,OPTIMAL,99187.0,10.7152,0.0,1,99187.0,12264,23,99187,0,99187,3653,1288623,g1:m3|g2:m9992|g3:m6388,,
+HiGHS-MILP,min_balance_gap,OPTIMAL,-89193.0,12.9743,0.0,0,-89193.0,12264,23,99187,89193,9994,3645,1306236,g1:m3|g2:m13140|g3:m3240,,
+HiGHS-MILP,min_total_risk,OPTIMAL,3645.0,11.7353,0.0,0,3645.0,12264,23,99187,89193,9994,3645,1306236,g1:m3|g2:m13140|g3:m3240,,
+HiGHS-MILP,min_transport_cost,OPTIMAL,1306236.0,12.4953,0.0,0,1306236.0,12264,24,99187,89193,9994,3645,1306236,g1:m3|g2:m13140|g3:m3240,3|13140|3240,9994.0

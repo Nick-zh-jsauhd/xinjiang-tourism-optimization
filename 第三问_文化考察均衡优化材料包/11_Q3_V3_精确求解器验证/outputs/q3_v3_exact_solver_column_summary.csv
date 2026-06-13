@@ -1,0 +1,4 @@
+﻿group_id,allowed_columns,selected_mask,selected_completion_hours,min_column_completion_hours,max_column_completion_hours,mean_column_completion_hours
+1,4096,3,99.187,99.187,236.26,171.323
+2,4083,13140,89.193,18.412,152.704,88.2
+3,4083,3240,89.401,18.412,152.704,88.2

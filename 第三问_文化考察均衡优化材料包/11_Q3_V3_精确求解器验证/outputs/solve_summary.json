@@ -1,0 +1,25 @@
+{
+  "model": "Q3-V3 Exact Set-Partitioning Solver Verification",
+  "source_model": "Q3-V2 Robust Multi-Team Cultural Fieldwork Scheduling",
+  "candidate_spots": 14,
+  "full_mask": 16383,
+  "special_mask": 3,
+  "selected_masks": [
+    3,
+    13140,
+    3240
+  ],
+  "allowed_columns_total": 12262,
+  "enumerated_assignment_space": 474254,
+  "exact_solver_name": "HiGHS-MILP",
+  "exact_solver_final_status": "OPTIMAL",
+  "exact_max_completion_hours": 99.187,
+  "exact_balance_gap_hours": 9.994,
+  "exact_total_risk_score": 3.645,
+  "exact_transport_cost_yuan": 13062.36,
+  "delta_vs_v2_max_completion_hours": 0.0,
+  "delta_vs_v2_balance_gap_hours": 0.0,
+  "optimality_gap_under_constraints": 0.0,
+  "total_runtime_seconds": 51.0704,
+  "report": "reports/新疆旅游第三问Q3_V3精确求解器验证报告.md"
+}
