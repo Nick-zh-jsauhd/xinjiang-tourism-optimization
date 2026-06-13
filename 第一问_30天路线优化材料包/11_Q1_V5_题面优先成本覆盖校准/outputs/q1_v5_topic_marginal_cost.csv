@@ -1,0 +1,6 @@
+﻿coverage_q,route_id,min_cost_yuan,buffer_days,red_days,operational_success_probability,delta_cost_from_previous_q,delta_spots_from_previous_q,marginal_cost_per_added_spot
+20,Q1V3_Q20_012,8055.84,9,1,0.95,,,
+22,Q1V3_Q22_070,8580.51,7,1,0.918,524.67,2,262.34
+24,Q1V3_Q24_124,9620.98,5,2,0.94,1040.47,2,520.23
+26,Q1V3_Q26_215,10557.6,2,4,0.862,936.62,2,468.31
+28,Q1V3_Q28_269,13022.84,1,4,0.72,2465.24,2,1232.62

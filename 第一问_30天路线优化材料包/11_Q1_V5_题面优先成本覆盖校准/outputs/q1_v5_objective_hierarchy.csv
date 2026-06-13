@@ -1,0 +1,5 @@
+﻿level,name,mathematical_role,definition,reason
+L0,题面可执行性约束,feasibility,普通游客路线、30天内、严格日程可执行、0时间窗违规、硬约束通过。,对应题目中的“合适旅游路线”，避免把不可执行的高覆盖路线作为主答案。
+L1,覆盖数最大化,primary_objective,maximize N(R),对应“游尽可能多的地方”。
+L2,除吃饭外总费用最小化,secondary_objective,minimize C(R)=交通费+门票/预约费+住宿费+必要本地接驳费用,对应“花最少的钱”及“估算除吃饭之外的费用”。
+L3,现实质量与鲁棒性评价,tie_breaker_and_audit,缓冲日、舒适度、红色压力日、运营成功率、严格舒适成功率、CVaR等。,作为模型亮点与推荐方案解释，不抢占题面主目标。
