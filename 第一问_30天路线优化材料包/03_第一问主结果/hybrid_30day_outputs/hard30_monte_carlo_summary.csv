@@ -1,2 +1,0 @@
-﻿route_id,trials,spots_count,feasibility_rate,mean_days,p95_days,mean_cost_yuan,p95_cost_yuan,mean_over_budget_days,prob_any_reservation_failure,prob_any_hotel_full,prob_severe_transport,mean_crowd_penalty
-HYBRID_30D_ACO_ALNS_SA,260,32,0.1192,31.81,37.0,15578.14,17961.17,5.74,0.6077,0.6385,0.0231,0.0724

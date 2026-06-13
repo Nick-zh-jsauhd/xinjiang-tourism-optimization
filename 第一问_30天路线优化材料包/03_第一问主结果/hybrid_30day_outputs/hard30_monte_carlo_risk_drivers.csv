@@ -1,6 +1,0 @@
-﻿route_id,risk_driver,driver_count
-HYBRID_30D_ACO_ALNS_SA,active_budget_pressure,1393
-HYBRID_30D_ACO_ALNS_SA,hotel_full,453
-HYBRID_30D_ACO_ALNS_SA,reservation_failure,306
-HYBRID_30D_ACO_ALNS_SA,time_window_violation,57
-HYBRID_30D_ACO_ALNS_SA,severe_transport,13

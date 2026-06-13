@@ -1,8 +1,0 @@
-﻿solver_or_package,python_module,available_now,role_in_project,best_for,efficiency_note
-SciPy/HiGHS,scipy,True,当前已用,MILP 基线、下界、可行解,可用，但缺少 lazy cuts callback
-NetworkX,networkx,True,当前辅助,图结构检查、连通性/子回路识别,可用
-OR-Tools,ortools,False,建议新增,VRP/TSP 高效启发式、warm start,当前缺包；脚本已预留
-Gurobi,gurobipy,False,建议新增,精确 MILP、lazy constraints、MIP start、gap 证明,当前缺包；若有学术许可优先
-CPLEX,cplex,False,备选新增,精确 MILP、callback、工业级证明,当前缺包
-Pyomo,pyomo,False,表达层可选,更贴近数学公式的模型书写,当前缺包；本身不提速
-PuLP,pulp,False,表达层可选,轻量 MILP 表达层,当前缺包；本身不提速

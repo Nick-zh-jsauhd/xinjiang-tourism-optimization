@@ -1,6 +1,0 @@
-﻿method,speed,proof_strength,engineering_cost,fit_to_q2,main_risk
-当前 SciPy/HiGHS MTZ,中,弱-中,低,适合保留为免费基线,MTZ 松弛较弱，限时下通常只能给可行解
-当前 SciPy/HiGHS iterative DFJ,慢,中,中,适合验证思路，不适合作为效率主线,无法在分支过程中 lazy 加割，重解成本高
-OR-Tools Routing,很快,弱,中,适合快速路线和 warm start,不能作为全局最优证明
-Gurobi/CPLEX DFJ lazy cuts,快-很快,强,中-高,最适合作为最终效率强化主模型,需要安装与许可证
-Pyomo/PuLP + CBC/HiGHS,不一定提升,取决于后端,低-中,适合写论文公式，不是效率核心,换壳不换求解器，性能瓶颈仍在

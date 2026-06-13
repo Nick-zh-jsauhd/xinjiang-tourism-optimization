@@ -1,5 +1,0 @@
-﻿attempt,available,last_best_bound,last_best_solution,last_gap_percent,last_time_seconds,last_nodes_processed,valid_progress_lines,log_file
-DFJ iterative current,True,3586.648549,3692.82,2.88,345.2,45245,664,logs\p2_exact_dfj.out.log
-DFJ static precuts,True,3582.151736,3764.72,4.85,596.4,18722,1535,logs\p2_exact_dfj_static.out.log
-Single-commodity flow,True,3207.185564,inf,inf,264.2,1005,23,logs\p2_exact_flow.out.log
-Rooted long MILP,True,3443.579494,5784.083692,40.46,194.1,6372,52,logs\p2_rooted_long_milp.out.log

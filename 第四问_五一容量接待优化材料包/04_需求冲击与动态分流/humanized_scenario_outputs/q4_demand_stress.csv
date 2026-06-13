@@ -1,6 +1,0 @@
-﻿demand_multiplier,requested_visitors,served_visitors_if_no_reallocation,rejected_or_overflow_visitors,system_capacity,system_utilization,routes_over_95pct_capacity,interpretation
-0.8,85086,85086,0,111956,0.76,0,总容量尚可，但热门线路可能局部拥堵
-1.0,106358,106358,0,111956,0.95,8,总容量尚可，但热门线路可能局部拥堵
-1.1,116994,107328,9666,111956,0.959,8,需求超过总容量，需要预约限流和分流
-1.2,127630,108298,19331,111956,0.967,8,需求超过总容量，需要预约限流和分流
-1.35,143583,109754,33830,111956,0.98,8,需求超过总容量，需要预约限流和分流

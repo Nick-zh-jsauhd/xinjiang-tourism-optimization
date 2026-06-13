@@ -1,3 +1,0 @@
-﻿route_id,expected_time_hours,worst_case_time_hours,expected_cost_yuan,expected_risk,robust_objective,scenario_count
-PCOP_MILP,160.03,160.7,10885.39,3.183,11874.03,5
-PCOP_ALNS,239.75,242.55,21200.92,4.208,22603.45,5

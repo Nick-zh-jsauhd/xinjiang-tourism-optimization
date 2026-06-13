@@ -1,183 +1,76 @@
-﻿relative_path,bytes,modified_time
-00_原始题目与总纲/q1_v2_plan.md,29119,2026-06-11T13:12:26.011366
-00_原始题目与总纲/新疆旅游全品类数据明细.xlsx,44892,2026-06-04T18:17:38.741229
-00_原始题目与总纲/新疆旅游四问数学建模总纲_先模型后实验版.md,15234,2026-06-11T11:48:35.321813
-00_原始题目与总纲/新疆旅游最终数据集说明_更新版.md,9340,2026-06-11T11:42:20.712750
-00_原始题目与总纲/新疆旅游线路安排案例10.docx,61996,2026-06-09T17:25:33.479056
-00_原始题目与总纲/旅游线路安排-图论.pdf,167902,2026-05-26T21:21:38.235305
-01_输入数据/enhanced_data/air_public_schedule_seed.csv,6884,2026-06-10T16:09:04.413960
-01_输入数据/enhanced_data/amap_depot_access_matrix_clean.csv,18398,2026-06-10T16:09:04.428962
-01_输入数据/enhanced_data/amap_driving_od_matrix_clean.csv,241185,2026-06-10T16:09:04.428049
-01_输入数据/enhanced_data/capacity_by_spot.csv,4908,2026-06-10T16:09:04.408070
-01_输入数据/enhanced_data/cultural_tags.csv,3727,2026-06-10T16:09:04.409604
-01_输入数据/enhanced_data/data_gap_acquisition_plan.csv,3117,2026-06-10T16:09:04.404831
-01_输入数据/enhanced_data/depot_access_matrix.csv,2456,2026-06-10T16:09:04.488600
-01_输入数据/enhanced_data/edge_time_scenarios.csv,463510,2026-06-10T16:09:04.477138
-01_输入数据/enhanced_data/enhanced_od_matrix.csv,183008,2026-06-10T16:09:04.487280
-01_输入数据/enhanced_data/enhanced_od_matrix_with_amap.csv,326546,2026-06-10T14:43:57.191647
-01_输入数据/enhanced_data/hotel_hub_constraints.csv,2328,2026-06-10T16:09:04.411892
-01_输入数据/enhanced_data/model_status_recommendations.csv,1690,2026-06-10T16:09:04.405852
-01_输入数据/enhanced_data/multimodal_edges.csv,254766,2026-06-10T16:09:04.443605
-01_输入数据/enhanced_data/multimodal_nodes.csv,6925,2026-06-10T16:09:04.428962
-01_输入数据/enhanced_data/rail_12306_model_options.csv,7077,2026-06-10T16:09:04.412891
-01_输入数据/enhanced_data/source_registry.csv,4998,2026-06-10T16:09:04.398019
-01_输入数据/enhanced_data/special_access_constraints.csv,2941,2026-06-10T16:09:04.410611
-01_输入数据/enhanced_data/spot_coordinates_amap.csv,9123,2026-06-10T14:40:25.422191
-01_输入数据/enhanced_data/spot_time_windows.csv,2816,2026-06-10T16:09:04.407048
-01_输入数据/enhanced_data/time_dependent_rules.csv,1190,2026-06-10T16:09:04.443605
-01_输入数据/model_data/data_dictionary.csv,850,2026-06-09T22:11:09.183475
-01_输入数据/model_data/data_quality_issues.csv,4662,2026-06-09T22:11:09.182476
-01_输入数据/model_data/hotel_options_clean.csv,4829,2026-06-09T22:11:09.175904
-01_输入数据/model_data/hotel_place_default.csv,1807,2026-06-09T22:11:09.177468
-01_输入数据/model_data/hub_clean.csv,1523,2026-06-09T22:11:09.169882
-01_输入数据/model_data/README_数据底座.md,1112,2026-06-09T22:11:09.209799
-01_输入数据/model_data/scenario_parameters.csv,859,2026-06-09T22:11:09.181476
-01_输入数据/model_data/source_sites.csv,1727,2026-06-09T22:11:09.183475
-01_输入数据/model_data/spot_clean.csv,10670,2026-06-09T22:11:09.168878
-01_输入数据/model_data/spot_hub_map.csv,3886,2026-06-09T22:11:09.172895
-01_输入数据/model_data/summary.json,896,2026-06-09T22:11:09.209799
-01_输入数据/model_data/transport_cost_clean.csv,6052,2026-06-09T22:11:09.179477
-02_模型代码/adaptive_strategy_lab.py,23385,2026-06-11T00:53:01.794971
-02_模型代码/build_daily_itinerary_layer.py,26301,2026-06-10T16:56:54.324052
-02_模型代码/build_final_research_package_v2.py,21995,2026-06-11T02:07:23.104074
-02_模型代码/build_visual_assets.py,13759,2026-06-11T01:13:19.618968
-02_模型代码/digital_twin_robustness_lab.py,36459,2026-06-11T01:44:44.276936
-02_模型代码/enhance_data_and_models.py,97494,2026-06-10T16:08:20.486139
-02_模型代码/humanized_scenario_research.py,27005,2026-06-11T00:46:51.362705
-02_模型代码/hybrid_30day_metaheuristic_optimizer.py,12351,2026-06-10T20:21:14.250828
-02_模型代码/hybrid_metaheuristic_optimizer.py,27351,2026-06-10T19:46:06.105638
-02_模型代码/prepare_tourism_model_data.py,32774,2026-06-09T22:10:45.968719
-02_模型代码/repair_daily_itinerary_layer.py,21100,2026-06-10T17:04:32.008379
-02_模型代码/risk_aware_policy_engine.py,27689,2026-06-11T01:59:51.583728
-02_模型代码/stochastic_integrated_joint_optimization.py,69222,2026-06-10T18:14:24.905368
-03_第一问主结果/enhanced_model_outputs/enhanced_solve_summary.json,735,2026-06-10T16:10:39.452141
-03_第一问主结果/enhanced_model_outputs/problem1_nsga_pareto.csv,8108,2026-06-10T16:10:39.421811
-03_第一问主结果/enhanced_model_outputs/problem1_pcop_summary.csv,1532,2026-06-10T16:10:39.420811
-03_第一问主结果/enhanced_model_outputs/robust_route_evaluation.csv,221,2026-06-10T16:10:39.428836
-03_第一问主结果/enhanced_model_outputs/transport_experiment_comparison.csv,3718,2026-06-10T16:10:39.429350
-03_第一问主结果/hybrid_30day_outputs/hard30_aco_history.csv,1037,2026-06-10T20:26:56.230287
-03_第一问主结果/hybrid_30day_outputs/hard30_aco_solutions.csv,638162,2026-06-10T20:26:56.244694
-03_第一问主结果/hybrid_30day_outputs/hard30_alns_sa_history.csv,82345,2026-06-10T20:26:56.253774
-03_第一问主结果/hybrid_30day_outputs/hard30_lodging.csv,3052,2026-06-10T20:26:56.228786
-03_第一问主结果/hybrid_30day_outputs/hard30_model_comparison.csv,6472,2026-06-10T20:26:56.262242
-03_第一问主结果/hybrid_30day_outputs/hard30_monte_carlo_risk_drivers.csv,270,2026-06-10T20:26:56.261242
-03_第一问主结果/hybrid_30day_outputs/hard30_monte_carlo_summary.csv,309,2026-06-10T20:26:56.259939
-03_第一问主结果/hybrid_30day_outputs/hard30_monte_carlo_trials.csv,23277,2026-06-10T20:26:56.258579
-03_第一问主结果/hybrid_30day_outputs/hard30_operator_stats.csv,263,2026-06-10T20:26:56.254775
-03_第一问主结果/hybrid_30day_outputs/hard30_route_days.csv,5042,2026-06-10T20:26:56.224785
-03_第一问主结果/hybrid_30day_outputs/hard30_route_segments.csv,8924,2026-06-10T20:26:56.222788
-03_第一问主结果/hybrid_30day_outputs/hard30_route_summary.csv,1231,2026-06-10T20:26:56.220785
-03_第一问主结果/hybrid_30day_outputs/hard30_seed_summary.csv,15793,2026-06-10T20:26:56.246693
-03_第一问主结果/hybrid_30day_outputs/hard30_solve_summary.json,386,2026-06-10T20:26:58.004084
-03_第一问主结果/hybrid_30day_outputs/hard30_time_windows.csv,3583,2026-06-10T20:26:56.226788
-04_逐日排程与修复/itinerary_outputs/daily_itinerary_days.csv,9906,2026-06-10T16:57:08.882482
-04_逐日排程与修复/itinerary_outputs/daily_itinerary_segments.csv,16389,2026-06-10T16:57:08.880487
-04_逐日排程与修复/itinerary_outputs/daily_itinerary_summary.json,648,2026-06-10T16:57:09.265622
-04_逐日排程与修复/itinerary_repair_outputs/all_repair_actions.csv,6347,2026-06-10T17:04:49.557985
-04_逐日排程与修复/itinerary_repair_outputs/lodging_repair_candidates.csv,1273,2026-06-10T17:04:49.554929
-04_逐日排程与修复/itinerary_repair_outputs/operational_repair_actions.csv,3819,2026-06-10T17:04:49.556985
-04_逐日排程与修复/itinerary_repair_outputs/order_repair_actions.csv,562,2026-06-10T17:04:49.553690
-04_逐日排程与修复/itinerary_repair_outputs/PCOP_ALNS_days.csv,5848,2026-06-10T17:04:49.543549
-04_逐日排程与修复/itinerary_repair_outputs/PCOP_ALNS_lodging.csv,3556,2026-06-10T17:04:49.546594
-04_逐日排程与修复/itinerary_repair_outputs/PCOP_ALNS_segments.csv,9818,2026-06-10T17:04:49.542549
-04_逐日排程与修复/itinerary_repair_outputs/PCOP_ALNS_time_windows.csv,3831,2026-06-10T17:04:49.545593
-04_逐日排程与修复/itinerary_repair_outputs/PCOP_MILP_days.csv,4335,2026-06-10T17:04:49.331400
-04_逐日排程与修复/itinerary_repair_outputs/PCOP_MILP_lodging.csv,2569,2026-06-10T17:04:49.333400
-04_逐日排程与修复/itinerary_repair_outputs/PCOP_MILP_segments.csv,6966,2026-06-10T17:04:49.329401
-04_逐日排程与修复/itinerary_repair_outputs/PCOP_MILP_time_windows.csv,2469,2026-06-10T17:04:49.332400
-04_逐日排程与修复/itinerary_repair_outputs/repair_summary.csv,2668,2026-06-10T17:04:49.553690
-04_逐日排程与修复/itinerary_repair_outputs/repair_summary.json,3628,2026-06-10T17:04:49.901808
-05_画像与鲁棒性/adaptive_strategy_outputs/q1_variant_days.csv,10376,2026-06-11T00:53:16.719773
-05_画像与鲁棒性/adaptive_strategy_outputs/q1_variant_dropped_spots.csv,1504,2026-06-11T00:53:16.720774
-05_画像与鲁棒性/adaptive_strategy_outputs/q1_variant_summary.csv,3613,2026-06-11T00:53:16.717773
-05_画像与鲁棒性/adaptive_strategy_outputs/solve_summary.json,552,2026-06-11T00:53:17.323910
-05_画像与鲁棒性/digital_twin_outputs/q1_distribution_detail.csv,1485,2026-06-11T01:45:46.618303
-05_画像与鲁棒性/digital_twin_outputs/q1_persona_robustness.csv,4530,2026-06-11T01:45:46.617302
-05_画像与鲁棒性/digital_twin_outputs/recommendation_atlas.csv,3560,2026-06-11T01:45:46.623418
-05_画像与鲁棒性/digital_twin_outputs/scenario_parameters.csv,824,2026-06-11T01:45:46.613972
-05_画像与鲁棒性/digital_twin_outputs/solve_summary.json,631,2026-06-11T01:45:48.930751
-05_画像与鲁棒性/humanized_scenario_outputs/q1_day_stress.csv,12971,2026-06-11T00:47:12.875491
-05_画像与鲁棒性/humanized_scenario_outputs/q1_drop_candidates.csv,1404,2026-06-11T00:47:12.878025
-05_画像与鲁棒性/humanized_scenario_outputs/q1_persona_summary.csv,595,2026-06-11T00:47:12.874490
-05_画像与鲁棒性/humanized_scenario_outputs/q1_repair_days.csv,1099,2026-06-11T00:47:12.877004
-05_画像与鲁棒性/humanized_scenario_outputs/solve_summary.json,985,2026-06-11T00:47:13.505472
-05_画像与鲁棒性/risk_policy_outputs/integrated_policy_portfolio.csv,1937,2026-06-11T02:00:39.537699
-05_画像与鲁棒性/risk_policy_outputs/q1_policy_candidates.csv,14988,2026-06-11T02:00:39.532181
-05_画像与鲁棒性/risk_policy_outputs/q1_policy_selection.csv,11059,2026-06-11T02:00:39.533182
-06_图表/fig01_q1_persona_robustness_heatmap.png,111602,2026-06-11T01:45:47.172175
-06_图表/fig02_final_model_stack_v2.png,142967,2026-06-11T02:08:16.122154
-06_图表/fig02_q1_persona_comfort.png,69324,2026-06-11T01:13:42.299374
-07_报告与工作簿/新疆旅游30天硬约束混合元启发式求解报告.md,5912,2026-06-10T20:26:58.000763
-07_报告与工作簿/新疆旅游30天硬约束混合元启发式求解结果.xlsx,235504,2026-06-10T20:26:57.974693
-07_报告与工作簿/新疆旅游人性化场景强化模型与实验报告.md,18016,2026-06-11T00:47:13.505472
-07_报告与工作簿/新疆旅游人性化场景强化结果.xlsx,23058,2026-06-11T00:47:13.482398
-07_报告与工作簿/新疆旅游四问数字孪生鲁棒性实验报告.md,17217,2026-06-11T01:45:48.929752
-07_报告与工作簿/新疆旅游四问风险感知策略选择模型报告.md,10834,2026-06-11T02:00:41.192755
-07_报告与工作簿/新疆旅游数字孪生鲁棒性实验结果.xlsx,22192,2026-06-11T01:45:48.905592
-07_报告与工作簿/新疆旅游最终科研交付总包v2.md,15035,2026-06-11T02:08:16.723825
-07_报告与工作簿/新疆旅游最终科研交付总包v2.xlsx,13751,2026-06-11T02:08:16.699014
-07_报告与工作簿/新疆旅游混合元启发式全量求解报告.md,6485,2026-06-10T19:52:26.568662
-07_报告与工作簿/新疆旅游混合元启发式全量求解结果.xlsx,238816,2026-06-10T19:52:26.548275
-07_报告与工作簿/新疆旅游自适应策略实验报告.md,15979,2026-06-11T00:53:17.323910
-07_报告与工作簿/新疆旅游自适应策略实验结果.xlsx,18509,2026-06-11T00:53:17.300061
-07_报告与工作簿/新疆旅游逐日行程与可行性强化报告.md,2287,2026-06-10T16:57:09.264622
-07_报告与工作簿/新疆旅游逐日行程与可行性强化结果.xlsx,36871,2026-06-10T16:57:09.263621
-07_报告与工作簿/新疆旅游逐日行程二次修复报告.md,1098,2026-06-10T17:04:49.899641
-07_报告与工作簿/新疆旅游逐日行程二次修复结果.xlsx,14120,2026-06-10T17:04:49.899641
-07_报告与工作簿/新疆旅游风险感知策略选择模型结果.xlsx,25764,2026-06-11T02:00:41.168834
-08_Q1_V2强化/figures/fig_q1_v2_candidate_route_family.png,81148,2026-06-11T16:02:43.686038
-08_Q1_V2强化/figures/fig_q1_v2_comfort_robustness.png,68563,2026-06-11T16:02:44.416680
-08_Q1_V2强化/figures/fig_q1_v2_pareto_route_family.png,81148,2026-06-11T16:02:43.960472
-08_Q1_V2强化/outputs/enhanced_od_labels_v2.csv,300188,2026-06-11T16:02:38.690839
-08_Q1_V2强化/outputs/q1_v2_daily_itinerary.csv,28254,2026-06-11T16:02:38.769750
-08_Q1_V2强化/outputs/q1_v2_epsilon_grid.csv,12028,2026-06-11T16:02:38.931184
-08_Q1_V2强化/outputs/q1_v2_loulan_substitution.csv,1391,2026-06-11T16:02:38.945770
-08_Q1_V2强化/outputs/q1_v2_model_audit.csv,2189,2026-06-11T16:02:38.940895
-08_Q1_V2强化/outputs/q1_v2_pareto_routes.csv,6446,2026-06-11T16:02:38.774196
-08_Q1_V2强化/outputs/q1_v2_risk_strategy_matrix.csv,857,2026-06-11T16:02:38.937446
-08_Q1_V2强化/outputs/q1_v2_robustness_summary.csv,1945,2026-06-11T16:02:38.775567
-08_Q1_V2强化/outputs/q1_v2_route_family.csv,6446,2026-06-11T16:02:38.771806
-08_Q1_V2强化/outputs/q1_v2_route_product_cards.csv,1598,2026-06-11T16:02:38.937446
-08_Q1_V2强化/outputs/solve_summary.json,1830,2026-06-11T16:02:46.398709
-08_Q1_V2强化/reports/新疆旅游第一问Q1_V2强化建模与实验报告.md,13082,2026-06-11T16:02:46.398709
-08_Q1_V2强化/reports/新疆旅游第一问Q1_V2强化结果.xlsx,168145,2026-06-11T16:02:46.364564
-08_Q1_V2强化/reports/楼兰古城不可普通访问与文化替代说明.md,1095,2026-06-11T16:02:38.947038
-08_Q1_V2强化/scripts/q1_v2_build_all.py,71274,2026-06-11T16:00:50.266602
-09_Q1_V3_鲁棒联合优化/config/q1_v3_config.yaml,672,2026-06-11T16:44:26.844470
-09_Q1_V3_鲁棒联合优化/figures/fig_q1_v3_risk_comfort_tradeoff.png,123624,2026-06-11T20:00:24.216911
-09_Q1_V3_鲁棒联合优化/figures/fig_q1_v3_robust_pareto_front.png,136561,2026-06-11T20:00:24.005625
-09_Q1_V3_鲁棒联合优化/figures/fig_q1_v3_route_simulation_distribution.png,50782,2026-06-11T20:00:24.610715
-09_Q1_V3_鲁棒联合优化/figures/fig_q1_v3_transport_mode_mix.png,57320,2026-06-11T20:00:24.359203
-09_Q1_V3_鲁棒联合优化/outputs/q1_v3_candidate_routes.csv,295862,2026-06-11T19:25:40.707556
-09_Q1_V3_鲁棒联合优化/outputs/q1_v3_candidate_routes_enriched.csv,330207,2026-06-11T20:00:17.548278
-09_Q1_V3_鲁棒联合优化/outputs/q1_v3_feasible_robust_pareto_front.csv,44771,2026-06-11T20:00:17.507011
-09_Q1_V3_鲁棒联合优化/outputs/q1_v3_hourly_itinerary.csv,1305889,2026-06-11T19:25:40.695993
-09_Q1_V3_鲁棒联合优化/outputs/q1_v3_loulan_substitution_tiers.csv,1170,2026-06-11T19:24:09.838437
-09_Q1_V3_鲁棒联合优化/outputs/q1_v3_model_audit.csv,2321,2026-06-11T20:00:24.650999
-09_Q1_V3_鲁棒联合优化/outputs/q1_v3_multimodal_labels.csv,380703,2026-06-11T19:24:09.659059
-09_Q1_V3_鲁棒联合优化/outputs/q1_v3_preference_groups.csv,2511,2026-06-11T19:24:09.830154
-09_Q1_V3_鲁棒联合优化/outputs/q1_v3_region_diversity_rules.csv,620,2026-06-11T19:24:09.835820
-09_Q1_V3_鲁棒联合优化/outputs/q1_v3_robust_pareto_front.csv,113461,2026-06-11T20:00:17.497554
-09_Q1_V3_鲁棒联合优化/outputs/q1_v3_scenario_samples.csv,92761,2026-06-11T19:24:10.012467
-09_Q1_V3_鲁棒联合优化/outputs/q1_v3_schedule_infeasibility.csv,2929,2026-06-11T19:25:40.697520
-09_Q1_V3_鲁棒联合优化/outputs/q1_v3_schedule_summary.csv,24489,2026-06-11T19:25:40.699726
-09_Q1_V3_鲁棒联合优化/outputs/q1_v3_selected_routes.csv,17705,2026-06-11T20:00:17.538499
-09_Q1_V3_鲁棒联合优化/outputs/q1_v3_simulation_summary.csv,32357,2026-06-11T19:25:52.728390
-09_Q1_V3_鲁棒联合优化/outputs/q1_v3_simulation_trials.csv,6039448,2026-06-11T19:25:52.724840
-09_Q1_V3_鲁棒联合优化/outputs/q1_v3_small_exact_check.csv,2215,2026-06-11T20:00:23.671044
-09_Q1_V3_鲁棒联合优化/outputs/q1_v3_strict_comfort_pareto_front.csv,1580,2026-06-11T20:00:17.509549
-09_Q1_V3_鲁棒联合优化/outputs/solve_summary.json,2491,2026-06-11T20:00:25.805073
-09_Q1_V3_鲁棒联合优化/README.md,933,2026-06-11T20:00:24.660016
-09_Q1_V3_鲁棒联合优化/reports/新疆旅游第一问Q1_V3鲁棒联合优化报告.md,10963,2026-06-11T20:00:24.660016
-09_Q1_V3_鲁棒联合优化/reports/新疆旅游第一问Q1_V3鲁棒联合优化结果.xlsx,160663,2026-06-11T20:00:25.714962
-09_Q1_V3_鲁棒联合优化/scripts/__pycache__/q1_v3_build_all.cpython-38.pyc,100605,2026-06-11T20:00:15.880809
-09_Q1_V3_鲁棒联合优化/scripts/q1_v3_build_all.py,155865,2026-06-11T20:00:03.472543
-09_Q1_V3_鲁棒联合优化/scripts/q1_v3_build_transport_labels.py,210,2026-06-11T16:56:04.569037
-09_Q1_V3_鲁棒联合优化/scripts/q1_v3_generate_scenarios.py,132,2026-06-11T16:56:04.572204
-09_Q1_V3_鲁棒联合优化/scripts/q1_v3_hourly_scheduler.py,373,2026-06-11T16:56:04.575036
-09_Q1_V3_鲁棒联合优化/scripts/q1_v3_master_optimizer.py,278,2026-06-11T16:56:04.573501
-09_Q1_V3_鲁棒联合优化/scripts/q1_v3_pareto_selector.py,479,2026-06-11T19:23:52.392967
-09_Q1_V3_鲁棒联合优化/scripts/q1_v3_route_simulator.py,253,2026-06-11T16:56:04.575036
-Q1_directory_summary.csv,76,2026-06-11T19:29:29.247321
-Q1_file_manifest.csv,17549,2026-06-11T19:29:29.243789
-README.md,10770,2026-06-11T19:29:15.073644
+﻿"relative_path","size_bytes","last_write_time"
+"00_原始题目与总纲\q1_v2_plan.md","29119","2026-06-11 13:12:26"
+"00_原始题目与总纲\旅游线路安排-图论.pdf","167902","2026-05-26 21:21:38"
+"00_原始题目与总纲\新疆旅游全品类数据明细.xlsx","44892","2026-06-04 18:17:38"
+"00_原始题目与总纲\新疆旅游四问数学建模总纲_先模型后实验版.md","15234","2026-06-11 11:48:35"
+"00_原始题目与总纲\新疆旅游线路安排案例10.docx","61996","2026-06-09 17:25:33"
+"00_原始题目与总纲\新疆旅游最终数据集说明_更新版.md","9340","2026-06-11 11:42:20"
+"01_输入数据\enhanced_data\air_public_schedule_seed.csv","6884","2026-06-10 16:09:04"
+"01_输入数据\enhanced_data\amap_depot_access_matrix_clean.csv","18398","2026-06-10 16:09:04"
+"01_输入数据\enhanced_data\amap_driving_od_matrix_clean.csv","241185","2026-06-10 16:09:04"
+"01_输入数据\enhanced_data\capacity_by_spot.csv","4908","2026-06-10 16:09:04"
+"01_输入数据\enhanced_data\cultural_tags.csv","3727","2026-06-10 16:09:04"
+"01_输入数据\enhanced_data\data_gap_acquisition_plan.csv","3117","2026-06-10 16:09:04"
+"01_输入数据\enhanced_data\depot_access_matrix.csv","2456","2026-06-10 16:09:04"
+"01_输入数据\enhanced_data\edge_time_scenarios.csv","463510","2026-06-10 16:09:04"
+"01_输入数据\enhanced_data\enhanced_od_matrix.csv","183008","2026-06-10 16:09:04"
+"01_输入数据\enhanced_data\enhanced_od_matrix_with_amap.csv","326546","2026-06-10 14:43:57"
+"01_输入数据\enhanced_data\hotel_hub_constraints.csv","2328","2026-06-10 16:09:04"
+"01_输入数据\enhanced_data\model_status_recommendations.csv","1690","2026-06-10 16:09:04"
+"01_输入数据\enhanced_data\multimodal_edges.csv","254766","2026-06-10 16:09:04"
+"01_输入数据\enhanced_data\multimodal_nodes.csv","6925","2026-06-10 16:09:04"
+"01_输入数据\enhanced_data\rail_12306_model_options.csv","7077","2026-06-10 16:09:04"
+"01_输入数据\enhanced_data\source_registry.csv","4998","2026-06-10 16:09:04"
+"01_输入数据\enhanced_data\special_access_constraints.csv","2941","2026-06-10 16:09:04"
+"01_输入数据\enhanced_data\spot_coordinates_amap.csv","9123","2026-06-10 14:40:25"
+"01_输入数据\enhanced_data\spot_time_windows.csv","2816","2026-06-10 16:09:04"
+"01_输入数据\enhanced_data\time_dependent_rules.csv","1190","2026-06-10 16:09:04"
+"01_输入数据\model_data\data_dictionary.csv","850","2026-06-09 22:11:09"
+"01_输入数据\model_data\data_quality_issues.csv","4662","2026-06-09 22:11:09"
+"01_输入数据\model_data\hotel_options_clean.csv","4829","2026-06-09 22:11:09"
+"01_输入数据\model_data\hotel_place_default.csv","1807","2026-06-09 22:11:09"
+"01_输入数据\model_data\hub_clean.csv","1523","2026-06-09 22:11:09"
+"01_输入数据\model_data\README_数据底座.md","1112","2026-06-09 22:11:09"
+"01_输入数据\model_data\scenario_parameters.csv","859","2026-06-09 22:11:09"
+"01_输入数据\model_data\source_sites.csv","1727","2026-06-09 22:11:09"
+"01_输入数据\model_data\spot_clean.csv","10670","2026-06-09 22:11:09"
+"01_输入数据\model_data\spot_hub_map.csv","3886","2026-06-09 22:11:09"
+"01_输入数据\model_data\summary.json","896","2026-06-09 22:11:09"
+"01_输入数据\model_data\transport_cost_clean.csv","6052","2026-06-09 22:11:09"
+"09_Q1_V3_鲁棒联合优化\config\q1_v3_config.yaml","672","2026-06-11 16:44:26"
+"09_Q1_V3_鲁棒联合优化\figures\fig_q1_v3_risk_comfort_tradeoff.png","123624","2026-06-11 20:00:24"
+"09_Q1_V3_鲁棒联合优化\figures\fig_q1_v3_robust_pareto_front.png","136561","2026-06-11 20:00:24"
+"09_Q1_V3_鲁棒联合优化\figures\fig_q1_v3_route_simulation_distribution.png","50782","2026-06-11 20:00:24"
+"09_Q1_V3_鲁棒联合优化\figures\fig_q1_v3_transport_mode_mix.png","57320","2026-06-11 20:00:24"
+"09_Q1_V3_鲁棒联合优化\outputs\q1_v3_candidate_routes.csv","295862","2026-06-11 19:25:40"
+"09_Q1_V3_鲁棒联合优化\outputs\q1_v3_candidate_routes_enriched.csv","330207","2026-06-11 20:00:17"
+"09_Q1_V3_鲁棒联合优化\outputs\q1_v3_feasible_robust_pareto_front.csv","44771","2026-06-11 20:00:17"
+"09_Q1_V3_鲁棒联合优化\outputs\q1_v3_hourly_itinerary.csv","1305889","2026-06-11 19:25:40"
+"09_Q1_V3_鲁棒联合优化\outputs\q1_v3_loulan_substitution_tiers.csv","1170","2026-06-11 19:24:09"
+"09_Q1_V3_鲁棒联合优化\outputs\q1_v3_model_audit.csv","2321","2026-06-11 20:00:24"
+"09_Q1_V3_鲁棒联合优化\outputs\q1_v3_multimodal_labels.csv","380703","2026-06-11 19:24:09"
+"09_Q1_V3_鲁棒联合优化\outputs\q1_v3_preference_groups.csv","2511","2026-06-11 19:24:09"
+"09_Q1_V3_鲁棒联合优化\outputs\q1_v3_region_diversity_rules.csv","620","2026-06-11 19:24:09"
+"09_Q1_V3_鲁棒联合优化\outputs\q1_v3_robust_pareto_front.csv","113461","2026-06-11 20:00:17"
+"09_Q1_V3_鲁棒联合优化\outputs\q1_v3_scenario_samples.csv","92761","2026-06-11 19:24:10"
+"09_Q1_V3_鲁棒联合优化\outputs\q1_v3_schedule_infeasibility.csv","2929","2026-06-11 19:25:40"
+"09_Q1_V3_鲁棒联合优化\outputs\q1_v3_schedule_summary.csv","24489","2026-06-11 19:25:40"
+"09_Q1_V3_鲁棒联合优化\outputs\q1_v3_selected_routes.csv","17705","2026-06-11 20:00:17"
+"09_Q1_V3_鲁棒联合优化\outputs\q1_v3_simulation_summary.csv","32357","2026-06-11 19:25:52"
+"09_Q1_V3_鲁棒联合优化\outputs\q1_v3_simulation_trials.csv","6039448","2026-06-11 19:25:52"
+"09_Q1_V3_鲁棒联合优化\outputs\q1_v3_small_exact_check.csv","2215","2026-06-11 20:00:23"
+"09_Q1_V3_鲁棒联合优化\outputs\q1_v3_strict_comfort_pareto_front.csv","1580","2026-06-11 20:00:17"
+"09_Q1_V3_鲁棒联合优化\outputs\solve_summary.json","2491","2026-06-11 20:00:25"
+"09_Q1_V3_鲁棒联合优化\README.md","933","2026-06-11 20:00:24"
+"09_Q1_V3_鲁棒联合优化\reports\新疆旅游第一问Q1_V3鲁棒联合优化报告.md","10963","2026-06-11 20:00:24"
+"09_Q1_V3_鲁棒联合优化\reports\新疆旅游第一问Q1_V3鲁棒联合优化结果.xlsx","160663","2026-06-11 20:00:25"
+"09_Q1_V3_鲁棒联合优化\scripts\q1_v3_build_all.py","155865","2026-06-11 20:00:03"
+"09_Q1_V3_鲁棒联合优化\scripts\q1_v3_build_transport_labels.py","210","2026-06-11 16:56:04"
+"09_Q1_V3_鲁棒联合优化\scripts\q1_v3_generate_scenarios.py","132","2026-06-11 16:56:04"
+"09_Q1_V3_鲁棒联合优化\scripts\q1_v3_hourly_scheduler.py","373","2026-06-11 16:56:04"
+"09_Q1_V3_鲁棒联合优化\scripts\q1_v3_master_optimizer.py","278","2026-06-11 16:56:04"
+"09_Q1_V3_鲁棒联合优化\scripts\q1_v3_pareto_selector.py","479","2026-06-11 19:23:52"
+"09_Q1_V3_鲁棒联合优化\scripts\q1_v3_route_simulator.py","253","2026-06-11 16:56:04"
+"Q1_directory_summary.csv","461","2026-06-13 16:19:02"
+"Q1_file_manifest.csv","6396","2026-06-13 16:19:02"
+"README.md","2205","2026-06-13 16:18:28"

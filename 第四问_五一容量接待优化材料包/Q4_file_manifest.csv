@@ -1,150 +1,76 @@
-﻿relative_path,parent_dir,file_name,file_size_bytes
-00_原始题目与建模口径/Q4_modeling_scope.md,00_原始题目与建模口径,Q4_modeling_scope.md,742
-00_原始题目与建模口径/新疆旅游全品类数据明细.xlsx,00_原始题目与建模口径,新疆旅游全品类数据明细.xlsx,44892
-00_原始题目与建模口径/新疆旅游四问数学建模总纲_先模型后实验版.md,00_原始题目与建模口径,新疆旅游四问数学建模总纲_先模型后实验版.md,15234
-00_原始题目与建模口径/新疆旅游强化数据与算法研究报告.md,00_原始题目与建模口径,新疆旅游强化数据与算法研究报告.md,13140
-00_原始题目与建模口径/新疆旅游最终数据集说明_更新版.md,00_原始题目与建模口径,新疆旅游最终数据集说明_更新版.md,9340
-00_原始题目与建模口径/新疆旅游线路安排四问最终收束方案.md,00_原始题目与建模口径,新疆旅游线路安排四问最终收束方案.md,22895
-00_原始题目与建模口径/新疆旅游线路安排案例10.docx,00_原始题目与建模口径,新疆旅游线路安排案例10.docx,61996
-00_原始题目与建模口径/旅游线路安排-图论.pdf,00_原始题目与建模口径,旅游线路安排-图论.pdf,167902
-01_输入数据/enhanced_data/air_public_schedule_seed.csv,01_输入数据/enhanced_data,air_public_schedule_seed.csv,6884
-01_输入数据/enhanced_data/amap_depot_access_matrix_clean.csv,01_输入数据/enhanced_data,amap_depot_access_matrix_clean.csv,18398
-01_输入数据/enhanced_data/amap_driving_od_matrix.csv,01_输入数据/enhanced_data,amap_driving_od_matrix.csv,201422
-01_输入数据/enhanced_data/amap_driving_od_matrix_clean.csv,01_输入数据/enhanced_data,amap_driving_od_matrix_clean.csv,241185
-01_输入数据/enhanced_data/amap_od_integration_summary.csv,01_输入数据/enhanced_data,amap_od_integration_summary.csv,547
-01_输入数据/enhanced_data/amap_od_integration_summary.json,01_输入数据/enhanced_data,amap_od_integration_summary.json,349
-01_输入数据/enhanced_data/capacity_by_spot.csv,01_输入数据/enhanced_data,capacity_by_spot.csv,4908
-01_输入数据/enhanced_data/cultural_tags.csv,01_输入数据/enhanced_data,cultural_tags.csv,3727
-01_输入数据/enhanced_data/data_gap_acquisition_plan.csv,01_输入数据/enhanced_data,data_gap_acquisition_plan.csv,3117
-01_输入数据/enhanced_data/depot_access_matrix.csv,01_输入数据/enhanced_data,depot_access_matrix.csv,2456
-01_输入数据/enhanced_data/edge_time_scenarios.csv,01_输入数据/enhanced_data,edge_time_scenarios.csv,463510
-01_输入数据/enhanced_data/enhanced_od_matrix.csv,01_输入数据/enhanced_data,enhanced_od_matrix.csv,183008
-01_输入数据/enhanced_data/enhanced_od_matrix_with_amap.csv,01_输入数据/enhanced_data,enhanced_od_matrix_with_amap.csv,326546
-01_输入数据/enhanced_data/hotel_hub_constraints.csv,01_输入数据/enhanced_data,hotel_hub_constraints.csv,2328
-01_输入数据/enhanced_data/model_status_recommendations.csv,01_输入数据/enhanced_data,model_status_recommendations.csv,1690
-01_输入数据/enhanced_data/multimodal_edges.csv,01_输入数据/enhanced_data,multimodal_edges.csv,254766
-01_输入数据/enhanced_data/multimodal_nodes.csv,01_输入数据/enhanced_data,multimodal_nodes.csv,6925
-01_输入数据/enhanced_data/rail_12306_model_options.csv,01_输入数据/enhanced_data,rail_12306_model_options.csv,7077
-01_输入数据/enhanced_data/rail_12306_raw_core_od.csv,01_输入数据/enhanced_data,rail_12306_raw_core_od.csv,35148
-01_输入数据/enhanced_data/rail_12306_summary.json,01_输入数据/enhanced_data,rail_12306_summary.json,231
-01_输入数据/enhanced_data/source_registry.csv,01_输入数据/enhanced_data,source_registry.csv,4998
-01_输入数据/enhanced_data/special_access_constraints.csv,01_输入数据/enhanced_data,special_access_constraints.csv,2941
-01_输入数据/enhanced_data/spot_coordinates_amap.csv,01_输入数据/enhanced_data,spot_coordinates_amap.csv,9123
-01_输入数据/enhanced_data/spot_time_windows.csv,01_输入数据/enhanced_data,spot_time_windows.csv,2816
-01_输入数据/enhanced_data/time_dependent_rules.csv,01_输入数据/enhanced_data,time_dependent_rules.csv,1190
-01_输入数据/model_data/data_dictionary.csv,01_输入数据/model_data,data_dictionary.csv,850
-01_输入数据/model_data/data_quality_issues.csv,01_输入数据/model_data,data_quality_issues.csv,4662
-01_输入数据/model_data/edge_road_directed.csv,01_输入数据/model_data,edge_road_directed.csv,8363
-01_输入数据/model_data/hotel_options_clean.csv,01_输入数据/model_data,hotel_options_clean.csv,4829
-01_输入数据/model_data/hotel_place_default.csv,01_输入数据/model_data,hotel_place_default.csv,1807
-01_输入数据/model_data/hub_clean.csv,01_输入数据/model_data,hub_clean.csv,1523
-01_输入数据/model_data/README_数据底座.md,01_输入数据/model_data,README_数据底座.md,1112
-01_输入数据/model_data/scenario_parameters.csv,01_输入数据/model_data,scenario_parameters.csv,859
-01_输入数据/model_data/source_sites.csv,01_输入数据/model_data,source_sites.csv,1727
-01_输入数据/model_data/spot_clean.csv,01_输入数据/model_data,spot_clean.csv,10670
-01_输入数据/model_data/spot_hub_map.csv,01_输入数据/model_data,spot_hub_map.csv,3886
-01_输入数据/model_data/summary.json,01_输入数据/model_data,summary.json,896
-01_输入数据/model_data/tables.json,01_输入数据/model_data,tables.json,118968
-01_输入数据/model_data/transport_cost_clean.csv,01_输入数据/model_data,transport_cost_clean.csv,6052
-02_模型代码/adaptive_strategy_lab.py,02_模型代码,adaptive_strategy_lab.py,23385
-02_模型代码/build_defense_package.py,02_模型代码,build_defense_package.py,12805
-02_模型代码/build_final_research_package_v2.py,02_模型代码,build_final_research_package_v2.py,21995
-02_模型代码/build_paper_chapter.py,02_模型代码,build_paper_chapter.py,13396
-02_模型代码/build_research_synthesis.py,02_模型代码,build_research_synthesis.py,16083
-02_模型代码/build_visual_assets.py,02_模型代码,build_visual_assets.py,13759
-02_模型代码/digital_twin_robustness_lab.py,02_模型代码,digital_twin_robustness_lab.py,36459
-02_模型代码/enhance_data_and_models.py,02_模型代码,enhance_data_and_models.py,97494
-02_模型代码/humanized_scenario_research.py,02_模型代码,humanized_scenario_research.py,27005
-02_模型代码/policy_simulation_lab.py,02_模型代码,policy_simulation_lab.py,15382
-02_模型代码/prepare_tourism_model_data.py,02_模型代码,prepare_tourism_model_data.py,32774
-02_模型代码/risk_aware_policy_engine.py,02_模型代码,risk_aware_policy_engine.py,27689
-03_线路产品容量流主模型/enhanced_model_outputs/enhanced_solve_summary.json,03_线路产品容量流主模型/enhanced_model_outputs,enhanced_solve_summary.json,735
-03_线路产品容量流主模型/enhanced_model_outputs/problem4_capacity_flow.csv,03_线路产品容量流主模型/enhanced_model_outputs,problem4_capacity_flow.csv,2343
-03_线路产品容量流主模型/enhanced_model_outputs/problem4_route_columns.csv,03_线路产品容量流主模型/enhanced_model_outputs,problem4_route_columns.csv,1649
-04_需求冲击与动态分流/adaptive_strategy_outputs/q4_reallocation_plan.csv,04_需求冲击与动态分流/adaptive_strategy_outputs,q4_reallocation_plan.csv,1239
-04_需求冲击与动态分流/adaptive_strategy_outputs/q4_reallocation_summary.csv,04_需求冲击与动态分流/adaptive_strategy_outputs,q4_reallocation_summary.csv,598
-04_需求冲击与动态分流/adaptive_strategy_outputs/solve_summary.json,04_需求冲击与动态分流/adaptive_strategy_outputs,solve_summary.json,552
-04_需求冲击与动态分流/humanized_scenario_outputs/q4_bottlenecks.csv,04_需求冲击与动态分流/humanized_scenario_outputs,q4_bottlenecks.csv,1689
-04_需求冲击与动态分流/humanized_scenario_outputs/q4_demand_stress.csv,04_需求冲击与动态分流/humanized_scenario_outputs,q4_demand_stress.csv,630
-04_需求冲击与动态分流/humanized_scenario_outputs/solve_summary.json,04_需求冲击与动态分流/humanized_scenario_outputs,solve_summary.json,985
-05_预约上限与鲁棒策略/digital_twin_outputs/q4_capacity_policy.csv,05_预约上限与鲁棒策略/digital_twin_outputs,q4_capacity_policy.csv,4334
-05_预约上限与鲁棒策略/digital_twin_outputs/q4_distribution_detail.csv,05_预约上限与鲁棒策略/digital_twin_outputs,q4_distribution_detail.csv,1950
-05_预约上限与鲁棒策略/digital_twin_outputs/recommendation_atlas.csv,05_预约上限与鲁棒策略/digital_twin_outputs,recommendation_atlas.csv,3560
-05_预约上限与鲁棒策略/digital_twin_outputs/scenario_parameters.csv,05_预约上限与鲁棒策略/digital_twin_outputs,scenario_parameters.csv,824
-05_预约上限与鲁棒策略/digital_twin_outputs/solve_summary.json,05_预约上限与鲁棒策略/digital_twin_outputs,solve_summary.json,631
-05_预约上限与鲁棒策略/policy_simulation_outputs/q4_reservation_policy_summary.csv,05_预约上限与鲁棒策略/policy_simulation_outputs,q4_reservation_policy_summary.csv,1666
-05_预约上限与鲁棒策略/policy_simulation_outputs/q4_reservation_route_detail.csv,05_预约上限与鲁棒策略/policy_simulation_outputs,q4_reservation_route_detail.csv,8761
-05_预约上限与鲁棒策略/policy_simulation_outputs/solve_summary.json,05_预约上限与鲁棒策略/policy_simulation_outputs,solve_summary.json,736
-05_预约上限与鲁棒策略/risk_policy_outputs/integrated_policy_portfolio.csv,05_预约上限与鲁棒策略/risk_policy_outputs,integrated_policy_portfolio.csv,1937
-05_预约上限与鲁棒策略/risk_policy_outputs/q4_policy_selection.csv,05_预约上限与鲁棒策略/risk_policy_outputs,q4_policy_selection.csv,2644
-05_预约上限与鲁棒策略/risk_policy_outputs/solve_summary.json,05_预约上限与鲁棒策略/risk_policy_outputs,solve_summary.json,559
-06_图表/risk_policy_outputs/figures/fig03_q3_q4_selected_risk_metrics.png,06_图表/risk_policy_outputs/figures,fig03_q3_q4_selected_risk_metrics.png,65852
-06_图表/visual_assets_outputs/figures/fig05_q4_demand_reallocation.png,06_图表/visual_assets_outputs/figures,fig05_q4_demand_reallocation.png,45001
-06_图表/visual_assets_outputs/figures/fig06_q4_reservation_policy.png,06_图表/visual_assets_outputs/figures,fig06_q4_reservation_policy.png,56837
-06_图表/visual_assets_outputs/solve_summary.json,06_图表/visual_assets_outputs,solve_summary.json,203
-06_图表/visual_assets_outputs/visual_index.csv,06_图表/visual_assets_outputs,visual_index.csv,940
-07_报告与工作簿/defense_package_outputs/chart_plan.csv,07_报告与工作簿/defense_package_outputs,chart_plan.csv,1281
-07_报告与工作簿/defense_package_outputs/qa_bank.csv,07_报告与工作簿/defense_package_outputs,qa_bank.csv,1906
-07_报告与工作簿/defense_package_outputs/slide_outline.csv,07_报告与工作簿/defense_package_outputs,slide_outline.csv,1555
-07_报告与工作簿/defense_package_outputs/solve_summary.json,07_报告与工作簿/defense_package_outputs,solve_summary.json,411
-07_报告与工作簿/defense_package_outputs/validity_audit.csv,07_报告与工作簿/defense_package_outputs,validity_audit.csv,1137
-07_报告与工作簿/final_research_package_v2_outputs/data_truth_table.csv,07_报告与工作簿/final_research_package_v2_outputs,data_truth_table.csv,1031
-07_报告与工作簿/final_research_package_v2_outputs/evidence_registry.csv,07_报告与工作簿/final_research_package_v2_outputs,evidence_registry.csv,1278
-07_报告与工作簿/final_research_package_v2_outputs/figures/fig01_data_evidence_maturity.png,07_报告与工作簿/final_research_package_v2_outputs/figures,fig01_data_evidence_maturity.png,71918
-07_报告与工作簿/final_research_package_v2_outputs/figures/fig02_final_model_stack_v2.png,07_报告与工作簿/final_research_package_v2_outputs/figures,fig02_final_model_stack_v2.png,142967
-07_报告与工作簿/final_research_package_v2_outputs/final_answers.csv,07_报告与工作簿/final_research_package_v2_outputs,final_answers.csv,1735
-07_报告与工作簿/final_research_package_v2_outputs/model_stack_v2.csv,07_报告与工作簿/final_research_package_v2_outputs,model_stack_v2.csv,1690
-07_报告与工作簿/final_research_package_v2_outputs/paper_insert_plan.csv,07_报告与工作簿/final_research_package_v2_outputs,paper_insert_plan.csv,1375
-07_报告与工作簿/final_research_package_v2_outputs/slide_storyline.csv,07_报告与工作簿/final_research_package_v2_outputs,slide_storyline.csv,1098
-07_报告与工作簿/final_research_package_v2_outputs/solve_summary.json,07_报告与工作簿/final_research_package_v2_outputs,solve_summary.json,454
-07_报告与工作簿/outputs/新疆旅游人性化场景强化模型与实验报告.md,07_报告与工作簿/outputs,新疆旅游人性化场景强化模型与实验报告.md,18016
-07_报告与工作簿/outputs/新疆旅游人性化场景强化结果.xlsx,07_报告与工作簿/outputs,新疆旅游人性化场景强化结果.xlsx,23058
-07_报告与工作簿/outputs/新疆旅游四问Fancy建模科研总报告.md,07_报告与工作簿/outputs,新疆旅游四问Fancy建模科研总报告.md,14270
-07_报告与工作簿/outputs/新疆旅游四问Fancy建模科研总览.xlsx,07_报告与工作簿/outputs,新疆旅游四问Fancy建模科研总览.xlsx,9033
-07_报告与工作簿/outputs/新疆旅游四问数字孪生鲁棒性实验报告.md,07_报告与工作簿/outputs,新疆旅游四问数字孪生鲁棒性实验报告.md,17217
-07_报告与工作簿/outputs/新疆旅游四问风险感知策略选择模型报告.md,07_报告与工作簿/outputs,新疆旅游四问风险感知策略选择模型报告.md,10834
-07_报告与工作簿/outputs/新疆旅游政策仿真实验报告.md,07_报告与工作簿/outputs,新疆旅游政策仿真实验报告.md,11758
-07_报告与工作簿/outputs/新疆旅游政策仿真实验结果.xlsx,07_报告与工作簿/outputs,新疆旅游政策仿真实验结果.xlsx,161110
-07_报告与工作簿/outputs/新疆旅游数字孪生鲁棒性实验结果.xlsx,07_报告与工作簿/outputs,新疆旅游数字孪生鲁棒性实验结果.xlsx,22192
-07_报告与工作簿/outputs/新疆旅游最终科研交付总包v2.md,07_报告与工作簿/outputs,新疆旅游最终科研交付总包v2.md,15035
-07_报告与工作簿/outputs/新疆旅游最终科研交付总包v2.xlsx,07_报告与工作簿/outputs,新疆旅游最终科研交付总包v2.xlsx,13751
-07_报告与工作簿/outputs/新疆旅游答辩材料包.md,07_报告与工作簿/outputs,新疆旅游答辩材料包.md,11248
-07_报告与工作簿/outputs/新疆旅游答辩材料包.xlsx,07_报告与工作簿/outputs,新疆旅游答辩材料包.xlsx,11073
-07_报告与工作簿/outputs/新疆旅游自适应策略实验报告.md,07_报告与工作簿/outputs,新疆旅游自适应策略实验报告.md,15979
-07_报告与工作簿/outputs/新疆旅游自适应策略实验结果.xlsx,07_报告与工作簿/outputs,新疆旅游自适应策略实验结果.xlsx,18509
-07_报告与工作簿/outputs/新疆旅游风险感知策略选择模型结果.xlsx,07_报告与工作簿/outputs,新疆旅游风险感知策略选择模型结果.xlsx,25764
-07_报告与工作簿/paper_chapter_outputs/algorithm_index.csv,07_报告与工作簿/paper_chapter_outputs,algorithm_index.csv,785
-07_报告与工作簿/paper_chapter_outputs/experiment_matrix.csv,07_报告与工作簿/paper_chapter_outputs,experiment_matrix.csv,1207
-07_报告与工作簿/paper_chapter_outputs/master_metrics.csv,07_报告与工作簿/paper_chapter_outputs,master_metrics.csv,2518
-07_报告与工作簿/paper_chapter_outputs/notation.csv,07_报告与工作簿/paper_chapter_outputs,notation.csv,996
-07_报告与工作簿/paper_chapter_outputs/solve_summary.json,07_报告与工作簿/paper_chapter_outputs,solve_summary.json,447
-08_待补与缺口审计/Q4_material_audit.csv,08_待补与缺口审计,Q4_material_audit.csv,2304
-08_待补与缺口审计/Q4_missing_artifacts.csv,08_待补与缺口审计,Q4_missing_artifacts.csv,1586
-09_Q4_V2_12天线路产品组合与分时容量优化/config/q4_v2_route_portfolio_capacity_plan.md,09_Q4_V2_12天线路产品组合与分时容量优化/config,q4_v2_route_portfolio_capacity_plan.md,26570
-09_Q4_V2_12天线路产品组合与分时容量优化/figures/fig_q4_v2_bottleneck_shadow_prices.png,09_Q4_V2_12天线路产品组合与分时容量优化/figures,fig_q4_v2_bottleneck_shadow_prices.png,141119
-09_Q4_V2_12天线路产品组合与分时容量优化/figures/fig_q4_v2_policy_scenarios.png,09_Q4_V2_12天线路产品组合与分时容量优化/figures,fig_q4_v2_policy_scenarios.png,106816
-09_Q4_V2_12天线路产品组合与分时容量优化/figures/fig_q4_v2_portfolio_capacity.png,09_Q4_V2_12天线路产品组合与分时容量优化/figures,fig_q4_v2_portfolio_capacity.png,119311
-09_Q4_V2_12天线路产品组合与分时容量优化/figures/fig_q4_v2_timeslot_heatmap.png,09_Q4_V2_12天线路产品组合与分时容量优化/figures,fig_q4_v2_timeslot_heatmap.png,81315
-09_Q4_V2_12天线路产品组合与分时容量优化/outputs/q4_v2_bottleneck_shadow_prices.csv,09_Q4_V2_12天线路产品组合与分时容量优化/outputs,q4_v2_bottleneck_shadow_prices.csv,121416
-09_Q4_V2_12天线路产品组合与分时容量优化/outputs/q4_v2_candidate_route_products.csv,09_Q4_V2_12天线路产品组合与分时容量优化/outputs,q4_v2_candidate_route_products.csv,53743
-09_Q4_V2_12天线路产品组合与分时容量优化/outputs/q4_v2_capacity_ratio_allocation.csv,09_Q4_V2_12天线路产品组合与分时容量优化/outputs,q4_v2_capacity_ratio_allocation.csv,8401
-09_Q4_V2_12天线路产品组合与分时容量优化/outputs/q4_v2_file_manifest.csv,09_Q4_V2_12天线路产品组合与分时容量优化/outputs,q4_v2_file_manifest.csv,3515
-09_Q4_V2_12天线路产品组合与分时容量优化/outputs/q4_v2_hotel_resource_load.csv,09_Q4_V2_12天线路产品组合与分时容量优化/outputs,q4_v2_hotel_resource_load.csv,11756
-09_Q4_V2_12天线路产品组合与分时容量优化/outputs/q4_v2_model_audit.csv,09_Q4_V2_12天线路产品组合与分时容量优化/outputs,q4_v2_model_audit.csv,1872
-09_Q4_V2_12天线路产品组合与分时容量优化/outputs/q4_v2_policy_selection.csv,09_Q4_V2_12天线路产品组合与分时容量优化/outputs,q4_v2_policy_selection.csv,1108
-09_Q4_V2_12天线路产品组合与分时容量优化/outputs/q4_v2_reallocation_matrix.csv,09_Q4_V2_12天线路产品组合与分时容量优化/outputs,q4_v2_reallocation_matrix.csv,14876
-09_Q4_V2_12天线路产品组合与分时容量优化/outputs/q4_v2_reservation_slot_policy.csv,09_Q4_V2_12天线路产品组合与分时容量优化/outputs,q4_v2_reservation_slot_policy.csv,67797
-09_Q4_V2_12天线路产品组合与分时容量优化/outputs/q4_v2_route_daily_itinerary.csv,09_Q4_V2_12天线路产品组合与分时容量优化/outputs,q4_v2_route_daily_itinerary.csv,37976
-09_Q4_V2_12天线路产品组合与分时容量优化/outputs/q4_v2_route_quality_audit.csv,09_Q4_V2_12天线路产品组合与分时容量优化/outputs,q4_v2_route_quality_audit.csv,5285
-09_Q4_V2_12天线路产品组合与分时容量优化/outputs/q4_v2_run_summary.json,09_Q4_V2_12天线路产品组合与分时容量优化/outputs,q4_v2_run_summary.json,540
-09_Q4_V2_12天线路产品组合与分时容量优化/outputs/q4_v2_scenario_simulation_summary.csv,09_Q4_V2_12天线路产品组合与分时容量优化/outputs,q4_v2_scenario_simulation_summary.csv,7796
-09_Q4_V2_12天线路产品组合与分时容量优化/outputs/q4_v2_selected_route_portfolio.csv,09_Q4_V2_12天线路产品组合与分时容量优化/outputs,q4_v2_selected_route_portfolio.csv,10973
-09_Q4_V2_12天线路产品组合与分时容量优化/outputs/q4_v2_spot_timeslot_load.csv,09_Q4_V2_12天线路产品组合与分时容量优化/outputs,q4_v2_spot_timeslot_load.csv,26509
-09_Q4_V2_12天线路产品组合与分时容量优化/outputs/q4_v2_vehicle_guide_resource_load.csv,09_Q4_V2_12天线路产品组合与分时容量优化/outputs,q4_v2_vehicle_guide_resource_load.csv,51116
-09_Q4_V2_12天线路产品组合与分时容量优化/README.md,09_Q4_V2_12天线路产品组合与分时容量优化,README.md,6179
-09_Q4_V2_12天线路产品组合与分时容量优化/reports/新疆旅游第四问Q4_V2五一路线产品组合优化报告.md,09_Q4_V2_12天线路产品组合与分时容量优化/reports,新疆旅游第四问Q4_V2五一路线产品组合优化报告.md,26432
-09_Q4_V2_12天线路产品组合与分时容量优化/reports/新疆旅游第四问Q4_V2五一路线产品组合优化结果.xlsx,09_Q4_V2_12天线路产品组合与分时容量优化/reports,新疆旅游第四问Q4_V2五一路线产品组合优化结果.xlsx,141093
-09_Q4_V2_12天线路产品组合与分时容量优化/scripts/q4_v2_build_all.py,09_Q4_V2_12天线路产品组合与分时容量优化/scripts,q4_v2_build_all.py,103452
-Q4_directory_summary.csv,.,Q4_directory_summary.csv,1539
-Q4_file_manifest.csv,.,Q4_file_manifest.csv,21193
-README.md,.,README.md,8180
+﻿"relative_path","size_bytes","last_write_time"
+"00_原始题目与建模口径\Q4_modeling_scope.md","742","2026-06-12 09:07:15"
+"00_原始题目与建模口径\旅游线路安排-图论.pdf","167902","2026-05-26 21:21:38"
+"00_原始题目与建模口径\新疆旅游强化数据与算法研究报告.md","13140","2026-06-10 16:10:39"
+"00_原始题目与建模口径\新疆旅游全品类数据明细.xlsx","44892","2026-06-04 18:17:38"
+"00_原始题目与建模口径\新疆旅游四问数学建模总纲_先模型后实验版.md","15234","2026-06-11 11:48:35"
+"00_原始题目与建模口径\新疆旅游线路安排案例10.docx","61996","2026-06-09 17:25:33"
+"00_原始题目与建模口径\新疆旅游线路安排四问最终收束方案.md","22895","2026-06-10 22:05:04"
+"00_原始题目与建模口径\新疆旅游最终数据集说明_更新版.md","9340","2026-06-11 11:42:20"
+"01_输入数据\enhanced_data\air_public_schedule_seed.csv","6884","2026-06-10 16:09:04"
+"01_输入数据\enhanced_data\amap_depot_access_matrix_clean.csv","18398","2026-06-10 16:09:04"
+"01_输入数据\enhanced_data\amap_driving_od_matrix.csv","201422","2026-06-10 14:41:59"
+"01_输入数据\enhanced_data\amap_driving_od_matrix_clean.csv","241185","2026-06-10 16:09:04"
+"01_输入数据\enhanced_data\amap_od_integration_summary.csv","547","2026-06-10 14:43:57"
+"01_输入数据\enhanced_data\amap_od_integration_summary.json","349","2026-06-10 14:43:57"
+"01_输入数据\enhanced_data\capacity_by_spot.csv","4908","2026-06-10 16:09:04"
+"01_输入数据\enhanced_data\cultural_tags.csv","3727","2026-06-10 16:09:04"
+"01_输入数据\enhanced_data\data_gap_acquisition_plan.csv","3117","2026-06-10 16:09:04"
+"01_输入数据\enhanced_data\depot_access_matrix.csv","2456","2026-06-10 16:09:04"
+"01_输入数据\enhanced_data\edge_time_scenarios.csv","463510","2026-06-10 16:09:04"
+"01_输入数据\enhanced_data\enhanced_od_matrix.csv","183008","2026-06-10 16:09:04"
+"01_输入数据\enhanced_data\enhanced_od_matrix_with_amap.csv","326546","2026-06-10 14:43:57"
+"01_输入数据\enhanced_data\hotel_hub_constraints.csv","2328","2026-06-10 16:09:04"
+"01_输入数据\enhanced_data\model_status_recommendations.csv","1690","2026-06-10 16:09:04"
+"01_输入数据\enhanced_data\multimodal_edges.csv","254766","2026-06-10 16:09:04"
+"01_输入数据\enhanced_data\multimodal_nodes.csv","6925","2026-06-10 16:09:04"
+"01_输入数据\enhanced_data\rail_12306_model_options.csv","7077","2026-06-10 16:09:04"
+"01_输入数据\enhanced_data\rail_12306_raw_core_od.csv","35148","2026-06-10 15:22:37"
+"01_输入数据\enhanced_data\rail_12306_summary.json","231","2026-06-10 15:22:37"
+"01_输入数据\enhanced_data\source_registry.csv","4998","2026-06-10 16:09:04"
+"01_输入数据\enhanced_data\special_access_constraints.csv","2941","2026-06-10 16:09:04"
+"01_输入数据\enhanced_data\spot_coordinates_amap.csv","9123","2026-06-10 14:40:25"
+"01_输入数据\enhanced_data\spot_time_windows.csv","2816","2026-06-10 16:09:04"
+"01_输入数据\enhanced_data\time_dependent_rules.csv","1190","2026-06-10 16:09:04"
+"01_输入数据\model_data\data_dictionary.csv","850","2026-06-09 22:11:09"
+"01_输入数据\model_data\data_quality_issues.csv","4662","2026-06-09 22:11:09"
+"01_输入数据\model_data\edge_road_directed.csv","8363","2026-06-09 22:11:09"
+"01_输入数据\model_data\hotel_options_clean.csv","4829","2026-06-09 22:11:09"
+"01_输入数据\model_data\hotel_place_default.csv","1807","2026-06-09 22:11:09"
+"01_输入数据\model_data\hub_clean.csv","1523","2026-06-09 22:11:09"
+"01_输入数据\model_data\README_数据底座.md","1112","2026-06-09 22:11:09"
+"01_输入数据\model_data\scenario_parameters.csv","859","2026-06-09 22:11:09"
+"01_输入数据\model_data\source_sites.csv","1727","2026-06-09 22:11:09"
+"01_输入数据\model_data\spot_clean.csv","10670","2026-06-09 22:11:09"
+"01_输入数据\model_data\spot_hub_map.csv","3886","2026-06-09 22:11:09"
+"01_输入数据\model_data\summary.json","896","2026-06-09 22:11:09"
+"01_输入数据\model_data\tables.json","118968","2026-06-09 22:11:09"
+"01_输入数据\model_data\transport_cost_clean.csv","6052","2026-06-09 22:11:09"
+"09_Q4_V2_12天线路产品组合与分时容量优化\config\q4_v2_route_portfolio_capacity_plan.md","26570","2026-06-12 09:30:51"
+"09_Q4_V2_12天线路产品组合与分时容量优化\figures\fig_q4_v2_bottleneck_shadow_prices.png","141119","2026-06-12 11:11:43"
+"09_Q4_V2_12天线路产品组合与分时容量优化\figures\fig_q4_v2_policy_scenarios.png","106816","2026-06-12 11:11:43"
+"09_Q4_V2_12天线路产品组合与分时容量优化\figures\fig_q4_v2_portfolio_capacity.png","119311","2026-06-12 11:11:42"
+"09_Q4_V2_12天线路产品组合与分时容量优化\figures\fig_q4_v2_timeslot_heatmap.png","81315","2026-06-12 11:11:44"
+"09_Q4_V2_12天线路产品组合与分时容量优化\outputs\q4_v2_bottleneck_shadow_prices.csv","121416","2026-06-12 11:11:40"
+"09_Q4_V2_12天线路产品组合与分时容量优化\outputs\q4_v2_candidate_route_products.csv","53743","2026-06-12 11:11:40"
+"09_Q4_V2_12天线路产品组合与分时容量优化\outputs\q4_v2_capacity_ratio_allocation.csv","8401","2026-06-12 11:11:40"
+"09_Q4_V2_12天线路产品组合与分时容量优化\outputs\q4_v2_file_manifest.csv","3515","2026-06-12 11:11:44"
+"09_Q4_V2_12天线路产品组合与分时容量优化\outputs\q4_v2_hotel_resource_load.csv","11756","2026-06-12 11:11:40"
+"09_Q4_V2_12天线路产品组合与分时容量优化\outputs\q4_v2_model_audit.csv","1872","2026-06-12 11:11:40"
+"09_Q4_V2_12天线路产品组合与分时容量优化\outputs\q4_v2_policy_selection.csv","1108","2026-06-12 11:11:40"
+"09_Q4_V2_12天线路产品组合与分时容量优化\outputs\q4_v2_reallocation_matrix.csv","14876","2026-06-12 11:11:40"
+"09_Q4_V2_12天线路产品组合与分时容量优化\outputs\q4_v2_reservation_slot_policy.csv","67797","2026-06-12 11:11:40"
+"09_Q4_V2_12天线路产品组合与分时容量优化\outputs\q4_v2_route_daily_itinerary.csv","37976","2026-06-12 11:11:40"
+"09_Q4_V2_12天线路产品组合与分时容量优化\outputs\q4_v2_route_quality_audit.csv","5285","2026-06-12 11:11:40"
+"09_Q4_V2_12天线路产品组合与分时容量优化\outputs\q4_v2_run_summary.json","540","2026-06-12 11:11:44"
+"09_Q4_V2_12天线路产品组合与分时容量优化\outputs\q4_v2_scenario_simulation_summary.csv","7796","2026-06-12 11:11:40"
+"09_Q4_V2_12天线路产品组合与分时容量优化\outputs\q4_v2_selected_route_portfolio.csv","10973","2026-06-12 11:11:40"
+"09_Q4_V2_12天线路产品组合与分时容量优化\outputs\q4_v2_spot_timeslot_load.csv","26509","2026-06-12 11:11:40"
+"09_Q4_V2_12天线路产品组合与分时容量优化\outputs\q4_v2_vehicle_guide_resource_load.csv","51116","2026-06-12 11:11:40"
+"09_Q4_V2_12天线路产品组合与分时容量优化\README.md","6179","2026-06-12 11:11:40"
+"09_Q4_V2_12天线路产品组合与分时容量优化\reports\新疆旅游第四问Q4_V2五一路线产品组合优化报告.md","26432","2026-06-12 11:11:40"
+"09_Q4_V2_12天线路产品组合与分时容量优化\reports\新疆旅游第四问Q4_V2五一路线产品组合优化结果.xlsx","141093","2026-06-12 11:11:41"
+"09_Q4_V2_12天线路产品组合与分时容量优化\scripts\q4_v2_build_all.py","103452","2026-06-12 11:11:21"
+"Q4_directory_summary.csv","1540","2026-06-12 11:12:11"
+"Q4_file_manifest.csv","21385","2026-06-12 11:12:11"
+"README.md","2616","2026-06-13 16:18:28"

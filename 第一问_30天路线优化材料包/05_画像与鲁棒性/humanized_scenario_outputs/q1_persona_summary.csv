@@ -1,5 +1,0 @@
-﻿problem,persona_id,persona_name,mean_comfort_score,p10_comfort_score,red_days,yellow_days,suggested_buffer_days,interpretation
-Q1_30day_route,explorer_dense,探索紧凑型,95.4,86.54,1,2,2,适合精力较好的游客，舒适型人群需预留弹性
-Q1_30day_route,standard_active,普通体力型,91.18,76.04,3,3,3,适合精力较好的游客，舒适型人群需预留弹性
-Q1_30day_route,family_comfort,亲子舒适型,84.22,59.1,6,4,6,需要增加缓冲或削减低收益景点
-Q1_30day_route,senior_slow,长者慢游型,77.08,45.36,9,4,8,需要增加缓冲或削减低收益景点

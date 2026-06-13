@@ -1,4 +1,12 @@
-﻿metric,value
-manifest_count,182
-v3_output_files,19
-v3_report_files,2
+﻿"relative_dir","direct_file_count","direct_size_bytes"
+".","3","9518"
+"00_原始题目与总纲","6","328483"
+"01_输入数据","0",
+"01_输入数据\enhanced_data","20","1547593"
+"01_输入数据\model_data","12","38873"
+"09_Q1_V3_鲁棒联合优化","1","933"
+"09_Q1_V3_鲁棒联合优化\config","1","672"
+"09_Q1_V3_鲁棒联合优化\figures","4","368287"
+"09_Q1_V3_鲁棒联合优化\outputs","19","8693490"
+"09_Q1_V3_鲁棒联合优化\reports","2","171626"
+"09_Q1_V3_鲁棒联合优化\scripts","7","157590"

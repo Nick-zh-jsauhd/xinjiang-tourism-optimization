@@ -1,5 +1,0 @@
-﻿question,final_answer,humanized_policy,evidence,claim_strength
-Q1,主线采用30天硬约束混合元启发式：32景点，30天，总成本14548.53元；普通体力型可用画像路线：32景点，28天，均值舒适度91.78，状态satisfied。,探索紧凑型30天改造->按原画像路线执行；亲子舒适型30天改造->拆成两段慢游；长者慢游型30天改造->按原画像路线执行；普通体力型30天主线->按原画像路线执行,hybrid_30day_outputs/hard30_route_summary.csv; adaptive_strategy_outputs/q1_variant_summary.csv; risk_policy_outputs/q1_policy_selection.csv,强可行解 + 人群画像鲁棒性；不声称全局最优
-Q2,保守主方案：32天，交通费4340.68元，最大单年19天；开放式多口岸下界：28天，交通费2992.69元，最大单年14天；当两人外部大交通额外差价低于1347.99元时开放式更优。,双方案实时比价后择优,problem2_openpath_outputs/scenario_totals.csv; policy_simulation_outputs/q2_gateway_price_summary.csv; risk_policy_outputs/q2_policy_selection.csv,交通费用主模型 + 条件策略；DFJ精确证明未完成
-Q3,三组文化考察采用MinMax均衡：最大完成98.70小时，时间差12.16小时。,5天项目缓冲,enhanced_model_outputs/problem3_minmax_summary.csv; policy_simulation_outputs/q3_project_buffer_curve.csv; risk_policy_outputs/q3_policy_selection.csv,确定性均衡 + 风险缓冲策略
-Q4,五一容量流主方案：9条线路，分配106358人，总容量111956人。,分时预约+动态分流,enhanced_model_outputs/problem4_capacity_flow.csv; adaptive_strategy_outputs/q4_reallocation_summary.csv; digital_twin_outputs/q4_capacity_policy.csv,容量分配 + 预约/分流压力测试

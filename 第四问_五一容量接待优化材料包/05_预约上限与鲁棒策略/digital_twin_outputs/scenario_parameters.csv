@@ -1,7 +1,0 @@
-﻿scenario_id,scenario_name,travel_mu,travel_sigma,service_mu,reservation_fail_prob,heat_penalty,road_closure_prob,open_gateway_premium_mean,open_gateway_premium_sd,q3_weather_delay_mean,q3_permit_rework_prob,q4_demand_multiplier,q4_capacity_multiplier,q4_no_show_rate
-normal_summer,常规暑期,1.05,0.08,1.02,0.02,2.0,0.01,1100,330,0.8,0.03,1.0,1.0,0.04
-heatwave,热浪高温,1.08,0.1,1.08,0.03,8.0,0.015,1250,420,1.2,0.04,0.95,0.92,0.08
-rain_flood_delay,雨洪道路延误,1.28,0.18,1.02,0.04,3.0,0.1,1200,420,2.8,0.05,0.9,0.82,0.1
-reservation_tight,预约收紧,1.08,0.09,1.03,0.12,3.0,0.02,1250,430,1.0,0.08,1.05,0.9,0.05
-peak_summer,暑期客流高峰,1.18,0.14,1.05,0.08,5.0,0.03,1760,650,1.5,0.06,1.2,0.95,0.03
-compound_extreme,复合极端冲击,1.35,0.22,1.1,0.18,10.0,0.15,2100,900,4.0,0.12,1.35,0.8,0.07

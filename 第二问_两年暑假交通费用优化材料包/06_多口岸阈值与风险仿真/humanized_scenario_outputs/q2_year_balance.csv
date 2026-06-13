@@ -1,3 +1,0 @@
-﻿scenario_id,year_count,spots_total,days_total,max_year_days,day_balance_gap,cost_balance_gap_yuan_for_two,travel_balance_gap_hours,total_transport_cost_yuan_for_two,humanized_score,interpretation
-P2_OPEN_GATEWAY_LOWER_BOUND,2,38,28,14,0,169.97,6.43,2992.69,92.76,两年负担均衡且费用最低
-P2_ROOTED_URUMQI_MINCOST,2,38,32,19,6,1390.5,38.72,4340.68,61.21,口径保守、可落地，但第二年负担明显更重

@@ -1,4 +1,0 @@
-﻿route_id,spots_count,travel_hours,service_hours,total_hours,days,transport_cost_yuan,ticket_yuan,risk_score,objective_cost_yuan,culture_value_total,route_sequence,max_completion_hours,balance_gap_hours
-S3_MinMax_Group1,2,26.7,72.0,98.7,13,6071.97,8090.0,0.722,17281.97,20.0,楼兰古城 -> 尼雅遗址,98.7,12.159999999999997
-S3_MinMax_Group2,7,31.17,59.0,90.17,12,3661.72,566.0,1.139,7087.72,54.0,北庭故城遗址 -> 苏公塔 -> 交河故城 -> 库车王府 -> 克孜尔石窟 -> 香妃园 -> 喀什古城,98.7,12.159999999999997
-S3_MinMax_Group3,5,38.54,48.0,86.54,11,6105.87,390.0,1.066,9095.87,37.0,吐峪沟麻扎村 -> 高昌故城 -> 罗布人村寨 -> 艾提尕尔清真寺 -> 石头城遗址,98.7,12.159999999999997

@@ -1,7 +1,0 @@
-﻿route_id,day,base_lodging_hub,recommended_lodging_hub,representative_hotel_area_spot,transfer_to_hotel_hours,transfer_to_hotel_cost_yuan_per_two,estimated_extra_detour_hours,estimated_extra_detour_cost_yuan_per_two,repair_status,rationale
-PCOP_MILP,1,达坂城镇,天池风景区,天山天池,1.921,92.74,0.0,0.0,recommended,将非标准住宿点替换为最近且绕行成本较低的标准酒店枢纽。
-PCOP_MILP,25,霍城县(惠远古城),赛里木湖,果子沟大桥,0.597,19.1,0.0,0.0,recommended,将非标准住宿点替换为最近且绕行成本较低的标准酒店枢纽。
-PCOP_ALNS,4,达坂城镇,吐鲁番市,吐峪沟麻扎村,1.779,85.64,0.0,0.0,recommended,将非标准住宿点替换为最近且绕行成本较低的标准酒店枢纽。
-PCOP_ALNS,19,霍城县(惠远古城),赛里木湖,果子沟大桥,0.597,19.1,0.0,0.0,recommended,将非标准住宿点替换为最近且绕行成本较低的标准酒店枢纽。
-PCOP_ALNS,22,阿勒泰市,禾木村,五彩滩,3.174,132.03,6.246,263.19,recommended,将非标准住宿点替换为最近且绕行成本较低的标准酒店枢纽。
-PCOP_ALNS,23,阿勒泰市,禾木村,五彩滩,3.174,132.03,0.0,0.0,recommended,将非标准住宿点替换为最近且绕行成本较低的标准酒店枢纽。

@@ -1,8 +1,0 @@
-artifact,expected_location,current_status,impact,next_action
-Q4-V2独立主求解器,09_Q4_V2_五一容量预约联合优化/scripts/q4_v2_build_all.py,missing,当前第四问材料已整理但不是独立闭环,建立独立脚本统一生成线路列/容量流/分流/预约/报告
-列生成线路库,09_Q4_V2_五一容量预约联合优化/outputs/q4_v2_generated_columns.csv,missing,现有9条线路为模板列，难以证明线路库充分,用资源约束最短路或启发式定价生成更多候选线路
-日级/时段级预约流,09_Q4_V2_五一容量预约联合优化/outputs/q4_v2_time_slot_booking.csv,missing,当前只看12天总量，不能解释每日拥堵和错峰,建立day-slot容量约束和预约滚动分配
-酒店与车辆容量,01_输入数据/enhanced_data/q4_lodging_vehicle_capacity.csv,missing,无法判断线路产品是否被住宿/车辆瓶颈限制,采集酒店房量/旅游大巴/摆渡车/停车位并接入多资源容量
-真实线路级需求分布,01_输入数据/enhanced_data/q4_route_demand_prior.csv,missing,当前游客偏好分布为代理估计,用携程/飞猪产品热度、景区客流、文旅通报或问卷校准
-小规模精确校验,09_Q4_V2_五一容量预约联合优化/outputs/q4_v2_exact_check.csv,missing,难以说明启发式分流策略的最优性差距,对小规模线路-景点-时段集合建立LP/MILP精确校验
-运营执行表,09_Q4_V2_五一容量预约联合优化/outputs/q4_v2_daily_operations_plan.csv,missing,答辩时仍缺每日线路容量/预约/候补/分流执行表,输出12天逐日分配和管控动作
