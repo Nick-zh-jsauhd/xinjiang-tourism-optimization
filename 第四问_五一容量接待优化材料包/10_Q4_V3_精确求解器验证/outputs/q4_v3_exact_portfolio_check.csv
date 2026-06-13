@@ -1,0 +1,2 @@
+﻿experiment_id,solver,scope,candidate_routes,selected_routes,baseline_demand,solver_status,proved_optimal,current_q4v2_exact_score,milp_exact_score,relative_score_improvement,current_q4v2_capacity,milp_capacity,current_quality_proxy_count,milp_quality_proxy_count,route_overlap_count,mip_objective,mip_gap
+Q4V3_63_CANDIDATE_18_ROUTE_PORTFOLIO_MILP,HiGHS-MILP via scipy.optimize.milp,63条候选12天线路中，在Q4-V2相同产品类型配额、区域覆盖、容量下界和质量代理约束下，精确选择18条线路最大化综合投放分,63,18,106358.0,optimal,True,921.989204,993.392727,0.07744508,160190.0,187550.0,13,15,10,-993.392727,0.0

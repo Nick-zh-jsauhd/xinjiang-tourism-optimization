@@ -1,0 +1,2 @@
+﻿experiment_id,solver,scope,spots_count,route_count,min_spots_per_year,max_spots_per_year,solver_status,proved_optimal,heuristic_cost_yuan_for_two,exact_cost_yuan_for_two,relative_gap_vs_exact,mip_objective,mip_gap
+Q2V4_20_NODE_TWO_YEAR_ROOTED_MIP,HiGHS-MILP via scipy.optimize.milp,从Q2V3固定乌鲁木齐方案抽取Year1前10点与Year2前10点，精确求解两条乌鲁木齐起讫路线覆盖20节点,20,2,8,12,optimal,True,2594.34,1681.1,0.54323955,1681.1,0.0

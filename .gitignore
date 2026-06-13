@@ -64,6 +64,9 @@ desktop.ini
 /research_synthesis_outputs/
 /risk_policy_outputs/
 /scripts/
+!/scripts/
+/scripts/*
+!/scripts/run_q124_exact_verification.py
 /solver_efficiency_outputs/
 /visual_assets_outputs/
 /旅游线路安排-图论.pdf
